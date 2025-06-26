@@ -1325,45 +1325,24 @@
   function safeSetItem(key, value) {
     try {
       localStorage.setItem(key, JSON.stringify(value));
-      // Əlavə olaraq sessionStorage-də də saxla
       sessionStorage.setItem(key, JSON.stringify(value));
       return true;
-    } catch (error) {
-      console.error('localStorage yazma xətası:', error);
-      // Əgər localStorage doludursa, köhnə məlumatları təmizlə
-      try {
-        if (error.name === 'QuotaExceededError') {
-          clearOldData();
-          localStorage.setItem(key, JSON.stringify(value));
-          sessionStorage.setItem(key, JSON.stringify(value));
-          return true;
-        }
-      } catch (e) {
-        console.error('Təmizləmə xətası:', e);
-      }
+    } catch (e) {
       return false;
     }
   }
 
   function safeGetItem(key, defaultValue = null) {
     try {
-      // Əvvəlcə localStorage-dən oxu
       const localValue = localStorage.getItem(key);
-      if (localValue !== null) {
-        return JSON.parse(localValue);
-      }
-      
-      // Əgər localStorage-də yoxdursa, sessionStorage-dən oxu
+      if (localValue !== null) return JSON.parse(localValue);
       const sessionValue = sessionStorage.getItem(key);
       if (sessionValue !== null) {
-        // sessionStorage-dəki məlumatı localStorage-ə köçür
         localStorage.setItem(key, sessionValue);
         return JSON.parse(sessionValue);
       }
-      
       return defaultValue;
-    } catch (error) {
-      console.error('localStorage oxuma xətası:', error);
+    } catch (e) {
       return defaultValue;
     }
   }
