@@ -1223,6 +1223,12 @@
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
         <button id="cat-patan" class="category-btn" onclick="togglepatanSubcats()"><i class="fa fa-microscope"></i> PATAN</button>
       </div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <button id="cat-norfiz1" data-category="norfiz1.json" onclick="selectCategory('norfiz1.json')" class="category-btn"><i class="fa fa-heartbeat"></i> NORFIZ1</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <button id="cat-norfiz2" data-category="norfiz2.json" onclick="selectCategory('norfiz2.json')" class="category-btn"><i class="fa fa-heartbeat"></i> NORFIZ2</button>
+      </div>
       <!-- MİKROB üçün alt kateqoriyalar (başlanğıcda gizli) -->
 <div id="patanSubcats" style="display:none;align-items:center;gap:10px;margin-bottom:10px; margin-left:30px; flex-direction:column; width:100%;">
   <div style="display:flex; gap:10px; width:100%;">
@@ -3410,7 +3416,9 @@ function renderQuizWrongOnly() {
       { name: 'PATAN2', file: 'patan2a.json', icon: 'fa-virus' },
       { name: 'DYES', file: 'patandyes.json', icon: 'fa-bacteria' },
       { name: 'MIKROB1', file: 'mikrob1.json', icon: 'fa-microchip' },
-      { name: 'MIKROB2', file: 'mikrob2.json', icon: 'fa-microchip' }
+      { name: 'MIKROB2', file: 'mikrob2.json', icon: 'fa-microchip' },
+      { name: 'NORFIZ1', file: 'norfiz1.json', icon: 'fa-microchip' },
+      { name: 'NORFIZ2', file: 'norfiz2.json', icon: 'fa-microchip' }
     ];
 
     allCategoriesData = {};
@@ -3931,7 +3939,9 @@ function renderQuizWrongOnly() {
       { name: 'PATAN2', file: 'patan2a.json', icon: 'fa-virus' },
       { name: 'DYES', file: 'patandyes.json', icon: 'fa-bacteria' },
       { name: 'MIKROB1', file: 'mikrob1.json', icon: 'fa-microchip' },
-      { name: 'MIKROB2', file: 'mikrob2.json', icon: 'fa-microchip' }
+      { name: 'MIKROB2', file: 'mikrob2.json', icon: 'fa-microchip' },
+      { name: 'NORFIZ1', file: 'norfiz1.json', icon: 'fa-microchip' },
+      { name: 'NORFIZ2', file: 'norfiz2.json', icon: 'fa-microchip' }
     ];
 
     allCategoriesData = {};
