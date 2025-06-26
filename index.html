@@ -3486,22 +3486,6 @@ function renderQuizWrongOnly() {
   function updateDistribution(categoryName, value) {
     categoryDistribution[categoryName] = parseInt(value) || 0;
     
-    // Ümumi faizi 100% saxla
-    const total = Object.values(categoryDistribution).reduce((sum, val) => sum + val, 0);
-    if (total !== 100) {
-      // Əgər 100% deyilsə, digər kateqoriyaları proporsional olaraq tənzimlə
-      const otherCategories = Object.keys(categoryDistribution).filter(name => name !== categoryName);
-      if (otherCategories.length > 0) {
-        const remaining = 100 - categoryDistribution[categoryName];
-        const share = remaining / otherCategories.length;
-        otherCategories.forEach(name => {
-          categoryDistribution[name] = Math.round(share);
-        });
-        // Son kateqoriyaya qalan hissəni ver
-        categoryDistribution[otherCategories[0]] += remaining - (Math.round(share) * otherCategories.length);
-      }
-    }
-    
     // UI-ni yenilə
     showDistributionPanel();
     // Cəmi yoxla və xəbərdarlıq göstər
