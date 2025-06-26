@@ -1,0 +1,3994 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>REZİDENTURA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Əlyazma şrift üçün Google Fonts əlavə et -->
+  
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Firebase SDK -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+    import { getFirestore, doc, setDoc, getDoc, collection } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+    import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCOLGCIOWD0G5pNZWNYSqrT5VJjYehzheU",
+      authDomain: "hola-b40e3.firebaseapp.com",
+      projectId: "hola-b40e3",
+      storageBucket: "hola-b40e3.firebasestorage.app",
+      messagingSenderId: "333880238833",
+      appId: "1:333880238833:web:6119d514d2f3267e7e3f50",
+      measurementId: "G-81P0KGGS7J"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db = getFirestore(app);
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+
+    // Global Firebase objects
+    window.firebaseAuth = auth;
+    window.firebaseDB = db;
+    window.firebaseProvider = provider;
+  </script>
+  
+  <style>
+    /* Ümumi stil */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Caveat', Caveat, sans-serif;
+      background: linear-gradient(120deg, #e0e7ff 0%, #f8fafc 100%);
+      margin: 0;
+      min-height: 100vh;
+    }
+    h1, h2 {
+      font-family: 'Consolas', Arial, sans-serif;
+    }
+    /* Başlanğıc ekranı üçün stil */
+    #welcomeScreen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      height: 130vh;
+      background: linear-gradient(120deg, #cf1999 0%, #1824c4 100%);
+      padding: 0 20px;
+      text-align: center;
+    } 
+    #welcomeScreen h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #2563eb;
+      font-family: 'Pacifico', cursive;
+    }
+    #welcomeScreen p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+      color: #333;
+    }
+    #startBtn {
+      font-family: 'Canveat', consolas;
+      font-size: 3.5em;
+      padding: 44px 100px;
+      border-radius: 32px;
+      border: none;
+      background: linear-gradient(90deg, #fbbf24 60%, #f472b6 100%);
+      color: #222;
+      box-shadow: 0 8px 36px rgba(251,191,36,0.18);
+      cursor: pointer;
+      margin: 0;
+      letter-spacing: 2px;
+      transition: background 0.2s, transform 0.1s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #startBtn:hover {
+      transform: scale(1.07);
+      box-shadow: 0 12px 48px rgba(251,191,36,0.22);
+    }
+    /* Axtarış paneli */
+    .search-container {
+      text-align: center;
+      margin-bottom: 24px;
+      padding: 24px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(248,250,252,0.9) 100%);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(37,99,235,0.08);
+      border: 1px solid rgba(37,99,235,0.1);
+      backdrop-filter: blur(10px);
+    }
+    .search-container input {
+      border-radius: 16px;
+      border: 2px solid rgba(37,99,235,0.1);
+      padding: 16px 20px;
+      font-size: 1.1em;
+      width: 320px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: 'Inter', sans-serif;
+      background: rgba(255,255,255,0.9);
+    }
+    .search-container input:focus {
+      outline: none;
+      border-color: #667eea;
+      box-shadow: 0 0 0 4px rgba(102,126,234,0.1);
+      transform: translateY(-2px);
+    }
+    .search-container button {
+      border-radius: 16px;
+      padding: 16px 24px;
+      font-size: 1em;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      border: none;
+      margin-left: 12px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      box-shadow: 0 4px 16px rgba(102,126,234,0.2);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .search-container button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(102,126,234,0.3);
+    }
+    /* Əsas məzmun */
+    .main-container {
+      margin: 0 auto;
+      max-width: 700px;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+      padding: 32px 24px 24px 24px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .question {
+      background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(37,99,235,0.08);
+      margin-bottom: 32px;
+      padding: 32px 24px;
+      border: 1px solid rgba(37,99,235,0.1);
+      animation: slideInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .question::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #667eea, #764ba2);
+    }
+
+    @keyframes slideInUp {
+      from { 
+        opacity: 0; 
+        transform: translateY(30px) scale(0.95);
+      }
+      to { 
+        opacity: 1; 
+        transform: translateY(0) scale(1);
+      }
+    }
+    .question h2 {
+  font-size: 1.7em;
+  font-family: 'Times New Roman', sans-serif;
+}
+    .answers button {
+      display: block;
+      width: 100%;
+      margin: 12px 0;
+      padding: 16px 20px;
+      border: none;
+      border-radius: 16px;
+      cursor: pointer;
+      font-size: 1.1em;
+      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+      color: #374151;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      outline: none;
+      border: 1px solid rgba(0,0,0,0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .answers button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      transition: left 0.6s;
+    }
+
+    .answers button:hover::before {
+      left: 100%;
+    }
+
+    .answers button:hover:not(.correct):not(.wrong) {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 8px 24px rgba(102,126,234,0.25);
+      border-color: transparent;
+    }
+
+    .answers button.correct {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: #fff;
+      font-weight: 600;
+      box-shadow: 0 8px 24px rgba(16,185,129,0.25);
+      border: 2px solid #10b981;
+      transform: scale(1.02);
+    }
+
+    .answers button.wrong {
+      background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+      color: #fff;
+      font-weight: 600;
+      box-shadow: 0 8px 24px rgba(239,68,68,0.25);
+      border: 2px solid #ef4444;
+      transform: scale(1.02);
+    }
+    .next-btn, .reset-btn {
+  background-color: #e11d48;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.reset-btn:hover {
+  background-color: #be123c;
+}
+    .next-btn:hover, .reset-btn:hover {
+      background-color: #0056b3;
+    }
+    /* Səhifə navigasiyası – kvadrat düymələr şəklində, yan-yana */
+    .page-navigation {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .page-navigation button {
+      border-radius: 8px;
+      margin: 4px;
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      font-size: 1em;
+      width: 42px;
+      height: 42px;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .page-navigation button.active {
+      background: #1e40af;
+      font-weight: bold;
+      transform: scale(1.08);
+    }
+    .page-navigation span {
+      font-size: 1.3em;
+      color: #64748b;
+      margin: 0 8px;
+      user-select: none;
+    }
+    /* Yan panel – səhifənin sağ tərəfində, gizli/yoxlanır */
+    .side-panel {
+      position: fixed;
+      top: 0;
+      right: -320px;
+      width: 300px;
+      height: 100vh;
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(20px);
+      border-radius: 24px 0 0 24px;
+      box-shadow: -8px 0 32px rgba(37,99,235,0.15);
+      padding: 32px 24px 24px 24px;
+      transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow-y: auto;
+      z-index: 999;
+      border-left: 1px solid rgba(37,99,235,0.1);
+      font-family: 'Inter', sans-serif;
+    }
+    .side-panel.open {
+      right: 0;
+    }
+    .side-panel h2 {
+      font-size: 1.4em;
+      color: #667eea;
+      margin-top: 0;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+      text-align: left;
+      background: linear-gradient(135deg, rgba(102,126,234,0.1) 0%, rgba(118,75,162,0.1) 100%);
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(102,126,234,0.08);
+      border: 1px solid rgba(102,126,234,0.1);
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-family: 'Inter', sans-serif;
+    }
+    .side-panel div, .side-panel p {
+      background: rgba(255,255,255,0.8);
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+      border: 1px solid rgba(0,0,0,0.05);
+      padding: 12px 16px;
+      margin-bottom: 16px;
+      font-family: 'Inter', sans-serif;
+      backdrop-filter: blur(10px);
+    }
+    #progressInfo p {
+      margin: 5px 0;
+      font-size: 15px;
+      color: #333;
+      background: none;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    }
+    .wrong-questions-list button,
+    .flagged-questions-list button {
+      box-shadow: 0 2px 8px rgba(220,53,69,0.08);
+      border: 1px solid #eee;
+      transition: transform 0.1s;
+    }
+    .wrong-questions-list button:hover,
+    .flagged-questions-list button:hover {
+      transform: scale(1.08);
+      background: #fff3f3;
+      color: #dc3545;
+    }
+    .wrong-questions-list button {
+      min-width: 36px;
+      min-height: 36px;
+      font-size: 1.2em;
+      padding: 6px 0;
+      margin: 5px 8px 5px 0;
+      border-radius: 6px;
+      font-family: 'Consolas', Consolas, monospace;
+      background: #fff;
+      color: #dc3545;
+      border: 1.5px solid #dc3545;
+      box-shadow: 0 2px 8px rgba(220,53,69,0.08);
+      position: relative;
+      transition: transform 0.1s, background 0.2s;
+    }
+    .wrong-questions-list button:hover {
+      transform: scale(1.08);
+      background: #fff3f3;
+      color: #fff;
+      background-color: #dc3545;
+    }
+    .wrong-questions-list button span {
+      font-size: 0.9em;
+    }
+    .toggle-button {
+      position: fixed;
+      top: 32px;
+      right: 0;
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      border-top-left-radius: 16px;
+      border-bottom-left-radius: 16px;
+      cursor: pointer;
+      z-index: 11000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: -4px 4px 16px rgba(102,126,234,0.3);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      font-size: 1.5em;
+      border: none;
+      font-family: 'Inter', sans-serif;
+    }
+    .toggle-button:hover {
+      transform: translateX(-4px);
+      box-shadow: -8px 8px 24px rgba(102,126,234,0.4);
+    }
+    /* Extra Options: hər sualda Flag və Note düymələri */
+    .extra-options {
+      margin-top: 16px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .extra-options button {
+      margin-right: 0;
+      padding: 8px 16px;
+      font-size: 0.9em;
+      cursor: pointer;
+      border: none;
+      border-radius: 12px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .extra-options .flag-btn {
+      background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(251,191,36,0.2);
+    }
+    .extra-options .flag-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(251,191,36,0.3);
+    }
+    .extra-options .note-btn {
+      background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(59,130,246,0.2);
+    }
+    .extra-options .note-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(59,130,246,0.3);
+    }
+    .extra-options .clear-answer-btn {
+      background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(239,68,68,0.2);
+    }
+    .extra-options .clear-answer-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(239,68,68,0.3);
+    }
+    .extra-options textarea {
+      width: 100%;
+      margin-top: 12px;
+      border-radius: 12px;
+      padding: 12px;
+      border: 1px solid rgba(0,0,0,0.1);
+      font-family: 'Inter', sans-serif;
+      resize: vertical;
+      min-height: 80px;
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .extra-options textarea:focus {
+      outline: none;
+      border-color: #0ea5e9;
+      box-shadow: 0 0 0 4px rgba(14,165,233,0.1);
+      transform: translateY(-2px);
+    }
+    
+    .note-container {
+      position: relative;
+      margin-top: 12px;
+    }
+    
+    .note-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 0.9em;
+      color: #64748b;
+    }
+    
+    .note-actions {
+      display: flex;
+      gap: 8px;
+    }
+    
+    .note-action-btn {
+      padding: 4px 8px;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.8em;
+      cursor: pointer;
+      transition: all 0.2s;
+      background: #f1f5f9;
+      color: #64748b;
+    }
+    
+    .note-action-btn:hover {
+      background: #e2e8f0;
+      color: #475569;
+    }
+    
+    .note-action-btn.delete {
+      background: #fef2f2;
+      color: #dc2626;
+    }
+    
+    .note-action-btn.delete:hover {
+      background: #fee2e2;
+    }
+    
+    .note-action-btn.save {
+      background: #f0fdf4;
+      color: #16a34a;
+    }
+    
+    .note-action-btn.save:hover {
+      background: #dcfce7;
+    }
+    
+    .character-count {
+      font-size: 0.8em;
+      color: #94a3b8;
+    }
+    
+    .character-count.warning {
+      color: #f59e0b;
+    }
+    
+    .character-count.danger {
+      color: #dc2626;
+    }
+    /* Kateqoriya düymələri üçün stil */
+    .category-btn {
+      width: 240px;
+      margin: 12px 0;
+      padding: 18px 0;
+      font-size: 1.25em;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      border: none;
+      border-radius: 18px;
+      cursor: pointer;
+      box-shadow: 0 8px 32px rgba(102,126,234,0.15);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .category-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    .category-btn:hover::before {
+      left: 100%;
+    }
+
+    .category-btn:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 16px 48px rgba(102,126,234,0.25);
+    }
+
+    .category-btn.selected {
+      font-size: 1.6em;
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      color: #fff;
+      transform: scale(1.08);
+      font-weight: bold;
+      box-shadow: 0 12px 40px rgba(245,87,108,0.3);
+      z-index: 2;
+    }
+
+    .category-btn.inactive {
+      opacity: 0.6;
+      filter: grayscale(0.3);
+      font-size: 1em;
+      background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+      color: #6b7280;
+      box-shadow: none;
+    }
+
+    .category-btn i {
+      margin-right: 8px;
+      font-size: 1.1em;
+    }
+
+    /* Başlanğıc ekranı üçün stil */
+    #welcomeScreen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      height: 100vh;
+      background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+      padding: 0 20px;
+      text-align: center;
+    }
+    #welcomeScreen h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #2563eb;
+      font-family: 'Pacifico', cursive;
+    }
+    #welcomeScreen p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+      color: #333;
+    }
+    #startBtn {
+      font-family: 'Caveat', cursive;
+      font-size: 3.5em;
+      padding: 44px 100px;
+      border-radius: 32px;
+      border: none;
+      background: linear-gradient(90deg, #17cc9f 60%, #0b0ec2 100%);
+      color: #222;
+      box-shadow: 0 8px 36px rgba(251,191,36,0.18);
+      cursor: pointer;
+      margin: 0;
+      letter-spacing: 2px;
+      transition: background 0.2s, transform 0.1s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #startBtn:hover {
+      transform: scale(1.07);
+      box-shadow: 0 12px 48px rgba(251,191,36,0.22);
+    }
+    .order-mode-option:hover {
+  background: #2ed30c;
+}
+/* Estetik flag mode və geri düymələri üçün */
+.flagged-mode-btn, #exitFlaggedModeBtn {
+  margin-top: 16px;
+  background: linear-gradient(90deg, rgb(6, 230, 73) 60%, #f472b6 100%);
+  color: #222;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 1.15em;
+  padding: 14px 0;
+  box-shadow: 0 4px 16px rgba(251,191,36,0.13);
+  transition: background 0.18s, transform 0.12s;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.flagged-mode-btn:hover, #exitFlaggedModeBtn:hover {
+  background: linear-gradient(90deg, #f472b6 60%, #0ada94 100%);
+  color: #fff;
+  transform: scale(1.04);
+}
+#exitFlaggedModeBtn::before {
+  content: "⟵";
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+.flagged-mode-btn {
+  margin-top: 18px;
+  background: linear-gradient(90deg, #0ee28a 60%, #980dcf 100%);
+  color: #222;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 18px;
+  cursor: pointer;
+  border: none;
+  font-size: 1em;
+  padding: 10px 0;
+  box-shadow: 0 6px 24px rgba(251,191,36,0.18);
+  transition: background 0.18s, transform 0.12s, color 0.18s, box-shadow 0.18s;
+  letter-spacing: 1.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-shadow: 0 2px 8px #fff8;
+  outline: none;
+  border: 2px solid #fbbf24;
+}
+.flagged-mode-btn:hover {
+  background: linear-gradient(90deg, #f472b6 60%, #fbbf24 100%);
+  color: #fff;
+  transform: scale(1.06) rotate(-1deg);
+  box-shadow: 0 12px 36px rgba(251,191,36,0.22);
+  border-color: #f472b6;
+}
+  body.dark-mode {
+    background: linear-gradient(120deg, #18181b 0%, #1e293b 100%);
+    color: #e5e7eb;
+  }
+  body.dark-mode .main-container {
+    background: #23272f;
+    color: #e5e7eb;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  }
+  body.dark-mode .question {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    border-color: #475569;
+    color: #e5e7eb;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  body.dark-mode .answers button {
+    background: linear-gradient(135deg, #334155 0%, #475569 100%);
+    color: #e5e7eb;
+    border-color: #475569;
+  }
+  body.dark-mode .answers button:hover:not(.correct):not(.wrong) {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(14,165,233,0.3);
+  }
+  body.dark-mode .answers button.correct {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(34,197,94,0.3);
+  }
+  body.dark-mode .answers button.wrong {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(239,68,68,0.3);
+  }
+  body.dark-mode .side-panel {
+    background: linear-gradient(135deg, rgba(30,41,59,0.95) 0%, rgba(51,65,85,0.95) 100%);
+    color: #e5e7eb;
+    border-left: 1px solid #475569;
+    backdrop-filter: blur(20px);
+  }
+  body.dark-mode .side-panel h2 {
+    background: linear-gradient(135deg, rgba(14,165,233,0.1) 0%, rgba(2,132,199,0.1) 100%);
+    border-color: #0ea5e9;
+    color: #0ea5e9;
+  }
+  body.dark-mode .side-panel div, body.dark-mode .side-panel p {
+    background: rgba(30,41,59,0.8);
+    border-color: #475569;
+    color: #e5e7eb;
+  }
+  body.dark-mode .category-btn {
+    background: linear-gradient(135deg, #334155 0%, #475569 100%);
+    color: #e5e7eb;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  }
+  body.dark-mode .category-btn.selected {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: #1e293b;
+    box-shadow: 0 12px 40px rgba(251,191,36,0.3);
+  }
+  body.dark-mode .category-btn.inactive {
+    background: linear-gradient(135deg, #475569 0%, #64748b 100%);
+    color: #94a3b8;
+  }
+  body.dark-mode #welcomeScreen {
+    background: linear-gradient(120deg, #1e293b 0%, #0f172a 100%);
+    color: #e5e7eb;
+  }
+  body.dark-mode input, body.dark-mode textarea {
+    background: #334155;
+    color: #e5e7eb;
+    border-color: #475569;
+  }
+  body.dark-mode input:focus, body.dark-mode textarea:focus {
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 4px rgba(14,165,233,0.1);
+  }
+  body.dark-mode .search-container {
+    background: linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(51,65,85,0.9) 100%);
+    border-color: #475569;
+  }
+  body.dark-mode .search-container button {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: #fff;
+  }
+  body.dark-mode .search-container button:hover {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  }
+  body.dark-mode .extra-options button {
+    background: linear-gradient(135deg, #334155 0%, #475569 100%);
+    color: #e5e7eb;
+  }
+  body.dark-mode .extra-options .flag-btn {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: #1e293b;
+  }
+  body.dark-mode .extra-options .note-btn {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: #fff;
+  }
+  body.dark-mode .extra-options .clear-answer-btn {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: #fff;
+  }
+  body.dark-mode .toggle-button {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: #fff;
+  }
+  body.dark-mode .reset-btn {
+    background: #334155;
+    color: #e5e7eb;
+    border-color: #475569;
+  }
+  body.dark-mode .reset-btn:hover {
+    background: #475569;
+  }
+  body.dark-mode .page-navigation button {
+    background: #334155;
+    color: #e5e7eb;
+    border-color: #475569;
+  }
+  body.dark-mode .page-navigation button.active {
+    background: #0ea5e9;
+    color: #fff;
+  }
+  body.dark-mode .wrong-questions-list button,
+  body.dark-mode .flagged-questions-list button,
+  body.dark-mode .repeated-mistakes-list button {
+    background: #334155;
+    color: #e5e7eb;
+    border-color: #475569;
+  }
+  body.dark-mode .wrong-questions-list button:hover,
+  body.dark-mode .flagged-questions-list button:hover,
+  body.dark-mode .repeated-mistakes-list button:hover {
+    background: #475569;
+  }
+  body.dark-mode .flagged-mode-btn {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    color: #fff;
+  }
+  body.dark-mode .flagged-mode-btn:hover {
+    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  }
+
+  @media (max-width: 600px) {
+  #patanSubcats,
+  #patanSubcats > div {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .category-btn {
+    width: 100% !important;
+    min-width: unset !important;
+    font-size: 1em;
+    padding: 12px 0;
+    box-sizing: border-box;
+  }
+  .main-container {
+    max-width: 100vw;
+    padding: 10px 2vw 10px 2vw;
+    border-radius: 10px;
+  }
+    .side-panel {
+    width: 85vw !important;
+    right: -90vw !important;
+    border-radius: 12px 0 0 12px !important;
+    padding: 18px 6px !important;
+    font-size: 1em !important;
+    top: 0 !important;
+    height: 100vh !important;
+    z-index: 10001 !important;
+    box-shadow: -2px 0 24px rgba(37,99,235,0.10);
+    background: #fff;
+    transition: right 0.35s cubic-bezier(.77,0,.18,1);
+  }
+  .side-panel.open {
+    right: 0 !important;
+  }
+  .side-overlay {
+    display: block;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.25);
+    z-index: 10000;
+  }
+  .toggle-button {
+    top: 8px !important;
+    right: 0 !important;
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 1.5em !important;
+    z-index: 11000 !important;
+    display: flex !important;
+  }
+}
+@media (min-width: 601px) {
+  .side-overlay { display: none !important; }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-18px);}
+}
+#patanSubcats {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: auto;
+}
+  body, html {
+  overflow-x: hidden;
+}
+.main-container {
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+    
+    /* Flashcard rejimi üçün stillər */
+    .flashcard-question {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(102,126,234,0.2);
+      margin-bottom: 32px;
+      padding: 40px 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .flashcard-question::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 50%, rgba(255,255,255,0.1) 100%);
+      animation: shimmer 3s infinite;
+    }
+    
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    
+    .flashcard-question h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    
+    .flashcard-answers {
+      display: none;
+      margin-top: 20px;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .flashcard-answers.show {
+      display: block;
+      animation: slideInUp 0.5s ease-out;
+    }
+    
+    .flashcard-answers button {
+      background: rgba(255,255,255,0.9);
+      color: #333;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 20px;
+      margin: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+    
+    .flashcard-answers button:hover {
+      background: rgba(255,255,255,1);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    
+    .flashcard-answers button.correct {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: #fff;
+      font-weight: 600;
+    }
+    
+    .flashcard-answers button.wrong {
+      background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+      color: #fff;
+      font-weight: 600;
+    }
+    
+    .flashcard-controls {
+      margin-top: 20px;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .flashcard-controls button {
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-radius: 12px;
+      padding: 12px 24px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+    
+    .flashcard-controls button:hover {
+      background: rgba(255,255,255,0.3);
+      border-color: rgba(255,255,255,0.5);
+      transform: translateY(-2px);
+    }
+    
+    .flashcard-indicator {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    
+    /* Dark mode flashcard stilləri */
+    body.dark-mode .flashcard-question {
+      background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+      border-color: #475569;
+      color: #e5e7eb;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+    
+    body.dark-mode .flashcard-question::before {
+      background: linear-gradient(45deg, rgba(255,255,255,0.05) 0%, transparent 50%, rgba(255,255,255,0.05) 100%);
+    }
+    
+    body.dark-mode .flashcard-answers button {
+      background: rgba(51,65,85,0.9);
+      color: #e5e7eb;
+      border-color: #475569;
+    }
+    
+    body.dark-mode .flashcard-answers button:hover {
+      background: rgba(71,85,105,1);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    
+    body.dark-mode .flashcard-answers button.correct {
+      background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+      color: #fff;
+    }
+    
+    body.dark-mode .flashcard-answers button.wrong {
+      background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+      color: #fff;
+    }
+    
+    body.dark-mode .flashcard-controls button {
+      background: rgba(51,65,85,0.3);
+      color: #e5e7eb;
+      border-color: #475569;
+    }
+    
+    body.dark-mode .flashcard-controls button:hover {
+      background: rgba(71,85,105,0.4);
+      border-color: #64748b;
+    }
+    
+    body.dark-mode .flashcard-indicator {
+      background: rgba(51,65,85,0.3);
+      color: #e5e7eb;
+      border-color: #475569;
+    }
+    
+    /* Kateqoriya düymələri üçün stil */
+  </style>
+</head>
+<body>
+  <!-- Başlanğıc Ekranı -->
+  <div id="welcomeScreen">
+    <button id="startBtn">
+      DR NİKO
+    </button>
+  </div>
+
+  <!-- Qalan hissə -->
+  <div id="mainContent" style="display:none;">
+    <!-- İstifadəçi giriş paneli -->
+    <div id="userInfo" style="display:none; margin-bottom:20px;"></div>
+    <div id="syncStatus" style="text-align:center; margin-bottom:10px; font-weight:bold; color:#2563eb;"></div>
+    
+    <!-- Giriş düyməsi (əgər istifadəçi daxil deyilsə) -->
+    <div id="loginPrompt" style="text-align:center; margin-bottom:20px; padding:15px; background:linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius:12px; border:1px solid #f59e0b;">
+      <h3 style="margin-top:0; color:#d97706;"><i class="fa fa-cloud"></i> Multi-Device Sync</h3>
+      <p style="color:#92400e; margin-bottom:15px;">Fərqli cihazlarda davam etmək üçün Google hesabınızla daxil olun</p>
+      <button onclick="signInWithGoogle()" style="background:linear-gradient(135deg, #4285f4 0%, #34a853 100%); color:#fff; border:none; padding:12px 24px; border-radius:8px; cursor:pointer; font-weight:bold; font-size:1.1em;">
+        <i class="fa fa-google"></i> Google ilə daxil ol
+      </button>
+    </div>
+    
+    <!-- Kateqoriya seçimi -->
+    <div id="categoryContainer" style="display:flex; flex-direction:column; align-items:center; margin-bottom:30px;">
+      <h2 style="font-size:2.2em; margin-bottom:20px;">Kateqoriya seçin</h2>
+       <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <button id="cat-farm" data-category="farm.json" onclick="selectCategory('farm.json')" class="category-btn"><i class="fa fa-flask"></i> Farmakologiya</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <button id="cat-patfiz" data-category="patfiz.json" onclick="selectCategory('patfiz.json')" class="category-btn"><i class="fa fa-heartbeat"></i> PATFİZ</button>
+      </div>
+      
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <button id="cat-patfiz2" data-category="patfiz2.json" onclick="selectCategory('patfiz2.json')" class="category-btn"><i class="fa fa-brain"></i> PATFIZ2</button>
+      </div>
+
+
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <button id="cat-patan" class="category-btn" onclick="togglepatanSubcats()"><i class="fa fa-microscope"></i> PATAN</button>
+      </div>
+      <!-- MİKROB üçün alt kateqoriyalar (başlanğıcda gizli) -->
+<div id="patanSubcats" style="display:none;align-items:center;gap:10px;margin-bottom:10px; margin-left:30px; flex-direction:column; width:100%;">
+  <div style="display:flex; gap:10px; width:100%;">
+    <button data-category="patan1a.json" onclick="selectCategory('patan1a.json')" class="category-btn" style="width:100%;"><i class="fa fa-dna"></i> PATAN1</button>
+    <button data-category="patan2a.json" onclick="selectCategory('patan2a.json')" class="category-btn" style="width:100%;"><i class="fa fa-virus"></i> PATAN2</button>
+    <button data-category="patandyes.json" onclick="selectCategory('patandyes.json')" class="category-btn" style="width:100%;"><i class="fa fa-bacteria"></i> DYES</button>
+  </div>
+  <div style="margin-top:8px;">
+    <button id="patan-all-btn" class="category-btn" onclick="selectCategory('patan-all')" style="background:#22c55e;"><i class="fa fa-layer-group"></i> BÜTÜN PATAN</button>
+  </div>
+</div>
+
+      <!-- BÜTÜN kateqoriyalar üçün düymə -->
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <button id="cat-all" class="category-btn" onclick="selectCategory('all-categories')" style="background:linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color:#1e293b; font-weight:bold;"><i class="fa fa-globe"></i> BÜTÜN KATEQORİYALAR</button>
+      </div>
+      
+      <!-- Bölgü tənzimləmə paneli (başlanğıcda gizli) -->
+      <div id="distributionPanel" style="display:none; margin-top:20px; padding:20px; background:linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%); border-radius:16px; border:1px solid rgba(37,99,235,0.1);">
+        <h3 style="margin-top:0; color:#2563eb; text-align:center;"><i class="fa fa-cogs"></i> Sual Bölgüsü Tənzimləməsi</h3>
+        
+        <div style="margin-bottom:15px;">
+          <label style="display:block; margin-bottom:8px; font-weight:bold; color:#374151;">
+            Hər neçə sualda bölgü yoxlanılsın:
+            <input id="distributionInterval" type="number" min="5" max="50" value="10" style="width:60px; margin-left:8px; padding:4px; border-radius:4px; border:1px solid #ccc;">
+          </label>
+        </div>
+        
+        <div id="categoryDistribution" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:12px;">
+          <!-- Kateqoriyalar burada dinamik olaraq əlavə olunacaq -->
+        </div>
+        
+        <div style="text-align:center; margin-top:15px;">
+          <button onclick="applyDistribution()" style="background:#10b981; color:#fff; border:none; padding:10px 20px; border-radius:8px; cursor:pointer; font-weight:bold;">
+            <i class="fa fa-check"></i> Tətbiq Et
+          </button>
+          <button onclick="resetDistribution()" style="background:#6b7280; color:#fff; border:none; padding:10px 20px; border-radius:8px; cursor:pointer; margin-left:10px; font-weight:bold;">
+            <i class="fa fa-refresh"></i> Sıfırla
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Axtarış Paneli -->
+    <div class="search-container" id="searchContainer" style="display:none;">
+      <div style="margin-bottom:10px; color:#666; font-size:0.9em;">🔍 Axtarış üçün yazın və ya Enter düyməsinə basın</div>
+      <input id="searchInput" type="text" placeholder="Axtar..." onkeyup="handleSearchInput(event)">
+      <button onclick="performSearch()"><i class="fa fa-search"></i> Axtar</button>
+      <button onclick="clearSearch()"><i class="fa fa-times"></i> Təmizlə</button>
+    </div>
+    
+    <!-- Sual sayı seçimi -->
+    <div id="questionCountContainer" style="display:none; text-align:center; margin: 20px 0;">
+      <div style="display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap;">
+        <label style="font-size:1.1em;">
+          Səhifədə neçə sual göstərilsin:
+          <input id="questionsPerPageInput" type="number" min="1" max="100" value="10" style="width:60px; font-size:1em; margin-left:8px;">
+        </label>
+        <label style="font-size:1.1em;">
+          Sual aralığı :
+          <input id="questionRangeInput" type="text" placeholder="1-50" style="width:80px; font-size:1em; margin-left:8px; padding:4px 8px; border-radius:4px; border:1px solid #ccc;">
+        </label>
+      </div>
+    </div>
+    
+    <div class="main-container">
+      
+      <!-- Kateqoriya sıfırlama düyməsi -->
+<div id="categoryResetContainer" style="display:none; text-align:right; margin-bottom:18px; display:flex; align-items:center; gap:12px;">
+  <button id="categoryResetBtn" class="reset-btn"><i class="fa fa-refresh"></i> Reset</button>
+  <div style="position:relative;">
+    <button id="orderModeBtn" class="reset-btn" style="background:#2563eb;"><i class="fa fa-sort"></i> Sıralama: <span id="orderModeLabel">ARDICIL</span></button>
+    <!-- Gələcək seçim üçün sadə menyu -->
+    <div id="orderModeMenu" style="display:none; position:absolute; right:0; top:110%; background:#fff; border-radius:8px; box-shadow:0 2px 12px rgba(0,0,0,0.13); z-index:10;">
+      <div class="order-mode-option" data-mode="ARDICIL" style="padding:10px 24px; cursor:pointer;">ARDICIL</div>
+      <div class="order-mode-option" data-mode="RANDOM" style="padding:10px 24px; cursor:pointer;">RANDOM</div>
+    </div>
+  </div>
+  <button id="adaptiveModeBtn" class="reset-btn" style="background:#10b981;"><i class="fa fa-brain"></i> Adaptiv: <span id="adaptiveModeLabel">OFF</span></button>
+  <button id="flashcardModeBtn" class="reset-btn" style="background:#8b5cf6;"><i class="fa fa-credit-card"></i> Flashcard: <span id="flashcardModeLabel">OFF</span></button>
+  
+  <!-- Məlumat idarəetmə düymələri -->
+  <div style="position:relative;">
+    <button id="dataMenuBtn" class="reset-btn" style="background:#f59e0b;"><i class="fa fa-database"></i> Məlumat</button>
+    <div id="dataMenu" style="display:none; position:absolute; right:0; top:110%; background:#fff; border-radius:8px; box-shadow:0 2px 12px rgba(0,0,0,0.13); z-index:10; min-width:150px;">
+      <div class="data-menu-option" onclick="exportData()" style="padding:10px 16px; cursor:pointer; border-bottom:1px solid #eee;"><i class="fa fa-download"></i> Export</div>
+      <div class="data-menu-option" onclick="importData()" style="padding:10px 16px; cursor:pointer; border-bottom:1px solid #eee;"><i class="fa fa-upload"></i> Import</div>
+</div>
+      <div id="quizContainer"></div>
+      <div id="pageNavigation" class="page-navigation"></div>
+    </div>
+
+    <!-- Yan Panel: Proqres, Səhv və İşarələnmiş Suallar -->
+    <div id="sidePanel" class="side-panel">
+      <h2>Statistika</h2>
+      <div id="statsInfo"></div>
+    
+      <div id="progressInfo"></div>
+      <h2>Səhvlər</h2>
+      <div id="wrongQuestionsList" class="wrong-questions-list"></div>
+      <h2>FLAG</h2>
+      <div id="flaggedQuestionsList" class="flagged-questions-list"></div>
+      <h2>TƏKRARLANAN SƏHVLƏR</h2>
+      <div id="repeatedMistakesList" class="repeated-mistakes-list"></div>
+    </div>
+    <div class="toggle-button" id="toggleButton" onclick="toggleSidePanel()">☰</div>
+  </div>
+  <!-- Bura qədər əsas content-in bağlanması üçün </div> var -->
+  <div id="sideOverlay" class="side-overlay" style="display:none;"></div>
+
+  <script>
+  
+  let allQuestions = [];
+  let currentIndex = 0;
+  let questionsPerPage = parseInt(safeGetItem("questionsPerPage", 10));
+  let questionRange = safeGetItem("questionRange", ""); // Yeni dəyişən
+  let wrongQuestions = [];
+  let selectedAnswers = {};
+  let flaggedQuestions = [];
+  let questionNotes = {};
+  let questionWrongCount = {}; // Hər sualın neçə dəfə səhv cavablandırıldığını izləyir
+  let adaptiveMode = safeGetItem("adaptiveMode", false); // Adaptiv rejim
+  let flashcardMode = false; // Flashcard rejim - default olaraq OFF
+  let flashcardAnswers = {}; // Flashcard rejimində cavabların göstərilməsi
+
+  let currentSearchQuery = "";
+  let currentCategory = null; // Başlanğıcda heç bir kateqoriya seçilməsin
+  let orderMode = safeGetItem("orderMode", "ARDICIL");
+  let orderedQuestions = []; // sualların ardıcıllığı üçün
+  let isFlaggedMode = false;
+  let prevSelectedAnswers = null;
+  let prevCurrentIndex = 0;
+
+  let isWrongMode = false;
+  let prevWrongSelectedAnswers = null;
+  let prevWrongCurrentIndex = 0;
+
+  // Bütün kateqoriyalar üçün dəyişənlər
+  let allCategoriesData = {}; // Bütün kateqoriyaların məlumatları
+  let categoryDistribution = {}; // Kateqoriya bölgüsü
+  let distributionInterval = 10; // Hər neçə sualda bölgü yoxlanılsın
+  let isAllCategoriesMode = false; // Bütün kateqoriyalar rejimi aktivdir
+
+  // Firebase sync dəyişənləri
+  let currentUser = null;
+  let isSyncing = false;
+  let lastSyncTime = null;
+
+  // localStorage fallback və təhlükəsizlik funksiyaları
+  function safeSetItem(key, value) {
+    try {
+      localStorage.setItem(key, JSON.stringify(value));
+      // Əlavə olaraq sessionStorage-də də saxla
+      sessionStorage.setItem(key, JSON.stringify(value));
+      return true;
+    } catch (error) {
+      console.error('localStorage yazma xətası:', error);
+      // Əgər localStorage doludursa, köhnə məlumatları təmizlə
+      try {
+        if (error.name === 'QuotaExceededError') {
+          clearOldData();
+          localStorage.setItem(key, JSON.stringify(value));
+          sessionStorage.setItem(key, JSON.stringify(value));
+          return true;
+        }
+      } catch (e) {
+        console.error('Təmizləmə xətası:', e);
+      }
+      return false;
+    }
+  }
+
+  function safeGetItem(key, defaultValue = null) {
+    try {
+      // Əvvəlcə localStorage-dən oxu
+      const localValue = localStorage.getItem(key);
+      if (localValue !== null) {
+        return JSON.parse(localValue);
+      }
+      
+      // Əgər localStorage-də yoxdursa, sessionStorage-dən oxu
+      const sessionValue = sessionStorage.getItem(key);
+      if (sessionValue !== null) {
+        // sessionStorage-dəki məlumatı localStorage-ə köçür
+        localStorage.setItem(key, sessionValue);
+        return JSON.parse(sessionValue);
+      }
+      
+      return defaultValue;
+    } catch (error) {
+      console.error('localStorage oxuma xətası:', error);
+      return defaultValue;
+    }
+  }
+
+  function clearOldData() {
+    try {
+      // 30 gündən köhnə məlumatları təmizlə
+      const keys = Object.keys(localStorage);
+      const now = Date.now();
+      const thirtyDaysAgo = now - (30 * 24 * 60 * 60 * 1000);
+      
+      keys.forEach(key => {
+        if (key.startsWith('questionNotes_') || key.startsWith('selectedAnswers_')) {
+          try {
+            const item = localStorage.getItem(key);
+            if (item) {
+              const data = JSON.parse(item);
+              // Əgər məlumatın timestamp-i varsa və köhnədirsə sil
+              if (data.timestamp && data.timestamp < thirtyDaysAgo) {
+                localStorage.removeItem(key);
+              }
+            }
+          } catch (e) {
+            // Xətalı məlumatları sil
+            localStorage.removeItem(key);
+          }
+        }
+      });
+    } catch (error) {
+      console.error('Köhnə məlumatları təmizləmə xətası:', error);
+    }
+  }
+
+  // Məlumatları avtomatik yadda saxla
+  function autoSave() {
+    if (currentCategory) {
+      safeSetItem(getStorageKey("selectedAnswers"), selectedAnswers);
+      safeSetItem(getStorageKey("wrongQuestions"), wrongQuestions);
+      safeSetItem(getStorageKey("flaggedQuestions"), flaggedQuestions);
+      safeSetItem(getStorageKey("questionNotes"), questionNotes);
+      safeSetItem(getStorageKey("questionWrongCount"), questionWrongCount);
+    }
+  }
+
+  // Hər 30 saniyədə avtomatik yadda saxla
+  setInterval(autoSave, 30000);
+
+  // Səhifə yükləndikdə və bağlanmadan əvvəl yadda saxla
+  window.addEventListener('beforeunload', autoSave);
+  window.addEventListener('pagehide', autoSave);
+
+  function getStorageKey(base) {
+  return base + "_" + (currentCategory || "default");
+}
+
+function loadCategoryState() {
+  wrongQuestions = safeGetItem(getStorageKey("wrongQuestions"), []);
+  selectedAnswers = safeGetItem(getStorageKey("selectedAnswers"), {});
+  flaggedQuestions = safeGetItem(getStorageKey("flaggedQuestions"), []);
+  questionNotes = safeGetItem(getStorageKey("questionNotes"), {});
+  questionWrongCount = safeGetItem(getStorageKey("questionWrongCount"), {});
+  adaptiveMode = safeGetItem("adaptiveMode", false);
+  flashcardMode = safeGetItem("flashcardMode", false);
+}
+
+  async function loadQuizData() {
+  if (!currentCategory) {
+    document.getElementById('quizContainer').innerHTML = `
+      <div style="text-align:center; margin:40px 0;">
+        <div style="font-size:4em; animation:bounce 1.2s infinite;">📚</div>
+        <div style="font-size:1.4em; color:#2563eb; margin-top:18px; font-weight:bold;">
+          Kateqoriya seçin
+        </div>
+        <div style="font-size:1em; color:#888; margin-top:8px;">
+          Axtarış üçün əvvəlcə kateqoriya seçməlisiniz.
+        </div>
+      </div>
+    `;
+    updateWrongQuestionsList();
+    updateFlaggedQuestionsList();
+    updateProgressInfo();
+    return;
+  }
+  try {
+    const response = await fetch(currentCategory);
+    if (!response.ok) {
+      throw new Error('Məlumat yüklənmədi: ' + response.status);
+    }
+    allQuestions = await response.json();
+    allQuestions = allQuestions.map(q => shuffleAnswers(q));
+    applyOrderMode();
+    renderQuiz();
+    updateWrongQuestionsList();
+    updateFlaggedQuestionsList();
+    updateRepeatedMistakesList();
+    updateProgressInfo();
+    updatePageNavigation();
+  } catch (error) {
+    console.error('JSON yüklənərkən xəta:', error);
+    document.getElementById('quizContainer').innerHTML = '<p>Məlumat yüklənmədi</p>';
+  }
+}
+
+  async function selectCategory(filename) {
+  console.log("Seçilən kateqoriya:", filename);
+  currentCategory = filename;
+  currentIndex = 0;
+  isFlaggedMode = false;
+  currentSearchQuery = "";
+  document.getElementById('searchInput').value = "";
+  loadCategoryState();
+  document.getElementById('questionCountContainer').style.display = 'block';
+  document.getElementById('categoryResetContainer').style.display = 'block';
+  document.getElementById('searchContainer').style.display = 'block'; // Show search container
+  // Focus on search input
+  setTimeout(() => {
+    document.getElementById('searchInput').focus();
+  }, 100);
+  document.querySelectorAll('.category-btn').forEach(btn => {
+    if (btn.getAttribute('data-category') === filename) {
+      btn.classList.add('selected');
+      btn.classList.remove('inactive');
+    } else {
+      btn.classList.remove('selected');
+      btn.classList.add('inactive');
+    }
+  });
+
+  // Əgər bütün patan alt kateqoriyaları üçünsə:
+  if (filename === 'patan-all') {
+    // Bütün alt kateqoriyaların json-larını yüklə və birləşdir
+    const files = ['patan2a.json', 'patan1a.json', 'patandyes.json'];
+    let all = [];
+    for (let file of files) {
+      try {
+        const resp = await fetch(file);
+        if (resp.ok) {
+          const data = await resp.json();
+          all = all.concat(data);
+        }
+      } catch (e) {
+        console.error(file, "yüklənmədi:", e);
+      }
+    }
+    allQuestions = all.map(q => shuffleAnswers(q));
+    applyOrderMode();
+    renderQuiz();
+    updateWrongQuestionsList();
+    updateFlaggedQuestionsList();
+    updateRepeatedMistakesList();
+    updateProgressInfo();
+    updatePageNavigation();
+    return;
+  }
+
+  // Standart halda bir json yüklə
+  loadQuizData();
+}
+    function renderQuiz() {
+       updateStatsInfo();
+  const container = document.getElementById('quizContainer');
+  container.innerHTML = '';
+  let filteredQuestions;
+  
+  // Determine which questions to show based on current mode
+  if (isFlaggedMode) {
+    filteredQuestions = flaggedQuestions
+      .map(qNum => allQuestions[qNum - 1])
+      .filter(q => !!q);
+  } else if (isWrongMode) {
+    filteredQuestions = wrongQuestions
+      .map(qNum => allQuestions[qNum - 1])
+      .filter(q => !!q);
+  } else {
+    filteredQuestions = orderedQuestions;
+  }
+  
+  console.log("Before search filter:", filteredQuestions.length, "questions");
+  console.log("Current search query:", currentSearchQuery);
+  
+  // Apply search filter
+  if (currentSearchQuery) {
+    const query = currentSearchQuery.toLowerCase();
+    console.log("Searching for:", query);
+    filteredQuestions = filteredQuestions.filter(q =>
+      (q.question && q.question.toLowerCase().includes(query)) ||
+      (q.answers && q.answers.some(ans => ans.toLowerCase().includes(query)))
+    );
+    console.log("After search filter:", filteredQuestions.length, "questions");
+  }
+  
+  // Show search results count if searching
+  if (currentSearchQuery) {
+    const searchInfo = document.createElement('div');
+    searchInfo.style.cssText = 'text-align:center; margin-bottom:20px; padding:10px; background:#e0e7ff; border-radius:8px; color:#2563eb; font-weight:bold;';
+    searchInfo.innerHTML = `🔍 "${currentSearchQuery}" üçün ${filteredQuestions.length} sual tapıldı`;
+    container.appendChild(searchInfo);
+  }
+  
+  // Sual aralığı məlumatını göstər
+  if (questionRange && questionRange.trim() !== "") {
+    const rangeInfo = document.createElement('div');
+    rangeInfo.style.cssText = 'text-align:center; margin-bottom:20px; padding:10px; background:#fef3c7; border-radius:8px; color:#d97706; font-weight:bold;';
+    rangeInfo.innerHTML = `📊 Sual aralığı: ${questionRange} (${filteredQuestions.length} sual)`;
+    container.appendChild(rangeInfo);
+  }
+  if (!filteredQuestions || filteredQuestions.length === 0) {
+    container.innerHTML = `
+    <div style="text-align:center; margin:40px 0;">
+      <div style="font-size:4em; animation:bounce 1.2s infinite;">🔍</div>
+      <div style="font-size:1.4em; color:#dc3545; margin-top:18px; font-weight:bold;">
+        Heç bir sual tapılmadı!
+      </div>
+      <div style="font-size:1em; color:#888; margin-top:8px;">
+        Axtarış kriteriyanı dəyiş və ya təmizlə.
+      </div>
+    </div>
+  `;
+    return;
+  }
+  if (currentIndex >= filteredQuestions.length) { currentIndex = 0; }
+  const questionsToShow = filteredQuestions.slice(currentIndex, currentIndex + questionsPerPage);
+      questionsToShow.forEach((item, index) => {
+        const questionEl = document.createElement('div');
+        questionEl.className = 'question';
+        // Sualların orijinal sırası: allQuestions-dakı index + 1
+        const questionNumber = allQuestions.indexOf(item) + 1;
+        questionEl.id = 'question-' + questionNumber; // <-- YENİ SƏTR
+        
+        // Flashcard rejimi üçün xüsusi render
+        if (flashcardMode) {
+          renderFlashcardQuestion(questionEl, item, questionNumber);
+        } else {
+          // Normal rejim üçün mövcud kod
+          // Təkrarlanan səhv sayını göstər
+          const wrongCount = questionWrongCount[questionNumber] || 0;
+          const wrongCountDisplay = wrongCount > 0 ? `<span style="color:#dc3545; font-size:0.9em; margin-left:10px;">(Səhv: ${wrongCount})</span>` : '';
+          
+          // Mənbə kateqoriyasını göstər (əgər qarışıq rejimdədirsə)
+          const sourceCategoryDisplay = item.sourceCategory ? 
+            `<span style="color:#2563eb; font-size:0.8em; background:#e0e7ff; padding:2px 6px; border-radius:4px; margin-left:8px;">${item.sourceCategory}</span>` : '';
+          
+          questionEl.innerHTML = `<h2 style="position:relative; padding-right:38px;">${questionNumber}. ${item.question} ${wrongCountDisplay} ${sourceCategoryDisplay}</h2>`;
+
+          // Kiçik, kvadrat, sağ yuxarıda copy iconu
+          const copyAllBtn = document.createElement('button');
+          copyAllBtn.innerHTML = "&#128203;"; // 📋 unicode
+          copyAllBtn.title = "Sualı və variantları kopyala";
+          copyAllBtn.style.position = "absolute";
+          copyAllBtn.style.top = "8px";
+          copyAllBtn.style.right = "8px";
+          copyAllBtn.style.width = "32px";
+          copyAllBtn.style.height = "32px";
+          copyAllBtn.style.display = "flex";
+          copyAllBtn.style.alignItems = "center";
+          copyAllBtn.style.justifyContent = "center";
+          copyAllBtn.style.background = "#f1f5f9";
+          copyAllBtn.style.border = "1px solid #cbd5e1";
+          copyAllBtn.style.borderRadius = "7px";
+          copyAllBtn.style.cursor = "pointer";
+          copyAllBtn.style.fontSize = "1.3em";
+          copyAllBtn.style.boxShadow = "0 2px 8px rgba(0,0,0,0.07)";
+          copyAllBtn.addEventListener('click', () => {
+            let text = `${questionNumber}. ${item.question}\n`;
+            item.answers.forEach((ans, idx) => {
+              const letter = String.fromCharCode(65 + idx);
+              text += `${letter}) ${ans}\n`;
+            });
+            navigator.clipboard.writeText(text);
+            copyAllBtn.innerHTML = "✔️";
+            setTimeout(() => copyAllBtn.innerHTML = "&#128203;", 1200);
+          });
+          questionEl.appendChild(copyAllBtn);
+
+          const answersEl = document.createElement('div');
+          answersEl.className = 'answers';
+          item.answers.forEach(answer => {
+            const button = document.createElement('button');
+            button.textContent = answer;
+            if (selectedAnswers[questionNumber] !== undefined) {
+              if (button.textContent === selectedAnswers[questionNumber]) {
+                if (button.textContent === item.answers[item.correctIndex]) {
+                  button.classList.add('correct');
+                } else {
+                  button.classList.add('wrong');
+                }
+              }
+            } else {
+              button.addEventListener('click', () => {
+                if (selectedAnswers[questionNumber] === undefined) {
+                  selectedAnswers[questionNumber] = answer;
+                  safeSetItem(getStorageKey("selectedAnswers"), selectedAnswers);
+                  if (answer === item.answers[item.correctIndex]) {
+                    button.classList.add('correct');
+                  } else {
+                    button.classList.add('wrong');
+                    addWrongQuestion(questionNumber);
+                  }
+                  updateProgressInfo();
+                  updateStatsInfo(); // <-- bunu əlavə et
+                }
+              });
+            }
+            answersEl.appendChild(button);
+          });
+          questionEl.appendChild(answersEl);
+          
+          // Extra Options: Flag və Qeyd
+          const extraOptionsDiv = document.createElement('div');
+          extraOptionsDiv.className = 'extra-options';
+          // Flag düyməsi
+          const flagButton = document.createElement('button');
+          flagButton.className = 'flag-btn';
+          flagButton.innerHTML = flaggedQuestions.includes(questionNumber) ? '<i class="fa fa-flag"></i> Unflag' : '<i class="fa fa-flag-o"></i> İşarələ';
+          flagButton.addEventListener('click', () => toggleFlagged(questionNumber, flagButton));
+          extraOptionsDiv.appendChild(flagButton);
+          // Qeyd düyməsi
+          const noteButton = document.createElement('button');
+          noteButton.className = 'note-btn';
+          noteButton.innerHTML = '<i class="fa fa-sticky-note"></i> Qeyd əlavə et';
+          noteButton.addEventListener('click', () => toggleNoteArea(questionNumber));
+          extraOptionsDiv.appendChild(noteButton);
+          // Cavabı sil düyməsi
+          const clearAnswerButton = document.createElement('button');
+          clearAnswerButton.className = 'clear-answer-btn';
+          clearAnswerButton.innerHTML = '<i class="fa fa-eraser"></i> Cavabı sil';
+          clearAnswerButton.addEventListener('click', () => {
+            // Cavabı sil
+            delete selectedAnswers[questionNumber];
+            safeSetItem(getStorageKey("selectedAnswers"), selectedAnswers);
+            // Səhv suallar siyahısına əlavə et (əgər yoxdursa)
+            if (!wrongQuestions.includes(questionNumber)) {
+              wrongQuestions.push(questionNumber);
+              safeSetItem(getStorageKey("wrongQuestions"), wrongQuestions);
+            }
+            renderQuiz();
+            updateWrongQuestionsList();
+            updateProgressInfo();
+          });
+          extraOptionsDiv.appendChild(clearAnswerButton);
+          
+          // Qeyd textarea bölməsi
+          const noteDiv = document.createElement('div');
+          noteDiv.style.display = 'none';
+          noteDiv.id = 'noteDiv-' + questionNumber;
+          const noteTextarea = document.createElement('textarea');
+          noteTextarea.placeholder = "Qeyd...";
+          noteTextarea.rows = 3;
+          if (questionNotes[questionNumber]) {
+            noteTextarea.value = questionNotes[questionNumber];
+            noteDiv.style.display = 'block';
+          }
+          ['input', 'blur'].forEach(evt =>
+    noteTextarea.addEventListener(evt, () => {
+      questionNotes[questionNumber] = noteTextarea.value;
+      safeSetItem(getStorageKey("questionNotes"), questionNotes);
+    })
+  );
+          noteDiv.appendChild(noteTextarea);
+          extraOptionsDiv.appendChild(noteDiv);
+          
+          questionEl.appendChild(extraOptionsDiv);
+        }
+        
+        container.appendChild(questionEl);
+      });
+    }
+
+    // Flashcard rejimi üçün sual render funksiyası
+    function renderFlashcardQuestion(questionEl, item, questionNumber) {
+      questionEl.className = 'flashcard-question';
+      
+      // Flashcard indikatoru
+      const indicator = document.createElement('div');
+      indicator.className = 'flashcard-indicator';
+      indicator.innerHTML = `<i class="fa fa-credit-card"></i> ${questionNumber}`;
+      questionEl.appendChild(indicator);
+      
+      // Sual mətni
+      const questionTitle = document.createElement('h2');
+      questionTitle.textContent = item.question;
+      questionEl.appendChild(questionTitle);
+      
+      // Cavablar (başlanğıcda gizli)
+      const answersEl = document.createElement('div');
+      answersEl.className = 'flashcard-answers';
+      answersEl.id = 'flashcard-answers-' + questionNumber;
+      
+      item.answers.forEach((answer, index) => {
+        const button = document.createElement('button');
+        button.textContent = `${String.fromCharCode(65 + index)}) ${answer}`;
+        
+        // Cavab seçildikdə
+        button.addEventListener('click', () => {
+          if (selectedAnswers[questionNumber] === undefined) {
+            selectedAnswers[questionNumber] = answer;
+            safeSetItem(getStorageKey("selectedAnswers"), selectedAnswers);
+            
+            // Bütün cavabları göstər və düzgün/səhv olanları işarələ
+            const allButtons = answersEl.querySelectorAll('button');
+            allButtons.forEach(btn => {
+              if (btn.textContent.includes(answer)) {
+                if (answer === item.answers[item.correctIndex]) {
+                  btn.classList.add('correct');
+                } else {
+                  btn.classList.add('wrong');
+                }
+              } else if (btn.textContent.includes(item.answers[item.correctIndex])) {
+                btn.classList.add('correct');
+              }
+            });
+            
+            // Səhv cavab seçildisə səhv suallar siyahısına əlavə et
+            if (answer !== item.answers[item.correctIndex]) {
+              addWrongQuestion(questionNumber);
+            }
+            
+            updateProgressInfo();
+            updateStatsInfo();
+          }
+        });
+        
+        answersEl.appendChild(button);
+      });
+      
+      questionEl.appendChild(answersEl);
+      
+      // Kontrol düymələri
+      const controlsEl = document.createElement('div');
+      controlsEl.className = 'flashcard-controls';
+      
+      // Cavabları göstər/gizlə düyməsi
+      const showAnswersBtn = document.createElement('button');
+      showAnswersBtn.innerHTML = '<i class="fa fa-eye"></i> Cavabları göstər';
+      showAnswersBtn.addEventListener('click', () => {
+        const answersDiv = document.getElementById('flashcard-answers-' + questionNumber);
+        if (answersDiv.classList.contains('show')) {
+          answersDiv.classList.remove('show');
+          showAnswersBtn.innerHTML = '<i class="fa fa-eye"></i> Cavabları göstər';
+        } else {
+          answersDiv.classList.add('show');
+          showAnswersBtn.innerHTML = '<i class="fa fa-eye-slash"></i> Cavabları gizlət';
+        }
+      });
+      
+      // Düzgün cavabı göstər düyməsi
+      const showCorrectBtn = document.createElement('button');
+      showCorrectBtn.innerHTML = '<i class="fa fa-check-circle"></i> Düzgün cavab';
+      showCorrectBtn.addEventListener('click', () => {
+        const answersDiv = document.getElementById('flashcard-answers-' + questionNumber);
+        answersDiv.classList.add('show');
+        
+        // Düzgün cavabı işarələ
+        const allButtons = answersDiv.querySelectorAll('button');
+        allButtons.forEach(btn => {
+          if (btn.textContent.includes(item.answers[item.correctIndex])) {
+            btn.classList.add('correct');
+          }
+        });
+        
+        showAnswersBtn.innerHTML = '<i class="fa fa-eye-slash"></i> Cavabları gizlət';
+      });
+      
+      // Növbəti sual düyməsi
+      const nextBtn = document.createElement('button');
+      nextBtn.innerHTML = '<i class="fa fa-arrow-right"></i> Növbəti';
+      nextBtn.addEventListener('click', () => {
+        if (currentIndex + questionsPerPage < orderedQuestions.length) {
+          currentIndex += questionsPerPage;
+          renderQuiz();
+          updatePageNavigation();
+          // Yeni suala scroll et
+          setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }, 100);
+        }
+      });
+      
+      controlsEl.appendChild(showAnswersBtn);
+      controlsEl.appendChild(showCorrectBtn);
+      controlsEl.appendChild(nextBtn);
+      questionEl.appendChild(controlsEl);
+    }
+
+    function renderQuizFlaggedOnly() {
+      const container = document.getElementById('quizContainer');
+      container.innerHTML = '';
+      let flaggedOnlyQuestions = orderedQuestions.filter((q, idx) => flaggedQuestions.includes(allQuestions.indexOf(q) + 1));
+      if (flaggedOnlyQuestions.length === 0) {
+        container.innerHTML = "<p>İşarələnmiş sual yoxdur.</p>";
+        return;
+      }
+      flaggedOnlyQuestions.forEach((item, index) => {
+        const questionEl = document.createElement('div');
+        questionEl.className = 'question';
+        const questionNumber = allQuestions.indexOf(item) + 1;
+        questionEl.innerHTML = `<h2>${questionNumber}. ${item.question}</h2>`;
+        const answersEl = document.createElement('div');
+        answersEl.className = 'answers';
+        item.answers.forEach(answer => {
+          const button = document.createElement('button');
+          button.textContent = answer;
+          if (selectedAnswers[questionNumber] !== undefined) {
+            if (button.textContent === selectedAnswers[questionNumber]) {
+              if (button.textContent === item.answers[item.correctIndex]) {
+                button.classList.add('correct');
+              } else {
+                button.classList.add('wrong');
+              }
+            }
+          } else {
+            button.addEventListener('click', () => {
+              if (selectedAnswers[questionNumber] === undefined) {
+                selectedAnswers[questionNumber] = answer;
+                safeSetItem(getStorageKey("selectedAnswers"), selectedAnswers);
+                if (answer === item.answers[item.correctIndex]) {
+                  button.classList.add('correct');
+                } else {
+                  button.classList.add('wrong');
+                  addWrongQuestion(questionNumber);
+                }
+                updateProgressInfo();
+              }
+            });
+          }
+          answersEl.appendChild(button);
+        });
+        questionEl.appendChild(answersEl);
+        container.appendChild(questionEl);
+      });
+    }
+
+    function applyOrderMode() {
+  if (orderMode === "RANDOM") {
+    // Əvvəlcə sual aralığına görə filter et
+    let filteredQuestions = filterQuestionsByRange(allQuestions);
+    // Adaptiv rejim varsa tətbiq et
+    if (adaptiveMode) {
+      filteredQuestions = createAdaptiveOrder(filteredQuestions);
+    } else {
+      // Sonra random sırala
+      orderedQuestions = filteredQuestions.slice();
+      for (let i = orderedQuestions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [orderedQuestions[i], orderedQuestions[j]] = [orderedQuestions[j], orderedQuestions[i]];
+      }
+      return;
+    }
+    orderedQuestions = filteredQuestions;
+  } else {
+    // Normal ardıcıllıq - əvvəlcə filter et, sonra sırala
+    let filteredQuestions = filterQuestionsByRange(allQuestions);
+    if (adaptiveMode) {
+      orderedQuestions = createAdaptiveOrder(filteredQuestions);
+    } else {
+      orderedQuestions = filteredQuestions;
+    }
+  }
+}
+
+    function updateProgressInfo() {
+      const progressDiv = document.getElementById('progressInfo');
+      const answeredCount = Object.keys(selectedAnswers).length;
+      const totalCount = allQuestions.length;
+      const remainingCount = totalCount - answeredCount;
+      }
+
+    function addWrongQuestion(questionNumber) {
+      if (!wrongQuestions.includes(questionNumber)) {
+        wrongQuestions.push(questionNumber);
+        safeSetItem(getStorageKey("wrongQuestions"), wrongQuestions);
+        updateWrongQuestionsList();
+      }
+      
+      // Səhv sayını artır
+      questionWrongCount[questionNumber] = (questionWrongCount[questionNumber] || 0) + 1;
+      safeSetItem(getStorageKey("questionWrongCount"), questionWrongCount);
+    }
+
+    function removeWrongQuestion(qNum) {
+      wrongQuestions = wrongQuestions.filter(q => q !== qNum);
+      safeSetItem(getStorageKey("wrongQuestions"), wrongQuestions);
+      updateWrongQuestionsList();
+    }
+
+function updateWrongQuestionsList() {
+  const listContainer = document.getElementById('wrongQuestionsList');
+  listContainer.innerHTML = '';
+
+  const maxVisible = 8; // 1 cərgədə neçə sual görünsün (istəyə görə dəyiş)
+  const isExpanded = listContainer.getAttribute('data-expanded') === 'true';
+
+  // Hansı suallar göstəriləcək
+  let visibleQuestions = wrongQuestions;
+  if (!isExpanded && wrongQuestions.length > maxVisible) {
+    visibleQuestions = wrongQuestions.slice(0, maxVisible);
+  }
+
+  visibleQuestions.forEach(qNum => {
+    const btn = document.createElement('button');
+    btn.textContent = qNum;
+    btn.style.position = "relative";
+    // Remove ikonunu yaradırıq
+    const removeIcon = document.createElement('span');
+    removeIcon.textContent = "X";
+    removeIcon.style.position = "absolute";
+    removeIcon.style.top = "0";
+    removeIcon.style.right = "0";
+    removeIcon.style.backgroundColor = "#000";
+    removeIcon.style.color = "#fff";
+    removeIcon.style.borderRadius = "0";
+    removeIcon.style.width = "10px";
+    removeIcon.style.height = "10px";
+    removeIcon.style.display = "flex";
+    removeIcon.style.justifyContent = "center";
+    removeIcon.style.alignItems = "center";
+    removeIcon.style.fontSize = "10px";
+    removeIcon.style.cursor = "pointer";
+    removeIcon.addEventListener('click', function(e) {
+      e.stopPropagation();
+      removeWrongQuestion(qNum);
+    });
+    btn.appendChild(removeIcon);
+
+    btn.addEventListener('click', () => {
+      currentIndex = qNum - 1;
+      renderQuiz();
+      updatePageNavigation();
+      setTimeout(() => {
+        const el = document.getElementById('question-' + qNum);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 100);
+    });
+    listContainer.appendChild(btn);
+  });
+
+  // Əgər gizlədilən sual varsa, ... və ya "Daha çox" düyməsi əlavə et
+  if (!isExpanded && wrongQuestions.length > maxVisible) {
+    const moreBtn = document.createElement('button');
+    moreBtn.textContent = '...';
+    moreBtn.style.background = '#e5e7eb';
+    moreBtn.style.color = '#222';
+    moreBtn.style.fontWeight = 'bold';
+    moreBtn.style.fontSize = '1.2em';
+    moreBtn.style.border = 'none';
+    moreBtn.style.cursor = 'pointer';
+    moreBtn.style.minWidth = '36px';
+    moreBtn.style.minHeight = '36px';
+    moreBtn.style.borderRadius = '6px';
+    moreBtn.addEventListener('click', function() {
+      listContainer.setAttribute('data-expanded', 'true');
+      updateWrongQuestionsList();
+    });
+    listContainer.appendChild(moreBtn);
+  }
+
+  // Əgər açıqdırsa və gizlətmək istəyirsə, "Daha az" düyməsi əlavə et
+  if (isExpanded && wrongQuestions.length > maxVisible) {
+    const lessBtn = document.createElement('button');
+    lessBtn.textContent = '▲';
+    lessBtn.title = "Gizlət";
+    lessBtn.style.background = '#e5e7eb';
+    lessBtn.style.color = '#222';
+    lessBtn.style.fontWeight = 'bold';
+    lessBtn.style.fontSize = '1.2em';
+    lessBtn.style.border = 'none';
+    lessBtn.style.cursor = 'pointer';
+    lessBtn.style.minWidth = '36px';
+    lessBtn.style.minHeight = '36px';
+    lessBtn.style.borderRadius = '6px';
+    lessBtn.addEventListener('click', function() {
+      listContainer.setAttribute('data-expanded', 'false');
+      updateWrongQuestionsList();
+    });
+    listContainer.appendChild(lessBtn);
+  }
+
+  if (wrongQuestions.length > 0) {
+  const wrongModeBtn = document.createElement('button');
+  wrongModeBtn.innerHTML = `<i class="fa fa-times-circle" style="font-size:1.3em;"></i> <span>YALNIZ SƏHV SUALLAR</span>`;
+  wrongModeBtn.className = "flagged-mode-btn";
+  wrongModeBtn.style.background = "linear-gradient(90deg, #dc3545 60%, #fbbf24 100%)";
+  wrongModeBtn.style.color = "#fff";
+  wrongModeBtn.style.marginTop = "18px";
+  wrongModeBtn.style.display = "block";
+  wrongModeBtn.addEventListener('click', () => {
+    enterWrongMode();
+  });
+  listContainer.appendChild(wrongModeBtn);
+}
+}
+
+    function toggleFlagged(questionNumber, flagButton) {
+      if (flaggedQuestions.includes(questionNumber)) {
+        flaggedQuestions = flaggedQuestions.filter(q => q !== questionNumber);
+        flagButton.textContent = "İşarələ";
+      } else {
+        flaggedQuestions.push(questionNumber);
+        flagButton.textContent = "Unflag";
+      }
+      safeSetItem(getStorageKey("flaggedQuestions"), flaggedQuestions);
+      updateFlaggedQuestionsList();
+    }
+
+    function updateFlaggedQuestionsList() {
+      const container = document.getElementById('flaggedQuestionsList');
+      container.innerHTML = '';
+      flaggedQuestions.forEach(qNum => {
+        const btn = document.createElement('button');
+        btn.textContent = qNum;
+        btn.addEventListener('click', () => {
+          currentIndex = qNum - 1;
+          renderQuiz();
+          updatePageNavigation();
+          setTimeout(() => {
+            const el = document.getElementById('question-' + qNum);
+            if (el) {
+              el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          }, 100);
+        });
+        container.appendChild(btn);
+      });
+
+      // Keçid əlavə et
+      if (flaggedQuestions.length > 0) {
+        const flaggedModeBtn = document.createElement('button');
+        flaggedModeBtn.innerHTML = `<i class="fa fa-flag" style="font-size:1.3em;"></i> <span>GO KYLİEE GO</span>`;
+        flaggedModeBtn.className = "flagged-mode-btn";
+        flaggedModeBtn.addEventListener('click', () => {
+          enterFlaggedMode();
+        });
+        container.appendChild(flaggedModeBtn);
+      }
+    }
+
+    function updateRepeatedMistakesList() {
+      const container = document.getElementById('repeatedMistakesList');
+      container.innerHTML = '';
+      
+      // 2 və ya daha çox dəfə səhv cavablandırılan sualları tap
+      const repeatedMistakes = Object.entries(questionWrongCount)
+        .filter(([qNum, count]) => count >= 2)
+        .sort((a, b) => b[1] - a[1]); // Ən çox səhv cavablandırılanları əvvəldə göstər
+      
+      repeatedMistakes.forEach(([qNum, count]) => {
+        const btn = document.createElement('button');
+        btn.innerHTML = `${qNum} <span style="color:#dc3545; font-weight:bold;">(${count})</span>`;
+        btn.style.position = "relative";
+        btn.style.background = "#fff3f3";
+        btn.style.border = "1.5px solid #dc3545";
+        btn.style.color = "#dc3545";
+        btn.style.fontWeight = "bold";
+        
+        btn.addEventListener('click', () => {
+          currentIndex = parseInt(qNum) - 1;
+          renderQuiz();
+          updatePageNavigation();
+          setTimeout(() => {
+            const el = document.getElementById('question-' + qNum);
+            if (el) {
+              el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          }, 100);
+        });
+        container.appendChild(btn);
+      });
+
+      // Əgər təkrarlanan səhv yoxdursa
+      if (repeatedMistakes.length === 0) {
+        const noMistakes = document.createElement('div');
+        noMistakes.innerHTML = '<p style="color:#666; font-style:italic;">Təkrarlanan səhv yoxdur</p>';
+        container.appendChild(noMistakes);
+      }
+    }
+
+    function toggleSidePanel(forceClose = false) {
+  const sidePanel = document.getElementById('sidePanel');
+  const overlay = document.getElementById('sideOverlay');
+  const isMobile = window.innerWidth <= 600;
+  if (forceClose || sidePanel.classList.contains('open')) {
+    sidePanel.classList.remove('open');
+    if (overlay) overlay.style.display = 'none';
+  } else {
+    sidePanel.classList.add('open');
+    if (isMobile && overlay) overlay.style.display = 'block';
+  }
+}
+
+// Overlay-ə klikləyəndə panel bağlansın
+document.addEventListener('DOMContentLoaded', function() {
+  const overlay = document.getElementById('sideOverlay');
+  if (overlay) {
+    overlay.addEventListener('click', function() {
+      toggleSidePanel(true);
+    });
+  }
+});
+
+    function nextQuestions() {
+      let filteredQuestions = allQuestions;
+      if (currentSearchQuery) {
+        filteredQuestions = allQuestions.filter(q => q.question.toLowerCase().includes(currentSearchQuery.toLowerCase()));
+      }
+      if (currentIndex + questionsPerPage < filteredQuestions.length) {
+        currentIndex += questionsPerPage;
+        renderQuiz();
+        updatePageNavigation();
+      } else {
+        alert("Bütün suallar göstərildi!");
+      }
+    }
+
+    function resetQuiz() {
+      if (confirm("Bütün nəticələri sıfırlamaq istədiyinizə əminsiniz?")) {
+    if (confirm("ALA RESET ee?")) {
+      if (confirm("BRAT GEDIR HAAA")) {
+        if (confirm("BAA RESETTT OLURR")) {
+          
+        selectedAnswers = {};
+        wrongQuestions = [];
+        safeRemoveItem(getStorageKey("selectedAnswers"));
+        safeRemoveItem(getStorageKey("wrongQuestions"));
+      
+        currentIndex = 0;
+        updateWrongQuestionsList();
+        updateFlaggedQuestionsList();
+        updateProgressInfo();
+        renderQuiz();
+        updatePageNavigation();
+        alert("Nəticələr sıfırlandı! İşarələnmiş suallar və qeydlər saxlanıldı.");
+      }
+    }
+  }
+    }
+
+
+      function performSearch() {
+        console.log("performSearch called");
+        currentSearchQuery = document.getElementById('searchInput').value;
+        console.log("Search query:", currentSearchQuery);
+        currentIndex = 0;
+        renderQuiz();
+        updatePageNavigation();
+        // Axtarış nəticələrində yuxarı qalx
+        setTimeout(() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          const firstQuestion = document.querySelector('.question');
+          if (firstQuestion) {
+            firstQuestion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 100);
+      }
+  
+      function clearSearch() {
+        console.log("clearSearch called");
+        currentSearchQuery = "";
+        document.getElementById('searchInput').value = "";
+        currentIndex = 0;
+        renderQuiz();
+        updatePageNavigation();
+        // Təmizləndikdən sonra yuxarı qalx
+        setTimeout(() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          const firstQuestion = document.querySelector('.question');
+          if (firstQuestion) {
+            firstQuestion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 100);
+      }
+  
+      function handleSearchInput(event) {
+        console.log("handleSearchInput called, key:", event.key);
+        // Real-time search on typing
+        if (event.key === 'Enter') {
+          window.performSearch();
+        } else {
+          // Debounced search for better performance
+          clearTimeout(window.searchTimeout);
+          window.searchTimeout = setTimeout(() => {
+            currentSearchQuery = document.getElementById('searchInput').value;
+            console.log("Debounced search query:", currentSearchQuery);
+            currentIndex = 0;
+            renderQuiz();
+            updatePageNavigation();
+            // Debounced axtarışda da yuxarı qalx
+            setTimeout(() => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+              const firstQuestion = document.querySelector('.question');
+              if (firstQuestion) {
+                firstQuestion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+            }, 100);
+          }, 300);
+        }
+      }
+  
+      // İlk açılışda heç bir sual göstərilməsin
+      loadQuizData();
+    }
+
+    // Sual sayı inputunu dinlə
+    document.addEventListener('DOMContentLoaded', function() {
+      const input = document.getElementById('questionsPerPageInput');
+      if (input) {
+        // İlk açılışda input dəyərini localStorage-dan götür
+        input.value = questionsPerPage;
+        input.addEventListener('change', function() {
+          let val = parseInt(this.value, 10);
+          if (isNaN(val) || val < 1) val = 1;
+          questionsPerPage = val;
+          safeSetItem("questionsPerPage", questionsPerPage); // <-- Yadda saxla
+          currentIndex = 0;
+          renderQuiz();
+          updatePageNavigation();
+        });
+      }
+      
+      // Sual aralığı inputunu dinlə
+      const rangeInput = document.getElementById('questionRangeInput');
+      if (rangeInput) {
+        // İlk açılışda input dəyərini localStorage-dan götür
+        rangeInput.value = questionRange;
+        rangeInput.addEventListener('input', function() {
+          questionRange = this.value;
+          safeSetItem("questionRange", questionRange);
+          currentIndex = 0;
+          applyOrderMode(); // Sıralama rejimini yenidən tətbiq et
+          renderQuiz();
+          updatePageNavigation();
+        });
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const startBtn = document.getElementById('startBtn');
+      if (startBtn) {
+        startBtn.addEventListener('click', function() {
+          document.getElementById('welcomeScreen').style.display = 'none';
+          document.getElementById('mainContent').style.display = 'block';
+        });
+      }
+      
+      // Məlumat menyusu üçün event listener
+      const dataMenuBtn = document.getElementById('dataMenuBtn');
+      const dataMenu = document.getElementById('dataMenu');
+      
+      if (dataMenuBtn && dataMenu) {
+        dataMenuBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          dataMenu.style.display = dataMenu.style.display === 'block' ? 'none' : 'block';
+        });
+        
+        // Menyu xaricində klikləyəndə bağla
+        document.body.addEventListener('click', function() {
+          dataMenu.style.display = 'none';
+        });
+        
+        // Menyu seçimləri üçün hover effekti
+        document.querySelectorAll('.data-menu-option').forEach(option => {
+          option.addEventListener('mouseenter', function() {
+            this.style.background = '#f8f9fa';
+          });
+          
+          option.addEventListener('mouseleave', function() {
+            this.style.background = '#fff';
+          });
+        });
+      }
+    });
+
+    document.addEventListener ('DOMContentLoaded', function() {
+  const resetBtn = document.getElementById('categoryResetBtn');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', function() {
+      if (confirm("RESET eləməyə əminsən?")) {
+        if (confirm("Bütün nəticələri sıfırlamaq istədiyinizə əminsiniz?")) {
+          if (confirm("ALA RESET ee?")) {
+            if (confirm("BRAT GEDIR HAAA")) {
+              if (confirm("BAA RESETTT OLURR")) {
+                selectedAnswers = {};
+                wrongQuestions = [];
+                safeRemoveItem(getStorageKey("selectedAnswers"));
+                safeRemoveItem(getStorageKey("wrongQuestions"));
+                
+                currentIndex = 0;
+                updateWrongQuestionsList();
+                updateFlaggedQuestionsList();
+                updateProgressInfo();
+                renderQuiz();
+                updatePageNavigation();
+                alert("Nəticələr sıfırlandı! İşarələnmiş suallar və qeydlər saxlanıldı.");
+              }
+            }
+          }
+        }
+      }
+    });
+  }
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const orderBtn = document.getElementById('orderModeBtn');
+  const orderMenu = document.getElementById('orderModeMenu');
+  const orderLabel = document.getElementById('orderModeLabel');
+  if (orderBtn && orderMenu && orderLabel) {
+    orderBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      orderMenu.style.display = orderMenu.style.display === 'block' ? 'none' : 'block';
+    });
+    document.querySelectorAll('.order-mode-option').forEach(opt => {
+      opt.addEventListener('click', function() {
+        orderMode = this.getAttribute('data-mode');
+        safeSetItem("orderMode", orderMode);
+        orderLabel.textContent = orderMode;
+        applyOrderMode();
+        currentIndex = 0;
+        renderQuiz();
+        updatePageNavigation();
+        orderMenu.style.display = 'none';
+      });
+    });
+    document.body.addEventListener('click', function() {
+      orderMenu.style.display = 'none';
+    });
+    // İlk açılışda label düz olsun
+    orderLabel.textContent = orderMode;
+  }
+  
+  // Adaptiv rejim düyməsi
+  const adaptiveBtn = document.getElementById('adaptiveModeBtn');
+  const adaptiveLabel = document.getElementById('adaptiveModeLabel');
+  if (adaptiveBtn && adaptiveLabel) {
+    // İlk açılışda label düz olsun
+    adaptiveLabel.textContent = adaptiveMode ? 'ON' : 'OFF';
+    adaptiveBtn.style.background = adaptiveMode ? '#dc3545' : '#10b981';
+    
+    adaptiveBtn.addEventListener('click', function() {
+      adaptiveMode = !adaptiveMode;
+      safeSetItem("adaptiveMode", adaptiveMode);
+      adaptiveLabel.textContent = adaptiveMode ? 'ON' : 'OFF';
+      adaptiveBtn.style.background = adaptiveMode ? '#dc3545' : '#10b981';
+      
+      applyOrderMode();
+      currentIndex = 0;
+      renderQuiz();
+      updatePageNavigation();
+    });
+  }
+  
+  // Flashcard rejim düyməsi
+  const flashcardBtn = document.getElementById('flashcardModeBtn');
+  const flashcardLabel = document.getElementById('flashcardModeLabel');
+  if (flashcardBtn && flashcardLabel) {
+    // İlk açılışda label düz olsun
+    flashcardLabel.textContent = flashcardMode ? 'ON' : 'OFF';
+    flashcardBtn.style.background = flashcardMode ? '#dc3545' : '#8b5cf6';
+    
+    flashcardBtn.addEventListener('click', function() {
+      flashcardMode = !flashcardMode;
+      safeSetItem("flashcardMode", flashcardMode);
+      flashcardLabel.textContent = flashcardMode ? 'ON' : 'OFF';
+      flashcardBtn.style.background = flashcardMode ? '#dc3545' : '#8b5cf6';
+      
+      currentIndex = 0;
+      renderQuiz();
+      updatePageNavigation();
+    });
+  }
+});
+
+function enterFlaggedMode() {
+  isFlaggedMode = true;
+  prevSelectedAnswers = { ...selectedAnswers };
+  prevCurrentIndex = currentIndex;
+  // Yalnız flaglı suallar üçün cavabları sil
+  flaggedQuestions.forEach(qNum => {
+    delete selectedAnswers[qNum];
+  });
+  safeSetItem(getStorageKey("selectedAnswers"), selectedAnswers);
+  // Yalnız flaglı sualları göstər
+  renderQuiz();
+  updatePageNavigation();
+  // Yan paneli aç!
+  document.getElementById('sidePanel').classList.add('open');
+  // Side barda geri qayıt düyməsi göstər
+  showExitFlaggedModeBtn();
+}
+
+function exitFlaggedMode() {
+  isFlaggedMode = false;
+  selectedAnswers = { ...prevSelectedAnswers };
+  safeSetItem(getStorageKey("selectedAnswers"), selectedAnswers);
+  currentIndex = prevCurrentIndex;
+  renderQuiz();
+  updatePageNavigation();
+  // Geri qayıt düyməsini gizlət
+  hideExitFlaggedModeBtn();
+}
+
+// Geri qayıt düyməsi
+function showExitFlaggedModeBtn() {
+  let flaggedList = document.getElementById('flaggedQuestionsList');;
+  let exitBtn = document.getElementById('exitFlaggedModeBtn');
+  if (!exitBtn) {
+    exitBtn = document.createElement('button');
+    exitBtn.id = 'exitFlaggedModeBtn';
+    exitBtn.textContent = " Geri (bütün suallara)";
+    exitBtn.className = "flagged-mode-btn";
+    exitBtn.addEventListener('click', exitFlaggedMode);
+    // Flagged sualların altına əlavə et
+    if (flaggedList && flaggedList.parentNode) {
+      flaggedList.parentNode.insertBefore(exitBtn, flaggedList.nextSibling);
+    }
+  } else {
+    exitBtn.style.display = "block";
+  }
+}
+function hideExitFlaggedModeBtn() {
+  let exitBtn = document.getElementById('exitFlaggedModeBtn');
+  if (exitBtn) exitBtn.style.display = "none";
+}
+
+// Variantları qarışdıran və düzgün cavabın indeksini saxlayan funksiya
+function shuffleAnswers(questionObj) {
+  const correct = questionObj.answers[0];
+  const shuffled = questionObj.answers.slice();
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+                                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+                  }
+                  // Find the new index of the correct answer
+                  const correctIndex = shuffled.indexOf(correct);
+                  return {
+                    ...questionObj,
+                    answers: shuffled,
+                    correctIndex: correctIndex
+                  };
+                }
+
+                function updatePageNavigation() {
+  const navContainer = document.getElementById('pageNavigation');
+  navContainer.innerHTML = '';
+  let filteredQuestions;
+  
+  // Determine which questions to show based on current mode
+  if (isFlaggedMode) {
+    filteredQuestions = flaggedQuestions
+      .map(qNum => allQuestions[qNum - 1])
+      .filter(q => !!q);
+  } else if (isWrongMode) {
+    filteredQuestions = wrongQuestions
+      .map(qNum => allQuestions[qNum - 1])
+      .filter(q => !!q);
+  } else {
+    filteredQuestions = orderedQuestions;
+  }
+  
+  // Apply search filter
+  if (currentSearchQuery) {
+    const query = currentSearchQuery.toLowerCase();
+    filteredQuestions = filteredQuestions.filter(q =>
+      (q.question && q.question.toLowerCase().includes(query)) ||
+      (q.answers && q.answers.some(ans => ans.toLowerCase().includes(query)))
+    );
+  }
+  const totalPages = Math.ceil(filteredQuestions.length / questionsPerPage);
+  if (totalPages <= 1) return;
+  for (let i = 0; i < totalPages; i++) {
+  const btn = document.createElement('button');
+  btn.textContent = (i + 1);
+  if (i === Math.floor(currentIndex / questionsPerPage)) {
+    btn.classList.add('active');
+  }
+  btn.addEventListener('click', () => {
+    currentIndex = i * questionsPerPage;
+    renderQuiz();
+    updatePageNavigation();
+    // Səhifə yuxarı qalxsın və ilk suala scroll etsin
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // Əgər suallar varsa, ilk suala scroll et
+      const firstQuestion = document.querySelector('.question');
+      if (firstQuestion) {
+        firstQuestion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  });
+  navContainer.appendChild(btn);
+}
+}
+function toggleNoteArea(questionNumber) {
+  const noteDiv = document.getElementById('noteDiv-' + questionNumber);
+  if (noteDiv) {
+    noteDiv.style.display = noteDiv.style.display === 'block' ? 'none' : 'block';
+  }
+}
+
+function togglepatanSubcats() {
+  const subcatsDiv = document.getElementById('patanSubcats');
+  if (subcatsDiv) {
+    subcatsDiv.style.display = subcatsDiv.style.display === 'none' ? 'flex' : 'none';
+  }
+}
+
+function updateStatsInfo() {
+  const statsDiv = document.getElementById('statsInfo');
+  if (!statsDiv) return;
+  const total = allQuestions.length;
+  const answered = Object.keys(selectedAnswers).length;
+  let correct = 0;
+  let wrong = 0;
+  for (let qNum in selectedAnswers) {
+    const idx = Number(qNum) - 1;
+    if (allQuestions[idx] && allQuestions[idx].answers) {
+      if (selectedAnswers[qNum] === allQuestions[idx].answers[allQuestions[idx].correctIndex]) {
+        correct++;
+      } else {
+        wrong++;
+      }
+    }
+  }
+  // Səhv sualların sayı: ya wrongQuestions.length, ya da yuxarıdakı wrong, hansını istəsəniz
+  const flagged = flaggedQuestions.length;
+  statsDiv.innerHTML = `
+    <p><b>Ümumi sual:</b> ${total}</p>
+    <p><b>Cavabladığın:</b> ${answered}</p>
+    <p style="color:#22c55e;"><b>Düzgün:</b> ${correct}</p>
+    <p style="color:#dc3545;"><b>Səhv:</b> ${wrongQuestions.length}</p>
+    <p style="color:#fbbf24;"><b>İşarələnmiş:</b> ${flagged}</p>
+  `;
+}
+function enterWrongMode() {
+  isWrongMode = true;
+  prevWrongSelectedAnswers = { ...selectedAnswers };
+  prevWrongCurrentIndex = currentIndex;
+  // Yalnız səhv suallar üçün cavabları sil
+  wrongQuestions.forEach(qNum => {
+    delete selectedAnswers[qNum];
+  });
+  safeSetItem(getStorageKey("selectedAnswers"), selectedAnswers);
+  renderQuizWrongOnly();
+  updatePageNavigation();
+  document.getElementById('sidePanel').classList.add('open');
+  showExitWrongModeBtn();
+}
+
+function exitWrongMode() {
+  isWrongMode = false;
+  selectedAnswers = { ...prevWrongSelectedAnswers };
+  safeSetItem(getStorageKey("selectedAnswers"), selectedAnswers);
+  currentIndex = prevWrongCurrentIndex;
+  renderQuiz();
+  updatePageNavigation();
+  hideExitWrongModeBtn();
+}
+
+function showExitWrongModeBtn() {
+  let wrongList = document.getElementById('wrongQuestionsList');
+  let exitBtn = document.getElementById('exitWrongModeBtn');
+  if (!exitBtn) {
+    exitBtn = document.createElement('button');
+    exitBtn.id = 'exitWrongModeBtn';
+    exitBtn.textContent = " Geri (bütün suallara)";
+    exitBtn.className = "flagged-mode-btn";
+    exitBtn.addEventListener('click', exitWrongMode);
+    if (wrongList && wrongList.parentNode) {
+      wrongList.parentNode.insertBefore(exitBtn, wrongList.nextSibling);
+    }
+  } else {
+    exitBtn.style.display = "block";
+  }
+}
+function hideExitWrongModeBtn() {
+  let exitBtn = document.getElementById('exitWrongModeBtn');
+  if (exitBtn) exitBtn.style.display = "none";
+}
+
+function renderQuizWrongOnly() {
+  updateStatsInfo();
+  const container = document.getElementById('quizContainer');
+  container.innerHTML = '';
+  let filteredQuestions = wrongQuestions
+    .map(qNum => allQuestions[qNum - 1])
+    .filter(q => !!q);
+    
+  // Səhv suallar üçün aralıq filterini tətbiq et
+  if (questionRange && questionRange.trim() !== "") {
+    const range = parseQuestionRange(questionRange);
+    if (range) {
+      filteredQuestions = filteredQuestions.filter((_, index) => {
+        const originalIndex = allQuestions.indexOf(filteredQuestions[index]);
+        const questionNumber = originalIndex + 1;
+        return questionNumber >= range.start && questionNumber <= range.end;
+      });
+    }
+  }
+    
+  // Apply search filter
+  if (currentSearchQuery) {
+    const query = currentSearchQuery.toLowerCase();
+    filteredQuestions = filteredQuestions.filter(q =>
+      (q.question && q.question.toLowerCase().includes(query)) ||
+      (q.answers && q.answers.some(ans => ans.toLowerCase().includes(query)))
+    );
+  }
+  if (!filteredQuestions || filteredQuestions.length === 0) {
+    container.innerHTML = `
+      <div style="text-align:center; margin:40px 0;">
+        <div style="font-size:4em; animation:bounce 1.2s infinite;">🔍</div>
+        <div style="font-size:1.4em; color:#dc3545; margin-top:18px; font-weight:bold;">
+          Heç bir səhv sual tapılmadı!
+        </div>
+        <div style="font-size:1em; color:#888; margin-top:8px;">
+          Axtarış kriteriyanı dəyiş və ya təmizlə.
+        </div>
+      </div>
+    `;
+    return;
+  }
+  
+  // Show search results count if searching
+  if (currentSearchQuery) {
+    const searchInfo = document.createElement('div');
+    searchInfo.style.cssText = 'text-align:center; margin-bottom:20px; padding:10px; background:#e0e7ff; border-radius:8px; color:#2563eb; font-weight:bold;';
+    searchInfo.innerHTML = `🔍 "${currentSearchQuery}" üçün ${filteredQuestions.length} səhv sual tapıldı`;
+    container.appendChild(searchInfo);
+  }
+  if (currentIndex >= filteredQuestions.length) { currentIndex = 0; }
+  const questionsToShow = filteredQuestions.slice(currentIndex, currentIndex + questionsPerPage);
+  questionsToShow.forEach((item, index) => {
+    const questionEl = document.createElement('div');
+    questionEl.className = 'question';
+    const questionNumber = allQuestions.indexOf(item) + 1;
+    questionEl.id = 'question-' + questionNumber;
+    questionEl.innerHTML = `<h2 style="position:relative; padding-right:38px;">${questionNumber}. ${item.question}</h2>`;
+
+    // Copy button
+    const copyAllBtn = document.createElement('button');
+    copyAllBtn.innerHTML = "&#128203;";
+    copyAllBtn.title = "Sualı və variantları kopyala";
+    copyAllBtn.style.position = "absolute";
+    copyAllBtn.style.top = "8px";
+    copyAllBtn.style.right = "8px";
+    copyAllBtn.style.width = "32px";
+    copyAllBtn.style.height = "32px";
+    copyAllBtn.style.display = "flex";
+    copyAllBtn.style.alignItems = "center";
+    copyAllBtn.style.justifyContent = "center";
+    copyAllBtn.style.background = "#f1f5f9";
+    copyAllBtn.style.border = "1px solid #cbd5e1";
+    copyAllBtn.style.borderRadius = "7px";
+    copyAllBtn.style.cursor = "pointer";
+    copyAllBtn.style.fontSize = "1.3em";
+    copyAllBtn.style.boxShadow = "0 2px 8px rgba(0,0,0,0.07)";
+    copyAllBtn.addEventListener('click', () => {
+      let text = `${questionNumber}. ${item.question}\n`;
+      item.answers.forEach((ans, idx) => {
+        const letter = String.fromCharCode(65 + idx);
+        text += `${letter}) ${ans}\n`;
+      });
+      navigator.clipboard.writeText(text);
+      copyAllBtn.innerHTML = "✔️";
+      setTimeout(() => copyAllBtn.innerHTML = "&#128203;", 1200);
+    });
+    questionEl.appendChild(copyAllBtn);
+
+    // Cavablar
+    const answersEl = document.createElement('div');
+    answersEl.className = 'answers';
+    item.answers.forEach(answer => {
+      const button = document.createElement('button');
+      button.textContent = answer;
+      if (selectedAnswers[questionNumber] !== undefined) {
+        if (button.textContent === selectedAnswers[questionNumber]) {
+          if (button.textContent === item.answers[item.correctIndex]) {
+            button.classList.add('correct');
+          } else {
+            button.classList.add('wrong');
+          }
+        }
+      } else {
+        button.addEventListener('click', () => {
+          if (selectedAnswers[questionNumber] === undefined) {
+            selectedAnswers[questionNumber] = answer;
+            safeSetItem(getStorageKey("selectedAnswers"), selectedAnswers);
+            if (answer === item.answers[item.correctIndex]) {
+              button.classList.add('correct');
+            } else {
+              button.classList.add('wrong');
+              addWrongQuestion(questionNumber);
+            }
+            updateProgressInfo();
+            updateStatsInfo();
+          }
+        });
+      }
+      answersEl.appendChild(button);
+    });
+    questionEl.appendChild(answersEl);
+
+    // Extra Options: Flag, Qeyd, Cavabı sil
+    const extraOptionsDiv = document.createElement('div');
+    extraOptionsDiv.className = 'extra-options';
+
+    // Flag düyməsi
+    const flagButton = document.createElement('button');
+    flagButton.className = 'flag-btn';
+    flagButton.innerHTML = flaggedQuestions.includes(questionNumber) ? '<i class="fa fa-flag"></i> Unflag' : '<i class="fa fa-flag-o"></i> İşarələ';
+    flagButton.addEventListener('click', () => toggleFlagged(questionNumber, flagButton));
+    extraOptionsDiv.appendChild(flagButton);
+
+    // Qeyd düyməsi
+    const noteButton = document.createElement('button');
+    noteButton.className = 'note-btn';
+    noteButton.innerHTML = '<i class="fa fa-sticky-note"></i> Qeyd əlavə et';
+    noteButton.addEventListener('click', () => toggleNoteArea(questionNumber));
+    extraOptionsDiv.appendChild(noteButton);
+
+    // Cavabı sil düyməsi
+    const clearAnswerButton = document.createElement('button');
+    clearAnswerButton.className = 'clear-answer-btn';
+    clearAnswerButton.innerHTML = '<i class="fa fa-eraser"></i> Cavabı sil';
+    clearAnswerButton.addEventListener('click', () => {
+      delete selectedAnswers[questionNumber];
+      safeSetItem(getStorageKey("selectedAnswers"), selectedAnswers);
+      if (!wrongQuestions.includes(questionNumber)) {
+        wrongQuestions.push(questionNumber);
+        safeSetItem(getStorageKey("wrongQuestions"), wrongQuestions);
+      }
+      renderQuizWrongOnly();
+      updateWrongQuestionsList();
+      updateProgressInfo();
+    });
+    extraOptionsDiv.appendChild(clearAnswerButton);
+
+    // Qeyd textarea bölməsi
+    const noteDiv = document.createElement('div');
+    noteDiv.style.display = 'none';
+    noteDiv.id = 'noteDiv-' + questionNumber;
+    const noteTextarea = document.createElement('textarea');
+    noteTextarea.placeholder = "Qeyd...";
+    noteTextarea.rows = 3;
+    if (questionNotes[questionNumber]) {
+      noteTextarea.value = questionNotes[questionNumber];
+      noteDiv.style.display = 'block';
+    }
+    ['input', 'blur'].forEach(evt =>
+      noteTextarea.addEventListener(evt, () => {
+        questionNotes[questionNumber] = noteTextarea.value;
+        safeSetItem(getStorageKey("questionNotes"), questionNotes);
+      })
+    );
+    noteDiv.appendChild(noteTextarea);
+    extraOptionsDiv.appendChild(noteDiv);
+
+    questionEl.appendChild(extraOptionsDiv);
+    container.appendChild(questionEl);
+  });
+}
+
+    // Global search functions
+    window.performSearch = function() {
+      console.log("performSearch called");
+      currentSearchQuery = document.getElementById('searchInput').value;
+      console.log("Search query:", currentSearchQuery);
+      currentIndex = 0;
+      renderQuiz();
+      updatePageNavigation();
+      // Axtarış nəticələrində yuxarı qalx
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        const firstQuestion = document.querySelector('.question');
+        if (firstQuestion) {
+          firstQuestion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    };
+
+    window.clearSearch = function() {
+      console.log("clearSearch called");
+      currentSearchQuery = "";
+      document.getElementById('searchInput').value = "";
+      currentIndex = 0;
+      renderQuiz();
+      updatePageNavigation();
+      // Təmizləndikdən sonra yuxarı qalx
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        const firstQuestion = document.querySelector('.question');
+        if (firstQuestion) {
+          firstQuestion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    };
+
+    window.handleSearchInput = function(event) {
+      console.log("handleSearchInput called, key:", event.key);
+      // Real-time search on typing
+      if (event.key === 'Enter') {
+        window.performSearch();
+      } else {
+        // Debounced search for better performance
+        clearTimeout(window.searchTimeout);
+        window.searchTimeout = setTimeout(() => {
+          currentSearchQuery = document.getElementById('searchInput').value;
+          console.log("Debounced search query:", currentSearchQuery);
+          currentIndex = 0;
+          renderQuiz();
+          updatePageNavigation();
+          // Debounced axtarışda da yuxarı qalx
+          setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            const firstQuestion = document.querySelector('.question');
+            if (firstQuestion) {
+              firstQuestion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }, 100);
+        }, 300);
+      }
+    };
+
+    window.testSearch = function() {
+      console.log("=== TEST SEARCH ===");
+      console.log("allQuestions length:", allQuestions.length);
+      console.log("orderedQuestions length:", orderedQuestions.length);
+      console.log("currentCategory:", currentCategory);
+      console.log("currentSearchQuery:", currentSearchQuery);
+      console.log("searchInput value:", document.getElementById('searchInput').value);
+      
+      // Set a test search query
+      document.getElementById('searchInput').value = "test";
+      currentSearchQuery = "test";
+      console.log("Set test search query to 'test'");
+      
+      renderQuiz();
+      updatePageNavigation();
+    };
+
+  // Sual aralığını parse edən funksiya
+  function parseQuestionRange(rangeStr) {
+    if (!rangeStr || rangeStr.trim() === "") return null;
+    
+    const range = rangeStr.trim();
+    const dashIndex = range.indexOf('-');
+    
+    if (dashIndex === -1) {
+      // Tək sual nömrəsi
+      const num = parseInt(range);
+      return isNaN(num) ? null : { start: num, end: num };
+    }
+    
+    const startStr = range.substring(0, dashIndex).trim();
+    const endStr = range.substring(dashIndex + 1).trim();
+    
+    const start = parseInt(startStr);
+    const end = parseInt(endStr);
+    
+    if (isNaN(start) || isNaN(end) || start > end || start < 1) {
+      return null;
+    }
+    
+    return { start, end };
+  }
+
+  // Sual aralığına görə filter edən funksiya
+  function filterQuestionsByRange(questions) {
+    if (!questionRange || questionRange.trim() === "") {
+      return questions;
+    }
+    
+    const range = parseQuestionRange(questionRange);
+    if (!range) {
+      console.warn("Yanlış sual aralığı formatı:", questionRange);
+      return questions;
+    }
+    
+    return questions.filter((_, index) => {
+      const questionNumber = index + 1;
+      return questionNumber >= range.start && questionNumber <= range.end;
+    });
+  }
+
+  // Adaptiv suallar üçün sıralama funksiyası
+  function createAdaptiveOrder(questions) {
+    if (!adaptiveMode) return questions;
+    
+    // Hər sualın çətinlik dərəcəsini hesabla (səhv sayına görə)
+    const questionDifficulty = questions.map((q, index) => {
+      const questionNumber = allQuestions.indexOf(q) + 1;
+      const wrongCount = questionWrongCount[questionNumber] || 0;
+      return { question: q, difficulty: wrongCount, originalIndex: index };
+    });
+    
+    // Çətinlik dərəcəsinə görə sırala (ən çətin suallar əvvəldə)
+    questionDifficulty.sort((a, b) => b.difficulty - a.difficulty);
+    
+    // Adaptiv ağırlıq sistemi: çətin suallar daha tez təkrarlansın
+    const adaptiveQuestions = [];
+    questionDifficulty.forEach((item, index) => {
+      const repeatCount = Math.max(1, Math.floor(item.difficulty / 2) + 1);
+      for (let i = 0; i < repeatCount; i++) {
+        adaptiveQuestions.push(item.question);
+      }
+    });
+    
+    // Sonra random qarışdır
+    for (let i = adaptiveQuestions.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [adaptiveQuestions[i], adaptiveQuestions[j]] = [adaptiveQuestions[j], adaptiveQuestions[i]];
+    }
+    
+    return adaptiveQuestions;
+  }
+
+  // Təkmilləşdirilmiş qeyd sistemi
+  function createEnhancedNoteArea(questionNumber) {
+    const noteDiv = document.createElement('div');
+    noteDiv.style.display = 'none';
+    noteDiv.id = 'noteDiv-' + questionNumber;
+    noteDiv.className = 'note-container';
+    
+    // Qeyd başlığı
+    const noteHeader = document.createElement('div');
+    noteHeader.className = 'note-header';
+    
+    const noteTitle = document.createElement('span');
+    noteTitle.innerHTML = '<i class="fa fa-sticky-note"></i> Qeyd';
+    
+    const noteActions = document.createElement('div');
+    noteActions.className = 'note-actions';
+    
+    // Simvol sayı
+    const charCount = document.createElement('span');
+    charCount.className = 'character-count';
+    charCount.textContent = '0/500';
+    
+    // Yadda saxla düyməsi
+    const saveBtn = document.createElement('button');
+    saveBtn.className = 'note-action-btn save';
+    saveBtn.innerHTML = '<i class="fa fa-save"></i> Saxla';
+    saveBtn.addEventListener('click', () => saveNote(questionNumber));
+    
+    // Sil düyməsi
+    const deleteBtn = document.createElement('button');
+    deleteBtn.className = 'note-action-btn delete';
+    deleteBtn.innerHTML = '<i class="fa fa-trash"></i> Sil';
+    deleteBtn.addEventListener('click', () => deleteNote(questionNumber));
+    
+    noteActions.appendChild(charCount);
+    noteActions.appendChild(saveBtn);
+    noteActions.appendChild(deleteBtn);
+    noteHeader.appendChild(noteTitle);
+    noteHeader.appendChild(noteActions);
+    
+    // Qeyd textarea
+    const noteTextarea = document.createElement('textarea');
+    noteTextarea.placeholder = "Bu sual haqqında qeydlərinizi yazın...";
+    noteTextarea.rows = 4;
+    noteTextarea.maxLength = 500;
+    
+    // Mövcud qeydi yüklə
+    if (questionNotes[questionNumber]) {
+      noteTextarea.value = questionNotes[questionNumber];
+      noteDiv.style.display = 'block';
+      updateCharCount(noteTextarea, charCount);
+    }
+    
+    // Event listener-lər
+    noteTextarea.addEventListener('input', () => {
+      updateCharCount(noteTextarea, charCount);
+      autoSaveNote(questionNumber, noteTextarea.value);
+    });
+    
+    noteTextarea.addEventListener('keydown', (e) => {
+      if (e.ctrlKey && e.key === 's') {
+        e.preventDefault();
+        saveNote(questionNumber);
+      }
+    });
+    
+    noteDiv.appendChild(noteHeader);
+    noteDiv.appendChild(noteTextarea);
+    
+    return noteDiv;
+  }
+
+  function updateCharCount(textarea, charCountElement) {
+    const count = textarea.value.length;
+    const maxLength = textarea.maxLength;
+    charCountElement.textContent = `${count}/${maxLength}`;
+    
+    // Rəng dəyişdir
+    charCountElement.className = 'character-count';
+    if (count > maxLength * 0.8) {
+      charCountElement.classList.add('warning');
+    }
+    if (count > maxLength * 0.95) {
+      charCountElement.classList.remove('warning');
+      charCountElement.classList.add('danger');
+    }
+  }
+
+  function autoSaveNote(questionNumber, content) {
+    questionNotes[questionNumber] = content;
+    safeSetItem(getStorageKey("questionNotes"), questionNotes);
+  }
+
+  function saveNote(questionNumber) {
+    const textarea = document.querySelector(`#noteDiv-${questionNumber} textarea`);
+    if (textarea) {
+      questionNotes[questionNumber] = textarea.value;
+      safeSetItem(getStorageKey("questionNotes"), questionNotes);
+      
+      // Saxla düyməsini müvəqqəti olaraq dəyişdir
+      const saveBtn = document.querySelector(`#noteDiv-${questionNumber} .save`);
+      const originalText = saveBtn.innerHTML;
+      saveBtn.innerHTML = '<i class="fa fa-check"></i> Saxlandı!';
+      saveBtn.style.background = '#dcfce7';
+      saveBtn.style.color = '#16a34a';
+      
+      setTimeout(() => {
+        saveBtn.innerHTML = originalText;
+        saveBtn.style.background = '';
+        saveBtn.style.color = '';
+      }, 1500);
+    }
+  }
+
+  function deleteNote(questionNumber) {
+    if (confirm('Bu qeydi silmək istədiyinizə əminsiniz?')) {
+      delete questionNotes[questionNumber];
+      safeSetItem(getStorageKey("questionNotes"), questionNotes);
+      
+      const noteDiv = document.getElementById('noteDiv-' + questionNumber);
+      if (noteDiv) {
+        noteDiv.style.display = 'none';
+        const textarea = noteDiv.querySelector('textarea');
+        if (textarea) {
+          textarea.value = '';
+        }
+      }
+    }
+  }
+
+  // Flashcard rejimini düzgün başlat
+  function initializeFlashcardMode() {
+    const savedMode = safeGetItem("flashcardMode", "false");
+    if (savedMode === null) {
+      // Əgər heç bir dəyər yoxdursa, OFF ilə başlat
+      safeSetItem("flashcardMode", "false");
+      flashcardMode = false;
+    } else {
+      // Mövcud dəyəri istifadə et
+      flashcardMode = savedMode === 'true';
+    }
+    
+    // Düyməni yenilə
+    const flashcardBtn = document.getElementById('flashcardModeBtn');
+    const flashcardLabel = document.getElementById('flashcardModeLabel');
+    if (flashcardBtn && flashcardLabel) {
+      flashcardLabel.textContent = flashcardMode ? 'ON' : 'OFF';
+      flashcardBtn.style.background = flashcardMode ? '#dc3545' : '#8b5cf6';
+    }
+  }
+
+  // Səhifə yükləndikdə flashcard rejimini düzgün başlat
+  document.addEventListener('DOMContentLoaded', function() {
+    initializeFlashcardMode();
+  });
+
+  // Təhlükəsiz silmə funksiyası
+  function safeRemoveItem(key) {
+    try {
+      localStorage.removeItem(key);
+      sessionStorage.removeItem(key);
+      return true;
+    } catch (error) {
+      console.error('localStorage silmə xətası:', error);
+      return false;
+    }
+  }
+
+  // Məlumatları bərpa etmək üçün funksiya
+  function recoverData() {
+    try {
+      // localStorage və sessionStorage arasında məlumatları sinxronizasiya et
+      const keys = [...new Set([...Object.keys(localStorage), ...Object.keys(sessionStorage)])];
+      
+      keys.forEach(key => {
+        const localValue = localStorage.getItem(key);
+        const sessionValue = sessionStorage.getItem(key);
+        
+        if (localValue && !sessionValue) {
+          // localStorage-də var, sessionStorage-də yox
+          sessionStorage.setItem(key, localValue);
+        } else if (!localValue && sessionValue) {
+          // sessionStorage-də var, localStorage-də yox
+          localStorage.setItem(key, sessionValue);
+        }
+      });
+      
+      console.log('Məlumatlar bərpa edildi');
+      return true;
+    } catch (error) {
+      console.error('Məlumat bərpa xətası:', error);
+      return false;
+    }
+  }
+
+  // Mobil cihazlar üçün xüsusi funksiyalar
+  function handleMobileStorage() {
+    // Mobil brauzerlərdə localStorage məhdudiyyətləri
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    
+    if (isMobile) {
+      // Mobil cihazlarda daha tez-tez yadda saxla
+      setInterval(autoSave, 15000); // 15 saniyədə bir
+      
+      // Səhifə görünməz olduqda yadda saxla
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+          autoSave();
+        }
+      });
+      
+      // Brauzer geri/irəli düymələri üçün
+      window.addEventListener('popstate', autoSave);
+    }
+  }
+
+  // Məlumatları yoxlamaq üçün funksiya
+  function checkDataIntegrity() {
+    const requiredKeys = [
+      getStorageKey("selectedAnswers"),
+      getStorageKey("wrongQuestions"),
+      getStorageKey("flaggedQuestions"),
+      getStorageKey("questionNotes"),
+      getStorageKey("questionWrongCount")
+    ];
+    
+    const missingKeys = requiredKeys.filter(key => 
+      !localStorage.getItem(key) && !sessionStorage.getItem(key)
+    );
+    
+    if (missingKeys.length > 0) {
+      console.warn('Bəzi məlumatlar tapılmadı:', missingKeys);
+      return false;
+    }
+    
+    return true;
+  }
+
+  // Səhifə yükləndikdə məlumatları bərpa et
+  document.addEventListener('DOMContentLoaded', function() {
+    recoverData();
+    handleMobileStorage();
+    
+    // Məlumat bütövlüyünü yoxla
+    if (!checkDataIntegrity()) {
+      console.log('Məlumat bütövlüyü problemi aşkar edildi, bərpa cəhdi...');
+      recoverData();
+    }
+    
+    // Firebase auth-ı başlat
+    setTimeout(() => {
+      initializeAuth();
+    }, 1000); // Firebase yüklənməsi üçün vaxt ver
+  });
+
+  // Məlumatları export etmək üçün funksiya
+  function exportData() {
+    try {
+      const exportData = {
+        timestamp: Date.now(),
+        category: currentCategory,
+        selectedAnswers: selectedAnswers,
+        wrongQuestions: wrongQuestions,
+        flaggedQuestions: flaggedQuestions,
+        questionNotes: questionNotes,
+        questionWrongCount: questionWrongCount,
+        settings: {
+          questionsPerPage: questionsPerPage,
+          questionRange: questionRange,
+          orderMode: orderMode,
+          adaptiveMode: adaptiveMode,
+          flashcardMode: flashcardMode
+        }
+      };
+      
+      const dataStr = JSON.stringify(exportData, null, 2);
+      const dataBlob = new Blob([dataStr], {type: 'application/json'});
+      const url = URL.createObjectURL(dataBlob);
+      
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `ets_backup_${new Date().toISOString().split('T')[0]}.json`;
+      link.click();
+      
+      URL.revokeObjectURL(url);
+      alert('Məlumatlar uğurla export edildi!');
+    } catch (error) {
+      console.error('Export xətası:', error);
+      alert('Export zamanı xəta baş verdi!');
+    }
+  }
+
+  // Məlumatları import etmək üçün funksiya
+  function importData() {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json';
+    
+    input.onchange = function(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+      
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const importData = JSON.parse(e.target.result);
+          
+          if (confirm('Mövcud məlumatlar silinəcək. Davam etmək istəyirsiniz?')) {
+            // Məlumatları yüklə
+            selectedAnswers = importData.selectedAnswers || {};
+            wrongQuestions = importData.wrongQuestions || [];
+            flaggedQuestions = importData.flaggedQuestions || [];
+            questionNotes = importData.questionNotes || {};
+            questionWrongCount = importData.questionWrongCount || {};
+            
+            // Tənzimləmələri yüklə
+            if (importData.settings) {
+              questionsPerPage = importData.settings.questionsPerPage || 10;
+              questionRange = importData.settings.questionRange || "";
+              orderMode = importData.settings.orderMode || "ARDICIL";
+              adaptiveMode = importData.settings.adaptiveMode || false;
+              flashcardMode = importData.settings.flashcardMode || false;
+            }
+            
+            // localStorage-ə yadda saxla
+            autoSave();
+            
+            // UI-ni yenilə
+            if (currentCategory) {
+              renderQuiz();
+              updateWrongQuestionsList();
+              updateFlaggedQuestionsList();
+              updateRepeatedMistakesList();
+              updateProgressInfo();
+              updatePageNavigation();
+            }
+            
+            alert('Məlumatlar uğurla import edildi!');
+          }
+        } catch (error) {
+          console.error('Import xətası:', error);
+          alert('Import zamanı xəta baş verdi! Fayl düzgün formatda deyil.');
+        }
+      };
+      reader.readAsText(file);
+    };
+    
+    input.click();
+  }
+
+  // Məlumatları təmizləmək üçün funksiya
+  function clearAllData() {
+    if (confirm('BÜTÜN məlumatlar silinəcək! Bu əməliyyat geri alına bilməz. Davam etmək istəyirsiniz?')) {
+      if (confirm('Əmin olduğunuzu təsdiqləyin:')) {
+        try {
+          // Bütün localStorage və sessionStorage məlumatlarını təmizlə
+          localStorage.clear();
+          sessionStorage.clear();
+          
+          // Dəyişənləri sıfırla
+          selectedAnswers = {};
+          wrongQuestions = [];
+          flaggedQuestions = [];
+          questionNotes = {};
+          questionWrongCount = {};
+          currentIndex = 0;
+          
+          // UI-ni yenilə
+          if (currentCategory) {
+            renderQuiz();
+            updateWrongQuestionsList();
+            updateFlaggedQuestionsList();
+            updateRepeatedMistakesList();
+            updateProgressInfo();
+            updatePageNavigation();
+          }
+          
+          alert('Bütün məlumatlar təmizləndi!');
+        } catch (error) {
+          console.error('Təmizləmə xətası:', error);
+          alert('Təmizləmə zamanı xəta baş verdi!');
+        }
+      }
+    }
+  }
+
+  // Bütün kateqoriyaları yükləyən funksiya
+  async function loadAllCategories() {
+    const categories = [
+      { name: 'Farmakologiya', file: 'farm.json', icon: 'fa-flask' },
+      { name: 'PATFİZ', file: 'patfiz.json', icon: 'fa-heartbeat' },
+      { name: 'PATFIZ2', file: 'patfiz2.json', icon: 'fa-brain' },
+      { name: 'PATAN1', file: 'patan1a.json', icon: 'fa-dna' },
+      { name: 'PATAN2', file: 'patan2a.json', icon: 'fa-virus' },
+      { name: 'DYES', file: 'patandyes.json', icon: 'fa-bacteria' }
+    ];
+
+    allCategoriesData = {};
+    let totalQuestions = 0;
+
+    for (let category of categories) {
+      try {
+        const response = await fetch(category.file);
+        if (response.ok) {
+          const data = await response.json();
+          allCategoriesData[category.name] = {
+            questions: data.map(q => shuffleAnswers(q)),
+            icon: category.icon,
+            count: data.length
+          };
+          totalQuestions += data.length;
+        }
+      } catch (error) {
+        console.error(`${category.name} yüklənmədi:`, error);
+      }
+    }
+
+    // Default bölgü yarat (bərabər bölgü)
+    const categoryNames = Object.keys(allCategoriesData);
+    const defaultShare = Math.floor(100 / categoryNames.length);
+    
+    categoryDistribution = {};
+    categoryNames.forEach((name, index) => {
+      categoryDistribution[name] = index === categoryNames.length - 1 ? 
+        (100 - (defaultShare * (categoryNames.length - 1))) : defaultShare;
+    });
+
+    console.log('Bütün kateqoriyalar yükləndi:', allCategoriesData);
+    console.log('Default bölgü:', categoryDistribution);
+    
+    return totalQuestions;
+  }
+
+  // Bölgü panelini göstərən funksiya
+  function showDistributionPanel() {
+    const panel = document.getElementById('distributionPanel');
+    const distributionContainer = document.getElementById('categoryDistribution');
+    
+    if (panel && distributionContainer) {
+      panel.style.display = 'block';
+      
+      // Bölgü kontrollarını yarat
+      distributionContainer.innerHTML = '';
+      
+      Object.keys(allCategoriesData).forEach(categoryName => {
+        const categoryDiv = document.createElement('div');
+        categoryDiv.style.cssText = 'background:#fff; padding:15px; border-radius:8px; border:1px solid #e5e7eb;';
+        
+        const icon = allCategoriesData[categoryName].icon;
+        const count = allCategoriesData[categoryName].count;
+        const currentShare = categoryDistribution[categoryName] || 0;
+        
+        categoryDiv.innerHTML = `
+          <div style="display:flex; align-items:center; margin-bottom:10px;">
+            <i class="fa ${icon}" style="margin-right:8px; color:#2563eb;"></i>
+            <strong>${categoryName}</strong>
+            <span style="margin-left:auto; color:#6b7280; font-size:0.9em;">(${count} sual)</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:8px;">
+            <label style="font-size:0.9em; color:#374151;">Faiz:</label>
+            <input type="number" 
+                   min="0" 
+                   max="100" 
+                   value="${currentShare}" 
+                   onchange="updateDistribution('${categoryName}', this.value)"
+                   style="width:60px; padding:4px; border-radius:4px; border:1px solid #ccc;">
+            <span style="font-size:0.9em; color:#6b7280;">%</span>
+          </div>
+        `;
+        
+        distributionContainer.appendChild(categoryDiv);
+      });
+    }
+  }
+
+  // Bölgünü yeniləyən funksiya
+  function updateDistribution(categoryName, value) {
+    categoryDistribution[categoryName] = parseInt(value) || 0;
+    
+    // Ümumi faizi 100% saxla
+    const total = Object.values(categoryDistribution).reduce((sum, val) => sum + val, 0);
+    if (total !== 100) {
+      // Əgər 100% deyilsə, digər kateqoriyaları proporsional olaraq tənzimlə
+      const otherCategories = Object.keys(categoryDistribution).filter(name => name !== categoryName);
+      if (otherCategories.length > 0) {
+        const remaining = 100 - categoryDistribution[categoryName];
+        const share = remaining / otherCategories.length;
+        otherCategories.forEach(name => {
+          categoryDistribution[name] = Math.round(share);
+        });
+        // Son kateqoriyaya qalan hissəni ver
+        categoryDistribution[otherCategories[0]] += remaining - (Math.round(share) * otherCategories.length);
+      }
+    }
+    
+    // UI-ni yenilə
+    showDistributionPanel();
+  }
+
+  // Bölgünü tətbiq edən funksiya
+  function applyDistribution() {
+    distributionInterval = parseInt(document.getElementById('distributionInterval').value) || 10;
+    
+    // Bölgünü localStorage-ə yadda saxla
+    safeSetItem('categoryDistribution', categoryDistribution);
+    safeSetItem('distributionInterval', distributionInterval);
+    
+    // Qarışıq sualları yarat
+    createMixedQuestions();
+    
+    // Panel bağla
+    document.getElementById('distributionPanel').style.display = 'none';
+    
+    alert('Bölgü tətbiq edildi!');
+  }
+
+  // Bölgünü sıfırlayan funksiya
+  function resetDistribution() {
+    const categoryNames = Object.keys(allCategoriesData);
+    const defaultShare = Math.floor(100 / categoryNames.length);
+    
+    categoryDistribution = {};
+    categoryNames.forEach((name, index) => {
+      categoryDistribution[name] = index === categoryNames.length - 1 ? 
+        (100 - (defaultShare * (categoryNames.length - 1))) : defaultShare;
+    });
+    
+    document.getElementById('distributionInterval').value = 10;
+    distributionInterval = 10;
+    
+    showDistributionPanel();
+  }
+
+  // Qarışıq sualları yaradan funksiya
+  function createMixedQuestions() {
+    if (!isAllCategoriesMode) return;
+    
+    const mixedQuestions = [];
+    const categoryNames = Object.keys(allCategoriesData);
+    
+    // Hər interval üçün sualları seç
+    for (let i = 0; i < 1000; i += distributionInterval) { // 1000 sual limiti
+      const intervalQuestions = [];
+      
+      // Hər kateqoriyadan nisbi sayda sual al
+      categoryNames.forEach(categoryName => {
+        const share = categoryDistribution[categoryName] || 0;
+        const questionsFromCategory = Math.round((share / 100) * distributionInterval);
+        
+        const categoryQuestions = allCategoriesData[categoryName].questions;
+        const selectedQuestions = getRandomQuestions(categoryQuestions, questionsFromCategory);
+        
+        selectedQuestions.forEach(q => {
+          q.sourceCategory = categoryName; // Mənbə kateqoriyasını qeyd et
+        });
+        
+        intervalQuestions.push(...selectedQuestions);
+      });
+      
+      // Əgər intervalQuestions azdırsa, təsadüfi suallarla doldur
+      while (intervalQuestions.length < distributionInterval) {
+        const randomCategory = categoryNames[Math.floor(Math.random() * categoryNames.length)];
+        const randomQuestion = getRandomQuestions(allCategoriesData[randomCategory].questions, 1)[0];
+        if (randomQuestion && !intervalQuestions.includes(randomQuestion)) {
+          randomQuestion.sourceCategory = randomCategory;
+          intervalQuestions.push(randomQuestion);
+        }
+      }
+      
+      // Interval suallarını qarışdır və əlavə et
+      shuffleArray(intervalQuestions);
+      mixedQuestions.push(...intervalQuestions.slice(0, distributionInterval));
+    }
+    
+    // Ümumi sualları qarışdır
+    shuffleArray(mixedQuestions);
+    
+    // allQuestions-ə təyin et
+    allQuestions = mixedQuestions;
+    applyOrderMode();
+    
+    console.log('Qarışıq suallar yaradıldı:', allQuestions.length);
+  }
+
+  // Təsadüfi suallar seçən funksiya
+  function getRandomQuestions(questions, count) {
+    const shuffled = [...questions];
+    shuffleArray(shuffled);
+    return shuffled.slice(0, Math.min(count, questions.length));
+  }
+
+  // Array-i qarışdıran funksiya
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+
+  // selectCategory funksiyasını yenilə
+  async function selectCategory(filename) {
+    console.log("Seçilən kateqoriya:", filename);
+    currentCategory = filename;
+    currentIndex = 0;
+    isFlaggedMode = false;
+    isAllCategoriesMode = false;
+    currentSearchQuery = "";
+    document.getElementById('searchInput').value = "";
+    loadCategoryState();
+    document.getElementById('questionCountContainer').style.display = 'block';
+    document.getElementById('categoryResetContainer').style.display = 'block';
+    document.getElementById('searchContainer').style.display = 'block';
+    document.getElementById('distributionPanel').style.display = 'none'; // Bölgü panelini gizlət
+    
+    // Focus on search input
+    setTimeout(() => {
+      document.getElementById('searchInput').focus();
+    }, 100);
+    
+    document.querySelectorAll('.category-btn').forEach(btn => {
+      if (btn.getAttribute('data-category') === filename || btn.id === 'cat-all') {
+        btn.classList.add('selected');
+        btn.classList.remove('inactive');
+      } else {
+        btn.classList.remove('selected');
+        btn.classList.add('inactive');
+      }
+    });
+
+    // Əgər bütün kateqoriyalar seçilibsə
+    if (filename === 'all-categories') {
+      isAllCategoriesMode = true;
+      
+      // Bütün kateqoriyaları yüklə
+      const totalQuestions = await loadAllCategories();
+      
+      // Yadda saxlanılan bölgünü yüklə
+      const savedDistribution = safeGetItem('categoryDistribution', null);
+      const savedInterval = safeGetItem('distributionInterval', 10);
+      
+      if (savedDistribution) {
+        categoryDistribution = savedDistribution;
+        distributionInterval = savedInterval;
+      }
+      
+      // Bölgü panelini göstər
+      showDistributionPanel();
+      
+      // Qarışıq sualları yarat
+      createMixedQuestions();
+      
+      renderQuiz();
+      updateWrongQuestionsList();
+      updateFlaggedQuestionsList();
+      updateRepeatedMistakesList();
+      updateProgressInfo();
+      updatePageNavigation();
+      return;
+    }
+
+    // Əgər bütün patan alt kateqoriyaları üçünsə:
+    if (filename === 'patan-all') {
+      // Bütün alt kateqoriyaların json-larını yüklə və birləşdir
+      const files = ['patan2a.json', 'patan1a.json', 'patandyes.json'];
+      let all = [];
+      for (let file of files) {
+        try {
+          const resp = await fetch(file);
+          if (resp.ok) {
+            const data = await resp.json();
+            all = all.concat(data);
+          }
+        } catch (e) {
+          console.error(file, "yüklənmədi:", e);
+        }
+      }
+      allQuestions = all.map(q => shuffleAnswers(q));
+      applyOrderMode();
+      renderQuiz();
+      updateWrongQuestionsList();
+      updateFlaggedQuestionsList();
+      updateRepeatedMistakesList();
+      updateProgressInfo();
+      updatePageNavigation();
+      return;
+    }
+
+    // Standart halda bir json yüklə
+    loadQuizData();
+  }
+
+  // Firebase Authentication və Sync funksiyaları
+  function signInWithGoogle() {
+    if (!window.firebaseAuth || !window.firebaseProvider) {
+      alert('Firebase yüklənmədi. Zəhmət olmasa səhifəni yeniləyin.');
+      return;
+    }
+
+    signInWithPopup(window.firebaseAuth, window.firebaseProvider)
+      .then((result) => {
+        currentUser = result.user;
+        showUserInfo();
+        loadUserDataFromCloud();
+        console.log('Daxil oldunuz:', currentUser.email);
+      })
+      .catch((error) => {
+        console.error('Giriş xətası:', error);
+        alert('Giriş zamanı xəta baş verdi: ' + error.message);
+      });
+  }
+
+  function signOutUser() {
+    if (!window.firebaseAuth) return;
+
+    signOut(window.firebaseAuth)
+      .then(() => {
+        currentUser = null;
+        hideUserInfo();
+        console.log('Çıxış edildi');
+      })
+      .catch((error) => {
+        console.error('Çıxış xətası:', error);
+      });
+  }
+
+  function showUserInfo() {
+    const userInfoDiv = document.getElementById('userInfo');
+    if (userInfoDiv && currentUser) {
+      userInfoDiv.innerHTML = `
+        <div style="display:flex; align-items:center; gap:10px; padding:10px; background:linear-gradient(135deg, #10b981 0%, #059669 100%); color:#fff; border-radius:8px; margin-bottom:10px;">
+          <img src="${currentUser.photoURL || 'https://via.placeholder.com/32'}" style="width:32px; height:32px; border-radius:50%;">
+          <span style="font-weight:bold;">${currentUser.displayName || currentUser.email}</span>
+          <button onclick="signOutUser()" style="margin-left:auto; background:none; border:none; color:#fff; cursor:pointer; font-size:1.2em;">🚪</button>
+        </div>
+        <div style="display:flex; gap:8px; margin-bottom:10px;">
+          <button onclick="saveUserDataToCloud()" style="background:#2563eb; color:#fff; border:none; padding:8px 12px; border-radius:6px; cursor:pointer; font-size:0.9em;">
+            <i class="fa fa-cloud-upload"></i> Buluda yadda saxla
+          </button>
+          <button onclick="loadUserDataFromCloud()" style="background:#10b981; color:#fff; border:none; padding:8px 12px; border-radius:6px; cursor:pointer; font-size:0.9em;">
+            <i class="fa fa-cloud-download"></i> Buluddan yüklə
+          </button>
+        </div>
+        ${lastSyncTime ? `<div style="font-size:0.8em; color:#666; text-align:center;">Son sinxronlaşma: ${lastSyncTime}</div>` : ''}
+      `;
+      userInfoDiv.style.display = 'block';
+    }
+  }
+
+  function hideUserInfo() {
+    const userInfoDiv = document.getElementById('userInfo');
+    if (userInfoDiv) {
+      userInfoDiv.style.display = 'none';
+    }
+  }
+
+  // Məlumatı buluda yadda saxla
+  async function saveUserDataToCloud() {
+    if (!currentUser || !window.firebaseDB) {
+      alert('Zəhmət olmasa əvvəlcə daxil olun.');
+      return;
+    }
+
+    if (isSyncing) {
+      alert('Sinxronlaşma davam edir, zəhmət olmasa gözləyin.');
+      return;
+    }
+
+    isSyncing = true;
+    const syncStatus = document.getElementById('syncStatus');
+    if (syncStatus) syncStatus.textContent = 'Buluda yadda saxlanılır...';
+
+    try {
+      const userData = {
+        userId: currentUser.uid,
+        email: currentUser.email,
+        lastUpdated: new Date().toISOString(),
+        category: currentCategory,
+        selectedAnswers: selectedAnswers,
+        wrongQuestions: wrongQuestions,
+        flaggedQuestions: flaggedQuestions,
+        questionNotes: questionNotes,
+        questionWrongCount: questionWrongCount,
+        settings: {
+          questionsPerPage: questionsPerPage,
+          questionRange: questionRange,
+          orderMode: orderMode,
+          adaptiveMode: adaptiveMode,
+          flashcardMode: flashcardMode,
+          categoryDistribution: categoryDistribution,
+          distributionInterval: distributionInterval
+        }
+      };
+
+      await setDoc(doc(window.firebaseDB, 'users', currentUser.uid), userData);
+      
+      lastSyncTime = new Date().toLocaleString('az-AZ');
+      showUserInfo();
+      
+      if (syncStatus) syncStatus.textContent = 'Uğurla yadda saxlandı!';
+      setTimeout(() => {
+        if (syncStatus) syncStatus.textContent = '';
+      }, 2000);
+      
+      console.log('Məlumat buluda yadda saxlandı');
+    } catch (error) {
+      console.error('Yadda saxlama xətası:', error);
+      alert('Yadda saxlama zamanı xəta baş verdi: ' + error.message);
+      if (syncStatus) syncStatus.textContent = 'Xəta baş verdi!';
+    } finally {
+      isSyncing = false;
+    }
+  }
+
+  // Məlumatı buluddan yüklə
+  async function loadUserDataFromCloud() {
+    if (!currentUser || !window.firebaseDB) {
+      alert('Zəhmət olmasa əvvəlcə daxil olun.');
+      return;
+    }
+
+    if (isSyncing) {
+      alert('Sinxronlaşma davam edir, zəhmət olmasa gözləyin.');
+      return;
+    }
+
+    isSyncing = true;
+    const syncStatus = document.getElementById('syncStatus');
+    if (syncStatus) syncStatus.textContent = 'Buluddan yüklənilir...';
+
+    try {
+      const docRef = doc(window.firebaseDB, 'users', currentUser.uid);
+      const docSnap = await getDoc(docRef);
+
+      if (docSnap.exists()) {
+        const userData = docSnap.data();
+        
+        // Məlumatları yüklə
+        selectedAnswers = userData.selectedAnswers || {};
+        wrongQuestions = userData.wrongQuestions || [];
+        flaggedQuestions = userData.flaggedQuestions || [];
+        questionNotes = userData.questionNotes || {};
+        questionWrongCount = userData.questionWrongCount || {};
+        
+        // Tənzimləmələri yüklə
+        if (userData.settings) {
+          questionsPerPage = userData.settings.questionsPerPage || 10;
+          questionRange = userData.settings.questionRange || "";
+          orderMode = userData.settings.orderMode || "ARDICIL";
+          adaptiveMode = userData.settings.adaptiveMode || false;
+          flashcardMode = userData.settings.flashcardMode || false;
+          categoryDistribution = userData.settings.categoryDistribution || {};
+          distributionInterval = userData.settings.distributionInterval || 10;
+        }
+
+        // localStorage-ə yadda saxla
+        autoSave();
+        
+        // UI-ni yenilə
+        if (currentCategory) {
+          renderQuiz();
+          updateWrongQuestionsList();
+          updateFlaggedQuestionsList();
+          updateRepeatedMistakesList();
+          updateProgressInfo();
+          updatePageNavigation();
+        }
+
+        lastSyncTime = new Date().toLocaleString('az-AZ');
+        showUserInfo();
+        
+        if (syncStatus) syncStatus.textContent = 'Məlumat yükləndi!';
+        setTimeout(() => {
+          if (syncStatus) syncStatus.textContent = '';
+        }, 2000);
+        
+        console.log('Məlumat buluddan yükləndi');
+        alert('Məlumatlar uğurla yükləndi!');
+      } else {
+        alert('Bu hesab üçün heç bir məlumat tapılmadı.');
+        if (syncStatus) syncStatus.textContent = 'Məlumat tapılmadı';
+      }
+    } catch (error) {
+      console.error('Yükləmə xətası:', error);
+      alert('Yükləmə zamanı xəta baş verdi: ' + error.message);
+      if (syncStatus) syncStatus.textContent = 'Xəta baş verdi!';
+    } finally {
+      isSyncing = false;
+    }
+  }
+
+  // İstifadəçi giriş vəziyyətini izlə
+  function initializeAuth() {
+    if (!window.firebaseAuth) return;
+
+    onAuthStateChanged(window.firebaseAuth, (user) => {
+      if (user) {
+        currentUser = user;
+        showUserInfo();
+        console.log('İstifadəçi daxil oldu:', user.email);
+      } else {
+        currentUser = null;
+        hideUserInfo();
+        console.log('İstifadəçi çıxış etdi');
+      }
+    });
+  }
+
+  // Bütün kateqoriyaları yükləyən funksiya
+  async function loadAllCategories() {
+    const categories = [
+      { name: 'Farmakologiya', file: 'farm.json', icon: 'fa-flask' },
+      { name: 'PATFİZ', file: 'patfiz.json', icon: 'fa-heartbeat' },
+      { name: 'PATFIZ2', file: 'patfiz2.json', icon: 'fa-brain' },
+      { name: 'PATAN1', file: 'patan1a.json', icon: 'fa-dna' },
+      { name: 'PATAN2', file: 'patan2a.json', icon: 'fa-virus' },
+      { name: 'DYES', file: 'patandyes.json', icon: 'fa-bacteria' }
+    ];
+
+    allCategoriesData = {};
+    let totalQuestions = 0;
+
+    for (let category of categories) {
+      try {
+        const response = await fetch(category.file);
+        if (response.ok) {
+          const data = await response.json();
+          allCategoriesData[category.name] = {
+            questions: data.map(q => shuffleAnswers(q)),
+            icon: category.icon,
+            count: data.length
+          };
+          totalQuestions += data.length;
+        }
+      } catch (error) {
+        console.error(`${category.name} yüklənmədi:`, error);
+      }
+    }
+
+    // Default bölgü yarat (bərabər bölgü)
+    const categoryNames = Object.keys(allCategoriesData);
+    const defaultShare = Math.floor(100 / categoryNames.length);
+    
+    categoryDistribution = {};
+    categoryNames.forEach((name, index) => {
+      categoryDistribution[name] = index === categoryNames.length - 1 ? 
+        (100 - (defaultShare * (categoryNames.length - 1))) : defaultShare;
+    });
+
+    console.log('Bütün kateqoriyalar yükləndi:', allCategoriesData);
+    console.log('Default bölgü:', categoryDistribution);
+    
+    return totalQuestions;
+  }
+  </script>
+  <button id="darkModeToggle" style="position:fixed;top:18px;left:18px;z-index:1001;padding:12px 20px;border-radius:12px;background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);color:#fff;font-size:1.1em;cursor:pointer;border:none;box-shadow:0 4px 16px rgba(102,126,234,0.3);transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);font-family:'Inter',sans-serif;font-weight:600;display:flex;align-items:center;gap:8px;">
+    <i class="fa fa-moon"></i>
+    <span>Qaranlıq rejim</span>
+  </button>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const darkBtn = document.getElementById('darkModeToggle');
+  const darkIcon = darkBtn.querySelector('i');
+  const darkText = darkBtn.querySelector('span');
+  
+  // Yadda saxlanılan rejimi yüklə
+  if (safeGetItem('darkMode') === 'on') {
+    document.body.classList.add('dark-mode');
+    updateDarkModeUI(true);
+  }
+  
+  if (darkBtn) {
+    darkBtn.addEventListener('click', function() {
+      const isDark = document.body.classList.toggle('dark-mode');
+      updateDarkModeUI(isDark);
+      
+      // Yadda saxla
+      if (isDark) {
+        safeSetItem('darkMode', 'on');
+      } else {
+        safeSetItem('darkMode', 'off');
+      }
+    });
+  }
+  
+  function updateDarkModeUI(isDark) {
+    if (isDark) {
+      darkIcon.className = 'fa fa-sun';
+      darkText.textContent = 'İşıqlı rejim';
+      darkBtn.style.background = 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)';
+      darkBtn.style.color = '#1e293b';
+    } else {
+      darkIcon.className = 'fa fa-moon';
+      darkText.textContent = 'Qaranlıq rejim';
+      darkBtn.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+      darkBtn.style.color = '#fff';
+    }
+  }
+  
+  // Keyboard shortcut for search (Ctrl+F)
+  document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && e.key === 'f') {
+      e.preventDefault();
+      const searchInput = document.getElementById('searchInput');
+      const searchContainer = document.getElementById('searchContainer');
+      if (searchContainer && searchContainer.style.display !== 'none') {
+        searchInput.focus();
+      }
+    }
+  });
+});
+</script>
+  <div id="loadingSpinner" style="display:none;text-align:center;">
+    <i class="fa fa-spinner fa-spin fa-2x"></i>
+  </div>
+</body>
+</html>
