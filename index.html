@@ -4289,5 +4289,28 @@ document.addEventListener('DOMContentLoaded', function() {
     hideFixedPWAInstallBtn();
   });
   </script>
+
+  <script>
+  function checkTotal() {
+    const inputs = document.querySelectorAll('.category-percent');
+    let total = 0;
+    inputs.forEach(input => {
+      total += Number(input.value);
+    });
+    if (total !== 100) {
+      document.getElementById('warning').innerText = 'Cəmi 100 olmalıdır!';
+      // Submit-i blokla
+      document.getElementById('submitBtn').disabled = true;
+    } else {
+      document.getElementById('warning').innerText = '';
+      document.getElementById('submitBtn').disabled = false;
+    }
+  }
+
+  // Hər input dəyişəndə yoxla
+  document.querySelectorAll('.category-percent').forEach(input => {
+    input.addEventListener('input', checkTotal);
+  });
+  </script>
 </body>
 </html>
