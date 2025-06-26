@@ -2,7 +2,7 @@
   "name": "REZİDENTURA Quiz App",
   "short_name": "Quiz App",
   "description": "Tibb rezidenturası üçün interaktiv quiz tətbiqi",
-  "start_url": ".",
+  "start_url": "./index.html",
 
   "display": "standalone",
   "background_color": "#e0e7ff",
