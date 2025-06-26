@@ -40,6 +40,12 @@
     window.firebaseAuth = auth;
     window.firebaseDB = db;
     window.firebaseProvider = provider;
+    window.signInWithPopup = signInWithPopup;
+    window.onAuthStateChanged = onAuthStateChanged;
+    window.signOut = signOut;
+    window.setDoc = setDoc;
+    window.getDoc = getDoc;
+    window.doc = doc;
   </script>
   
   <style>
@@ -3674,7 +3680,7 @@ function renderQuizWrongOnly() {
       return;
     }
 
-    signInWithPopup(window.firebaseAuth, window.firebaseProvider)
+    window.signInWithPopup(window.firebaseAuth, window.firebaseProvider)
       .then((result) => {
         currentUser = result.user;
         showUserInfo();
@@ -3690,7 +3696,7 @@ function renderQuizWrongOnly() {
   function signOutUser() {
     if (!window.firebaseAuth) return;
 
-    signOut(window.firebaseAuth)
+    window.signOut(window.firebaseAuth)
       .then(() => {
         currentUser = null;
         hideUserInfo();
@@ -3703,6 +3709,8 @@ function renderQuizWrongOnly() {
 
   function showUserInfo() {
     const userInfoDiv = document.getElementById('userInfo');
+    const loginPrompt = document.getElementById('loginPrompt');
+    
     if (userInfoDiv && currentUser) {
       userInfoDiv.innerHTML = `
         <div style="display:flex; align-items:center; gap:10px; padding:10px; background:linear-gradient(135deg, #10b981 0%, #059669 100%); color:#fff; border-radius:8px; margin-bottom:10px;">
@@ -3721,14 +3729,22 @@ function renderQuizWrongOnly() {
         ${lastSyncTime ? `<div style="font-size:0.8em; color:#666; text-align:center;">Son sinxronlaşma: ${lastSyncTime}</div>` : ''}
       `;
       userInfoDiv.style.display = 'block';
+      
+      // Login prompt-u gizlət
+      if (loginPrompt) loginPrompt.style.display = 'none';
     }
   }
 
   function hideUserInfo() {
     const userInfoDiv = document.getElementById('userInfo');
+    const loginPrompt = document.getElementById('loginPrompt');
+    
     if (userInfoDiv) {
       userInfoDiv.style.display = 'none';
     }
+    
+    // Login prompt-u göstər
+    if (loginPrompt) loginPrompt.style.display = 'block';
   }
 
   // Məlumatı buluda yadda saxla
@@ -3769,7 +3785,7 @@ function renderQuizWrongOnly() {
         }
       };
 
-      await setDoc(doc(window.firebaseDB, 'users', currentUser.uid), userData);
+      await window.setDoc(window.doc(window.firebaseDB, 'users', currentUser.uid), userData);
       
       lastSyncTime = new Date().toLocaleString('az-AZ');
       showUserInfo();
@@ -3806,8 +3822,8 @@ function renderQuizWrongOnly() {
     if (syncStatus) syncStatus.textContent = 'Buluddan yüklənilir...';
 
     try {
-      const docRef = doc(window.firebaseDB, 'users', currentUser.uid);
-      const docSnap = await getDoc(docRef);
+      const docRef = window.doc(window.firebaseDB, 'users', currentUser.uid);
+      const docSnap = await window.getDoc(docRef);
 
       if (docSnap.exists()) {
         const userData = docSnap.data();
@@ -3870,7 +3886,7 @@ function renderQuizWrongOnly() {
   function initializeAuth() {
     if (!window.firebaseAuth) return;
 
-    onAuthStateChanged(window.firebaseAuth, (user) => {
+    window.onAuthStateChanged(window.firebaseAuth, (user) => {
       if (user) {
         currentUser = user;
         showUserInfo();
