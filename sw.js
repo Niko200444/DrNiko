@@ -1,33 +1,34 @@
 const CACHE_NAME = 'quiz-app-v1.0.1';
+const BASE_PATH = '/DrNiko/'; // saytınızın kök yolu
 const urlsToCache = [
-  './',
-  './index1.html',
-  './manifest.json',
-  './icon-16x16.png',
-  './icon-32x32.png',
-  './icon-72x72.png',
-  './icon-96x96.png',
-  './icon-128x128.png',
-  './icon-144x144.png',
-  './icon-152x152.png',
-  './icon-192x192.png',
-  './icon-384x384.png',
-  './icon-512x512.png',
-  './favicon.ico',
-  './farm.json',
-  './patfiz2.json',
-  './mama.json',
-  './aile.json',
-  './ofto1.json',
-  './patan1a.json',
-  './patan2a.json',
-  './patandyes.json',
-  './patandyes1.json',
-  './patfiz.json',
-  './psixbaza.json',
-  './Psixiatriya2.json',
-  './AETS.json',
-  './5.2.json'
+  BASE_PATH,
+  BASE_PATH + 'index.html',
+  BASE_PATH + 'manifest.json',
+  BASE_PATH + 'icon-16x16.png',
+  BASE_PATH + 'icon-32x32.png',
+  BASE_PATH + 'icon-72x72.png',
+  BASE_PATH + 'icon-96x96.png',
+  BASE_PATH + 'icon-128x128.png',
+  BASE_PATH + 'icon-144x144.png',
+  BASE_PATH + 'icon-152x152.png',
+  BASE_PATH + 'icon-192x192.png',
+  BASE_PATH + 'icon-384x384.png',
+  BASE_PATH + 'icon-512x512.png',
+  BASE_PATH + 'favicon.ico',
+  BASE_PATH + 'farm.json',
+  BASE_PATH + 'patfiz2.json',
+  BASE_PATH + 'mama.json',
+  BASE_PATH + 'aile.json',
+  BASE_PATH + 'ofto1.json',
+  BASE_PATH + 'patan1a.json',
+  BASE_PATH + 'patan2a.json',
+  BASE_PATH + 'patandyes.json',
+  BASE_PATH + 'patandyes1.json',
+  BASE_PATH + 'patfiz.json',
+  BASE_PATH + 'psixbaza.json',
+  BASE_PATH + 'Psixiatriya2.json',
+  BASE_PATH + 'AETS.json',
+  BASE_PATH + '5.2.json'
 ];
 
 // Service Worker quraşdırılması
@@ -35,11 +36,15 @@ self.addEventListener('install', (event) => {
   console.log('🚀 Service Worker quraşdırılır...');
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then((cache) => {
+      .then(async (cache) => {
         console.log('✅ Cache açıldı');
-        return cache.addAll(urlsToCache);
-      })
-      .then(() => {
+        for (const url of urlsToCache) {
+          try {
+            await cache.add(url);
+          } catch (e) {
+            console.warn('Cache-lənmədi:', url, e);
+          }
+        }
         console.log('✅ Bütün fayllar cache-də saxlanıldı');
         return self.skipWaiting();
       })
@@ -106,7 +111,7 @@ self.addEventListener('fetch', (event) => {
           .catch(() => {
             // Şəbəkə xətası zamanı offline səhifə göstər
             if (event.request.destination === 'document') {
-              return caches.match('./index1.html');
+              return caches.match('./index.html');
             }
           });
       })
