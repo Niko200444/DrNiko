@@ -1,155 +1,130 @@
-// Service Worker for Quiz App PWA
-const CACHE_NAME = 'quiz-app-v1.0';
-const STATIC_CACHE = 'quiz-static-v1.0';
-const DYNAMIC_CACHE = 'quiz-dynamic-v1.0';
-
-// Cache files to be cached immediately
-const STATIC_FILES = [
-  '/',
-  '/index.html',
-  '/farm.json',
-  '/patfiz.json',
-  '/patfiz2.json',
-  '/patan1a.json',
-  '/patan2a.json',
-  '/patandyes.json',
-  'https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap',
-  'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap',
-  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
+const CACHE_NAME = 'quiz-app-v1.0.0';
+const urlsToCache = [
+  './',
+  './index1.html',
+  './manifest.json',
+  './icon-16x16.png',
+  './icon-32x32.png',
+  './icon-72x72.png',
+  './icon-96x96.png',
+  './icon-128x128.png',
+  './icon-144x144.png',
+  './icon-152x152.png',
+  './icon-192x192.png',
+  './icon-384x384.png',
+  './icon-512x512.png',
+  './favicon.ico',
+  './farm.json',
+  './patfiz2.json',
+  './mama.json',
+  './aile.json',
+  './ofto1.json',
+  './patan1a.json',
+  './patan2a.json',
+  './patandyes.json',
+  './patandyes1.json',
+  './patfiz.json',
+  './psixbaza.json',
+  './Psixiatriya2.json',
+  './AETS.json',
+  './5.2.json'
 ];
 
-// Install event - cache static files
-self.addEventListener('install', event => {
-  console.log('Service Worker installing...');
+// Service Worker quraşdırılması
+self.addEventListener('install', (event) => {
+  console.log('🚀 Service Worker quraşdırılır...');
   event.waitUntil(
-    caches.open(STATIC_CACHE)
-      .then(cache => {
-        console.log('Caching static files...');
-        return cache.addAll(STATIC_FILES);
+    caches.open(CACHE_NAME)
+      .then((cache) => {
+        console.log('✅ Cache açıldı');
+        return cache.addAll(urlsToCache);
       })
       .then(() => {
-        console.log('Static files cached successfully');
+        console.log('✅ Bütün fayllar cache-də saxlanıldı');
         return self.skipWaiting();
       })
-      .catch(error => {
-        console.error('Cache installation failed:', error);
+      .catch((error) => {
+        console.error('❌ Cache xətası:', error);
       })
   );
 });
 
-// Activate event - clean up old caches
-self.addEventListener('activate', event => {
-  console.log('Service Worker activating...');
+// Service Worker aktivləşməsi
+self.addEventListener('activate', (event) => {
+  console.log('🔄 Service Worker aktivləşdirilir...');
   event.waitUntil(
-    caches.keys()
-      .then(cacheNames => {
-        return Promise.all(
-          cacheNames.map(cacheName => {
-            if (cacheName !== STATIC_CACHE && cacheName !== DYNAMIC_CACHE) {
-              console.log('Deleting old cache:', cacheName);
-              return caches.delete(cacheName);
+    caches.keys().then((cacheNames) => {
+      return Promise.all(
+        cacheNames.map((cacheName) => {
+          if (cacheName !== CACHE_NAME) {
+            console.log('🗑️ Köhnə cache silinir:', cacheName);
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    }).then(() => {
+      console.log('✅ Service Worker aktivləşdirildi');
+      return self.clients.claim();
+    })
+  );
+});
+
+// Fetch hadisəsi - offline dəstəyi
+self.addEventListener('fetch', (event) => {
+  event.respondWith(
+    caches.match(event.request)
+      .then((response) => {
+        // Cache-də varsa onu qaytar
+        if (response) {
+          console.log('📦 Cache-dən yüklənir:', event.request.url);
+          return response;
+        }
+
+        // Cache-də yoxdursa şəbəkədən yüklə
+        console.log('🌐 Şəbəkədən yüklənir:', event.request.url);
+        return fetch(event.request)
+          .then((response) => {
+            // Yalnız uğurlu cavabları cache et
+            if (!response || response.status !== 200 || response.type !== 'basic') {
+              return response;
             }
+
+            // Response-nu clone et (bir dəfə istifadə olunur)
+            const responseToCache = response.clone();
+
+            caches.open(CACHE_NAME)
+              .then((cache) => {
+                cache.put(event.request, responseToCache);
+                console.log('💾 Cache-ə əlavə edildi:', event.request.url);
+              });
+
+            return response;
           })
-        );
-      })
-      .then(() => {
-        console.log('Service Worker activated');
-        return self.clients.claim();
+          .catch(() => {
+            // Şəbəkə xətası zamanı offline səhifə göstər
+            if (event.request.destination === 'document') {
+              return caches.match('./index1.html');
+            }
+          });
       })
   );
 });
 
-// Fetch event - serve from cache, fallback to network
-self.addEventListener('fetch', event => {
-  const { request } = event;
-  const url = new URL(request.url);
-
-  // Skip non-GET requests
-  if (request.method !== 'GET') {
-    return;
-  }
-
-  // Handle different types of requests
-  if (url.pathname.endsWith('.json')) {
-    // JSON files - cache first, then network
-    event.respondWith(
-      caches.open(DYNAMIC_CACHE)
-        .then(cache => {
-          return cache.match(request)
-            .then(response => {
-              if (response) {
-                // Return cached version and update in background
-                fetch(request)
-                  .then(fetchResponse => {
-                    cache.put(request, fetchResponse.clone());
-                  })
-                  .catch(() => {
-                    console.log('Background update failed for:', request.url);
-                  });
-                return response;
-              }
-              // Not in cache, fetch from network
-              return fetch(request)
-                .then(fetchResponse => {
-                  cache.put(request, fetchResponse.clone());
-                  return fetchResponse;
-                })
-                .catch(error => {
-                  console.log('Network fetch failed for:', request.url, error);
-                  // Return offline fallback if available
-                  return new Response(JSON.stringify({ error: 'Offline mode' }), {
-                    headers: { 'Content-Type': 'application/json' }
-                  });
-                });
-            });
-        })
-    );
-  } else if (url.pathname === '/' || url.pathname.endsWith('.html')) {
-    // HTML files - network first, fallback to cache
-    event.respondWith(
-      fetch(request)
-        .then(response => {
-          // Cache the response
-          const responseClone = response.clone();
-          caches.open(STATIC_CACHE)
-            .then(cache => cache.put(request, responseClone));
-          return response;
-        })
-        .catch(() => {
-          // Fallback to cache
-          return caches.match(request);
-        })
-    );
-  } else {
-    // Other files - cache first, then network
-    event.respondWith(
-      caches.match(request)
-        .then(response => {
-          return response || fetch(request);
-        })
-    );
-  }
-});
-
-// Background sync for data synchronization
-self.addEventListener('sync', event => {
+// Background sync (gələcək üçün)
+self.addEventListener('sync', (event) => {
   if (event.tag === 'background-sync') {
-    console.log('Background sync triggered');
-    event.waitUntil(
-      // Sync data when online
-      syncData()
-    );
+    console.log('🔄 Background sync başladıldı');
+    event.waitUntil(doBackgroundSync());
   }
 });
 
-// Push notification handling
-self.addEventListener('push', event => {
-  console.log('Push notification received');
-  
+// Push bildirişləri (gələcək üçün)
+self.addEventListener('push', (event) => {
+  console.log('🔔 Push bildirişi alındı');
   const options = {
-    body: event.data ? event.data.text() : 'Yeni məlumat mövcuddur!',
-    icon: '/icon-192x192.png',
-    badge: '/badge-72x72.png',
+    body: event.data ? event.data.text() : 'Yeni sual əlavə edildi!',
+    icon: './icon-192x192.png',
+    badge: './icon-72x72.png',
     vibrate: [100, 50, 100],
     data: {
       dateOfArrival: Date.now(),
@@ -159,71 +134,40 @@ self.addEventListener('push', event => {
       {
         action: 'explore',
         title: 'Aç',
-        icon: '/icon-192x192.png'
+        icon: './icon-72x72.png'
       },
       {
         action: 'close',
         title: 'Bağla',
-        icon: '/icon-192x192.png'
+        icon: './icon-72x72.png'
       }
     ]
   };
 
   event.waitUntil(
-    self.registration.showNotification('Quiz App', options)
+    self.registration.showNotification('REZİDENTURA Quiz', options)
   );
 });
 
-// Notification click handling
-self.addEventListener('notificationclick', event => {
-  console.log('Notification clicked');
-  
+// Background sync funksiyası
+async function doBackgroundSync() {
+  try {
+    console.log('🔄 Məlumatlar sinxronlaşdırılır...');
+    // Burada Firebase sinxronlaşması əlavə edilə bilər
+    return Promise.resolve();
+  } catch (error) {
+    console.error('❌ Background sync xətası:', error);
+    return Promise.reject(error);
+  }
+}
+
+// Notification klik hadisəsi
+self.addEventListener('notificationclick', (event) => {
   event.notification.close();
 
   if (event.action === 'explore') {
     event.waitUntil(
-      clients.openWindow('/')
+      clients.openWindow('./')
     );
-  }
-});
-
-// Data synchronization function
-async function syncData() {
-  try {
-    // Get all clients
-    const clients = await self.clients.matchAll();
-    
-    // Send sync message to all clients
-    clients.forEach(client => {
-      client.postMessage({
-        type: 'SYNC_DATA',
-        timestamp: Date.now()
-      });
-    });
-    
-    console.log('Background sync completed');
-  } catch (error) {
-    console.error('Background sync failed:', error);
-  }
-}
-
-// Message handling from main thread
-self.addEventListener('message', event => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    self.skipWaiting();
-  }
-  
-  if (event.data && event.data.type === 'CACHE_QUIZ_DATA') {
-    // Cache quiz data
-    caches.open(DYNAMIC_CACHE)
-      .then(cache => {
-        return cache.put('/quiz-data', new Response(JSON.stringify(event.data.data)));
-      })
-      .then(() => {
-        console.log('Quiz data cached successfully');
-      })
-      .catch(error => {
-        console.error('Failed to cache quiz data:', error);
-      });
   }
 }); 
