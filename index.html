@@ -4,8 +4,30 @@
   <meta charset="UTF-8">
   <title>REZİDENTURA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Əlyazma şrift üçün Google Fonts əlavə et -->
   
+  <!-- PWA Meta Tags -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Quiz App">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json">
+  
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" href="/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="/icon-152x152.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/icon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icon-16x16.png">
+  
+  <!-- Əlyazma şrift üçün Google Fonts əlavə et -->
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -158,47 +180,76 @@
     
     function initIndexedDB() {
       return new Promise((resolve, reject) => {
-        const request = indexedDB.open(dbName, dbVersion);
+        // Check if IndexedDB is supported
+        if (!window.indexedDB) {
+          console.log('IndexedDB dəstəklənmir');
+          resolve(null);
+          return;
+        }
         
-        request.onerror = () => reject(request.error);
-        request.onsuccess = () => {
-          indexedDB = request.result;
-          resolve(indexedDB);
-        };
-        
-        request.onupgradeneeded = (event) => {
-          const db = event.target.result;
-          if (!db.objectStoreNames.contains('backups')) {
-            db.createObjectStore('backups', { keyPath: 'key' });
-          }
-        };
+        try {
+          const request = window.indexedDB.open(dbName, dbVersion);
+          
+          request.onerror = () => {
+            console.error('IndexedDB xətası:', request.error);
+            resolve(null);
+          };
+          
+          request.onsuccess = () => {
+            indexedDB = request.result;
+            console.log('IndexedDB uğurla açıldı');
+            resolve(indexedDB);
+          };
+          
+          request.onupgradeneeded = (event) => {
+            const db = event.target.result;
+            if (!db.objectStoreNames.contains('backups')) {
+              db.createObjectStore('backups', { keyPath: 'key' });
+            }
+          };
+        } catch (error) {
+          console.error('IndexedDB başlatma xətası:', error);
+          resolve(null);
+        }
       });
     }
     
     function saveToIndexedDB(key, value) {
       if (!indexedDB) {
-        initIndexedDB().then(() => saveToIndexedDB(key, value));
+        console.log('IndexedDB mövcud deyil, localStorage istifadə edilir');
         return;
       }
       
-      const transaction = indexedDB.transaction(['backups'], 'readwrite');
-      const store = transaction.objectStore('backups');
-      store.put({ key, value, timestamp: Date.now() });
+      try {
+        const transaction = indexedDB.transaction(['backups'], 'readwrite');
+        const store = transaction.objectStore('backups');
+        store.put({ key, value, timestamp: Date.now() });
+      } catch (error) {
+        console.error('IndexedDB yazma xətası:', error);
+      }
     }
     
     function getFromIndexedDB(key) {
       return new Promise((resolve, reject) => {
         if (!indexedDB) {
-          initIndexedDB().then(() => getFromIndexedDB(key).then(resolve).catch(reject));
+          resolve(null);
           return;
         }
         
-        const transaction = indexedDB.transaction(['backups'], 'readonly');
-        const store = transaction.objectStore('backups');
-        const request = store.get(key);
-        
-        request.onsuccess = () => resolve(request.result ? request.result.value : null);
-        request.onerror = () => reject(request.error);
+        try {
+          const transaction = indexedDB.transaction(['backups'], 'readonly');
+          const store = transaction.objectStore('backups');
+          const request = store.get(key);
+          
+          request.onsuccess = () => resolve(request.result ? request.result.value : null);
+          request.onerror = () => {
+            console.error('IndexedDB oxuma xətası:', request.error);
+            resolve(null);
+          };
+        } catch (error) {
+          console.error('IndexedDB oxuma xətası:', error);
+          resolve(null);
+        }
       });
     }
     
@@ -4442,70 +4493,189 @@ function renderQuizWrongOnly() {
     // Səhifə tərk ediləndə backup yarat
     window.addEventListener('beforeunload', createBackup);
   }
+
+  // PWA Installation Prompt
+  let deferredPrompt = null; // GLOBAL
+  function initializePWAInstall() {
+    // Debug PWA status
+    console.log('🔍 PWA Status Check:');
+    console.log('- Service Worker supported:', 'serviceWorker' in navigator);
+    console.log('- Manifest loaded:', !!document.querySelector('link[rel="manifest"]'));
+    console.log('- HTTPS/Localhost:', window.location.protocol === 'https:' || window.location.hostname === 'localhost');
+    console.log('- Current URL:', window.location.href);
+    
+    // Check manifest
+    const manifestLink = document.querySelector('link[rel="manifest"]');
+    if (manifestLink) {
+      console.log('- Manifest URL:', manifestLink.href);
+    }
+    
+    // Check if PWA is installable
+    if ('serviceWorker' in navigator && document.querySelector('link[rel="manifest"]')) {
+      console.log('✅ PWA tələbləri ödənilib');
+    } else {
+      console.log('❌ PWA tələbləri ödənməyib');
+    }
+    
+    window.addEventListener('beforeinstallprompt', (e) => {
+      console.log('🚀 Install prompt triggered!');
+      // Prevent the mini-infobar from appearing on mobile
+      e.preventDefault();
+      // Stash the event so it can be triggered later
+      deferredPrompt = e;
+      
+      // Show install button
+      showInstallButton();
+    });
+    
+    window.addEventListener('appinstalled', () => {
+      console.log('PWA was installed');
+      hideInstallButton();
+      showNotification('✅ Quiz App uğurla quraşdırıldı!', 'success');
+    });
+    
+    // Check if app is already installed
+    if (window.matchMedia('(display-mode: standalone)').matches) {
+      console.log('App already installed');
+    }
+    
+    // Force check after a delay
+    setTimeout(() => {
+      console.log('🔍 Delayed PWA check...');
+      if (deferredPrompt) {
+        console.log('✅ Install prompt is ready');
+        showInstallButton();
+      } else {
+        console.log('❌ Install prompt not ready');
+      }
+    }, 2000);
+  }
+
+  // Show install button
+  function showInstallButton() {
+    const installBtn = document.getElementById('installBtn');
+    if (installBtn) {
+      installBtn.style.display = 'flex';
+      console.log('✅ Install button shown');
+    }
+  }
+
+  // Hide install button
+  function hideInstallButton() {
+    const installBtn = document.getElementById('installBtn');
+    if (installBtn) {
+      installBtn.style.display = 'none';
+    }
+  }
+
+  // Manual PWA status check (console-dan çağırmaq üçün)
+  window.checkPWAStatus = function() {
+    console.log('🔍 Manual PWA Status Check:');
+    console.log('1. Service Worker supported:', 'serviceWorker' in navigator);
+    console.log('2. Manifest loaded:', !!document.querySelector('link[rel="manifest"]'));
+    console.log('3. HTTPS/Localhost:', window.location.protocol === 'https:' || window.location.hostname === 'localhost');
+    console.log('4. Current URL:', window.location.href);
+    
+    // Check manifest
+    const manifestLink = document.querySelector('link[rel="manifest"]');
+    if (manifestLink) {
+      console.log('5. Manifest URL:', manifestLink.href);
+      // Test manifest loading
+      fetch(manifestLink.href)
+        .then(response => {
+          console.log('6. Manifest response:', response.status, response.ok);
+          return response.json();
+        })
+        .then(data => {
+          console.log('7. Manifest data:', data);
+          console.log('8. Manifest name:', data.name);
+          console.log('9. Manifest icons:', data.icons ? data.icons.length : 0);
+        })
+        .catch(error => {
+          console.error('10. Manifest error:', error);
+        });
+    }
+    
+    // Check service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations()
+        .then(registrations => {
+          console.log('11. Service Worker registrations:', registrations.length);
+          registrations.forEach((reg, index) => {
+            console.log(`   SW ${index}:`, reg.active ? 'Active' : 'Inactive');
+          });
+        });
+    }
+    
+    // Check if app is already installed
+    console.log('12. Display mode:', window.matchMedia('(display-mode: standalone)').matches ? 'Standalone' : 'Browser');
+    
+    // Check install button
+    const installBtn = document.getElementById('installBtn');
+    console.log('13. Install button exists:', !!installBtn);
+    console.log('14. Install button display:', installBtn ? installBtn.style.display : 'N/A');
+    
+    return 'PWA status check completed. Check console for details.';
+  };
+  
+  // Force show install button (test üçün)
+  window.showInstallButton = function() {
+    const installBtn = document.getElementById('installBtn');
+    if (installBtn) {
+      installBtn.style.display = 'flex';
+      console.log('✅ Install button shown manually');
+    } else {
+      console.log('❌ Install button not found');
+    }
+  };
+
+  // Service Worker Registration
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then((registration) => {
+          console.log('✅ Service Worker registered successfully:', registration);
+        })
+        .catch((error) => {
+          console.error('❌ Service Worker registration failed:', error);
+        });
+    });
+  }
+
+  // Initialize PWA when page loads
+  window.addEventListener('load', () => {
+    initializePWAInstall();
+  });
+
+  // Install button click handler
+  document.addEventListener('DOMContentLoaded', () => {
+    const installBtn = document.getElementById('installBtn');
+    if (installBtn) {
+      installBtn.addEventListener('click', async () => {
+        console.log('Install button clicked');
+        if (deferredPrompt) {
+          deferredPrompt.prompt();
+          const { outcome } = await deferredPrompt.userChoice;
+          console.log('User response to the install prompt:', outcome);
+          deferredPrompt = null;
+          hideInstallButton();
+        } else {
+          console.log('No install prompt available');
+        }
+      });
+    }
+  });
   </script>
   <button id="darkModeToggle" style="position:fixed;top:18px;left:18px;z-index:1001;padding:12px 20px;border-radius:12px;background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);color:#fff;font-size:1.1em;cursor:pointer;border:none;box-shadow:0 4px 16px rgba(102,126,234,0.3);transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);font-family:'Inter',sans-serif;font-weight:600;display:flex;align-items:center;gap:8px;">
     <i class="fa fa-moon"></i>
     <span>Qaranlıq rejim</span>
   </button>
-  <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const darkBtn = document.getElementById('darkModeToggle');
-  const darkIcon = darkBtn.querySelector('i');
-  const darkText = darkBtn.querySelector('span');
   
-  // Yadda saxlanılan rejimi yüklə
-  if (safeGetItem('darkMode') === 'on') {
-    document.body.classList.add('dark-mode');
-    updateDarkModeUI(true);
-  }
-  
-  if (darkBtn) {
-    darkBtn.addEventListener('click', function() {
-      const isDark = document.body.classList.toggle('dark-mode');
-      updateDarkModeUI(isDark);
-      
-      // Yadda saxla
-      if (isDark) {
-        safeSetItem('darkMode', 'on');
-      } else {
-        safeSetItem('darkMode', 'off');
-      }
-    });
-  }
-  
-  function updateDarkModeUI(isDark) {
-    if (isDark) {
-      darkIcon.className = 'fa fa-sun';
-      darkText.textContent = 'İşıqlı rejim';
-      darkBtn.style.background = 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)';
-      darkBtn.style.color = '#1e293b';
-    } else {
-      darkIcon.className = 'fa fa-moon';
-      darkText.textContent = 'Qaranlıq rejim';
-      darkBtn.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
-      darkBtn.style.color = '#fff';
-    }
-  }
-  
-  // Keyboard shortcut for search (Ctrl+F)
-  document.addEventListener('keydown', function(e) {
-    if (e.ctrlKey && e.key === 'f') {
-      e.preventDefault();
-      const searchInput = document.getElementById('searchInput');
-      const searchContainer = document.getElementById('searchContainer');
-      if (searchContainer && searchContainer.style.display !== 'none') {
-        searchInput.focus();
-      }
-    }
-  });
-  
-  // Offline sistemini başlat
-  initializeOfflineSystem();
-  
-  // Firebase auth sistemini başlat
-  initializeAuth();
-});
-</script>
+  <!-- PWA Install Button -->
+  <button id="installBtn" style="position:fixed;top:18px;right:18px;z-index:1001;padding:12px 20px;border-radius:12px;background:linear-gradient(135deg, #10b981 0%, #059669 100%);color:#fff;font-size:1.1em;cursor:pointer;border:none;box-shadow:0 4px 16px rgba(16,185,129,0.3);transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);font-family:'Inter',sans-serif;font-weight:600;display:none;align-items:center;gap:8px;">
+    <i class="fa fa-download"></i>
+    <span>App Quraşdır</span>
+  </button>
   <div id="loadingSpinner" style="display:none;text-align:center;">
     <i class="fa fa-spinner fa-spin fa-2x"></i>
   </div>
