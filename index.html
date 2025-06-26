@@ -15,28 +15,44 @@
   <meta name="msapplication-tap-highlight" content="no">
   
   <!-- PWA Manifest -->
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="manifest.json">
   
   <!-- Apple Touch Icons -->
-  <link rel="apple-touch-icon" href="/icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/icon-192x192.png">
-  <link rel="apple-touch-icon" sizes="167x167" href="/icon-152x152.png">
+  <link rel="apple-touch-icon" href="icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="icon-128x128.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="icon-192x192.png">
+  <link rel="apple-touch-icon" sizes="384x384" href="icon-384x384.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="icon-512x512.png">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/icon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/icon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icon-32x32.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="icon-72x72.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="icon-128x128.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="icon-144x144.png">
+  <link rel="icon" type="image/png" sizes="152x152" href="icon-152x152.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="384x384" href="icon-384x384.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="icon-512x512.png">
   
   <!-- Əlyazma şrift üçün Google Fonts əlavə et -->
+  
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+
   
   <!-- Firebase SDK -->
   <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+    import { getAnalytics, isSupported } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
     import { getFirestore, doc, setDoc, getDoc, collection } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
     import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
@@ -53,7 +69,15 @@
 
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
+    
+    // Analytics-i yalnız dəstəklənərsə quraşdır
+    let analytics = null;
+    isSupported().then((supported) => {
+      if (supported) {
+        analytics = getAnalytics(app);
+      }
+    });
+    
     const db = getFirestore(app);
     const auth = getAuth(app);
     const provider = new GoogleAuthProvider();
@@ -68,293 +92,6 @@
     window.setDoc = setDoc;
     window.getDoc = getDoc;
     window.doc = doc;
-  </script>
-  
-  <!-- Hybrid Offline System -->
-  <script>
-    // Offline/Online status management
-    let isOnline = navigator.onLine;
-    let offlineData = {};
-    let autoSaveInterval;
-    let lastBackupTime = 0;
-    const BACKUP_INTERVAL = 30000; // 30 saniyə
-    
-    // Offline detection
-    window.addEventListener('online', function() {
-      isOnline = true;
-      updateOnlineStatus();
-      updateOfflineWarning();
-      console.log('İnternet bağlantısı bərpa olundu');
-      showNotification('🌐 İnternet bağlantısı bərpa olundu', 'success');
-      
-      // Online olduqda avtomatik backup yarat
-      if (Object.keys(offlineData).length > 0) {
-        createBackup();
-      }
-    });
-    
-    window.addEventListener('offline', function() {
-      isOnline = false;
-      updateOnlineStatus();
-      updateOfflineWarning();
-      console.log('İnternet bağlantısı kəsildi');
-      showNotification('📴 İnternet bağlantısı kəsildi - Offline rejim', 'warning');
-      
-      // Offline olduqda avtomatik backup yarat
-      createBackup();
-    });
-    
-    // Online status göstərmə
-    function updateOnlineStatus() {
-      const statusElement = document.getElementById('onlineStatus');
-      if (statusElement) {
-        if (isOnline) {
-          statusElement.innerHTML = '<i class="fa fa-wifi"></i> Online';
-          statusElement.className = 'online-status online';
-        } else {
-          statusElement.innerHTML = '<i class="fa fa-exclamation-triangle"></i> Offline';
-          statusElement.className = 'online-status offline';
-        }
-      }
-    }
-    
-    // Bildiriş göstərmə
-    function showNotification(message, type = 'info') {
-      const notification = document.createElement('div');
-      notification.className = `notification ${type}`;
-      notification.innerHTML = `
-        <div class="notification-content">
-          <span>${message}</span>
-          <button onclick="this.parentElement.parentElement.remove()">×</button>
-        </div>
-      `;
-      
-      document.body.appendChild(notification);
-      
-      // 5 saniyə sonra avtomatik sil
-      setTimeout(() => {
-        if (notification.parentElement) {
-          notification.remove();
-        }
-      }, 5000);
-    }
-    
-    // Təhlükəsiz localStorage funksiyaları
-    function safeSetItem(key, value) {
-      try {
-        localStorage.setItem(key, JSON.stringify(value));
-        sessionStorage.setItem(key, JSON.stringify(value));
-        return true;
-      } catch (error) {
-        console.error('localStorage xətası:', error);
-        // IndexedDB fallback
-        saveToIndexedDB(key, value);
-        return false;
-      }
-    }
-    
-    function safeGetItem(key) {
-      try {
-        const value = localStorage.getItem(key);
-        if (value !== null) {
-          return JSON.parse(value);
-        }
-        
-        // localStorage boşdursa sessionStorage-dan yoxla
-        const sessionValue = sessionStorage.getItem(key);
-        if (sessionValue !== null) {
-          return JSON.parse(sessionValue);
-        }
-        
-        return null;
-      } catch (error) {
-        console.error('localStorage oxuma xətası:', error);
-        return null;
-      }
-    }
-    
-    // IndexedDB backup sistemi
-    let indexedDB;
-    const dbName = 'QuizAppDB';
-    const dbVersion = 1;
-    
-    function initIndexedDB() {
-      return new Promise((resolve, reject) => {
-        // Check if IndexedDB is supported
-        if (!window.indexedDB) {
-          console.log('IndexedDB dəstəklənmir');
-          resolve(null);
-          return;
-        }
-        
-        try {
-          const request = window.indexedDB.open(dbName, dbVersion);
-          
-          request.onerror = () => {
-            console.error('IndexedDB xətası:', request.error);
-            resolve(null);
-          };
-          
-          request.onsuccess = () => {
-            indexedDB = request.result;
-            console.log('IndexedDB uğurla açıldı');
-            resolve(indexedDB);
-          };
-          
-          request.onupgradeneeded = (event) => {
-            const db = event.target.result;
-            if (!db.objectStoreNames.contains('backups')) {
-              db.createObjectStore('backups', { keyPath: 'key' });
-            }
-          };
-        } catch (error) {
-          console.error('IndexedDB başlatma xətası:', error);
-          resolve(null);
-        }
-      });
-    }
-    
-    function saveToIndexedDB(key, value) {
-      if (!indexedDB) {
-        console.log('IndexedDB mövcud deyil, localStorage istifadə edilir');
-        return;
-      }
-      
-      try {
-        const transaction = indexedDB.transaction(['backups'], 'readwrite');
-        const store = transaction.objectStore('backups');
-        store.put({ key, value, timestamp: Date.now() });
-      } catch (error) {
-        console.error('IndexedDB yazma xətası:', error);
-      }
-    }
-    
-    function getFromIndexedDB(key) {
-      return new Promise((resolve, reject) => {
-        if (!indexedDB) {
-          resolve(null);
-          return;
-        }
-        
-        try {
-          const transaction = indexedDB.transaction(['backups'], 'readonly');
-          const store = transaction.objectStore('backups');
-          const request = store.get(key);
-          
-          request.onsuccess = () => resolve(request.result ? request.result.value : null);
-          request.onerror = () => {
-            console.error('IndexedDB oxuma xətası:', request.error);
-            resolve(null);
-          };
-        } catch (error) {
-          console.error('IndexedDB oxuma xətası:', error);
-          resolve(null);
-        }
-      });
-    }
-    
-    // Avtomatik backup sistemi
-    function createBackup() {
-      const now = Date.now();
-      if (now - lastBackupTime < BACKUP_INTERVAL) return;
-      
-      const backupData = {
-        selectedAnswers: selectedAnswers || {},
-        wrongQuestions: wrongQuestions || [],
-        flaggedQuestions: flaggedQuestions || [],
-        questionNotes: questionNotes || {},
-        questionWrongCount: questionWrongCount || {},
-        settings: {
-          questionsPerPage: questionsPerPage || 10,
-          questionRange: questionRange || "",
-          orderMode: orderMode || "ARDICIL",
-          adaptiveMode: adaptiveMode || false,
-          flashcardMode: flashcardMode || false,
-          categoryDistribution: categoryDistribution || {},
-          distributionInterval: distributionInterval || 10
-        },
-        timestamp: now,
-        version: '1.0'
-      };
-      
-      // Çoxlu backup nöqtələri
-      safeSetItem('quizBackup', backupData);
-      safeSetItem('quizBackup_' + now, backupData);
-      
-      // Son 5 backup-ı saxla
-      const backupKeys = Object.keys(localStorage).filter(key => key.startsWith('quizBackup_'));
-      if (backupKeys.length > 5) {
-        backupKeys.sort().slice(0, -5).forEach(key => {
-          localStorage.removeItem(key);
-        });
-      }
-      
-      lastBackupTime = now;
-      console.log('Backup yaradıldı:', now);
-    }
-    
-    // Backup-dan bərpa
-    function restoreFromBackup() {
-      const backup = safeGetItem('quizBackup');
-      if (!backup) return false;
-      
-      try {
-        selectedAnswers = backup.selectedAnswers || {};
-        wrongQuestions = backup.wrongQuestions || [];
-        flaggedQuestions = backup.flaggedQuestions || [];
-        questionNotes = backup.questionNotes || {};
-        questionWrongCount = backup.questionWrongCount || {};
-        
-        if (backup.settings) {
-          questionsPerPage = backup.settings.questionsPerPage || 10;
-          questionRange = backup.settings.questionRange || "";
-          orderMode = backup.settings.orderMode || "ARDICIL";
-          adaptiveMode = backup.settings.adaptiveMode || false;
-          flashcardMode = backup.settings.flashcardMode || false;
-          categoryDistribution = backup.settings.categoryDistribution || {};
-          distributionInterval = backup.settings.distributionInterval || 10;
-        }
-        
-        console.log('Backup-dan bərpa olundu');
-        return true;
-      } catch (error) {
-        console.error('Backup bərpa xətası:', error);
-        return false;
-      }
-    }
-    
-    // Avtomatik backup interval
-    function startAutoBackup() {
-      if (autoSaveInterval) clearInterval(autoSaveInterval);
-      autoSaveInterval = setInterval(createBackup, BACKUP_INTERVAL);
-    }
-    
-    function stopAutoBackup() {
-      if (autoSaveInterval) {
-        clearInterval(autoSaveInterval);
-        autoSaveInterval = null;
-      }
-    }
-    
-    // Səhifə yükləndikdə offline sistemini başlat
-    document.addEventListener('DOMContentLoaded', function() {
-      // IndexedDB-ni başlat
-      initIndexedDB();
-      
-      // Online status göstər
-      updateOnlineStatus();
-      
-      // Avtomatik backup başlat
-      startAutoBackup();
-      
-      // Backup-dan bərpa et
-      if (restoreFromBackup()) {
-        console.log('Məlumatlar backup-dan bərpa olundu');
-      }
-      
-      // Səhifə tərk ediləndə backup yarat
-      window.addEventListener('beforeunload', createBackup);
-    });
   </script>
   
   <style>
@@ -1441,237 +1178,8 @@
     
     /* Kateqoriya düymələri üçün stil */
   </style>
-  /* Offline System Styles */
-  <style>
-    .online-status {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      padding: 12px 20px;
-      border-radius: 25px;
-      font-size: 14px;
-      font-weight: 600;
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-      font-family: 'Inter', sans-serif;
-    }
-    
-    .online-status.online {
-      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-      color: white;
-    }
-    
-    .online-status.offline {
-      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-      color: white;
-    }
-    
-    .notification {
-      position: fixed;
-      top: 80px;
-      right: 20px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-      border-left: 4px solid #667eea;
-      z-index: 1001;
-      max-width: 350px;
-      animation: slideInRight 0.3s ease;
-    }
-    
-    .notification.success {
-      border-left-color: #10b981;
-    }
-    
-    .notification.warning {
-      border-left-color: #f59e0b;
-    }
-    
-    .notification.error {
-      border-left-color: #ef4444;
-    }
-    
-    .notification-content {
-      padding: 16px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-    }
-    
-    .notification-content span {
-      flex: 1;
-      font-size: 14px;
-      color: #374151;
-      font-family: 'Inter', sans-serif;
-    }
-    
-    .notification-content button {
-      background: none;
-      border: none;
-      font-size: 18px;
-      color: #9ca3af;
-      cursor: pointer;
-      padding: 0;
-      width: 20px;
-      height: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      transition: all 0.2s ease;
-    }
-    
-    .notification-content button:hover {
-      background: #f3f4f6;
-      color: #6b7280;
-    }
-    
-    @keyframes slideInRight {
-      from {
-        transform: translateX(100%);
-        opacity: 0;
-      }
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-    
-    .backup-controls {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      z-index: 999;
-    }
-    
-    .backup-btn {
-      padding: 12px 16px;
-      border-radius: 25px;
-      border: none;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      font-size: 12px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      font-family: 'Inter', sans-serif;
-      box-shadow: 0 4px 16px rgba(102,126,234,0.3);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    
-    .backup-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(102,126,234,0.4);
-    }
-    
-    .backup-btn.restore {
-      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-      box-shadow: 0 4px 16px rgba(245,158,11,0.3);
-    }
-    
-    .backup-btn.restore:hover {
-      box-shadow: 0 8px 24px rgba(245,158,11,0.4);
-    }
-    
-    .offline-warning {
-      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-      border: 1px solid #f59e0b;
-      border-radius: 12px;
-      padding: 16px 20px;
-      margin: 20px 0;
-      text-align: center;
-      color: #92400e;
-      font-family: 'Inter', sans-serif;
-      font-size: 14px;
-      display: none;
-    }
-    
-    .offline-warning.show {
-      display: block;
-      animation: fadeIn 0.3s ease;
-    }
-    
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    
-    /* Dark mode support for offline elements */
-    body.dark-mode .notification {
-      background: #1f2937;
-      color: #f9fafb;
-    }
-    
-    body.dark-mode .notification-content span {
-      color: #f9fafb;
-    }
-    
-    body.dark-mode .offline-warning {
-      background: linear-gradient(135deg, #451a03 0%, #78350f 100%);
-      border-color: #f59e0b;
-      color: #fef3c7;
-    }
-    
-    /* Mobile responsive */
-    @media (max-width: 768px) {
-      .online-status {
-        top: 10px;
-        right: 10px;
-        padding: 8px 16px;
-        font-size: 12px;
-      }
-      
-      .notification {
-        top: 60px;
-        right: 10px;
-        left: 10px;
-        max-width: none;
-      }
-      
-      .backup-controls {
-        bottom: 10px;
-        right: 10px;
-      }
-      
-      .backup-btn {
-        padding: 10px 14px;
-        font-size: 11px;
-      }
-    }
-    
-    /* Ümumi stil */
-  </style>
 </head>
 <body>
-  <!-- Offline System Elements -->
-  <div id="onlineStatus" class="online-status">
-    <i class="fa fa-wifi"></i> Online
-  </div>
-  
-  <div class="backup-controls">
-    <button class="backup-btn" onclick="createBackup()" title="Məlumatları yadda saxla">
-      <i class="fa fa-save"></i> Backup
-    </button>
-    <button class="backup-btn restore" onclick="restoreFromBackup()" title="Məlumatları bərpa et">
-      <i class="fa fa-undo"></i> Bərpa
-    </button>
-  </div>
-  
-  <div id="offlineWarning" class="offline-warning">
-    <i class="fa fa-exclamation-triangle"></i>
-    <strong>Offline rejim:</strong> İnternet bağlantısı yoxdur. Məlumatlar local olaraq saxlanılır.
-  </div>
-
   <!-- Başlanğıc Ekranı -->
   <div id="welcomeScreen">
     <button id="startBtn">
@@ -4462,222 +3970,324 @@ function renderQuizWrongOnly() {
     
     return totalQuestions;
   }
-
-  // Offline warning göstərmə
-  function updateOfflineWarning() {
-    const warningElement = document.getElementById('offlineWarning');
-    if (warningElement) {
-      if (!isOnline) {
-        warningElement.classList.add('show');
-      } else {
-        warningElement.classList.remove('show');
-      }
-    }
-  }
-
-  // Offline sistemini başlat
-  function initializeOfflineSystem() {
-    // Online status göstər
-    updateOnlineStatus();
-    updateOfflineWarning();
-    
-    // Avtomatik backup başlat
-    startAutoBackup();
-    
-    // Backup-dan bərpa et
-    if (restoreFromBackup()) {
-      console.log('Məlumatlar backup-dan bərpa olundu');
-      showNotification('✅ Məlumatlar backup-dan bərpa olundu', 'success');
-    }
-    
-    // Səhifə tərk ediləndə backup yarat
-    window.addEventListener('beforeunload', createBackup);
-  }
-
-  // PWA Installation Prompt
-  let deferredPrompt = null; // GLOBAL
-  function initializePWAInstall() {
-    // Debug PWA status
-    console.log('🔍 PWA Status Check:');
-    console.log('- Service Worker supported:', 'serviceWorker' in navigator);
-    console.log('- Manifest loaded:', !!document.querySelector('link[rel="manifest"]'));
-    console.log('- HTTPS/Localhost:', window.location.protocol === 'https:' || window.location.hostname === 'localhost');
-    console.log('- Current URL:', window.location.href);
-    
-    // Check manifest
-    const manifestLink = document.querySelector('link[rel="manifest"]');
-    if (manifestLink) {
-      console.log('- Manifest URL:', manifestLink.href);
-    }
-    
-    // Check if PWA is installable
-    if ('serviceWorker' in navigator && document.querySelector('link[rel="manifest"]')) {
-      console.log('✅ PWA tələbləri ödənilib');
-    } else {
-      console.log('❌ PWA tələbləri ödənməyib');
-    }
-    
-    window.addEventListener('beforeinstallprompt', (e) => {
-      console.log('🚀 Install prompt triggered!');
-      // Prevent the mini-infobar from appearing on mobile
-      e.preventDefault();
-      // Stash the event so it can be triggered later
-      deferredPrompt = e;
-      
-      // Show install button
-      showInstallButton();
-    });
-    
-    window.addEventListener('appinstalled', () => {
-      console.log('PWA was installed');
-      hideInstallButton();
-      showNotification('✅ Quiz App uğurla quraşdırıldı!', 'success');
-    });
-    
-    // Check if app is already installed
-    if (window.matchMedia('(display-mode: standalone)').matches) {
-      console.log('App already installed');
-    }
-    
-    // Force check after a delay
-    setTimeout(() => {
-      console.log('🔍 Delayed PWA check...');
-      if (deferredPrompt) {
-        console.log('✅ Install prompt is ready');
-        showInstallButton();
-      } else {
-        console.log('❌ Install prompt not ready');
-      }
-    }, 2000);
-  }
-
-  // Show install button
-  function showInstallButton() {
-    const installBtn = document.getElementById('installBtn');
-    if (installBtn) {
-      installBtn.style.display = 'flex';
-      console.log('✅ Install button shown');
-    }
-  }
-
-  // Hide install button
-  function hideInstallButton() {
-    const installBtn = document.getElementById('installBtn');
-    if (installBtn) {
-      installBtn.style.display = 'none';
-    }
-  }
-
-  // Manual PWA status check (console-dan çağırmaq üçün)
-  window.checkPWAStatus = function() {
-    console.log('🔍 Manual PWA Status Check:');
-    console.log('1. Service Worker supported:', 'serviceWorker' in navigator);
-    console.log('2. Manifest loaded:', !!document.querySelector('link[rel="manifest"]'));
-    console.log('3. HTTPS/Localhost:', window.location.protocol === 'https:' || window.location.hostname === 'localhost');
-    console.log('4. Current URL:', window.location.href);
-    
-    // Check manifest
-    const manifestLink = document.querySelector('link[rel="manifest"]');
-    if (manifestLink) {
-      console.log('5. Manifest URL:', manifestLink.href);
-      // Test manifest loading
-      fetch(manifestLink.href)
-        .then(response => {
-          console.log('6. Manifest response:', response.status, response.ok);
-          return response.json();
-        })
-        .then(data => {
-          console.log('7. Manifest data:', data);
-          console.log('8. Manifest name:', data.name);
-          console.log('9. Manifest icons:', data.icons ? data.icons.length : 0);
-        })
-        .catch(error => {
-          console.error('10. Manifest error:', error);
-        });
-    }
-    
-    // Check service worker
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations()
-        .then(registrations => {
-          console.log('11. Service Worker registrations:', registrations.length);
-          registrations.forEach((reg, index) => {
-            console.log(`   SW ${index}:`, reg.active ? 'Active' : 'Inactive');
-          });
-        });
-    }
-    
-    // Check if app is already installed
-    console.log('12. Display mode:', window.matchMedia('(display-mode: standalone)').matches ? 'Standalone' : 'Browser');
-    
-    // Check install button
-    const installBtn = document.getElementById('installBtn');
-    console.log('13. Install button exists:', !!installBtn);
-    console.log('14. Install button display:', installBtn ? installBtn.style.display : 'N/A');
-    
-    return 'PWA status check completed. Check console for details.';
-  };
-  
-  // Force show install button (test üçün)
-  window.showInstallButton = function() {
-    const installBtn = document.getElementById('installBtn');
-    if (installBtn) {
-      installBtn.style.display = 'flex';
-      console.log('✅ Install button shown manually');
-    } else {
-      console.log('❌ Install button not found');
-    }
-  };
-
-  // Service Worker Registration
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js')
-        .then((registration) => {
-          console.log('✅ Service Worker registered successfully:', registration);
-        })
-        .catch((error) => {
-          console.error('❌ Service Worker registration failed:', error);
-        });
-    });
-  }
-
-  // Initialize PWA when page loads
-  window.addEventListener('load', () => {
-    initializePWAInstall();
-  });
-
-  // Install button click handler
-  document.addEventListener('DOMContentLoaded', () => {
-    const installBtn = document.getElementById('installBtn');
-    if (installBtn) {
-      installBtn.addEventListener('click', async () => {
-        console.log('Install button clicked');
-        if (deferredPrompt) {
-          deferredPrompt.prompt();
-          const { outcome } = await deferredPrompt.userChoice;
-          console.log('User response to the install prompt:', outcome);
-          deferredPrompt = null;
-          hideInstallButton();
-        } else {
-          console.log('No install prompt available');
-        }
-      });
-    }
-  });
   </script>
   <button id="darkModeToggle" style="position:fixed;top:18px;left:18px;z-index:1001;padding:12px 20px;border-radius:12px;background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);color:#fff;font-size:1.1em;cursor:pointer;border:none;box-shadow:0 4px 16px rgba(102,126,234,0.3);transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);font-family:'Inter',sans-serif;font-weight:600;display:flex;align-items:center;gap:8px;">
     <i class="fa fa-moon"></i>
     <span>Qaranlıq rejim</span>
   </button>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const darkBtn = document.getElementById('darkModeToggle');
+  const darkIcon = darkBtn.querySelector('i');
+  const darkText = darkBtn.querySelector('span');
   
-  <!-- PWA Install Button -->
-  <button id="installBtn" style="position:fixed;top:18px;right:18px;z-index:1001;padding:12px 20px;border-radius:12px;background:linear-gradient(135deg, #10b981 0%, #059669 100%);color:#fff;font-size:1.1em;cursor:pointer;border:none;box-shadow:0 4px 16px rgba(16,185,129,0.3);transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);font-family:'Inter',sans-serif;font-weight:600;display:none;align-items:center;gap:8px;">
-    <i class="fa fa-download"></i>
-    <span>App Quraşdır</span>
-  </button>
+  // Yadda saxlanılan rejimi yüklə
+  if (safeGetItem('darkMode') === 'on') {
+    document.body.classList.add('dark-mode');
+    updateDarkModeUI(true);
+  }
+  
+  if (darkBtn) {
+    darkBtn.addEventListener('click', function() {
+      const isDark = document.body.classList.toggle('dark-mode');
+      updateDarkModeUI(isDark);
+      
+      // Yadda saxla
+      if (isDark) {
+        safeSetItem('darkMode', 'on');
+      } else {
+        safeSetItem('darkMode', 'off');
+      }
+    });
+  }
+  
+  function updateDarkModeUI(isDark) {
+    if (isDark) {
+      darkIcon.className = 'fa fa-sun';
+      darkText.textContent = 'İşıqlı rejim';
+      darkBtn.style.background = 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)';
+      darkBtn.style.color = '#1e293b';
+    } else {
+      darkIcon.className = 'fa fa-moon';
+      darkText.textContent = 'Qaranlıq rejim';
+      darkBtn.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+      darkBtn.style.color = '#fff';
+    }
+  }
+  
+  // Keyboard shortcut for search (Ctrl+F)
+  document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && e.key === 'f') {
+      e.preventDefault();
+      const searchInput = document.getElementById('searchInput');
+      const searchContainer = document.getElementById('searchContainer');
+      if (searchContainer && searchContainer.style.display !== 'none') {
+        searchInput.focus();
+      }
+    }
+  });
+});
+</script>
   <div id="loadingSpinner" style="display:none;text-align:center;">
     <i class="fa fa-spinner fa-spin fa-2x"></i>
   </div>
+
+  <!-- PWA Installation System -->
+  <div id="pwaInstallContainer" style="display:none; position:fixed; bottom:20px; left:50%; transform:translateX(-50%); z-index:10000; background:linear-gradient(135deg, #667eea 0%, #764ba2 100%); color:#fff; padding:16px 24px; border-radius:16px; box-shadow:0 8px 32px rgba(102,126,234,0.3); font-family:'Inter',sans-serif; max-width:400px; text-align:center;">
+    <div style="margin-bottom:12px; font-weight:bold; font-size:1.1em;">
+      <i class="fa fa-download"></i> Tətbiqi quraşdırın
+    </div>
+    <div style="margin-bottom:16px; font-size:0.9em; opacity:0.9;">
+      Offline işləmə və daha sürətli giriş üçün tətbiqi cihazınıza quraşdırın
+    </div>
+    <div style="display:flex; gap:8px; justify-content:center;">
+      <button id="pwaInstallBtn" style="background:rgba(255,255,255,0.2); border:none; color:#fff; padding:8px 16px; border-radius:8px; cursor:pointer; font-weight:bold; transition:all 0.3s;">
+        <i class="fa fa-plus"></i> Quraşdır
+      </button>
+      <button id="pwaDismissBtn" style="background:rgba(255,255,255,0.1); border:none; color:#fff; padding:8px 16px; border-radius:8px; cursor:pointer; transition:all 0.3s;">
+        <i class="fa fa-times"></i> Bağla
+      </button>
+    </div>
+  </div>
+
+  <!-- PWA Status Indicator -->
+  <div id="pwaStatusIndicator" style="position:fixed; top:20px; right:20px; z-index:10001; background:rgba(0,0,0,0.7); color:#fff; padding:8px 12px; border-radius:8px; font-size:0.8em; font-family:'Inter',sans-serif; display:none;">
+    <i class="fa fa-wifi"></i> <span id="pwaStatusText">Offline</span>
+  </div>
+
+  <script>
+  // PWA Installation System
+  let deferredPrompt = null;
+  let installPromptReady = false;
+  
+  // PWA quraşdırma funksiyası
+  function initializePWA() {
+    console.log('🚀 PWA quraşdırılır...');
+    
+    // Service Worker qeydiyyatı
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js')
+        .then((registration) => {
+          console.log('✅ Service Worker qeydiyyatdan keçdi:', registration.scope);
+          updatePWAStatus('Service Worker aktiv');
+        })
+        .catch((error) => {
+          console.error('❌ Service Worker xətası:', error);
+          updatePWAStatus('Service Worker xətası');
+        });
+    }
+    
+    // Install prompt hadisəsi
+    window.addEventListener('beforeinstallprompt', (e) => {
+      console.log('📱 Install prompt hazır');
+      e.preventDefault();
+      deferredPrompt = e;
+      installPromptReady = true;
+      showInstallButton();
+    });
+    
+    // App installed hadisəsi
+    window.addEventListener('appinstalled', (evt) => {
+      console.log('✅ Tətbiq quraşdırıldı');
+      hideInstallButton();
+      updatePWAStatus('Tətbiq quraşdırıldı');
+      
+      // Analytics tracking
+      if (window.gtag) {
+        window.gtag('event', 'pwa_install', {
+          'event_category': 'engagement',
+          'event_label': 'pwa_install'
+        });
+      }
+    });
+    
+    // Online/Offline status
+    window.addEventListener('online', () => {
+      console.log('🌐 Online');
+      updatePWAStatus('Online');
+    });
+    
+    window.addEventListener('offline', () => {
+      console.log('📴 Offline');
+      updatePWAStatus('Offline');
+    });
+    
+    // İlk status yoxlaması
+    updatePWAStatus(navigator.onLine ? 'Online' : 'Offline');
+  }
+  
+  // Install düyməsini göstər
+  function showInstallButton() {
+    const container = document.getElementById('pwaInstallContainer');
+    if (container && installPromptReady) {
+      container.style.display = 'block';
+      
+      // Install düyməsi
+      const installBtn = document.getElementById('pwaInstallBtn');
+      if (installBtn) {
+        installBtn.addEventListener('click', () => {
+          if (deferredPrompt) {
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then((choiceResult) => {
+              console.log('İstifadəçi seçimi:', choiceResult.outcome);
+              if (choiceResult.outcome === 'accepted') {
+                console.log('Tətbiq quraşdırılacaq');
+              }
+              deferredPrompt = null;
+              hideInstallButton();
+            });
+          }
+        });
+      }
+      
+      // Bağla düyməsi
+      const dismissBtn = document.getElementById('pwaDismissBtn');
+      if (dismissBtn) {
+        dismissBtn.addEventListener('click', () => {
+          hideInstallButton();
+          // 1 həftə ərzində göstərmə
+          localStorage.setItem('pwaInstallDismissed', Date.now());
+        });
+      }
+    }
+  }
+  
+  // Install düyməsini gizlət
+  function hideInstallButton() {
+    const container = document.getElementById('pwaInstallContainer');
+    if (container) {
+      container.style.display = 'none';
+    }
+  }
+  
+  // PWA status göstəricisini yenilə
+  function updatePWAStatus(status) {
+    const indicator = document.getElementById('pwaStatusIndicator');
+    const statusText = document.getElementById('pwaStatusText');
+    
+    if (indicator && statusText) {
+      indicator.style.display = 'block';
+      statusText.textContent = status;
+      
+      // Status-a görə ikon dəyişdir
+      const icon = indicator.querySelector('i');
+      if (icon) {
+        if (status === 'Online') {
+          icon.className = 'fa fa-wifi';
+          indicator.style.background = 'rgba(34,197,94,0.8)';
+        } else if (status === 'Offline') {
+          icon.className = 'fa fa-wifi-slash';
+          indicator.style.background = 'rgba(239,68,68,0.8)';
+        } else if (status.includes('Service Worker')) {
+          icon.className = 'fa fa-cog';
+          indicator.style.background = 'rgba(59,130,246,0.8)';
+        } else {
+          icon.className = 'fa fa-info-circle';
+          indicator.style.background = 'rgba(0,0,0,0.7)';
+        }
+      }
+      
+      // 3 saniyə sonra gizlət
+      setTimeout(() => {
+        indicator.style.display = 'none';
+      }, 3000);
+    }
+  }
+  
+  // PWA test funksiyaları
+  function testPWAInstall() {
+    console.log('🧪 PWA install test edilir...');
+    if (deferredPrompt) {
+      console.log('✅ Install prompt mövcuddur');
+      showInstallButton();
+    } else {
+      console.log('❌ Install prompt mövcud deyil');
+      alert('Install prompt hazır deyil. Zəhmət olmasa tətbiqi bir az istifadə edin və sonra yenidən cəhd edin.');
+    }
+  }
+  
+  function checkPWAStatus() {
+    console.log('📊 PWA Status:');
+    console.log('- Service Worker:', 'serviceWorker' in navigator);
+    console.log('- Install Prompt:', !!deferredPrompt);
+    console.log('- Online:', navigator.onLine);
+    console.log('- Manifest:', !!document.querySelector('link[rel="manifest"]'));
+    
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(registrations => {
+        console.log('- Service Worker Registrations:', registrations.length);
+      });
+    }
+  }
+  
+  // Global funksiyalar
+  window.testPWAInstall = testPWAInstall;
+  window.checkPWAStatus = checkPWAStatus;
+  
+  // Səhifə yükləndikdə PWA-nı başlat
+  document.addEventListener('DOMContentLoaded', function() {
+    // PWA dismiss yoxlaması
+    const dismissed = localStorage.getItem('pwaInstallDismissed');
+    if (dismissed) {
+      const dismissTime = parseInt(dismissed);
+      const oneWeek = 7 * 24 * 60 * 60 * 1000;
+      if (Date.now() - dismissTime < oneWeek) {
+        console.log('PWA install bildirişi gizlədilib');
+      } else {
+        localStorage.removeItem('pwaInstallDismissed');
+      }
+    }
+    
+    // PWA-nı başlat
+    initializePWA();
+    
+    // Console üçün test funksiyaları
+    console.log('🎯 PWA test funksiyaları:');
+    console.log('- testPWAInstall() - Install düyməsini göstər');
+    console.log('- checkPWAStatus() - PWA status yoxla');
+  });
+  </script>
+
+  <div id="pwaFixedInstallBtn" style="position:fixed;bottom:24px;right:24px;z-index:10002;background:linear-gradient(135deg,#2563eb 0%,#764ba2 100%);color:#fff;padding:16px 28px;border-radius:16px;box-shadow:0 8px 32px rgba(37,99,235,0.18);font-family:'Inter',sans-serif;font-size:1.15em;font-weight:bold;display:none;align-items:center;gap:10px;cursor:pointer;transition:all 0.2s;">
+    <i class="fa fa-download"></i> Tətbiqi Quraşdır
+  </div>
+  <script>
+  // Sabit PWA install düyməsi
+  function showFixedPWAInstallBtn() {
+    const btn = document.getElementById('pwaFixedInstallBtn');
+    if (btn) btn.style.display = 'flex';
+  }
+  function hideFixedPWAInstallBtn() {
+    const btn = document.getElementById('pwaFixedInstallBtn');
+    if (btn) btn.style.display = 'none';
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    const btn = document.getElementById('pwaFixedInstallBtn');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        if (window.deferredPrompt) {
+          window.deferredPrompt.prompt();
+          window.deferredPrompt.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === 'accepted') {
+              hideFixedPWAInstallBtn();
+            }
+            window.deferredPrompt = null;
+          });
+        } else {
+          alert('Quraşdırma üçün brauzerin install imkanını gözləyin və ya tətbiqdən bir az istifadə edin.');
+        }
+      });
+    }
+  });
+  // beforeinstallprompt hadisəsində sabit düyməni göstər
+  window.addEventListener('beforeinstallprompt', function(e) {
+    window.deferredPrompt = e;
+    showFixedPWAInstallBtn();
+  });
+  // Quraşdırıldıqdan sonra gizlət
+  window.addEventListener('appinstalled', function() {
+    hideFixedPWAInstallBtn();
+  });
+  </script>
 </body>
 </html>
