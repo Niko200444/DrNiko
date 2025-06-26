@@ -1,7 +1,7 @@
-const CACHE_NAME = 'quiz-app-v1.0.0';
+const CACHE_NAME = 'quiz-app-v1.0.1';
 const urlsToCache = [
   './',
-  './index.html',
+  './index1.html',
   './manifest.json',
   './icon-16x16.png',
   './icon-32x32.png',
@@ -94,8 +94,11 @@ self.addEventListener('fetch', (event) => {
 
             caches.open(CACHE_NAME)
               .then((cache) => {
-                cache.put(event.request, responseToCache);
-                console.log('💾 Cache-ə əlavə edildi:', event.request.url);
+                // Yalnız http və https sorğularını cache-lə
+                if (event.request.url.startsWith('http://') || event.request.url.startsWith('https://')) {
+                  cache.put(event.request, responseToCache);
+                  console.log('💾 Cache-ə əlavə edildi:', event.request.url);
+                }
               });
 
             return response;
