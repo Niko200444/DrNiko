@@ -1211,12 +1211,15 @@
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
         <button id="cat-patfiz" data-category="patfiz.json" onclick="selectCategory('patfiz.json')" class="category-btn"><i class="fa fa-heartbeat"></i> PATFİZ</button>
       </div>
-      
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
         <button id="cat-patfiz2" data-category="patfiz2.json" onclick="selectCategory('patfiz2.json')" class="category-btn"><i class="fa fa-brain"></i> PATFIZ2</button>
       </div>
-
-
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <button id="cat-mikrob1" data-category="mikrob1.json" onclick="selectCategory('mikrob1.json')" class="category-btn"><i class="fa fa-heartbeat"></i> MIKROB1</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <button id="cat-mikrob2" data-category="mikrob2.json" onclick="selectCategory('mikrob2.json')" class="category-btn"><i class="fa fa-heartbeat"></i> MIKROB2</button>
+      </div>
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
         <button id="cat-patan" class="category-btn" onclick="togglepatanSubcats()"><i class="fa fa-microscope"></i> PATAN</button>
       </div>
@@ -1493,9 +1496,13 @@ function loadCategoryState() {
 }
 
   async function selectCategory(filename) {
+  // Əvvəlki kateqoriyadakı currentIndex-i yadda saxla
+  if (currentCategory) {
+    safeSetItem('currentIndex_' + currentCategory, currentIndex);
+  }
   console.log("Seçilən kateqoriya:", filename);
   currentCategory = filename;
-  currentIndex = 0;
+  currentIndex = safeGetItem('currentIndex_' + filename, 0);
   isFlaggedMode = false;
   currentSearchQuery = "";
   document.getElementById('searchInput').value = "";
@@ -3401,7 +3408,9 @@ function renderQuizWrongOnly() {
       { name: 'PATFIZ2', file: 'patfiz2.json', icon: 'fa-brain' },
       { name: 'PATAN1', file: 'patan1a.json', icon: 'fa-dna' },
       { name: 'PATAN2', file: 'patan2a.json', icon: 'fa-virus' },
-      { name: 'DYES', file: 'patandyes.json', icon: 'fa-bacteria' }
+      { name: 'DYES', file: 'patandyes.json', icon: 'fa-bacteria' },
+      { name: 'MIKROB1', file: 'mikrob1.json', icon: 'fa-microchip' },
+      { name: 'MIKROB2', file: 'mikrob2.json', icon: 'fa-microchip' }
     ];
 
     allCategoriesData = {};
@@ -3598,7 +3607,7 @@ function renderQuizWrongOnly() {
   async function selectCategory(filename) {
     console.log("Seçilən kateqoriya:", filename);
     currentCategory = filename;
-    currentIndex = 0;
+    currentIndex = safeGetItem('currentIndex_' + filename, 0);
     isFlaggedMode = false;
     isAllCategoriesMode = false;
     currentSearchQuery = "";
@@ -3920,7 +3929,9 @@ function renderQuizWrongOnly() {
       { name: 'PATFIZ2', file: 'patfiz2.json', icon: 'fa-brain' },
       { name: 'PATAN1', file: 'patan1a.json', icon: 'fa-dna' },
       { name: 'PATAN2', file: 'patan2a.json', icon: 'fa-virus' },
-      { name: 'DYES', file: 'patandyes.json', icon: 'fa-bacteria' }
+      { name: 'DYES', file: 'patandyes.json', icon: 'fa-bacteria' },
+      { name: 'MIKROB1', file: 'mikrob1.json', icon: 'fa-microchip' },
+      { name: 'MIKROB2', file: 'mikrob2.json', icon: 'fa-microchip' }
     ];
 
     allCategoriesData = {};
