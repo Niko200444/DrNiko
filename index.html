@@ -3504,6 +3504,8 @@ function renderQuizWrongOnly() {
     
     // UI-ni yenilə
     showDistributionPanel();
+    // Cəmi yoxla və xəbərdarlıq göstər
+    checkDistributionTotal();
   }
 
   // Bölgünü tətbiq edən funksiya
@@ -4310,6 +4312,29 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.category-percent').forEach(input => {
     input.addEventListener('input', checkTotal);
   });
+  </script>
+
+  <script>
+  function checkDistributionTotal() {
+    const total = Object.values(categoryDistribution).reduce((sum, val) => sum + val, 0);
+    let warning = document.getElementById('distributionWarning');
+    if (!warning) {
+      warning = document.createElement('div');
+      warning.id = 'distributionWarning';
+      warning.style.color = 'red';
+      warning.style.textAlign = 'center';
+      warning.style.marginTop = '10px';
+      document.getElementById('distributionPanel').appendChild(warning);
+    }
+    const submitBtn = document.querySelector('#distributionPanel button[onclick="applyDistribution()"]');
+    if (total !== 100) {
+      warning.innerText = 'Cəmi 100 olmalıdır! Hazırda: ' + total;
+      if (submitBtn) submitBtn.disabled = true;
+    } else {
+      warning.innerText = '';
+      if (submitBtn) submitBtn.disabled = false;
+    }
+  }
   </script>
 </body>
 </html>
