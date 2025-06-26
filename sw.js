@@ -111,7 +111,7 @@ self.addEventListener('fetch', (event) => {
           .catch(() => {
             // Şəbəkə xətası zamanı offline səhifə göstər
             if (event.request.destination === 'document') {
-             return caches.match(BASE_PATH + 'index1.html');
+             return caches.match(BASE_PATH + 'index.html');
             }
           });
       })
