@@ -1206,6 +1206,9 @@
     <div id="categoryContainer" style="display:flex; flex-direction:column; align-items:center; margin-bottom:30px;">
       <h2 style="font-size:2.2em; margin-bottom:20px;">Kateqoriya seçin</h2>
        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <button id="cat-tecili" data-category="tecili.json" onclick="selectCategory('tecili.json')" class="category-btn"><i class="fa fa-flask"></i> TƏCİLİ</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
         <button id="cat-farm" data-category="farm.json" onclick="selectCategory('farm.json')" class="category-btn"><i class="fa fa-flask"></i> Farmakologiya</button>
       </div>
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
@@ -3409,6 +3412,7 @@ function renderQuizWrongOnly() {
   // Bütün kateqoriyaları yükləyən funksiya
   async function loadAllCategories() {
     const categories = [
+      { name: 'TƏCİLİ', file: 'tecili.json', icon: 'fa-flask' },
       { name: 'Farmakologiya', file: 'farm.json', icon: 'fa-flask' },
       { name: 'PATFİZ', file: 'patfiz.json', icon: 'fa-heartbeat' },
       { name: 'PATFIZ2', file: 'patfiz2.json', icon: 'fa-brain' },
