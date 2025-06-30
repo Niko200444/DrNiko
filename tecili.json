@@ -2,12 +2,13 @@
   {
     "question": "Təcili hal:  ",
     "answers": [
-      "Sağlamlıq, həyat, əmlak və ya ətraf mühit üçün gözlənilməz risk təşkil edən və  dərhal müdaxilə tələb edən təcili və adətən təhlükəli vəziyyətdir.   ",
       "Bütün təhlükəli hesab olunan vəziyyətlərdir.   ",
       "Baş verən bütün təbiət hadisələridir.   ",
       "Yalnız sağlamlıq və həyat üçün dərhal tibbi müdaxilə tələb edən vəziyyətdir.   ",
-      "Yalnız əmlak və ya ətraf mühit üçün gözlənilməz risk təşkil edən haldır  "
-    ]
+      "Yalnız əmlak və ya ətraf mühit üçün gözlənilməz risk təşkil edən haldır  ",
+      "Sağlamlıq, həyat, əmlak və ya ətraf mühit üçün gözlənilməz risk təşkil edən və  dərhal müdaxilə tələb edən təcili və adətən təhlükəli vəziyyətdir.   "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Hansı Təcili Tibb Xidmətinin məqsədlərinə aid deyil?  ",
@@ -17,7 +18,8 @@
       "Diaqnostika və müalicəni paralel- eyni zamanda başlamaqla yanaşı xəstə  idarəetməni həyata keçirmək  ",
       "Bütün xəstəlik və zədələnmələrdə buna bağlı əlillik və ölümün qarşısını almaq   ",
       "Bütün yaş qruplarında xəstəlik və zədələrin kəskin və təcili aspektlərini  diaqnostika, müalicə və idarə etmək  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Tibbin ən qədim sahəsi olmasına baxmayaraq ayrıca ixtisas kimi XX əsrdə  tanınmağa başlayan tibb sahəsi hansıdır?  ",
@@ -27,7 +29,8 @@
       "Neonatologiya  ",
       "Plastik cərrahiyyə  ",
       "Kardiologiya  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Dünyada mövcud ənənəvi tibbi modeldə dar ixtisaslaşma tendensiyası olsa  da, təcili tibb:   1) xəstəyə mümkün olan ən geniş spektrdə baxmağı, differensial yanaşmanı    2) simptomu və xəstəliyi deyil, xəstəni müalicə etməyi,   3) yalnız etioloji müalicə aparmağı   4) diaqnostika və müalicəni paralel başlamağı   5) xəstə idarəetməni həyata keçirməyi. . .    . . . tələb edir.    Yuxarıdakı variantlardan hansı səhvdir?  ",
@@ -37,7 +40,8 @@
       "2   ",
       "5   ",
       "1   "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "“Təcili tibbin atası” hesab olunan alim kimdir?  ",
@@ -47,7 +51,8 @@
       "R. M. Rosen  ",
       "N. İ. Piroqov  ",
       "Hippokrat  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Napoleonun apardığı müharibələrdə təcili tibb xidmətinin təşkili ilə bağlı  hansı məlumat yanlışdır?  ",
@@ -57,7 +62,8 @@
       "İlk dəfə triaj tətbiq olunmuşdur.   ",
       "Təcili tibb xidmətinin əsas məqsədi yüngül yaralıları ən qısa zamanda müalicə edib  yenidən döyüşə qaytarmaq idi.   ",
       "“Uçan ambulans” (ambulance volante) adlanan arabalar atlarla yaralıları döyüş  bölgəsindən cərrahiyyə çadırlarına daşıyırdı.   "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Təcili tibb ayrıca ixtisas kimi ilk dəfə hansı ölkədə tanınıb?  ",
@@ -67,17 +73,19 @@
       "Rusiya  ",
       "Səudiyyə Ərəbistanı  ",
       "Çin  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Təcili tibbin xüsusi ixtisas kimi qəbul edilməsi üçün təkanverici rol oynadı:  ",
     "answers": [
-      "Vietnam müharibəsinin nəticələrinə aid ABŞ ordu departamentinin tibbi hesabatı  (1965-1970)  ",
+      "New Yorkda mobil koronar baxım birliklərinin qurulması (1968)  ",
       "Şahzadə Diananın avtoqəzada ölümü (1997)  ",
       "Avstriyanın Vyana şəhərində teatr binasında baş verən güclü yanğın (1881)  ",
-      "New Yorkda mobil koronar baxım birliklərinin qurulması (1968)  ",
-      "Fransada SMUR (Service Mobile d'Urgence et Réanimation)- Mobil təcili və  resusitasiya xidmətinin təşkili (1956)  "
-    ]
+      "Fransada SMUR (Service Mobile d'Urgence et Réanimation)- Mobil təcili və  resusitasiya xidmətinin təşkili (1956)  ",
+      "Vietnam müharibəsinin nəticələrinə aid ABŞ ordu departamentinin tibbi hesabatı  (1965-1970)  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Təcili tibbin Anqlo-amerikan modelinin xüsusiyyətlərini seçin:   1) Tibbi xidmət “Qal və müalicə et” (stay and play) prinsipinə əsasən həyata  keçirilir.    2) hadisə yerində mümkün olan qədər az vaxt itirilir.    3) hadisə yerində həkim olmayan tibb işçisi (paramedik) təcili dəyərləndirmə və  müalicəni başlayır.    4) həyatqurtarıcı- resusitasion təcili müalicə və dinamik müşahidə transport  müddətində davam etdirilir   5) xəstə təkmil təcili xidmət üçün xəstəxananın təcili yardım şöbəsinə çatdırılır.    6) Təcili yardım şöbələrində ixtisasca yalnız təcili tibb həkimləri çalışır.   ",
@@ -87,7 +95,8 @@
       "hamısı   ",
       "1,3,4,5,6   ",
       "1, 2, 5, 6   "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Cədvəldəki hansı bəndlər təcili tibb modellərinə görə yanlış verilmişdir?     ",
@@ -97,7 +106,8 @@
       "1 və 6  ",
       "5 və 7   ",
       "1və 3   "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Aşağıdakılardan hansı Təcili tibbin Franko-German modelinin  xüsusiyyətlərinə aid deyil?  ",
@@ -107,7 +117,8 @@
       "xəstəxana imkanları (bəzən hətta ECMO daxil) hadisə yerinə aparılır  ",
       "bu modeli istifadə edən ölkələrdə təcili tibb həkimliyi ayrıca ixtisas kimi inkişaf  etməmişdir.   ",
       "təcili yardım şöbələrində əsasən anestezioloq-renimatoloq və cərrahlar olmaqla  müxtəlif ixtisas həkimləri çalışır.   "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Təcili tibbin Anqlo-amerikan modelini tətbiq edən ölkəni seçin:  ",
@@ -117,7 +128,8 @@
       "Almaniya  ",
       "Avstriya  ",
       "Fransa  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Təcili tibbin Anqlo-amerikan modelini tətbiq edən ölkəni seçin:  ",
@@ -127,17 +139,19 @@
       "Almaniya  ",
       "Fransa  ",
       "Rusiya  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Təcili tibbin Franko-German modelini tətbiq edən ölkəni seçin:  ",
     "answers": [
-      "Almaniya  ",
       "ABŞ  ",
       "Türkiyə  ",
+      "Almaniya  ",
       "Çin  ",
       "İngiltərə  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Səhv fikir hansıdır?  ",
@@ -147,7 +161,8 @@
       "Parisdə avtoqəza keçirən Şahzadə Diananın 2 saatlıq prehospital yardıma  baxmayaraq həyatını itirməsindən sonra təcili tibbin Anqlo-amerikan modeli  məşhurlaşır (1997).   ",
       "Dünyada ilk Təcili Tibb kafedrası ABŞ-ın Cincinati Universitetində yaradılıb.   ",
       "Beynəlxalq Təcili Tibb Federasiyası (IFEM) tərəfindən göstəricilər müəyyən olunub  və o, hər ölkədə təcili tibbin səviyyəsini dəyərləndirərkən istifadə olunur  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Azərbaycanda xüsusən 20 yanvar hadisələri zamanı əhaliyə ən çox xidmət  göstərən və təcili tibb sahəsində ən məşhur xəstəxana kimi uzun illər fəaliyyət  göstərmiş xəstəxana hansıdır?  ",
@@ -157,7 +172,8 @@
       "Sumqayıt Dövlət Xəstəxanası  ",
       "Respublika Klinik Xəstəxanası  ",
       "3 saylı şəhər klinik xəstəxanası  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "90-cı illərdə M. Nağıyev adına Təcili Yardım Xəstəxanasında təcili yardım  xidmətini daha çox hansı ixtisas həkimləri həyata keçirirdilər?  ",
@@ -167,7 +183,8 @@
       "Kardioloq və kardiocərralar  ",
       "Plastik-rekonstruktiv cərrahlar  ",
       "Anestezioloqlar və pulmonoloqlar   "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "90-cı illərdə Azərbaycan Tibb Universitetində təcili tibbin ayrıca tədrisi üçün  yeni kafedranın (Təxirəsalınmaz tibbi yardımın təşkili kafedrası) qurulmasında  təkanverici amil nə idi?  ",
@@ -177,7 +194,8 @@
       "Təcili kardioloji xidmətin mövcud durumu  ",
       "İnfeksion xəstəliklərin qarşısının alınması  ",
       "Avtoqəzalarda ölüm hallarının çox olması  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "İstənilən xəstənin (yaşlı, uşaq, fiziki ve zehni əngəlli, zorakılıq qurbanları,  immunsupressiv və s. ) istənilən xəstəliklə (cərrahi, terapevtik) istənilən  zamanda (7/24) müraciət edə biləcəyi şöbə hansıdır?  ",
@@ -187,7 +205,8 @@
       "Plastik- estetik cərrahiyyə  ",
       "Ftiziatriya  ",
       "Nevrologiya  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Təcili yardım şöbəsinə aid xüsusiyyətləri seçin:    1) Şöbə xəstəxananın əsas girişinə yaxın yerləşməlidir   2) Radiologiya və digər xüsusi diaqnostik sahələrə yaxın olmalıdır   3) müalicə sahələrinə (angioqrafiya, koronar intensiv terapiya, ümumi  reanimasiya, əməliyyatxana) yaxın qurulmalıdır   4) helikopter enmə zolağına əlçatan yerdə olmalıdır.   ",
@@ -197,7 +216,8 @@
       "heç biri   ",
       "yalnız 1 və 4   ",
       "yalnız 2 və 3   "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Təcili yardım şöbəsinin vacib komponentlərini seçin:   1) mühafizə   2) triaj- xəstə çeşidləmə sahəsi   3) Resusitasiya otağı   4) travma otaqları   5) arena və izolə tipli müalicə zalları (qırmızı, sarı, yaşıl zonalar)   6) dekontaminasiya sahəsi  ",
@@ -207,37 +227,41 @@
       "heç biri   ",
       "yalnız 2, 3, 5 və 6  ",
       "yalnız 1, 3 və 4   "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Səhv fikir hansıdır?  ",
     "answers": [
-      "Təcili tibb komandası hər zaman 3 həkim və 3 tibb bacısı olmaqla 6 nəfərdən  ibarət olmalıdır.   ",
       "Təcili tibb komandasında ünsiyyət zamanı “Qapalı dövrə ünsiyyət modeli” tətbiq  olunur.   ",
       "Təcili tibb- xəstəni eyni zamanda dəyərləndirmək, müalicə və idarə etmək, ölüm və  əlilliyin qarşısını almaq üçün çalışan disiplinli bir komanda işidir.   ",
       "Komandada iş bölgüsü- tək çata bilməyəcəyimiz daha böyük hədəfə birlikdə  çatmaq üçün hər kəsin öz təhsil, bilik və bacarığına uyğun işi öhdəsinə almasıdır.   ",
-      "Komanda lideri bacarıqlarına görə üzvləri seçir, qərarlar qəbul edir və məqsədlərə  çatmaq üçün tapşırıqları əlaqələndirir.   "
-    ]
+      "Komanda lideri bacarıqlarına görə üzvləri seçir, qərarlar qəbul edir və məqsədlərə  çatmaq üçün tapşırıqları əlaqələndirir.   ",
+      "Təcili tibb komandası hər zaman 3 həkim və 3 tibb bacısı olmaqla 6 nəfərdən  ibarət olmalıdır.   "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Təcili tibdə uğurlu komanda işi üçün aşağıdakılardan hansılar olmalıdır?   a) doğru seçilmiş üzvlər   b) doğru ünsiyyət bacarığı (susaraq dinləmək, səlis danışmaq)   c) doğru dizayn edilmiş mühit və resurslar (öncədən yoxlanılan cihazlar,  ləvazimatlar)   d) motivasiya   e) simulyasiya/ məşqetmə   ",
     "answers": [
+      "Hamısı   ",
       "yalnız a və e  ",
       "yalnız b və d   ",
       "heç biri   ",
-      "Hamısı   ",
       "yalnız a, c və d   "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Təcili tibb komandası üçün simulyasiyaya əsaslanan təlimlərin (simulation  based training) əhəmiyyəti nədir?   ",
     "answers": [
-      "Liderlik və ünsiyyət bacarıqlarının inkişafı üçün, müxtəlif klinik bacarıqların, cərrahi  vərdişlərin öyrənilməsi və təkmilləşdirilməsi üçün istifadə olunur.   ",
       "Yalnız komanda üzvlərinin bilik-bacarıq-davranışını yoxlama imtahanı kimi istifadə  olunur.   ",
       "Simulyasiya təlimlərində ortaq istifadə olunan protokollar, alqoritmlər pozulur, fərdi  həll yolları təklif olunur.   ",
       "Heç bir xüsusi əhəmiyyəti yoxdur.   ",
-      "Komanda üzvlərinin bir-birini tanıması üçün həyata keçirilir.   "
-    ]
+      "Komanda üzvlərinin bir-birini tanıması üçün həyata keçirilir.   ",
+      "Liderlik və ünsiyyət bacarıqlarının inkişafı üçün, müxtəlif klinik bacarıqların, cərrahi  vərdişlərin öyrənilməsi və təkmilləşdirilməsi üçün istifadə olunur.   "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Cümləni tamamlayın:    Təcili tibb komandasında uğurlu performans üçün üzvlər öz iş bölgüsünə görə  …   ",
@@ -247,7 +271,8 @@
       "uzunmüddətli təcrübə qazanmalıdırlar  ",
       "çoxsaylı kurs və konfranslarda iştirak etməlidir  ",
       "sertifikat almalıdırlar  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Təcili tibb komandasının istifadə etdiyi “Qapalı dövrə ünsiyyət modeli”-nin  (Closed-loop communications) addımlarının ardıcıllığı necədir?   1) Ad   2) Soyad   3) Əmr   4) Xahiş   5) Təsdiq   6) İnkar  ",
@@ -257,7 +282,8 @@
       "1,2,5   ",
       "1,4,6   ",
       "1,4,6  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Təcili tibb komandasının lideri kimdir?  ",
@@ -267,7 +293,8 @@
       "Pediatr və ya uşaq cərrahı  ",
       "Anestezioloq-reanimatoloq  ",
       "Kardioloq və ya kardiocərrah  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Səhv fikir hansıdır?  ",
@@ -277,7 +304,8 @@
       "Təcili tibb komandasında qızıl qaydalardan biri: “Yazılmamışdırsa edilməmişdir”.   ",
       "Təcili tibb komandasının işində hər atılan addım üçün zaman məhdudiyyəti  olduğuna görə komandanın qeydiyyat aparan üzvü tərəfindən zamanla bağlı  xatırlatmalar edilir.   ",
       "Təcili tibb komandası lideri hər kəsin fəaliyyətini izləyə biləcək şəkildə ən kənarda  dayanır.   "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Düzgün olmayan variantı seçin:   Təcili tibdə komanda işinin tətbiqi. . .   ",
@@ -287,17 +315,19 @@
       "zamanın düzgün istifadə edilməsinə  ",
       "beynəlxalq standart yanaşmaların, müasir müalicə protokollarının istifadəsi  hesabına klinik müdaxilələrin əvvəlcədən planlaşdırılmasına  ",
       "klinik xətaların azalmasına    …səbəb olur  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Təcili tibdə istifadə olunan komanda modelləri hansılardır?   1) İ-P-O (input-process-output) modeli   2) komanda işinin zaman modeli   3) Kombinə model   4) CONSULT modeli   5) 5C modeli  ",
     "answers": [
-      "hamısı  ",
-      "1,4,5   ",
       "4,5   ",
+      "1,4,5   ",
+      "hamısı  ",
       "1,2,3   ",
       "heç biri   "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Təcili tibdə komanda işinin zaman modeli-nə aid yanlış fikir hansıdır?  ",
@@ -307,7 +337,8 @@
       "Müzakirə-debrifinq fazası komandanın hər üzvünün özünə, komandanın digər  üzvlərinə və ümumi komanda işinə verdiyi rəyə əsaslanır.   ",
       "Rəyvermə zamanı əvvəlcə təqdir olunan davranış, sonra irad, daha sonra səhvləri  aradan qaldırmağa kömək edən təklif qeyd olunur.   ",
       "Bu modeldə planlaşdırma, fəaliyyət və müzakirə fazaları vardır.   "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Təcili tibb komandasında tələb təklifdən-mövcud imkanlardan çox olduqda,  qorxu/stress, səs-küy, intizamsızlıq, vaxt məhdudiyyəti, təhdid/təhlükə olduqda  komanda koordinasiyasını itirərsə və fərdi həll yolları təklif olunarsa nə etməli?   1) xaosun təsirinə düşmədən, zənnə qapılmadan sübuta əsaslanan tibbə  söykənməli   2) soyuqqanlı davranmalı   3) Protokol alqoritmlərini səsli xatırlatmalı   4) hazırda ehtiyac olmayan müdaxilələri ertələməli    5) hər üzv yardım istəyəcəyi zamanı bilməli və zamanında yardım istəməli  ",
@@ -317,7 +348,8 @@
       "yalnız 1,3   ",
       "yalnız 5   ",
       "yalnız 1,3,5   "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Kəskin xəstəlik və ya zədələnməsi olan xəstənin ən qısa zamanda və paralel  olaraq həm dəyərləndirilməsi-diaqnostikası, həm də müalicəsini başlayır.    Çox geniş spektrdəki xəstəlikləri bilir və differensial diaqnostika aparır, xəstəyə  bütöv orqanizm kimi yanaşır    Hər tibbi sahənin təcili hallarında xəstəni stabilləşdirir və tibdə hər ixtisasın ilk  həyəcanlı dəqiqələri ilə məşğul olur.    Bir çox diaqnostik və cərrahi bacarığa sahibdir.    Xəstə idarəetməni həyata keçirir.    Təcili yardım şöbəsində xəstə axınını tənzimləyir.    Yuxarıdakı xüsusiyyətlərin hamısının hansı ixtisas həkimində olması tələb  olunur?  ",
@@ -327,7 +359,8 @@
       "Kardioloq  ",
       "Bütün həkimlər  ",
       "Reanimatoloq  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Hansı təcili tibb həkimi olmağın üstünlüklərinə aid deyil?  ",
@@ -337,7 +370,8 @@
       "Xəstəliyə differensial yanaşıb doğru diaqnozu qoyma, problemi həll etmə  ",
       "Xəstələrə tibbi köməyə ən çox ehtiyac duyduğu anda kömək etmə  ",
       "Həkim seçmək şansı olmayan xəstələrə xidmət etmə  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Hansı təcili tibb həkimi olmağın üstünlüklərinə aid deyil?  ",
@@ -347,7 +381,8 @@
       "Xəstəliyə differensial yanaşıb doğru diaqnozu qoyma, problemi həll etmə  ",
       "Həkim seçmək şansı olmayan xəstələrə xidmət etmə  ",
       "Xəstələrə tibbi köməyə ən çox ehtiyac duyduğu anda kömək etmə  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Triaj kəlməsinin mənası nədir?  ",
@@ -357,7 +392,8 @@
       "götürmək, qaldırmaq  ",
       "3 qat azaltmaq  ",
       "3 qat artmaq  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Tibbi triaj nədir?   Xəstələrin və ya yaralıların…  ",
@@ -367,7 +403,8 @@
       "transportu  ",
       "müalicəsi  ",
       "diaqnostikası  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Hansı halda tibbi triaja ehtiyac olmaz?  ",
@@ -377,17 +414,19 @@
       "Gecə, istirahət və bayram günlərində, digər tibb müəssisələrinin işləmədiyi  zamanlarda  ",
       "Heç bir halda  ",
       "Müharibə bölgələri və ucqar kəndlərdə  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Napoleon Bonapartın apardığı müharibələrdə ordunun hərbi cərrahı D. Jean  Larreyin tətbiq etdiyi müharibə triajının məqsədi nə idi?  ",
     "answers": [
-      "Ölümcül yaralanmış xəstələrin müalicəsindən imtina etməklə zamanı çox sayda  yüngül yaralılara sərf edərək az vaxtda daha çox xəstəyə tibbi xidmət göstərmək  ",
+      "Orduda baş verə biləcək infeksion xəstəlikləri müəyyən etmək, profilaktikasını  həyata keçirmək  ",
       "Əsgərlərin sağlamlıq göstəricilərini yoxlamaq  ",
       "Bütün hərbi heyətə təcili tibb xidməti göstərmək  ",
-      "Yaralıların hadisə yerində müayinəsi və müalicəsi  ",
-      "Orduda baş verə biləcək infeksion xəstəlikləri müəyyən etmək, profilaktikasını  həyata keçirmək  "
-    ]
+      "Ölümcül yaralanmış xəstələrin müalicəsindən imtina etməklə zamanı çox sayda  yüngül yaralılara sərf edərək az vaxtda daha çox xəstəyə tibbi xidmət göstərmək  ",
+      "Yaralıların hadisə yerində müayinəsi və müalicəsi  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Tibbi triajın faydalarına aid deyil?  ",
@@ -397,27 +436,30 @@
       "Müayinə və müalicələrin triaj zamanı başlanması həkimə zaman qazandırır.   ",
       "Xəstə və yaralıların tibbi kadr, material və imkanlardan səmərəli istifadə olunmaqla  təcililiyini müəyyən edir.   ",
       "Hansı xəstələrə daha əvvəl tibbi xidmət göstəriləcəyini, kimin, harada, kim  tərəfindən müayinə və müalicə olunacağını müəyyən edir.   "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Xəstəxanayaqədərki triaj formalarını seçin:   1) Hadisə yeri triajı - çoxsaylı zərərçəkmişin olduğu hadisələrdə (Multicasualty)   2) Fövqəladə vəziyyət triajı - kütləvi tələfat, yaralanma və ölümlər olan  hadisələrdə (Mass casualty)   3) Hərbi triaj- müharibə zonasında    4) Təcili yardım şöbəsində triaj   5) Reanimasiya və intensiv terapiyada triaj   6) Əməliyyatxana triajı  ",
     "answers": [
-      "1,2,3   ",
+      "4,5,6   ",
       "1,6  ",
       "2,5,6   ",
       "1,4,6   ",
-      "4,5,6   "
-    ]
+      "1,2,3   "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Xəstəxanadaxili triaj formalarını seçin:   1) Hadisə yeri triajı - çoxsaylı zərərçəkmişin olduğu hadisələrdə (Multicasualty)   2) Fövqəladə vəziyyət triajı - kütləvi tələfat, yaralanma və ölümlər olan  hadisələrdə (Mass casualty)   3) Hərbi triaj- müharibə zonasında    4) Təcili yardım şöbəsində triaj   5) Reanimasiya və intensiv terapiyada triaj   6) Əməliyyatxana triajı  ",
     "answers": [
-      "1,2,3   ",
+      "4,5,6   ",
       "1,6  ",
       "1,4,6   ",
       "2,5,6   ",
-      "4,5,6   "
-    ]
+      "1,2,3   "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Hadisə yerində triajı kim həyata keçirir?  ",
@@ -427,17 +469,19 @@
       "triaj tibb bacısı  ",
       "ən təcrübəli cərrah  ",
       "polis  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Müharibə bölgəsində triajı kim həyata keçirir?  ",
     "answers": [
-      "ən təcrübəli hərbi həkim  ",
-      "travmatoloq  ",
       "oraya ilk çatan ambulansın həkimi və ya orta tibb işçisi  ",
+      "travmatoloq  ",
       "komandir  ",
+      "ən təcrübəli hərbi həkim  ",
       "triaj tibb bacısı  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Xəstəxanada fövqəladə hal planı tətbiq olunduqda əməliyyatxana triajını kim  həyata keçirir?  ",
@@ -447,7 +491,8 @@
       "tibbi xilasetmə qrupu  ",
       "xəstəxanada əməliyyatxana triajı həyata keçirilmir.   ",
       "baş həkim  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Təcili yardım şöbəsində triajı adətən kim həyata keçirir?  ",
@@ -457,27 +502,30 @@
       "kardioloq  ",
       "Alqoloq  ",
       "Triaj tibb bacısı  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Təcili yardımda çalışan Triaj tibb bacısı haqda fikirlərdən biri səhvdir:  ",
     "answers": [
-      "Təcili tibb bacıları assosiasiyası (ENA) ən son BLS, ACLS, ATLS, PALS  sertifikatlarına sahib olmağı tövsiyə edir.   ",
+      "Mütləq orta tibb işçisi ixtisası üzrə ali təhsil almalıdır.   ",
       "Xəstələrə uyğun rəng kodlarını müəyyənləşdirərək xəstə axınına istiqamət verir.   ",
       "Triaj tibb bacısı hər xəstənin tibbi ehtiyacını ən qısa müddətdə qiymətləndirir,  öncədən qəbul olunmuş triaj protokolunu tətbiq edir.   ",
       "Ən az 2 il kritik xəstələrlə və ya ən az 6 ay təcili yardım şöbəsində işləmiş, triaj  təlimi keçmiş olmalıdır.   ",
-      "Mütləq orta tibb işçisi ixtisası üzrə ali təhsil almalıdır.   "
-    ]
+      "Təcili tibb bacıları assosiasiyası (ENA) ən son BLS, ACLS, ATLS, PALS  sertifikatlarına sahib olmağı tövsiyə edir.   "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Tibbi xilasetmə komandalarının fəaliyyətinə aid deyil?  ",
     "answers": [
-      "Hər xəstəxananın beynəlxalq tibbi xilasetmə komandası vardır və o, prehospital  təcili tibb xidmətini təmin edir.   ",
       "Hadisə yerində doğru və tez icra edilən tibbi müdaxilələrlə ölümün və əlilliyin  qarşısının alınması üçün həyat qurtarıcı müdaxilələri edir.   ",
       "Xəstələrin növbəti müayinə və müalicəsini transfer əsnasında və səhra  xəstəxanalarında davam etdirir.   ",
       "Fövqəladə hala məruz qalmış şəxslərə doğru və tez müdaxilə edərək ölü və yaralı  sayının qəbul ediləbilən rəqəmlərə endirilməsinə çalışır.   ",
-      "Hadisə yerinə ən tez çatıb triaj apararaq hansı xəstələrə öncə və harada  baxılacağını, kimin nə vaxt hansı xəstəxanaya transfer olunacağını müəyyən edir.   "
-    ]
+      "Hadisə yerinə ən tez çatıb triaj apararaq hansı xəstələrə öncə və harada  baxılacağını, kimin nə vaxt hansı xəstəxanaya transfer olunacağını müəyyən edir.   ",
+      "Hər xəstəxananın beynəlxalq tibbi xilasetmə komandası vardır və o, prehospital  təcili tibb xidmətini təmin edir.   "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Biri hadisə yerində tətbiq olunan Triaj protokoludur:  ",
@@ -487,7 +535,8 @@
       "Kanada Triaj və Təcililik Şkalası (The Canadian Triage & Acuity Scale – CTAS)  ",
       "Mançestr Triaj Sistemi (Manchester Triage System)  ",
       "Avstraliya Triaj Şkalası (ATS).   "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Biri hadisə yerində tətbiq olunan Triaj protokoludur:  ",
@@ -497,7 +546,8 @@
       "Mançestr Triaj Sistemi (Manchester Triage System)  ",
       "Kanada Triaj və Təcililik Şkalası (The Canadian Triage & Acuity Scale – CTAS)  ",
       "Avstraliya Triaj Şkalası (ATS).   "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Hadisə yerində START triajı zamanı atılan ilk addım nədir?  ",
@@ -507,37 +557,41 @@
       "Ölmüş və ya ölü hesab olunan xəstələri seçmək  ",
       "Triaj işçisinə ən yaxında dayanan xəstəyə həyatqurtarıcı müdaxilələr etmək  ",
       "Növbə ilə xəstələrin vital əlamətlərini dəyərləndirmək  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "START triajı haqda doğru olmayan variantı seçin:  ",
     "answers": [
-      "Triaj dinamik proses deyil, xəstənin vəziyyət göstəricisi bir rəngdən digərinə keçirilə  bilməz və triaj təkrarlanmamalıdır.   ",
       "Sarı rənglə işarələnən xəstələr həyati təhlükəsi olmayan, lakin ümumi vəziyyətləri  hər an pisləşib təxirəsalınmaz müdaxilə tələb edə bilənlərdir.   ",
       "Yaşıl rənglə işarələnmiş xəstələr müşahidədə saxlanılan xəstələrdir.   ",
       "Qara rənglə ölmüş və ya ölü hesab olunan xəstələr işarələnir.   ",
-      "Qırmızı rənglə işarələnən xəstələr həyatı təhlükədə olanlar, ölüm və ya əlillik riski  daşıyanlardır.   "
-    ]
+      "Qırmızı rənglə işarələnən xəstələr həyatı təhlükədə olanlar, ölüm və ya əlillik riski  daşıyanlardır.   ",
+      "Triaj dinamik proses deyil, xəstənin vəziyyət göstəricisi bir rəngdən digərinə keçirilə  bilməz və triaj təkrarlanmamalıdır.   "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Hadisə yerində aparılan triajla bağlı səhv fikir hansıdır?  ",
     "answers": [
-      "Bütün xəstələrin hadisə yerində detallı müayinəsi aparılır və etioloji müalicəsi  başlanır.   ",
       "xəstə tənəffüs yolu açıcı manevrlər etdikdən sonra nəfəs almırsa, əlavə heç bir  müayinə edilmədən xəstə ölmüş qəbul olunur, qara rənglə işarələnir.   ",
       "Əgər xəstə nəfəs almırsa, nəfəs yolunu açmaq üçün sadə baş geri/çənə önə və/və  ya jaw thrust-çənənin 2 əllə önə çəkilməsi manevri edilir  ",
       "Yaşıl kod verilən xəstələrin hadisə yerindən uzaqlaşdırılması həm xəstələrə  psixoloji cəhətdən müsbət təsir edir, həm də triaj işini asanlaşdırır.   ",
-      "Hadisə yerində şəxsiyyəti bilinməyən xəstənin qeydiyyatı triaj kartlarının,  biləkliklərinin köməyilə aparılır.   "
-    ]
+      "Hadisə yerində şəxsiyyəti bilinməyən xəstənin qeydiyyatı triaj kartlarının,  biləkliklərinin köməyilə aparılır.   ",
+      "Bütün xəstələrin hadisə yerində detallı müayinəsi aparılır və etioloji müalicəsi  başlanır.   "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Kütləvi zədələnmə halında hadisə yerində nəfəs almayan xəstəyə ilk nə  edilməlidir?  ",
     "answers": [
-      "baş geri/çənə önə və/və ya jaw thrust-çənənin 2 əllə önə çəkilməsi manevri  edilməlidir  ",
-      "süni tənəffüs verilməlidir  ",
       "ürək masajı edilməlidir  ",
+      "süni tənəffüs verilməlidir  ",
       "periferik kapillyar geri dolum yoxlanmalıdır  ",
-      "nəbzinə baxılmalıdır  "
-    ]
+      "nəbzinə baxılmalıdır  ",
+      "baş geri/çənə önə və/və ya jaw thrust-çənənin 2 əllə önə çəkilməsi manevri  edilməlidir  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Sürətli nevroloji müayinə üçün istifadə olunan AVPU şkalasından  aşağıdakılardan hansı yoxlanılmır?  ",
@@ -547,87 +601,96 @@
       "Unresponsiveness/ areaktivlik  ",
       "Verbal stimuli response/ səsə reaksiya  ",
       "Alert/Həyəcan  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "35 yaşlı qadın, alın bölgəsində böyük bir kəsik var. Tənəffüs sayı: 25.  Periferik kapillyar geridolum: ˂2 saniyə. Əmrlərə tabe olur və sizə doğru gəlir.    Triaj qiymətləndirməsi zamanı hadisə yerində bu xəstəyə hansı triaj rəng kodu  verilməlidir?  ",
     "answers": [
-      "qırmızı  ",
+      "yaşıl  ",
       "qara  ",
       "sarı  ",
-      "yaşıl  ",
-      "göy  "
-    ]
+      "göy  ",
+      "qırmızı  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "36 yaşlı kişi xəstə, döş qəfəsində ağrı ilə təcili yardım şöbəsinə müraciət  edir. Tənəffüs sayı: 28. Periferik kapillyar geridolum: ˂2 saniyə. Əmrlərə tabe  olur, amma uzanarkən narahat olur, oturmağa davam edir.    Triaj qiymətləndirməsi zamanı bu xəstəyə hansı triaj rəng kodu verilməlidir?  ",
     "answers": [
-      "sarı  ",
+      "yaşıl  ",
       "qara  ",
       "qırmızı  ",
-      "yaşıl  ",
-      "göy  "
-    ]
+      "göy  ",
+      "sarı  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "5 yaşlı qız uşağı avtobus qəzasından sonra hadisə yerində dəyərləndirilir.  Tənəffüs yoxdur. Periferik kapillyar geridönüm: >2 saniyə. Əmrlərə tabe olmur.    Hadisə yerində triaj qiymətləndirməsi zamanı hansı rəng kodu verilməlidir?  ",
     "answers": [
-      "qara  ",
+      "yaşıl  ",
       "sarı  ",
       "qırmızı  ",
-      "yaşıl  ",
+      "qara  ",
       "göy  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "33 yaşlı qadın, kürək nahiyəsində şiddətli ağrı şikayəti ilə yaxınları  tərəfindən təcili yardım şöbəsinə gətirilib. Tənəffüs sayı: 25. Periferik kapillyar  geridönüm: >2 saniyə. Əmrlərə tabe olur.    Triaj qiymətləndirməsi zamanı bu xəstəyə hansı triaj rəng kodu verilməlidir?  ",
     "answers": [
-      "qara  ",
-      "göy  ",
       "yaşıl  ",
+      "göy  ",
       "sarı  ",
+      "qara  ",
       "qırmızı  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "44 yaşlı kişi, zəlzələ zamanı baş verən dağıntı altından çıxarılıb. Sol qolda  bazunun sınığı var. Tənəffüs yoxdur. Nəbz var. Əmrlərə tabe olmur.    Triaj qiymətləndirməsi zamanı hadisə bu xəstəyə hansı triaj rəng kodu  verilməlidir?  ",
     "answers": [
-      "qara  ",
+      "yaşıl  ",
       "qırmızı  ",
       "göy  ",
-      "yaşıl  ",
-      "sarı  "
-    ]
+      "sarı  ",
+      "qara  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Fövqəladə hallarda zərərçəkənlərə tibbi yardımın mərhələlərini ardıcıllıqla  müəyyən edin:   1) izolyasiya   2) xilasetmə   3) müalicə  ",
     "answers": [
-      "1,2,3  ",
       "2,3  ",
       "yalnız 3  ",
       "2,1,3  ",
-      "3,1  "
-    ]
+      "3,1  ",
+      "1,2,3  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Fövqəladə hallar zamanı prehospital təcili xidmətin mütəşəkkil təşkilindən  asılı deyil:  ",
     "answers": [
-      "xəstəxanada bütün planlı əməliyyatların dayandırılması, yalnız təcili əməliyyatların  icrası  ",
-      "doğru xəstənin doğru xəstəxanaya doğru zamanda doğru transportu   ",
       "yerində həyatqurtarıcı müdaxilələrin aparılması  ",
+      "doğru xəstənin doğru xəstəxanaya doğru zamanda doğru transportu   ",
       "hadisə yerində təcili tibbi xidmətə ehtiyacı olanların sayının və yerinin müəyyən  olunması,   ",
-      "yaralı və zərərçəkənlərin ilkin müayinəsi və tibbi çeşidlənməsi   "
-    ]
+      "yaralı və zərərçəkənlərin ilkin müayinəsi və tibbi çeşidlənməsi   ",
+      "xəstəxanada bütün planlı əməliyyatların dayandırılması, yalnız təcili əməliyyatların  icrası  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Konsultasiyalar zamanı təcili tibb həkimi tərəfindən ən çox edilən səhvlərə  aid deyil?  ",
     "answers": [
-      "Təcili hallarda yetərli diaqnostik müayinələrin nəticələri bəlli olduqdan sonra  konsultantın dəvət olunması  ",
+      "Eyni ixtisas üzrə subordinasiya gözləmədən bir neçə konsultantın çağırılması  ",
       "Digər həkimlərin xəstələri üçün konsultantın çağırılması  ",
       "Münasib olmayan vaxtlarda-növbədənkənar zamanda zənglərin edilməsi  ",
-      "Eyni ixtisas üzrə subordinasiya gözləmədən bir neçə konsultantın çağırılması  ",
+      "Təcili hallarda yetərli diaqnostik müayinələrin nəticələri bəlli olduqdan sonra  konsultantın dəvət olunması  ",
       "Növbə cədvəlində adının qeyd olunmasına baxmayaraq növbəsini dəyişən  həkimlərin konsultasiyaya dəvət olunması  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Konsultantlar tərəfindən ən çox edilən səhvlərə aid deyil:   ",
@@ -637,7 +700,8 @@
       "Müalicə protokollarına uyğun olmayan təyinatlar vermək  ",
       "Xəstəni görmədən telefonla laborator-instrumental müayinə istəmək, müalicə üçün  təyinat vermək  ",
       "Xəstəyə baxış keçirmədən digər ixtisas həkimlərinin konsultasiyasını istəmək  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Təcili tibdə ən çox istifadə olunan 5C konsultasiya modelində ardıcıllığı  seçin:   1) Contact-təmas   2) Communicate-əlaqə qurmaq   3) Corequestion-əsas sual/problem   4) Collaborate-əməkdaşlıq   5) Closing the loop-dövrəni qapatmaq  ",
@@ -647,7 +711,8 @@
       "4,2,1,3,5   ",
       "2,3,5   ",
       "4,3,5   "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Biri təcili tibdə istifadə olunan konsultasiya modeli deyil:  ",
@@ -657,17 +722,19 @@
       "Kombinə model  ",
       "PİQUED  ",
       "5-C  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Təcili yardım şöbəsində qərarvermənin hansı forması yolverilməzdir?   1) İntuitiv   2) Təcrübəyə əsaslanan   3) Biliyə əsaslanan  ",
     "answers": [
-      "1  ",
+      "3  ",
       "1 və 3  ",
       "1 və 2  ",
       "2  ",
-      "3  "
-    ]
+      "1  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Təcili tibb həkimi xəstə barədə hansı qərarı vermir?   ",
@@ -677,7 +744,8 @@
       "başqa xəstəxanaya köçürülməsi qərarını   ",
       "aparılan resusitasiyaya baxmayaraq həyata qaytarıla bilməyən xəstələrin morqa  verilməsi  ",
       "təcili yardım şöbəsində müşahidədə saxlanılması  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Azərbaycan qanunlarına görə hansı halda həkim xəstənin müalicəsindən  imtina edə bilməz?  ",
@@ -687,7 +755,8 @@
       "Xarici vətəndaşlar tibb xidməti üçün müraciət edərsə  ",
       "İstənilən kardioloji şikayətlə müraciət etmə hallarında  ",
       "Həkim istənilən halda müalicədən imtina edə bilər  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Təcili yardım şöbəsində hansı halda polisə məlumat verilməməlidir?  ",
@@ -697,7 +766,8 @@
       "uşaq istismarı və zorakılığı düşündürən hallarda   ",
       "odlu silah yaralanmaları olarsa  ",
       "Kəsilib- deşilmiş yaralar varsa  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Terminal halın ardıcıl mərhələləri aşağıdakılardan hansılardır?   1) Akrosionoz 4) taxikardiya   2) Preaqoniya 5) aqoniya   3) Terminal fasilə 6) klinik ölüm  ",
@@ -707,17 +777,19 @@
       "3,2,5,4  ",
       "1,2,3,6   ",
       "2,1,5,6   "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Ölüm hallarında ilkin dövrün klinik əlamətlər triadası hansılardır?   1) Bəbəklərin işığa reaksiyasının olmaması   2) Ürəyin dayanması   3) Arteriyaların üzərində nəbzin əllənməsi   4) Tənəffüsün olmaması   5) Huşun itməsi  ",
     "answers": [
-      "2,4,5   ",
       "3,4,5  ",
       "5,1,3  ",
+      "2,4,5   ",
       "1,3,5  ",
       "1,2,3   "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "”Beyin ölümü” nədir?  ",
@@ -727,7 +799,8 @@
       "Şərti reflekslərin alınmaması  ",
       "Elektrolit mübadilə pozuntusu  ",
       "Beyin funksiyalarının geridönən pozuntusu  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "”Beyin ölümü” qərarını kimlər verir?   1) kardioloq   2) nevroloq   3) neyrocərrah  4) reanimotoloq  5) kardiocərrah  6) infeksionist  ",
@@ -737,7 +810,8 @@
       "2,3,4. 5  ",
       "1,2,3,5   ",
       "1,3,6,5  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "”Apnoe testi” nə zaman edilir?  ",
@@ -747,7 +821,8 @@
       "Huşun pozulması zamanı  ",
       "Klinik ölüm zamanı   ",
       "Sedasiya zamanı  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Beyin ölümü dəstəkləyici testlərə aiddir.   ",
@@ -757,7 +832,8 @@
       "Qanın ümumi analizi   ",
       "Biopsiya  ",
       "Sidiyin ümumi analizi  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "GRİEV-İNG formulu nə zaman istifadə olunur?  ",
@@ -767,7 +843,8 @@
       "Biopsiya edərkən  ",
       "Müayinə edərkən  ",
       "Əməliyyat qərarı verərkən  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Təcili Tibb şöbəsində ölüm baş verərkən ölüm aktını kim hazırlayır?  ",
@@ -777,7 +854,8 @@
       "Nevroloq  ",
       "İnfeksionist  ",
       "Reanimatoloq  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Koma zamanı Qlasko koma şkalası neçə olur?  ",
@@ -787,7 +865,8 @@
       "6  ",
       "8   ",
       "14  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Təcili Tibb şöbəsində baş verən kardioloji ölümlərin ən yüksək faizi hansı  ölümlərdir?  ",
@@ -797,17 +876,19 @@
       "Sol mədəcik çatışmazlığı  ",
       "Aşağı EF  ",
       "Sağ mədəcik çatışmazlığı  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Terminal fasilə nə deməkdir?  ",
     "answers": [
-      "Klinik ölümün mərhələsi   ",
       "Beyin ölümü   ",
       "Ürək-damar pozğunluğudur  ",
       "Qıcolma tutması  ",
-      "Tənəffüs pozğunluğudur  "
-    ]
+      "Tənəffüs pozğunluğudur  ",
+      "Klinik ölümün mərhələsi   "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Beyin kötüyü refleksləri hansıdır?  ",
@@ -817,7 +898,8 @@
       "Qıcolma tutması  ",
       "Ürəkdə ritm pozğunluqları  ",
       "Bəbəklərin genişlənib,işığa reaksiya verməməsi  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Beyin ölümü qərarını verən zaman “Apnoe testi”nin əsas məqsəd nədir?  ",
@@ -827,7 +909,8 @@
       "Qanda kreatinin səviyyəsini ölçmək  ",
       "Ürək fəaliyyənin qiymətləndirilməsi  ",
       "Qanda alkoloz dəyərləndirmək   "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "“Koma”,”Apnoe testi”,”Beyin kötüyü reflekslərinin qiymətləndirmə testi  “hansı dioqnozun qoyulmasında istifadə olunur?  ",
@@ -837,17 +920,19 @@
       "Ani ürək dayanması  ",
       "Terminal fasilə zamanı  ",
       "Aqonal vəziyyət  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Ağır xəstələrdə bu orqanın yalnız adekvat funksionallığı orqanlara oksigenin  çatdırılmasını təmin edir.   ",
     "answers": [
-      "Ağciyərlər  ",
+      "Beyin  ",
       "Böyrəklər  ",
       "Ürək  ",
       "Qanda eritrositlər  ",
-      "Beyin  "
-    ]
+      "Ağciyərlər  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Aşağıdakı xəstələrdən hansında tənəffüs yollarının keçiriciliyinə nəzarət ən  vacib müdaxilə hesab olunur?  ",
@@ -857,7 +942,8 @@
       "Anafilaktik şok  ",
       "Anafilaktik və septik şok  ",
       "Septik şok    "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Kəskin koronar sindromda “ilkin qeyri-invaziv yardımın göstərilməsi  konsepsiyası” adı altında nə nəzərdə tutulur?  ",
@@ -867,7 +953,8 @@
       "Heç biri ",
       "Aspirin, klopidoqrel  ",
       "Fibrinolitik terapiya    "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Stenokardiyanın müalicəsində əsas məqsədlər hansılardır?   1) Tutmaların dayandırılması   2) Stenokardiya tutmalarının və miokard işemiyasının ağrısız epizodlarının  profilaktikası və ya onların tezliyinin və şiddətinin azaldılması   3) ÜİX-nin ikincili profilaktikası və həyat proqnozunun yaxşılaşdırılması   4) Həyat keyfiyyətinin yaxşılaşdırılması ",
@@ -877,7 +964,8 @@
       "yalnız 1, 3, 4   ",
       "yalnız 3, 4  ",
       "yalnız 2, 3, 4     "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Depolarizasiya vəziyyətində olan hüceyrənin hüceyrə membranının səthi  necə yüklənir?  ",
@@ -887,7 +975,8 @@
       "xarici və daxili - müsbət  ",
       "xarici – müsbət, daxili – mənfi  ",
       "xarici və daxili - mənfi  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Ürəyin keçirici sisteminin hansı hissəsi normal olaraq ritmi kontrol edir?  ",
@@ -897,7 +986,8 @@
       "Atrioventrikulyar düyün  ",
       "Hiss dəstələri  ",
       "Kent dəstəsi "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Normalda sağ və sol qulaqcıqların oyanma ardıcıllığı necədir?   1) Sinus düyününün oyanması   2) Sağ qulaqcığın ilkin oyanması   3) Sağ və sol qulaqcıqların oyanması   4) Sol qulaqcığın son oyanması   ",
@@ -907,7 +997,8 @@
       "Yalnız 1  ",
       "Yuxarıda sadalananların hamısı  ",
       "1. 3. 4   "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Qulaqcıqların və mədəciklərin oyanmasının normal vaxt ardıcıllığını təyin  edən oyanma dalğasının fizioloji gecikməsi harada baş verir?  ",
@@ -917,7 +1008,8 @@
       "His dəstəsinin sol ayaqcığında  ",
       "His dəstəsinin sağ ayaqcığında  ",
       "Sinus düyünündə   "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Miokard infarktı olan xəstələrə qayğı göstərmək taktikası asılıdır:  ",
@@ -927,17 +1019,19 @@
       "Bu xəstədə müşayiət olunan xəstəliklərdən  ",
       "Yuxarıda göstərilənlərin hamısından  ",
       "Tutmaların tezliyindən  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Fibrinolitik terapiya hansı xəstələrdə əks göstərişdir?   (tam cavabı seçin)   1) Anamnezində keçici işemik tutmaları olan   2) Qan xəstəliyi olan   3) Hipokoaqulyasiyalı   4) Termiki xəstələrdə   5) Hepatit olan   6) Böyrək xəstəliyi olan   ",
     "answers": [
-      "1. 2. 3. 4. 5  ",
-      "1. 2. 4. 5. 6   ",
       "2. 3. 4. 5. 6   ",
+      "1. 2. 4. 5. 6   ",
       "2. 3. 4. 5   ",
+      "1. 2. 3. 4. 5  ",
       "1. 2. 3. 4. 5. 6  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Ürək dayanması (asistoliya) olduqda klinik və farmakoloji yanaşma:   1) Lidokain venadaxili 1,0-1,5 mq/kq   2) Bretilium venadaxili 5-10 mq/kq   3) Adrenalin venadaxili 2-10 mkq/dəq   4) Ürəyin qapalı masajı   5) Adrenalin venadaxili 1 mq hər 3-5 dəqiqədən bir   6) Atropin venadaxili 1 mq hər 3-5 dəqiqədən bir   ",
@@ -947,17 +1041,19 @@
       "3. 4. 6  ",
       "1. 2. 4   ",
       "4. 5. 6   "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Bradikardiyanın klinik və farmakoloji yanaşması?   1) Adrenalin venadaxili 2-10 mkq/dəq   2) Atropin venadaxili 0,5 – 1,0 mq   3) Dofamin 5-20 mkq/dəq   4) İzoproterenol   5) Adrenalin venadaxili 1 mq hər 3-5 dəqiqədən bir   6) Atropin venadaxili 1 mq hər 3-5 dəqiqədən bir ",
     "answers": [
-      "1. 2. 3. 4  ",
-      "3. 4. 6  ",
       "4. 5. 6  ",
+      "3. 4. 6  ",
       "Yuxarıda sadalananların hamısı  ",
+      "1. 2. 3. 4  ",
       "1. 2. 3    "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "ÜİX-nin verapamillə müalicəsinin təhlükəsizliyinə nəzarət etmək üçün EKQ- də hansı dəyişiklikləri izləmək lazımdır?  ",
@@ -967,7 +1063,8 @@
       "P dişciyi ",
       "U dişciyi  ",
       "Q–T intervalı       "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "ÜİX və arterial hipertenziya diaqnozu ilə müalicə alan xəstə halsızlıq,  diskomfort şikayətləri ilə təcili yardım şöbəsinə müraciət edib. Obyektiv və  subyektiv müayinə zamanı ürək döyüntüsü = 55 döyüntü/dəq, A/T = 120/70 mm  c. s. , EKQ-də P – Q intervalında uzanma qeydə alınıb. Həkim aşağıdakı  dərmanlardan hansını dayandırmalıdır?  ",
@@ -977,7 +1074,8 @@
       "Antiaqreqant ",
       "Nitrat  ",
       "AÇF- inhibitoru    "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Ektopik aritmiyalara hansı aid edilmir?  ",
@@ -987,17 +1085,19 @@
       "Mədəciklərin səyriməsi  ",
       "Parasistoliya  ",
       "Mədəcik taxikardiyası  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Ürək çırpıntısı olan xəstəyə EKQ müayinəsi olmadan aşağıdakı  dərmanlardan hansını təyin etmək olar?  ",
     "answers": [
-      "Amiodaron  ",
-      "Sotalol  ",
       "Ritmonorm  ",
+      "Sotalol  ",
       "Lidokain  ",
-      "Xinidin  "
-    ]
+      "Xinidin  ",
+      "Amiodaron  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Nitrogliserin tabletlərinin yuxarı dodağın selikli qişasından sorulmasının  yüksək bioeffektivliyi nə ilə izah olunur?  ",
@@ -1007,17 +1107,19 @@
       "Orqanizmdə toplanır ",
       "qaraciyərdən keçir  ",
       "Qan dövranına ipro-dərman kimi daxil olur  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "WPW sindromu nə ilə xarakterizə olunur?   (tam cavabı seçin)    1) Qısa PQ intervalı (<0,12)   2) δ – dalğaların olması   3) Paroksizmal taxikardiya   4) QRS kompleksinin genişlənməsi   5) Bradikardiya ",
     "answers": [
-      "1. 2. 3. 4  ",
-      "1. 2. 3. 5  ",
       "2. 3. 4. 5  ",
+      "1. 2. 3. 5  ",
+      "1. 2. 3. 4  ",
       "3. 4. 5  ",
       "1. 2. 4  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "P dişciyinin normal amplitudası və müddəti nədir?  ",
@@ -1027,17 +1129,19 @@
       "P dişciyinin amplitudası 3-4,5 mm-dən çox deyil, müddəti isə 0,12-0,20 s-dir.   ",
       "P dişciyinin amplitudası 1 mm-dən çox deyil, müddəti isə 0,20 s-dir.  ",
       "P dişciyinin amplitudası 1,5-2,5 mm-dən çox deyil, müddəti isə 0,12-0,20 s-dir.     "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Aşağıdakı cavablardan EKQ haqda doğru olanı seçin:   1) I aparma – sol əl (+) və sağ əl (-)   2) II aparma – sol ayaq (+) və sağ əl (-)   3) III aparma – sol ayaq (+) və sol əl(-)   4) aVF – sol əl (+) və sağ əl (-)  ",
     "answers": [
-      "1,2,3  ",
+      "2,3,4  ",
       "yalnız 4  ",
       "1,3,2  ",
-      "2,3,4  ",
-      "1,2,3,4  "
-    ]
+      "1,2,3,4  ",
+      "1,2,3  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Aşağıdakı döş aparmalarından hansı EKQ-də mədəciklərarası çəpərin  qüsurunu əks etdirir?  ",
@@ -1047,17 +1151,19 @@
       "V5-V6  ",
       "V1-V6  ",
       "V3-V4  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Aşağıdakı aparmalardan hansı ürək çəpərinin miokard infarktı zamanı  resiprok dəyişiklikləri əks etdirir? ",
     "answers": [
+      "aVR və aVF  ",
       "II və aVF ",
       "I və aVF  ",
       "I, II və aVF  ",
-      "aVR və aVF  ",
       "III və aVF  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Əlavə döş aparmalarının (V7-V9) diaqnostik imkanları ilə miokardın hansı  hissəsindəki ocaqlı dəyişiklikləri daha dəqiq müəyyən etmək olur?  ",
@@ -1067,7 +1173,8 @@
       "Sol mədəciyin ön hissəsi  ",
       "Qulaqcıqların posterobazal hissələri  ",
       "Sağ mədəcik  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "QRS kompleksinin normal müddəti nə qədərdir?  ",
@@ -1077,17 +1184,19 @@
       "2. 5 san  ",
       "0,1- 0,3 san  ",
       "> 0,1 san    "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Aşağıdakı aparmalardan hansında elektrodların düzgün tətbiqinə baxılır? ",
     "answers": [
-      "aVR       ",
       "I ",
       "aVF  ",
       "aVL  ",
-      "II  "
-    ]
+      "II  ",
+      "aVR       "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Aşağıdakı cihazlardan hansı tənəffüs yollarının keçiriciliyinin təminatı üçün  istifadə edilmir?  ",
@@ -1097,17 +1206,19 @@
       "Orofaringeal tənəffüs yolları ",
       "Dil tutucusu  ",
       "Oksigen qəbul edən borular  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Təcili yardım şöbəsində tənəffüs çatışmazlığından əziyyət çəkən xəstə  hansı bucaq altında uzanmalıdır? ",
     "answers": [
-      "45  ",
+      "90  ",
       "180  ",
       "30  ",
-      "90  ",
+      "45  ",
       "60  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Aspirasiyanın qarşısını almaq üçün huşunu itirmiş xəstəyə hansı mövqe  verilir?  ",
@@ -1117,37 +1228,41 @@
       "prompozisiya  ",
       "Düz, uzanmış  ",
       "45 dərəcə bucaq altında uzanmış mövqe  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "NPA (nasopharengial airway) quraşdırarkən hansı xəstələrə diqqət  yetirilməlidir? ",
     "answers": [
-      "baş və ya üz travması olan ",
       "Bronxial astma olan ",
       "Pnevmotorakslı ",
       "Yuxarıda göstərilənlərin hamısı ",
-      "ÜİX (ürəyin işemik xəstəliyi) olan "
-    ]
+      "ÜİX (ürəyin işemik xəstəliyi) olan ",
+      "baş və ya üz travması olan "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Guedel orofaringeal tənəffüs yollarından hansı rənginə görə ən uzundur? ",
     "answers": [
-      "Açıq yaşıl ",
-      "Yaşıl ",
       "Ağ ",
+      "Yaşıl ",
       "Sarı ",
-      "Qırmızı "
-    ]
+      "Qırmızı ",
+      "Açıq yaşıl "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "RSİ-sürətli ardıcıl intubasiyanın məqsədi nədir? ",
     "answers": [
-      "Göstərilənlərin hamısı ",
+      "ETT (endotraxeal boru) istifadə etməklə tənəffüsə nəzarət ",
       "Fizioloji pozulmaların minimuma endirilməsi ",
       "Vaxta qənaət etmək ",
-      "Sürətli müayinənin asanlaşdırılması ",
-      "ETT (endotraxeal boru) istifadə etməklə tənəffüsə nəzarət "
-    ]
+      "Göstərilənlərin hamısı ",
+      "Sürətli müayinənin asanlaşdırılması "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "25 mm/s-də qeydə alınan requlyar EKQ-də RR arasında böyük damaların  sayı 2-dirsə, ürək döyüntülərinin sayını təyin edin. ",
@@ -1157,7 +1272,8 @@
       "130 ",
       "100 ",
       "300 "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Aşağıdakılardan hansı ölüm ritmi hesab edilmir? ",
@@ -1167,7 +1283,8 @@
       "Nəbzsiz elektrik aktivliyi ",
       "Mədəcik taxikardiyası ",
       "Mədəciklərin fibrilasiyası "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Ürəyin qapalı masajı zamanı kompressiyanın dərinliyi nə qədər olmalıdır?  ",
@@ -1177,7 +1294,8 @@
       "2-4 sm  ",
       "3-4 sm  ",
       "1-5 sm  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "EKQ-də hiperkalemiya əlamətləri:  ",
@@ -1187,17 +1305,19 @@
       "PQ intervalının uzanması, yüksək T dişciyi  ",
       "Aşağı T dişciyi, QT intervalının uzanması ",
       "Aşağı T dişciyi, QT intervalının qısalması  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Həyat zəncirinin ardıcıllığını bərpa edin:   1) Defibrilator   2) Təcili yardım çağırmaq   3) BLS   4) Dərman müalicəsi  ",
     "answers": [
-      "2,3,1,4  ",
+      "1,2,3,4  ",
       "2,4,1,3  ",
       "2,1,3,4  ",
-      "1,2,3,4  ",
-      "3,4,1,2  "
-    ]
+      "3,4,1,2  ",
+      "2,3,1,4  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Kompressiya dərinliyi və sayı ilə bağlı düzgün qərarı seçin:  ",
@@ -1207,27 +1327,30 @@
       "5-6 sm; 30 k/dəq  ",
       "5-6 sm; 50 k/dəq  ",
       "3-4 sm; 100 k/dəq  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Komaya diaqnoz qoyan faktorları qeyd edin:   1) Şüurun olmaması   2) Bəbəklərin genişlənməsi   3) Bəbəklərin daralması   4) Qlasko 2   ",
     "answers": [
-      "1, 2  ",
-      "2, 4  ",
       "2, 3  ",
+      "2, 4  ",
+      "1, 2  ",
       "1, 4  ",
       "1, 3  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Miokard infarktı üçün tromboliz effektiv olur:  ",
     "answers": [
-      "ilk 6 saatda  ",
       "xəstəxanaya çatandan sonra 8 saat müddətində  ",
       "ilk 20 saatda  ",
       "Fərqi yoxdur ",
+      "ilk 6 saatda  ",
       "diaqnoz qoyulandan sonra 14 saat ərzində    "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Aşağıdakı EKQ dəyişikliklərindən hansı miokard infarktı üçün  xarakterikdir?  ",
@@ -1237,7 +1360,8 @@
       "Standart aparmalarda aşağı P dişcik gərginliyi.   ",
       "QT intervalının dəyişməsi ",
       "U dişciyinin yaranması       "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Hansı əlamətlər adətən aritmiya üçün xarakterik deyil?  ",
@@ -1247,7 +1371,8 @@
       "Ürək döyüntüsü  ",
       "Panika  ",
       "Nəfəs darlığı  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Traxeobronxial zədə təsvir edilmişdir. Hansı səhvdir?  ",
@@ -1257,17 +1382,19 @@
       "Hamman əlaməti və döş nayihəsinin ağrıya həssaslığı müsbətdir.   ",
       "Ən çox karinanın yuxarı 2 sm hissəsində və ya lobar bronxun çıxışında baş verir.  ",
       "Nəfəs darlığı, qanhayxırma və subkutan emfizema baş verə bilər.      "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Mədəciklərin aktivləşmə vaxtını nə göstərir?  ",
     "answers": [
-      "QRS eni  ",
+      "QT intervalı  ",
       "PQ intervalı  ",
       "PR intervalı  ",
-      "QT intervalı  ",
-      "ST seqmenti "
-    ]
+      "ST seqmenti ",
+      "QRS eni  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Siz radiologiya şöbəsində yerə yıxılan, 10 saniyə nəbz olmayan, aqonal  nəfəsi olan xəstəyə görə mavi koda zəng etmisiniz, növbəti addımda nə  edirsiniz?  ",
@@ -1277,17 +1404,19 @@
       "Yuxarıda göstərilənlərin hamısı  ",
       "Nəfəs verirəm  ",
       "Mavi kodun gəlməsini gözləyəcəyəm  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Hansı adi taxikardiya deyil?  ",
     "answers": [
-      "VT  ",
+      "Ektopik qulaqcıq taxikardiyası  ",
       "Düyün mənşəli aritmiya   ",
       "Multifokal qulaqcıq taxikardiyası  ",
-      "Ektopik qulaqcıq taxikardiyası  ",
+      "VT  ",
       "PSVT  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Hansı fibrinolitik dərman hesab edilmir?  ",
@@ -1297,7 +1426,8 @@
       "Streptokinaza  ",
       "Alteplaza ",
       "Urokinaza  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Bu preparatlardan hansı stenokardiya tutması zamanı ilk tibbi yardım  vasitəsi kimi seçilir?  ",
@@ -1307,7 +1437,8 @@
       "yalnız aspirin kardio  ",
       "yalnız nitrogliserin  ",
       "beta-blokatorlar və nitrogliserin  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Malpraktis nədir?  ",
@@ -1317,17 +1448,19 @@
       "Xəstənin müalicəsinə qeyri-standart yanaşma  ",
       "Xəstənin uğurlu reabilitasiyası  ",
       "Müvafiq müalicə üçün xəstənin razılığının alınması proseduru  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Qəfil ürək dayanması olan xəstələrdə bu patologiyanın ən çox rast gəlinən  səbəbi:  ",
     "answers": [
-      "İşemik xəstəlik  ",
-      "Aritmiya  ",
       "Xroniki böyrək xəstəliyi  ",
+      "Aritmiya  ",
       "Arterial hipertenziya  ",
-      "Kardiomiopatiyalar  "
-    ]
+      "Kardiomiopatiyalar  ",
+      "İşemik xəstəlik  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "R zirvəsinin amplitudası normada hansı döş aparmalarında ən kiçikdir?  ",
@@ -1337,17 +1470,19 @@
       "V4 və V6  ",
       "V4 və V6  ",
       "V3 və V5  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Döş aparmalarında V3 göstərir:  ",
     "answers": [
-      "Mədəciklərarası çəpərin əzələlərinin elektrik aktivliyinin dəyişməsini  ",
+      "Elektrik siqnallarının sol mədəciyin anterolateral divarında hərəkətini  ",
       "Yan mədəcikdən gələn elektrik siqnallarını  ",
       "Sağ mədəcikdən gələn elektrik siqnallarını  ",
       "Zirvədə aktivləşdirici siqnalların keçməsini  ",
-      "Elektrik siqnallarının sol mədəciyin anterolateral divarında hərəkətini  "
-    ]
+      "Mədəciklərarası çəpərin əzələlərinin elektrik aktivliyinin dəyişməsini  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "2010-cu il AHA CPR Təlimatında tövsiyə edilən əsas reanimasiyanın  ardıcıllığı:  ",
@@ -1357,7 +1492,8 @@
       "ürəyin qapalı masajı, tənəffüsün bərpası, tənəffüs yollarının keçiriciliyinin təmini,   ",
       "tənəffüs yollarının keçiriciliyinin təmini, ürəyin qapalı masajı, tənəffüsün bərpası;  ",
       "tənəffüs yollarının keçiriciliyinin təmini, tənəffüsün bərpası, ürəyin qapalı masajı;  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Yüksək keyfiyyətli CPR üçün döş qəfəsinin minimum sıxılma tezliyi:  ",
@@ -1367,7 +1503,8 @@
       "dəqiqədə 150  ",
       "dəqiqədə 75  ",
       "dəqiqədə 90  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Aritmiyanın əsas əlamətləri hansı deyil?  ",
@@ -1377,7 +1514,8 @@
       "Presenkop və ya huşunu itirmə halları  ",
       "Fiziki fəaliyyətə dözüm qabiliyyətinin azalması  ",
       "Ürək döyüntülərinin artması  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Wolff-Parkinson-White və Lown-Ganong-Levine sindromlarının ümumi  xarakteristikası:  ",
@@ -1387,7 +1525,8 @@
       "Bradikardiya  ",
       "R dişciyində delta dalğası  ",
       "Stenokardiya  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Qulaqcıqların Səyriməsi (Atrial Fibrilyasiya) haqqında yanlış ifadə:  ",
@@ -1397,27 +1536,30 @@
       "Nizamsız taxikardiya  ",
       "Qulaqcıqların yığılma sürətinin dəqiqədə 200-dən çox olması  ",
       "Supraventrikulyar taxikardiya  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "VT-də ürək yığılmalarının tezliyinə və ya sürətinə aşağıdakılardan hansı  təsir etməyəcək?  ",
     "answers": [
-      "Adenozin  ",
+      "Amiodaron  ",
       "Lidokain  ",
       "Novokainamid  ",
       "Prokainamid  ",
-      "Amiodaron  "
-    ]
+      "Adenozin  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Dar QRS və hipotenziyası olan xəstələr üçün əks göstərişdir:  ",
     "answers": [
-      "Beta blokatorlar  ",
       "Amiodaron və Diqoksin  ",
       "Diqoksin  ",
       "Amiodaron  ",
+      "Beta blokatorlar  ",
       "Kardioversiya  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Birinci dərəcəli atrioventrikulyar blokada üçün doğrudur:  ",
@@ -1427,7 +1569,8 @@
       "Hər ikinci və ya üçüncü impulsun keçiriciliyi olmur  ",
       "Samoylov-Venkebax dövrü təyin olunur  ",
       "3 növə bölünür: Mobitz I, Mobits II və tam atrioventrikulyar blokada  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Normal EKQ-də T dişciyi ilə bağlı doğru ifadə:  ",
@@ -1437,17 +1580,19 @@
       "Yalnız müsbət ola bilər  ",
       "İki fazalı olmalıdır  ",
       "I, II, aVR, V2-V4 aparmalarında həmişə mənfidir  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Ölüm ritmlərinə daxil deyil:  ",
     "answers": [
-      "Qulaqcıqların fibrilyasiyası  ",
+      "NEA  ",
       "Ventrikulyar fibrilyasiya  ",
       "Ventrikulyar taxikardiya  ",
-      "NEA  ",
-      "Asistoliya  "
-    ]
+      "Asistoliya  ",
+      "Qulaqcıqların fibrilyasiyası  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "AV blokadanın ikinci dərəcəsi EKQ-də necə əks olunur?  ",
@@ -1457,7 +1602,8 @@
       "Əlavə QRS-in mövcudluğu  ",
       "QRS intervalının uzanması  ",
       "Mənfi QRS kompleksi  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Endokardial kardiostimulyatorun implantasiyası üçün göstərişlərə aid  deyil:  ",
@@ -1467,77 +1613,85 @@
       "Ürək döyüntüsü 40/dəq-dən azdır  ",
       "3 saniyədən çox asistoliya dövrləri  ",
       "2-ci dərəcəli AV blokadası  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Defibrilyasiya üçün göstəriş olan ritmlər hansılardır?  ",
     "answers": [
-      "mədəcik fibrilyasiyası (VF) və nəbzsiz mədəcik taxikardiyası (nəbzsiz VT)  ",
       "nəbzsiz elektrik aktivliyi (NEA) və asistoliya.   ",
       "supraventrikulyar taxikardiya (SVT) və ventrikulyar taxikardiya (VT)  ",
       "qulaqcıq səyriməsi (Afib) və qulaqcıq titrəməsi (Aflut)  ",
-      "nəbzli və nəbzsiz mədəcik taxikardiyası  "
-    ]
+      "nəbzli və nəbzsiz mədəcik taxikardiyası  ",
+      "mədəcik fibrilyasiyası (VF) və nəbzsiz mədəcik taxikardiyası (nəbzsiz VT)  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Defibrilyasiyanın məqsədi nədir?  ",
     "answers": [
-      "mədəciklərin xaotik şəkildə yığılmasını dayandırmaqla nizamlı ritmin bərpasına  şərait yaratmaq  ",
       "diastola fazasında mədəciklərin yığılmasını təmin etmək  ",
       "sistola fazasında mədəciklərin yığılmasını təmin etmək  ",
       "dayanmış ürəyi yenidən canlandırmaq  ",
-      "qulaqcıqlarla mədəciklərin ardıcıl yığılmasını təmin etmək  "
-    ]
+      "qulaqcıqlarla mədəciklərin ardıcıl yığılmasını təmin etmək  ",
+      "mədəciklərin xaotik şəkildə yığılmasını dayandırmaqla nizamlı ritmin bərpasına  şərait yaratmaq  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Monofazik və bifazik defibrilyatorlar haqqında hansılar doğrudur?   1) monofazikdə cərəyan yalnız bir istiqamətdə bir elektroddan digərinə doğru  ötürülür   2) bifazikdə cərəyan birinci elektroddan digərinə doğru və sonra əks  istiqamətdə ötürülür   3) cərəyan ötürülməsi baxımından heç bir fərq yoxdur   4) monofazikdə elektrodların yerlərini dəyişdirmək olar.   ",
     "answers": [
-      "1,2  ",
       "3,4  ",
       "2,3  ",
       "2,4  ",
+      "1,2  ",
       "1,3  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Nəbzi olmayan xəstədə aşağıda gördüyünüz hansı ritmlərdə şok  verilməlidir?   1)     2)     3)     4)     5)    ",
     "answers": [
-      "1,3,5  ",
-      "1,2,3  ",
       "1,3  ",
+      "1,2,3  ",
       "2,4  ",
-      "hamısında  "
-    ]
+      "hamısında  ",
+      "1,3,5  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "57 yaşlı huşsuz kişi xəstə süni tənəffüs aparatına qoşulmuşdur. Arterial  təzyiq ölçülmür, periferik nəbz əllənmir, yuxu arteriyasında sapvari nəbz əllənir.  İntravenoz fizioloji məhlul infuziyası başlanmışdır. Monitorda aşağıdakı ritmi  görürsünüz. Növbəti addımınız necə olmalıdır?     ",
     "answers": [
-      "sinxronlaşdırılmış kardioversiya  ",
-      "vaqal manevr tətbiq etmək  ",
       "Amiodaron 150 mg intravenoz bolus  ",
+      "vaqal manevr tətbiq etmək  ",
       "defibrilyasiya  ",
-      "döş qəfəsinin qapalı masajı  "
-    ]
+      "döş qəfəsinin qapalı masajı  ",
+      "sinxronlaşdırılmış kardioversiya  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Qeyri stabil xəstədə aşağıda gördüyünüz ritm zamanı ilk seçiminiz nə  olmalıdır?     ",
     "answers": [
-      "bifazik defibrilyatorda 50J ilə sinxronlaşmış kardioversiya  ",
-      "bifazik defibrilyatorda 200J ilə defibrilyasiya  ",
       "kardiomonitorizasiya və müşahidə  ",
+      "bifazik defibrilyatorda 200J ilə defibrilyasiya  ",
+      "bifazik defibrilyatorda 50J ilə sinxronlaşmış kardioversiya  ",
       "monofazik defibrilyatorda 200J ilə sinxronlaşmış kardioversiya  ",
       "vaqal manevr tətbiq etmək  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Qeyri-stabil xəstələrdə hansı ritmlərdə kardioversiya göstərişdir?  ",
     "answers": [
+      "mədəcik fibrilyasiyası (VF), mədəcik taxikardiyası (VT), sinus taxikardiyası  ",
       "mədəcik fibrilyasiyası (VF), mədəcik taxikardiyası (VT), Torsade de Pointes.   ",
       "supraventrikulyar taxikardiya (SVT), sinus taxikardiyası, Torsade de Pointes  ",
       "qulaqcıq əsməsi (AFlutter), qulaqcıq səyriməsi (AFib), nəbzsiz mədəcik  taxikardiyası (VT);  ",
-      "mədəcik fibrilyasiyası (VF), mədəcik taxikardiyası (VT), sinus taxikardiyası  ",
       "nəbzli mədəcik taxikardiyası (VT), supraventrikulyar taxikardiya (SVT), qulaqcıq  titrəməsi (AFlutter), qulaqcıq səyriməsi (AFib)  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Nəbzi olan xəstədə aşağıda göstərilən kardioversiya edilməli ritmlərin  adlarını müvafiq ardıcıllıqla göstərin.    1)     2)     3)     4)    ",
@@ -1547,17 +1701,19 @@
       "VF, SVT, AFlut, AFib  ",
       "VF, sinus taxikardiyası, AFib, AFlut  ",
       "VT, sinus taxikardiyası, AFlut, AFib  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Defibrilyasiya ilə sinxronlaşmış kardioversiyanın fərqi haqqında  aşağıdakılardan hansı doğrudur?   1) defibrilyasiya zamanı verilən cərəyan mədəciklərin yığılmasından asılı  olmayaraq ötürülür;   2) kardioversiya zamanı verilən cərəyan mədəciklərin yığılma anında ötürülür;   3) kardioversiya defibrilyasiyaya nisbətən daha az enerji ilə edilir;   4) hər ikisində ilk cəhddə daha az, növbəti cəhdlərdə daha çox enerji istifadə  edilir.   ",
     "answers": [
-      "hamısı  ",
       "2,3  ",
       "3,4  ",
       "1,2  ",
-      "1,3  "
-    ]
+      "1,3  ",
+      "hamısı  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Aşağıda gördüyünüz ritmlərə uyğun müalicə üsulları hansı bənddə düzgün  göstərilmişdir?     ",
@@ -1567,7 +1723,8 @@
       "1-a, 2-c, 3-d, 4-b  ",
       "1-b, 2-d, 3-c, 4-a  ",
       "1-a, 2-b, 3-d, 4-c  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Avtomatik Eksternal Defibrilyator (AED) haqqında hansı fikir doğrudur?  ",
@@ -1577,7 +1734,8 @@
       "yalnız tibb müəssisələrində yerləşdirilə bilər  ",
       "enerji dozası istifadəçi tərəfindən seçilir  ",
       "yalnız həkim nəzarəti ilə istifadə edilməlidir  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Bifazik defibrilyator haqqında hansı fikir yanlışdır?  ",
@@ -1587,7 +1745,8 @@
       "sternum və apeks elektrodlarının yerlərini bir-birilə dəyişmək olar  ",
       "dəri yanıqları daha az rast gəlinir  ",
       "daha az başlanğıc doza seçmək imkanı vardır  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Uşaqlarda defibrilyasiya üçün tövsiyə edilən doza nə qədərdir?  ",
@@ -1597,7 +1756,8 @@
       "8 J/kg;  ",
       "10 J/kg;  ",
       "6 J/kg;  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Uşaqlarda defibrilyasiya haqqında hansı yanlışdır?  ",
@@ -1607,27 +1767,30 @@
       "pedlərdən biri sternuma, digəri isə kürək sümüklərinin arasına yapışdırıla bilər  ",
       "çəkisi 10 kg-dan çox olan uşaqlarda böyük pedlər (d=8-12 sm) istifadə edilir  ",
       "çəkisi 10 kg-dan az olan uşaqlarda pediatrik pedlər (d=4. 5 sm) istifadə edilir  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Aşağıdakı fikirlərdən hansı yanlışdır?  ",
     "answers": [
-      "Pacemaker və ya implant edilmiş defibrilyatoru olan xəstələrdə defibrilyasiya  qətiyyən edilməz  ",
       "xəstənin bədənində dermal yapışqan və ya metal varsa və bunlar defibrilyasiya  aparılacaq yerdədirsə, yaxud elektrik qövsü əmələ gətirmək riski varsa, çıxarılmalıdır.   ",
       "VF və nəbzsiz VT-dən başqa heç bir ritmdə defibrilyasiya edilməz.    ",
       "küt travma zamanı kardiak arrest mortallığı artırır  ",
-      "hamiləlikdə transtorasik impedansda dəyişiklik olmadığı üçün defibrilyasiyada da  heç bir fərq yoxdur  "
-    ]
+      "hamiləlikdə transtorasik impedansda dəyişiklik olmadığı üçün defibrilyasiyada da  heç bir fərq yoxdur  ",
+      "Pacemaker və ya implant edilmiş defibrilyatoru olan xəstələrdə defibrilyasiya  qətiyyən edilməz  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Aşağıdakılardan hansı yanlışdır?  ",
     "answers": [
-      "Ortostatik hipotenziyanın səbəb olduğu başgicəllənmədə proxlorperazin və  xlorpromazindən istifadə etmək tövsiyə olunur.   ",
+      "Betahistin gündə 1 dəfə 48 mg vertigonun müalicəsində effektlidir  ",
       "Antikolinerjik və antidofaminerjik dərmanları kombinasiya etmək tövsiyə edilmir.   ",
       "Gabapentin dağınıq skleroza bağlı başgicəllənmə üçün göstərişdir.   ",
-      "Betahistin gündə 1 dəfə 48 mg vertigonun müalicəsində effektlidir  ",
-      "Antidofaminergik neyroleptiklər ortostatik hipotenziyaya səbəb ola və ya  kəskinləşdirə bilər.   "
-    ]
+      "Antidofaminergik neyroleptiklər ortostatik hipotenziyaya səbəb ola və ya  kəskinləşdirə bilər.   ",
+      "Ortostatik hipotenziyanın səbəb olduğu başgicəllənmədə proxlorperazin və  xlorpromazindən istifadə etmək tövsiyə olunur.   "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "45 yaşında qadın xəstə bir neçə saat əvvəl yataqdan qalxarkən başlayan  başgicəllənmədən şikayət edir. Xüsusən uzanmış halda başını sağ tərəfə  çevirdikdə ürəkbulanma və başgicəllənmə olur. Başını tərpətmədikdə isə  əlamətlər keçib gedir. Qulaqda cingilti və eşitmə itkisinin olmadığını deyən  xəstənin yanaşı gedən xəstəliyi yoxdur. Zərərli vərdişləri yoxdur. Koordinasiya  daxil nevroloji müayinəsi normal olan xəstənin Dix-Halpike manevri aparılarkən  başı sağ tərəfə doğru çevirdikdə rotator nistaqm və digər şikayətlər 3 saniyəlik  bir gecikmə ilə başlamış və 30 saniyə sonra keçib getmişdir. Xəstənin diaqnozu  nədir?  ",
@@ -1637,27 +1800,30 @@
       "Menyera xəstəliyi  ",
       "Serebral insult  ",
       "Vertebral arteriya diseksiyası  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "68 yaşlı kişi çaşqınlıq və nitq pozğunluğu ilə Təcili Tibbi Yardıma müraciət  edir.    Xəstənin qızı deyir ki, xəstəni 2 saat əvvəl evində bu vəziyyətdə görüb, dünən  o, normal hərəkət edirdi, qızdırma, qusma, ishal və baş ağrısı olmayıb, keçən ay  həyat yoldaşı vəfat edəndən xəstənin iştahı pis olub. Xəstənin tibbi keçmişinə  hemodializ, son mərhələdə olan böyrək çatışmazlığı, hipertoniya və  hiperlipidemiya daxildir. Müayinə zamanı xəstənin hərarəti 37°C, A/t 150/90  mmHg, nəbz 104 vur/dəq, tənəffüs tezliyi 20 nəfəs/dəq, otaq havasında SpO2  99%, qlükoza səviyyəsi 45mq/dL (2,5mmol/L) təşkil edir. Xəstə danışa və bütün  ətraflarını hərəkət etdirə bilir, lakin onun nitqi çaşqın və anlaşılmazdır.    Aşağıdakılardan hansı bu xəstənin vəziyyəti üçün idarəetmədə ən uyğun  növbəti addımdır?  ",
     "answers": [
-      "İV Qlükoza  ",
-      "İV kalium xlorid  ",
       "Transtorakal ExoKQ  ",
+      "İV kalium xlorid  ",
       "İV hipertonik 3% NaCl  ",
-      "Baş beyin KT müayinəsi  "
-    ]
+      "Baş beyin KT müayinəsi  ",
+      "İV Qlükoza  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Cincinnati Prehospital İnsult şkalasına daxildir:   1) Üzün sallanması (anormal: üzün bir tərəfi digər tərəf kimi yaxşı hərəkət etmir)   2) Qol sürüşməsi (anormal: bir qol hərəkət etmir və ya digər qol ilə müqayisədə  aşağı sürüşür)   3). Anormal Nitq (pəltəklik, uyğun olmayan sözlər və ya danışa bilməmək)   4) Yaş >45 y   5) Qanda qlükoza 50-400 milliqram/dL  ",
     "answers": [
-      "1,2,3  ",
+      "2,3,4  ",
       "2,4,5  ",
       "1,3,5  ",
-      "2,3,4  ",
-      "3,4,5  "
-    ]
+      "3,4,5  ",
+      "1,2,3  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "İşemik insult diaqnozu qoyulmuş xəstə rtPA terapiyası üçün namizəddirsə,  hədəf arterial qan təzyiqləri neçədir?  ",
@@ -1667,17 +1833,19 @@
       "sistolik qan təzyiqi ≤190 mm Hg və diastolik qan təzyiqi ≤115 mm Hg  ",
       "sistolik qan təzyiqi ≤210 mm Hg və diastolik qan təzyiqi ≤130 mm Hg  ",
       "sistolik qan təzyiqi ≤200 mm Hg və diastolik qan təzyiqi ≤125 mm Hg  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Rekombinant toxuma plazminogen aktivatoru (rtPA) tətbiq etməzdən əvvəl  və ya trombektomiya gözləyən insult xəstələrində hipertenziyanın idarə  edilməsi zamanı seçim preparatlar hansılardır?   1) İndapamid   2) Labetalol   3) Nikardipin   4) Spironolakton   5)  Klevidipin  ",
     "answers": [
-      "2,3,5  ",
+      "3,4,5  ",
       "1,2,3  ",
       "1,3,5  ",
-      "3,4,5  ",
-      "2,3,4  "
-    ]
+      "2,3,4  ",
+      "2,3,5  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Aşağıdakılardan hansı Kəskin İşemik İnsultda İV Alteplaza istifadəsi üçün  xaric etmə kriteriyası deyil? (AHA/ASA 2018)  ",
@@ -1687,17 +1855,19 @@
       "Subaraxnoidal qanaxmanı göstərən simptomlar və əlamətlər  ",
       "Anamnezində kəskin kəllədaxili qanaxma   ",
       "Kəskin posttravmatik beyin infarktı  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "San Fransisko sinkop risk qiymətləndirmə qaydasına daxil deyil:  ",
     "answers": [
-      "Yaş >45  ",
-      "Təcili yardım şöbəsində sistolik təzyiq <90 mmHg  ",
       "Anormal EKQ   ",
+      "Təcili yardım şöbəsində sistolik təzyiq <90 mmHg  ",
       "Hematokrit <30%  ",
-      "Anamnezində ürək çatışmazlığı   "
-    ]
+      "Anamnezində ürək çatışmazlığı   ",
+      "Yaş >45  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Vertiqonun mərkəzi səbəbi deyil:  ",
@@ -1707,77 +1877,85 @@
       "Vestibulyar miqren  ",
       "Beyincik hemorragiyası  ",
       "Beyincik/beyin kötüyü insultu  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Vertiqonun periferik səbəbi deyil:  ",
     "answers": [
-      "Vestibulyar miqren  ",
+      "Vestibulyar nevrit  ",
       "Vestibulyar şvannoma  ",
       "Superior kanal dağılması  ",
       "Perilimfa fistula  ",
-      "Vestibulyar nevrit  "
-    ]
+      "Vestibulyar miqren  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "TYŞ-də Kəskin işemik insult üçün təqdim olunan vaxt  tövsiyələri(AHA/ASA):   1) İnsult komandasının aktivləşdirilməsi Gələndən dərhal sonra   2) Beyin görüntüləməsinin başlanması  ≤20 dəqiqə   3) İV trombolitiklərin tətbiqi  ≤90 dəqiqə (ikincili hədəf ≤60 dəqiqə)   4) Beyin görüntüləməsinin başlanması ≤40 dəqiqə   5) İV trombolitiklərin tətbiqi  ≤60 dəqiqə (ikincili hədəf ≤45 dəqiqə)  ",
     "answers": [
-      "1,2,3  ",
+      "3,4,5  ",
       "1,3,5  ",
       "2,4,5  ",
-      "3,4,5  ",
+      "1,2,3  ",
       "1,2,5  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Anamnezində AF olan 80 yaşında qadın xəstə anidən başlayan baş ağrısı,  qusma və yuxuya meyllilik şikayətləri ilə Təcili yardım şöbəsinə müraciət edir.  A/t 160/90 mm. c. s. Orta dərəcədə sol ətrafların gücsüzlüyü və keyiməsi var.  Suallara doğru cavab verir. Baş beyin KT müayinəsi sağ intraserebral  hemorragiya olduğunu göstərir. İNR-1,9 Aşağıdakı müdaxilələrdən hansı  xəstənin mortalitə riskini ən aza endirə bilər?  ",
     "answers": [
-      "Təzə dondurulmuş plazma və K vitamini istifadəsi  ",
+      "Endotraxeal intubasiya  ",
       "Terapevtik hipotermiya  ",
       "Arterial təzyiqi aşağı salmaq  ",
-      "Aspirin istifadəsi  ",
-      "Endotraxeal intubasiya  "
-    ]
+      "Təzə dondurulmuş plazma və K vitamini istifadəsi  ",
+      "Aspirin istifadəsi  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "50 yaşında qadın xəstə 18 saat əvvəl velotrenajorda məşq zamanı qəfil  başlayan şiddətli baş ağrısından şikayət edir. Ağrı əvvəlcə başın arxa  hissəsində və boyunda başlamış, amma indi daha da şiddətlənmiş və  yayılmışdır. Anamnezində hipertoniyası var. Zərərli vərdişi- siqaret çəkir. Hal  hazırda vital əlamətləri stabildir. Obyektiv müayinə və baş beyin KT normaldır.  Bu xəstəyə yanaşmada sonrakı addım necə olmalıdır?  ",
     "answers": [
-      "Onurğa beyni punksiyası  ",
+      "Ağrı kontrolu  ",
       "Xəstəni evə yazmaq  ",
+      "Onurğa beyni punksiyası  ",
       "Transtorakal exokardioqrafiya  ",
-      "Karotis USM  ",
-      "Ağrı kontrolu  "
-    ]
+      "Karotis USM  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Anamnezində diabet və ürəkdöyünmə şikayəti olan 46 yaşlı qadın xəstə  qəfil başgicəllənmə, müvazinətin pozulması, yeriyə bilməmə və qusma  şikayətləri ilə Təcili yardım şöbəsinə müraciət edir. Neyroloji müayinədə ciddi  gövdə və ətrafların ataksiyası mövcuddur. Baş beyin MRT müayinəsi sol  beyincik infarktı və yüngül hidrosefaliya olduğunu göstərir. Reanimasiya  şöbəsinə yatışının təşkil olunmasından başqa bu xəstənin müalicəsində ən  vacib addım hansıdır?  ",
     "answers": [
-      "Neyrocərrah konsultasiyası  ",
       "Enoksiparin  ",
       "Karotis USM  ",
       "Heparin  ",
+      "Neyrocərrah konsultasiyası  ",
       "Xəstəni Trendelenburq vəziyyətində saxlamaq  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Aşağıdakılardan hansı Tranzitor İşemik Həmlədən (TİH) sonra insult  riskinin artmasının göstərisicidir?(ABCD2 Tranzitor İşemik Həmlə Olan  Xəstələrdə İnsult Riskinin Qiymətləndirilməsi üçün Şkala)   ",
     "answers": [
-      "Simptomların 10 dəqiqədən artıq davam etməsi  ",
       "Anamnezində koronar arteriya xəstəliyinin olması  ",
       "Anemiya  ",
       "Yaş<60  ",
-      "Anamnezində arterial hipertoniyanın olması  "
-    ]
+      "Anamnezində arterial hipertoniyanın olması  ",
+      "Simptomların 10 dəqiqədən artıq davam etməsi  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Xoşxassəli paroksimal pozisional vertiqo (XPPV) hansı manevr ilə müalicə  edilə bilər?  ",
     "answers": [
-      "Qufoni  ",
-      "Skew  ",
       "Epley  ",
+      "Skew  ",
       "Dix-Hallpike  ",
-      "HINTS plus  "
-    ]
+      "HINTS plus  ",
+      "Qufoni  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Aşağıdakılardan hansı Tranzitor İşemik Həmlədən (TİH) sonra insult  riskinin artmasının göstərisici deyil?  ",
@@ -1787,17 +1965,19 @@
       "Simptomlar 10–59 dəq  ",
       "A/T >140/90 mm Hg  ",
       "Unilateral zəiflik  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "İşemik insult diaqnozu qoyulmuş xəstələrdə trombolitiklərin və ya digər  kəskin reperfuziya terapiyasının tətbiqi zamanı və sonra sistolik qan təzyiqi  >180-230 mm Hg və ya diastolik qan təzyiqi >105-120 mm Hg olarsa hansı  preparatın istifadəsi tövsiyə olunur?  ",
     "answers": [
-      "Labetolol  ",
       "Elanapril  ",
+      "Labetolol  ",
       "Karvediqamma  ",
       "Spironolakton  ",
       "Kandezartan  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Skopolamin və ya antihistaminlərlə müalicəyə cavab verməyən xəstələrdə  başgicəllənmənin simptomatik aradan qaldırılması üçün hansı qrup dərman  maddələri göstərişdir?  ",
@@ -1807,17 +1987,19 @@
       "Benzodiazepinlər  ",
       "M-xolinolitiklər  ",
       "β-blokatorlar  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Şokun müxtəlif formalarında baş verən hemodinamik dəyişikliklər zamanı  hansı fikir yanlışdır?  ",
     "answers": [
-      "Hemorragik- Ön yük artır , Ümumi Damar Müqaviməti (ÜDM) artır, ürəyin atım  fraksiyası artır  ",
-      "Obstruktiv- Ön yük azalır, ÜDM artır, ürəyin atım fraksiyası azalır  ",
       "Kardiogen- Ön yük və son yük artır, ÜDM artır, ürəyin atım fraksiyası azalır  ",
+      "Obstruktiv- Ön yük azalır, ÜDM artır, ürəyin atım fraksiyası azalır  ",
       "Hipovolemik- Ön yük azalır , ÜDM artır, ürəyin atım fraksiyası azalır  ",
-      "Distrubitiv- Ön yük azalır, ÜDM azalır, ürəyin atım fraksiyası həm arta, həm azala  bilər  "
-    ]
+      "Distrubitiv- Ön yük azalır, ÜDM azalır, ürəyin atım fraksiyası həm arta, həm azala  bilər  ",
+      "Hemorragik- Ön yük artır , Ümumi Damar Müqaviməti (ÜDM) artır, ürəyin atım  fraksiyası artır  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Obstruktiv şok səbəbi hansıdır?  ",
@@ -1827,7 +2009,8 @@
       "Ürəyin qapaq xəstəlikləri  ",
       "Transfuziya reaksiyaları  ",
       "Kardiomiopatiyalar  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Hipovolemik şok səbəbi hansıdır?  ",
@@ -1837,17 +2020,19 @@
       "Kardiomiopatiyalar  ",
       "Ürəyin qapaq xəstəlikləri  ",
       "Yanıqlar  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Koronar arteriya xəstəliyi olan 67 yaşlı qadın 10 il əvvəl koronar şuntlama  əməliyyatı keçirib. 2 gün davam edən təngnəfəslik və halının pisləşməsi  şikayəti ilə təcili yardıma gətirilib. Son 2 gündür ki, yataq vəziyyətindədir.  Sinəsində ağrısı və öskürəyi yoxdur. Arterial təzyiq-85/50 mm Hg, nəbz-125/dəq  və tənəffüsün dəqiqəlik sayı- 24. Ağciyərlərin auskultasiyasında bazallarda  ikitərəfli yaş xırıltılar eşidilir. Aşağı ətraflarda ikitərəfli 2+ ödem var. Diaqnoz  nədir?  ",
     "answers": [
+      "Kardiogen şok  ",
       "Hipovolemik şok  ",
       "Septiki şok  ",
-      "Kardiogen şok  ",
       "Neyrogen şok  ",
       "Anafilaktik şok  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "21 yaşlı gənci yolu keçərkən avtomobil vurub. Huşu aydındır, lakin sağ  ayağın şiddətli ağrılarından şikayətlənir. A/t 85/50 mm civə sütunu, Ps 125,  SpO2 95%, Tənəffüsün dəqiqəlik sayı 24. Hava yolu açıqdır, tənəffüs səsləri  ikitərəfli bərabərdir, qarnı yumşaq və həssasdır. Sağ ayağı sol ayağından  qısadır və budun ön hissəsində şişkinlik var. Açıq yara yoxdur. Ən çox ehtimal  olunan diaqnoz hansıdır?  ",
@@ -1857,37 +2042,41 @@
       "Anafilaktik şok  ",
       "Neyrogen şok  ",
       "Hipovolemik şok  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Heç bir tibbi problemi olmayan 29 yaşlı qadın həyat yoldaşı ilə şam yeməyi  yeyir. Naharın yarısında o, qollarını qaşımağa başlayır və həyat yoldaşı onun  üzünün qızardığını görür. Qaşıntı güclənir və sinə ağrısı, nəfəs darlığı və  başgicəllənmə hiss etməyə başlayır. Təcili yardım şöbəsinə gələndə çətinliklə  danışa bilir. A/t 85/50 mm Hg, Ps dəqiqədə 125 , Tənəffüs hərəkətlərinin sayı  dəqiqədə 26 və otaq havasında SpO2 91% təşkil edir. Ən çox ehtimal olunan  diaqnoz hansıdır?  ",
     "answers": [
-      "Hipovolemik şok  ",
+      "Kardiogen şok  ",
       "Septiki şok  ",
       "Neyrogen şok  ",
-      "Anafilaktik şok  ",
-      "Kardiogen şok  "
-    ]
+      "Hipovolemik şok  ",
+      "Anafilaktik şok  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Massiv transfuziya protokolunun aktivləşdirilməsi üçün göstərişlər  hansılardır?   1) zədədən sonrakı ilk 24 saat ərzində >10 U (unit) qan ehtiyacı    2) zədədən sonrakı ilk saatlarda >4 U qan ehtiyacı    3) zədədən sonra davam edən aktiv qanaxma (Məs. >200mL/saat hemotoraks  zamanı drenajdan gələn qan)   4) Arteril təzyiq 95/55 mm. c. s. olarsa   5) Hemoglobin konsentrasiyası >7 qram/dL (>70 qram/L) olarsa   6) GKŞ 8-10 arası olarsa   ",
     "answers": [
-      "1,2,3  ",
+      "4,5,6  ",
       "2,4,5  ",
+      "1,2,3  ",
       "3,5,6  ",
-      "1,3,5  ",
-      "4,5,6  "
-    ]
+      "1,3,5  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Hemorragik şoka yanaşmada hansı fikir yanlışdır?  ",
     "answers": [
-      "böyüklərdə 2 l izotonik maye köçürülməlidir   ",
+      "Uşaqlarda 10 mL/kg izotonik maye köçürülməlidir  ",
       "Ağır beyin zədəsi (GCS≤8) varsa-orta arterial təzyiq > 80 mmHg olmalıdır  ",
       "Beyin zədələnmədikdə sistolik qan təzyiqi >80-90mmHg olmalıdır  ",
-      "Uşaqlarda 10 mL/kg izotonik maye köçürülməlidir  ",
+      "böyüklərdə 2 l izotonik maye köçürülməlidir   ",
       "Hədəf sidik ifrazı -böyüklər = 0,5 ml/kq/saat olmalıdır  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "II mərhələ hemorragik şokun meydana çıxması üçün nə qədər qan itkisi  olmalıdır?  ",
@@ -1897,47 +2086,52 @@
       "< 750 ml  ",
       "1500-2000 ml  ",
       ">2000 ml  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "III mərhələ hemorragik şokun meydana çıxması üçün neçə ml qan itkisi  olmalıdır?  ",
     "answers": [
-      "1500-2000  ",
+      "750-1500  ",
       ">2000  ",
       "2000-3000  ",
-      "750-1500  ",
+      "1500-2000  ",
       "< 750  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Travma xəstəliyində qanaxma zamanı traneksam turşusunun düzgün  istifadə qaydası:  ",
     "answers": [
-      "ilk 3 saatda-1q iv 10 dəqiqəyə, sonrakı 8 saat ərzində 1q iv  ",
       "ilk 3 saatda-2 q iv 10 dəqiqəyə, sonrakı 10 saat ərzində 1q iv  ",
       "ilk 3 saatda-1q iv 10 dəqiqəyə, sonrakı 8 saat ərzində 10q iv  ",
       "ilk 8 saatda-1q iv 10 dəqiqəyə, sonrakı 3 saat ərzində 1q iv  ",
-      "ilk 5 saatda-1q iv 10 dəqiqəyə, sonrakı 12 saat ərzində 1q iv  "
-    ]
+      "ilk 5 saatda-1q iv 10 dəqiqəyə, sonrakı 12 saat ərzində 1q iv  ",
+      "ilk 3 saatda-1q iv 10 dəqiqəyə, sonrakı 8 saat ərzində 1q iv  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Septik şoku olan xəstədə infeksion amil müəyyən edilmədikdə ilkin  rasional empirik seçim preparatları:  ",
     "answers": [
-      "vankomisin + beta-laktamaza inhibitoru  ",
+      "ftorxinolonlar+aminoqlikozidlər  ",
       "karbapenemlər+aminoqlikozidlər  ",
       "vankomisin +karbapenemlər  ",
-      "ftorxinolonlar+aminoqlikozidlər  ",
-      "beta-laktamaza inhibitoru+aminoqlikozidlər  "
-    ]
+      "beta-laktamaza inhibitoru+aminoqlikozidlər  ",
+      "vankomisin + beta-laktamaza inhibitoru  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Septik şoku olan xəstədə infeksion amil müəyyən edilmədikdə ilkin  rasional empirik seçim preparatları:  ",
     "answers": [
+      "ftorxinolonlar+aminoqlikozidlər  ",
       "vankomisin + IV nəsil sefalosporinlər  ",
-      "ftorxinolonlar+aminoqlikozidlər  ",
       "karbapenemlər+aminoqlikozidlər  ",
       "vankomisin +karbapenemlər  ",
       "beta-laktamaza inhibitoru+aminoqlikozidlər  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Septik şok vəziyyətində ilkin rehidratasiyada nə istifadə edilməlidir?  ",
@@ -1947,17 +2141,19 @@
       "dekstranlar  ",
       "kolloidlər  ",
       "jelatinlər  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Yaranma mexanizminə görə şok neçə kateqoriyada təsnif edilir?  ",
     "answers": [
-      "4  ",
+      "3  ",
       "5  ",
       "2  ",
       "6  ",
-      "3  "
-    ]
+      "4  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Kəskin aorta diseksiyasında A/t üçün ideal terapevtik hədəf müraciətin ilk  saatında sistolik qan təzyiqinin neçə mm. c. s. olmasıdır?  ",
@@ -1967,17 +2163,19 @@
       "80-100  ",
       "140-160  ",
       "120-140  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "20 yaşında qadın xəstə həyatında ilk dəfə kokain qəbul etdikdən sonra  başlayan təşviş hissi və taxikardiya şikayətləri ilə Təcili yardım şöbəsinə  müraciət edir. Baş ağrısı, sinə ağrısı və nəfəs darlığı şikayətləri yoxdur. A/t  224/122 mm. c. s. P/s 110/dəq, Tənəffüs hərəkətlərinin sayı 22, Temperatur 37. 1  c, Spo2 100 % otaq havasında. Xəstənin həyəcanlı və tərli olmasından başqa  digər fiziki müayinələri normaldır. Aşağıdakılardan hansı ilkin müalicə üçün  seçim preparatıdır?  ",
     "answers": [
-      "Benzodiazepinlər  ",
+      "Ca antoqonistləri  ",
       "Nitratlar  ",
       "B blokatorlar  ",
-      "Ca antoqonistləri  ",
+      "Benzodiazepinlər  ",
       "AÇF inhibitorları  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Hamilələrdə preeklampsiya və eklampsiya zamanı hipertonik krizlərdə  hansı preparat əks göstərişdir?  ",
@@ -1987,47 +2185,52 @@
       "Nifedipin  ",
       "Hidralazin  ",
       "Labetalol  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Kokain və ya amfetamin istifadəsinə bağlı hipertonik krizlərdə ilk seçim  preparatı hansıdır?  ",
     "answers": [
-      "Lorazepam  ",
+      "Esmalol  ",
       "Nikardipin  ",
       "Nifedipin  ",
       "Labetolol  ",
-      "Esmalol  "
-    ]
+      "Lorazepam  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Feoxromositomaya bağlı hipertenziyalar zamanı ilk seçim preparatı  hansıdır?  ",
     "answers": [
-      "Fentolamin  ",
-      "Nifedipin  ",
       "Esmalol  ",
+      "Nifedipin  ",
       "Nikardipin  ",
-      "Labetolol  "
-    ]
+      "Labetolol  ",
+      "Fentolamin  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "A/t 180/100 mm. c. s. olan xəstənin KT müayinəsində aortanın diseksiyası  aşkarlanmışdır. Xəstəyə hipertenziya üçün verilə biləcək ən uyğun müalicə  hansıdır?   ",
     "answers": [
-      "Kaptopril  ",
-      "Nitroqliserin  ",
       "Esmolol  ",
+      "Nitroqliserin  ",
+      "Kaptopril  ",
       "Lizinopril  ",
       "Hidralazin  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Kontrolsuz hipertoniyası olan 45 yaşlı kişi xəstə 2 gündür getdikcə artan  başağrısı, çaşqınlıq və görmə pozğunluğu şikayətləri ilə təcili yardım şöbəsinə  müraciət edir. A/t 230/132 mm. c. s. , Ps 90/dəq, Tənəffüsün dəqiqəlik sayı-20,  temp 37dərəcə, SpO2 -98% otaq havasında. Obyektiv müayinədə ənsə sərtliyi  yoxdur. Ağciyərlər və abdomen auskultasiyası normaldır. Neyroloji müayinədə  fokal defisit yoxdur. Kokain, amfetamin və fensiklidin üçün göndərilən  toksikoloji panel neqativdir. Göz dibi müayinəsi aşağıda verilmişdir.  Aşağıdakılardan hansı bu xəstə üçün müalicədə əks göstərişdir?     ",
     "answers": [
-      "Labetolol  ",
+      "Esmolol  ",
       "Fenoldopam  ",
+      "Labetolol  ",
       "Nikardipin  ",
-      "Nifedipin  ",
-      "Esmolol  "
-    ]
+      "Nifedipin  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Aşağıdakılardan hansı hipertenziv təcili hallarda per os istifadə edilməli  olan preparatdır?  ",
@@ -2037,7 +2240,8 @@
       "Na nitroprussid  ",
       "Propranolol  ",
       "Atropin  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Antihipertenziv dərmanlara aiddir:  ",
@@ -2047,7 +2251,8 @@
       "β adrenomimetiklər  ",
       "Aminoqlikozidlər  ",
       "M xolinolitiklər  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Eklampsiya və preeklampsiyada hipertonik krizlər zamanı ilk saatda sistolik  qan təzyiqi hədəfi:  ",
@@ -2057,7 +2262,8 @@
       "160-180 mm. c. s.   ",
       ">180 mm. c. s.   ",
       "<160 mm. c. s  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Esensial hipertenziyası olan xəstə quru öskürək, dəri səpgiləri və  angionevrotik ödem şikayətləri ilə Təcili yardım şöbəsinə müraciət edib.  Dediyinə görə, 1 həftə öncə yeni antihipertenziv dərman qəbuluna başlayıb.  Aşağıdakı hansı preparat bu şikayətlərə səbəb ola bilər?  ",
@@ -2067,7 +2273,8 @@
       "Prazozin  ",
       "Xlortiazid  ",
       "Metildofa  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Aşağıdakı antihipertenziv dərmanlardan hansında müalicənin qəfil  dayandırılmasına bağlı olaraq hipertonik kriz (rebaund hipertenziya) meydana  gələ bilər?  ",
@@ -2077,17 +2284,19 @@
       "Lizinopril  ",
       "Hidroxlortiazid  ",
       "Verapamil  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "40 yaşında evsiz sərxoş xəstə ayağında keyimə şikayəti ilə Təcili yardım  şöbəsinə müraciət edir. Külək olduğu üçün (havanın temperaturu donma  dərəcəsinə yaxındır, son beş gündür ki davamlı yağış yağır) gecəni drenaj  kanalında keçirib. Ayağı solğun və uyuşmuş görünür. Yenidən isitmədən sonra  şiddətli yanma ağrısı meydana çıxdı. Ən çox ehtimal olunan diaqnoz hansıdır?   ",
     "answers": [
-      "Xəndək ayağı  ",
       "Donma  ",
       "Pernio  ",
       "Soyuq məxmərək  ",
-      "Pannikulit  "
-    ]
+      "Pannikulit  ",
+      "Xəndək ayağı  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Aşağıdakılardan hansı yüksək voltajlı elektrik vurmalarının ağırlaşması  deyil?  ",
@@ -2097,27 +2306,30 @@
       "Kardiak və ya tənəffüs dayanması  ",
       "Kompartman sindromu  ",
       "Cərəyan mənbəyindən atılmaya bağlı küt travma  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "37 yaşlı kişi futbol meydançasında ildırım vurmadan sonra Təcili yardım  komandası tərəfindən sürətli resustasiya edildi. Bu xəstədə rast gəlmə ehtimalı  ən az olan hansıdır?  ",
     "answers": [
-      "Katarakta  ",
+      "EKQ anormallığı  ",
       "Timpanik membranın perforasiyası  ",
       "Aşağı ətraflarda zəiflik  ",
-      "EKQ anormallığı  ",
+      "Katarakta  ",
       "Kompartman sindromu  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Aşağıdakı dərmanlardan hansı yüngül və orta dərəcəli Kəskin dağ  xəstəliyinin müalicəsi üçün ən uyğun seçimdir?  ",
     "answers": [
-      "Asetazolamid  ",
-      "Ginko biloba  ",
-      "Sildenafil  ",
       "Deksametazon  ",
+      "Ginko biloba  ",
+      "Asetazolamid  ",
+      "Sildenafil  ",
       "Nifedipin  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Aşağıda verilən suda boğulan xəstələrdən hansı ən yaxşı proqnoza  malikdir?  ",
@@ -2127,17 +2339,19 @@
       "Şirin su (isti) gölünə düşən, izləyicilər tərəfindən KPR olunan, ambulans  komandası tərəfindən resustasiya edilən 2 yaşındakı uşaq  ",
       "Bir partidə sərxoş halda suya düşən, ətrafdakılar tərəfindən KPR olunaraq TYŞ  gətirilən 16 yaşındakı oğlan  ",
       "Qonşunun hovuzuna düşən, izləyənlər tərəfindən KPR olunan, təcili yardım  şöbəsinə (TYŞ) gəldikdə huşsuz olan 75 yaşlı Alsheymer xəstəsi  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Amerika Yanıq Assosiasiyasının təklif etdiyi “Yanıq şöbəsinə yönləndirmə  kriteriyaları”na aid olanlar hansılardır?   1) İstənilən yaş qrupunda tam qalınlıq/üçüncü dərəcəli yanıqlar   2) Qismən qalınlıqda bədən səthinin <10% yanıqları   3)  Üz, əllər, ayaqlar, cinsiyyət orqanları, perineum və ya böyük oynaqları əhatə  edən yanıqlar  ",
     "answers": [
-      "1,3  ",
+      "2,3  ",
       "Yalnız 3  ",
       "Yalnız 2  ",
       "1,2  ",
-      "2,3  "
-    ]
+      "1,3  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "40% ikinci və üçüncü dərəcəli yanıqlarla 70 kq çəkisi olan xəstə üçün  Parkland Formulu ilə ehtiyac olan sutkalıq mayenin miqdarını hesablayın:  ",
@@ -2147,27 +2361,30 @@
       "15. 000mL  ",
       "13. 200mL  ",
       "10. 500 mL  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Kimyəvi yanıqlar haqda hansı fikir yanlışdır?  ",
     "answers": [
-      "Turşular qələvilərdən daha çox toxuma zədələnməsinə səbəb olur  ",
-      "Qələvilərlə daha dərin yanıqlar meydana çıxır.   ",
       "Eskar adətən patogenin daha dərinə nüfuz etməsinin qarşısını alır  ",
+      "Qələvilərlə daha dərin yanıqlar meydana çıxır.   ",
       "Qələvilər lipidlərin sabunlaşmasına və nekroza səbəb olur  ",
-      "Turşular zülal çöküntüsü ilə koaqulyasion nekroza səbəb olur  "
-    ]
+      "Turşular zülal çöküntüsü ilə koaqulyasion nekroza səbəb olur  ",
+      "Turşular qələvilərdən daha çox toxuma zədələnməsinə səbəb olur  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Yüksək hündürlük sindromlarına aid deyil:  ",
     "answers": [
-      "Barotravma  ",
-      "Yüksək hündürlükdə beyin ödemi (YHBÖ)  ",
       "Yüksək hündürlükdə pulmonar ödem (YHPÖ)   ",
+      "Yüksək hündürlükdə beyin ödemi (YHBÖ)  ",
+      "Barotravma  ",
       "Kəskin hipoksiya  ",
       "Kəskin dağ xəstəliyi (KDX)  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Suda boğulma ilə Təcili Yardım Şöbəsinə müraciət edən xəstələrdə GKS  >13 və oksigen saturasiyası ≥95% olduqda belə xəstələrin neçə saat ərzində  müşahidə edilməsi kifayətdir?  ",
@@ -2177,7 +2394,8 @@
       "1-3  ",
       "1-2  ",
       "7-9  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "37 yaşlı qadın bulanıq görmə ilə təcili yardım şöbəsinə müraciət edir. Onun  görmə qabiliyyəti təxminən 2 aydır tədricən pisləşir. O, göz ağrısı və ya birbaşa  göz travmasını inkar edir. Dediyinə görə, 2 ay əvvəl qolf oynayarkən ildırım  vurub və dərhal TYŞ müraciət edib, lakin heç bir xəsarət aşkarlanmayıb. Onun  görmə qabiliyyətinin azalmasının ən çox ehtimal olunan səbəb nədir?  ",
@@ -2187,37 +2405,41 @@
       "Makulanın degenerasiyası  ",
       "Qlaukoma  ",
       "İrit  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "22 aylıq uşaq valideynləri tərəfindən elektrik kabelini çeynəyərkən  tapıldıqdan sonra təcili yardım şöbəsinə gətirilir. Onun dodaqlarında və ağız  boşluğunda kiçik yanıqlar var. Evə yazıldıqdan sonra valideynlərə Təcili Yardım  Şöbəsinə geri dönmə səbəbi kimi hansı vəziyyət barədə xəbərdarlıq  edilməlidir?  ",
     "answers": [
-      "Gecikmiş labial arterial qanaxma  ",
+      "Üz kompartmanı sindromu  ",
       "Rabdomioliz  ",
       "Gecikmiş diş düşməsi  ",
       "Ürək ritminin pozulması  ",
-      "Üz kompartmanı sindromu  "
-    ]
+      "Gecikmiş labial arterial qanaxma  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Elektrik xəsarətləri zamanı 24 saat ərzində fasiotomiya ehtiyacı üçün  proqnozlaşdırıcı amillər:    1) mioqlobinuriya    2) ümumi bədən səthinin 20%-dən az hissəsini əhatə edən yanıqlar    3) bədən səthinin 12%-dən az hissəsini əhatə edən tam qat yanıq sahəsi   4) ümumi bədən səthinin 20%-dən çox hissəsini əhatə edən yanıqlar    5) bədən səthinin 12%-dən çox hissəsini əhatə edən tam qat yanıq sahəsi  ",
     "answers": [
-      "1,4,5  ",
-      "2,5  ",
       "3,4  ",
+      "2,5  ",
       "1,3,4  ",
+      "1,4,5  ",
       "1,2,3  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Hansı fikir yanlışdır?  ",
     "answers": [
-      "Pernio olan xəstələr əksər hallarda stasionarda müalicə olunurlar.   ",
       "Yüngül immersion zədələri olan xəstələr başqa əlamətlər olmadıqda evə buraxıla  bilər  ",
       "Pannikulit yüngül dərialtı piy toxumasının nekrozu ilə xarakterizə olunur.   ",
       "Xəndək ayağının müalicəsində limaprost istifadə edilə bilər  ",
+      "Pernio olan xəstələr əksər hallarda stasionarda müalicə olunurlar.   ",
       "Soyuq məxmərək diaqnozu ambulator müayinə zamanı soyuq su testi ilə  təsdiqlənə bilər  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Torlu qişada qanaxmalar hansı yüksəkliklərdə olan insanlarda tez-tez rast  gəlinir?  ",
@@ -2227,67 +2449,74 @@
       "1000-2000m  ",
       ">4000 m  ",
       "1000-3000m  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Səthi yanıqlar üçün xarakterik xüsusiyyətlər:   1) Yalnız dərinin epidermal təbəqəsini əhatə edir   2) Yanmış dəri hiperemiyalıdır, ağrılıdır və bulla yoxdur.    3) Dəridə bullalar yaranır, zədələnmiş dəri hiperemik və nəmlidir   4) Yanıq sahəsinin rəngi parlaq deyil, kapilyar geri dolma gecikmişdir və ağrı  hissi yoxdur   5) Yalnız simptomatik müalicə tələb olunur.   ",
     "answers": [
-      "1,2,5  ",
+      "3,4,5  ",
       "2,4,5  ",
       "1,3,4  ",
-      "3,4,5  ",
+      "1,2,5  ",
       "1,3,5  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Kimyəvi yanıqlar zamanı toxumaların zədələnməsinə təsir edən amillərə aid  deyil:  ",
     "answers": [
-      "Komorbid xəstəliklər  ",
+      "Maddənin konsentrasiyası  ",
       "Maddənin təsir müddəti  ",
       "Maddənin Nüfuz Dərəcəsi  ",
       "Təsiredici maddənin miqdarı  ",
-      "Maddənin konsentrasiyası  "
-    ]
+      "Komorbid xəstəliklər  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Şəkildəki görüntüyə əsasən ehtimal olunan diaqnoz nədir?     ",
     "answers": [
-      "İldırım vurma  ",
+      "Elektrik vurma  ",
       "Pernio  ",
       "Xəndək ayağı  ",
-      "Elektrik vurma  ",
+      "İldırım vurma  ",
       "Dərin qələvi yanığı  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Şəkildəki görüntüyə əsasən ehtimal olunan diaqnoz nədir?     ",
     "answers": [
-      "İldırım vurma  ",
+      "Elektrik vurma  ",
       "Pernio  ",
       "Dərin qələvi yanığı  ",
-      "Elektrik vurma  ",
+      "İldırım vurma  ",
       "Xəndək ayağı  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Şəkildəki görüntüyə əsasən ehtimal olunan diaqnoz nədir?     ",
     "answers": [
-      "İldırım vurma  ",
       "Elektrik vurma  ",
       "Dərin qələvi yanığı  ",
       "Pernio  ",
+      "İldırım vurma  ",
       "İmmersion zədə  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Pannikulit üçün yanlış fikir hansıdır?  ",
     "answers": [
-      "Diaqnoz ambulator müayinə zamanı soyuq su testi ilə təsdiqlənə bilər  ",
+      "Donma dərəcəsindən bir qədər yuxarı olan temperaturun uzun müddətli təsiri  nəticəsində yaranır  ",
       "İsidilmə zamanı piy toxumasında fibroz əmələ gəldiyindən dəridə kosmetik  qüsurlara səbəb ola bilər  ",
       "Dərialtı piy toxumasının nekrozu ilə xarakterizə olunur  ",
       "Bu zədə üçün effektiv müalicə yoxdur  ",
-      "Donma dərəcəsindən bir qədər yuxarı olan temperaturun uzun müddətli təsiri  nəticəsində yaranır  "
-    ]
+      "Diaqnoz ambulator müayinə zamanı soyuq su testi ilə təsdiqlənə bilər  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Donmanın dərəcəsinə görə klassifikasiyasına əsasən uyğunluğu müəyyən  edin:   1) I dərəcə donma   2) II dərəcə donma   3) III dərəcə donma   4) IV dərəcə donma   a) Dərinin bütün qalınlığını əhatə edən toxuma itkisi; hemorragik suluqlar   b) Ödem və eritema ilə əhatə olunmuş dəri suluqları   c) Keyimə, eritema, mərkəzi solğun olan ödem, qabıqlanma, dizesteziya   d) Dərinin bütün qatlarının, həmçinin daha dərin strukturların zədələnməsi,  nəticədə müəyyən bir nahiyənin nekrozu  ",
@@ -2297,7 +2526,8 @@
       "1-c; 2-b; 3-d; 4-a  ",
       "1-a; 2-b; 3-c; 4-d  ",
       "1-c; 2-d; 3-a; 4-b  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Lake Louise Kəskin Dağ Xəstəliyi (KDX) zamanı hansı simptom nəzərə  alınmır?  ",
@@ -2307,7 +2537,8 @@
       "Gastrointestinal simptomlar  ",
       "Yorğunluq / zəiflik  ",
       "Baş ağrısı  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Yüksək hündürlükdə beyin ödeminin (YHBÖ) proqressivləşməsinin  göstəricisi:  ",
@@ -2317,77 +2548,85 @@
       "Əsəbilik  ",
       "Hipotermiya  ",
       "Hipertermiya  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Kəskin dağ xəstəliyinin profilaktikası üçün sulfanilamidə allergiyası olan  insanlar üçün asetazolamidə alternativ dərman hansıdır?  ",
     "answers": [
-      "Dexametazon  ",
+      "Ondansetron  ",
       "Difenhidramin  ",
       "Tadalafil  ",
       "Nifedipin  ",
-      "Ondansetron  "
-    ]
+      "Dexametazon  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Kəskin dağ xəstəliyinin profilaktikası üçün Asetazolamid hündürlüyə  qalxmadan neçə gün əvvəl başlanır?  ",
     "answers": [
-      "1  ",
+      "3  ",
       "5  ",
       "4  ",
       "2  ",
-      "3  "
-    ]
+      "1  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Kəskin dağ xəstəliyinin profilaktikası üçün Asetazolamid hündürlüyə  qalxma zamanı və ən yüksək hündürlüyə çatdıqdan sonra ən azı neçə saat  davam etdirilir?  ",
     "answers": [
-      "48  ",
-      "42  ",
       "36  ",
+      "42  ",
       "24  ",
+      "48  ",
       "12  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Bir gündür ki, dağa qalxmağa davam edən 28 yaşlı alpinist poliuriya  şikayəti ilə komandanın heyətindəki həkimə müraciət edir. Dediyinə görə,  şikayətləri bir neçə saatdır başlayıb. İndiyə qədər bilinən bir xəstəliyi yoxdur.  Aşağıdakılardan hansı bu alpinist üçün həkimin ən birinci ehtimal edə biləcəyi  səbəbdir?  ",
     "answers": [
-      "Profilaktik asetazolamid qəbulu  ",
-      "Qazlı içki qəbulu  ",
       "Pielonefrit  ",
+      "Qazlı içki qəbulu  ",
       "Kəskin böyrək xəstəliyi  ",
+      "Profilaktik asetazolamid qəbulu  ",
       "Şəkərsiz diabet  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Şəkildəki görüntüyə əsasən ehtimal olunan diaqnoz nədir?     ",
     "answers": [
-      "IV dərəcə donma  ",
       "Elektrik vurma  ",
       "Dərin qələvi yanığı  ",
       "Pernio  ",
+      "IV dərəcə donma  ",
       "İmmersion zədə  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Aşağıdakılardan hansı zəhərlənmələr zamanı eliminasiyanın artırılması  üsuluna aiddir?  ",
     "answers": [
-      "Sidiyin qələviləşdirilməsi      ",
       "Göz dekontaminasiyası  ",
       "Bütün bağırsağın irriqasiyası  ",
       "Mədənin yuyulması  ",
-      "Qusdurma  "
-    ]
+      "Qusdurma  ",
+      "Sidiyin qələviləşdirilməsi      "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Səbəbi bilinməyən huş pozulması olan xəstələrdə aşağıdakılardan hansı  dəstəkləyici müalicə üçün tətbiq olunmur?  ",
     "answers": [
-      "Naloksan  ",
+      "Oksigen  ",
       "Tiamin  ",
       "Qlükoza  ",
-      "N-asetilsistein  ",
-      "Oksigen  "
-    ]
+      "Naloksan  ",
+      "N-asetilsistein  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Zəhərlənmiş xəstədə resusitasiya zamanı tətbiq olunan ilkin yanaşma  hansıdır?  ",
@@ -2397,7 +2636,8 @@
       "Hemodializ  ",
       "Dəri dekontaminasiyası  ",
       "Mədə yuyulması  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Oroqastrik lavajın fəsadlarına aiddir:  ",
@@ -2407,17 +2647,19 @@
       "Huşun pozulması  ",
       "Qarında ağrı  ",
       "Nitqin pozulması  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Aşağıdakılardan hansı zəhərlənmələr zamanı ekstrakarporal xaricetmə  üsullarına aiddir?  ",
     "answers": [
-      "Hemodializ  ",
-      "Sidiyin qələviləşdirilməsi  ",
       "Dəri dekontaminasiyası  ",
+      "Sidiyin qələviləşdirilməsi  ",
       "Qusdurma  ",
+      "Hemodializ  ",
       "Təkrar doza aktiv kömür tətbiqi  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Zəhərlənmələr zamanı bütün bağırsağın irriqasiyası prosesində istifadə  edilən məhlul hansıdır?  ",
@@ -2427,37 +2669,41 @@
       "Rinqer-laktat  ",
       "Su  ",
       "0. 9% NaCl  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Aşağıdakılardan hansı asetominofenin antidotudur?  ",
     "answers": [
-      "N-asetilsistein  ",
       "Natrium karbonat  ",
       "K vitamini  ",
       "Piridoksin  ",
+      "N-asetilsistein  ",
       "Atropin  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Antixolinergik toksidrom zamanı ciddi delirium hallarında istifadə olunan  əsas preparat hansıdır?  ",
     "answers": [
-      "Atropin  ",
       "Oksigen  ",
       "Metilen mavisi  ",
+      "Atropin  ",
       "Fizostiqmin  ",
       "Naloksan  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Opioidlərin antidotu hansıdır?  ",
     "answers": [
-      "Naloksan  ",
+      "N-asetilsistein  ",
       "Atropin  ",
       "Piridoksin  ",
-      "N-asetilsistein  ",
+      "Naloksan  ",
       "Karnitin  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Antixolinergik toksidrom əmələ gətirən dərman qruplarından biridir:  ",
@@ -2467,17 +2713,19 @@
       "Orqanofosfatlar  ",
       "Sedativ dərmanlar  ",
       "Psixotik dərmanlar  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Antixolinergik toksidromun əlamətlərinə aid deyil:  ",
     "answers": [
-      "İshal  ",
+      "Dəri və selikli qişaların quruması  ",
       "Hallüsinasiyalar  ",
       "Midriaz  ",
       "Qızdırma  ",
-      "Dəri və selikli qişaların quruması  "
-    ]
+      "İshal  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Aşağıdakılardan hansı xolinergik təsirli dərman qruplarına aiddir:  ",
@@ -2487,37 +2735,41 @@
       "Tramadol  ",
       "Opioidlər  ",
       "Sedativlər  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Xolinergik toksidromun müalicəsində isitfadə olunan antidot hansıdır:  ",
     "answers": [
-      "Atropin  ",
       "N-asetilsistein  ",
+      "Atropin  ",
       "Suksimer  ",
       "Naloksan  ",
       "Parasetamol   "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Xolinergik toksidromun əlamətlərinə aiddir:  ",
     "answers": [
-      "Hipersalivasiya  ",
+      "Dəri və selikli qişaların quruması  ",
       "Qızartı  ",
       "Taxikardiya  ",
       "Midriaz  ",
-      "Dəri və selikli qişaların quruması  "
-    ]
+      "Hipersalivasiya  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Opioid toksidromunun əlamətlərinə aiddir:  ",
     "answers": [
-      "Tənəffüs mərkəzinin depressiyası  ",
-      "Hipertenziya  ",
       "İshal  ",
+      "Hipertenziya  ",
       "Hipertermiya  ",
-      "Taxikardiya  "
-    ]
+      "Taxikardiya  ",
+      "Tənəffüs mərkəzinin depressiyası  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Seratonin toksidromunda qıcolmalar zamanı istifadə olunur:  ",
@@ -2527,7 +2779,8 @@
       "Tramadol  ",
       "Adrenalin  ",
       "Naloksan  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Xolinergik toksidromun əlamətlərinə aid deyil:  ",
@@ -2537,7 +2790,8 @@
       "İshal  ",
       "Tərləmə  ",
       "Qusma  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Opioid toksidromunun əlamətlərinə aid deyil:  ",
@@ -2547,27 +2801,30 @@
       "Hipotenziya  ",
       "Mioz  ",
       "Hipoventilyasiya  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Aşağıdakılardan hansı opioidlərə aid deyil:  ",
     "answers": [
-      "Kofein  ",
       "Eroin  ",
       "Kodein  ",
       "Fentanil  ",
+      "Kofein  ",
       "Morfin  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Aşağıdakılardan hansı simpatomimetik toksidrom əmələ gətirməz:  ",
     "answers": [
-      "Atropin  ",
+      "Epinefrin  ",
       "Kofein  ",
       "Ketamin  ",
-      "Epinefrin  ",
+      "Atropin  ",
       "Nikotin  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Sedativ-hipnotik toksidromlar zamanı hansı əlamət rast gəlinmir?  ",
@@ -2577,7 +2834,8 @@
       "Tənəffüs depressiyası  ",
       "Miozis  ",
       "Hipotenziya  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Antixolinergik toksidrom zamanı istifadə olunan antidot hansıdır?  ",
@@ -2587,17 +2845,19 @@
       "Aspirin  ",
       "Fizostiqmin  ",
       "Naloksan   "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Aşağıdakılardan hansı antixolinergik toksidrom müalicəsinə aid deyil?  ",
     "answers": [
+      "Natriumbikarbonat  ",
       "Fizostiqmin  ",
       "İntrovenoz maye dəstəyi  ",
-      "Natriumbikarbonat  ",
       "Aktiv kömür  ",
       "Atropin  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Parasetamol zəhərlənməsində antidot kimi istifadə olunur:  ",
@@ -2607,37 +2867,41 @@
       "Suksimir  ",
       "Fentanil  ",
       "Pulmazenil  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Aşağıdakılardan hansı karbon-monooksid zəhərlənməsində əsas müalicə  üsuludur?  ",
     "answers": [
-      "100% oksigen terapiyası  ",
-      "Mədə lavajı  ",
       "Səthi dekontaminasiyası  ",
+      "Mədə lavajı  ",
       "Bağırsağın yuyulması  ",
+      "100% oksigen terapiyası  ",
       "Aktiv kömür  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Aşağıdakılardan hansı üzvi civə zəhərlənmələrində antidot oalraq istifadə  olunur?  ",
     "answers": [
-      "Atropin  ",
       "N-asetilsistein  ",
+      "Atropin  ",
       "Tramadol  ",
       "Fizostiqmin  ",
       "Suksimir  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Aşağıdakılardan hansı etanolla zəhərlənmə zamanı tətbiq olunmur?  ",
     "answers": [
-      "Aktiv kömür  ",
-      "Hipoqlikemiya müalicəsi  ",
       "Oksigen terapiyası  ",
+      "Hipoqlikemiya müalicəsi  ",
       "Xəstənin uzun müddətli müşahidəsi   ",
-      "Hidrasiya  "
-    ]
+      "Hidrasiya  ",
+      "Aktiv kömür  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "İlan sancması zamanı göstərilən ilk yardım tədbirlərindən hansı doğrudur?  ",
@@ -2647,7 +2911,8 @@
       "Yaranın buzlu suya salınması  ",
       "Yara yerinin kəsilməsi  ",
       "Yara yerinə elektrik şokunun verilməsi  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "FAST nədir?  ",
@@ -2657,37 +2922,41 @@
       "Hamiləlikdə dölün qiymətləndirilməsi   ",
       "Xəstənin əməliyyata hazırlanması   ",
       "Sümüklərin müayinəsi   "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "FAST nə zaman istifadə olunur?  ",
     "answers": [
-      "Travma xəstəliyi zamanı   ",
       "Kardioloji monitorinq üçün  ",
       "Bütün təcili hallarda  ",
       "Dölün bətndaxili müayinəsi üçün  ",
-      "Hamiləlik təsbiti üçün  "
-    ]
+      "Hamiləlik təsbiti üçün  ",
+      "Travma xəstəliyi zamanı   "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "FAST zamanı hansı ötürücülər istifadə olunur?  ",
     "answers": [
-      "konveks, linear, sektor  ",
+      "konveks, vaginal, sektor  ",
       "vaginal, sektor  ",
       "sektor, vaginal, linear  ",
-      "konveks, vaginal, sektor  ",
-      "linear, vaginal, sektor  "
-    ]
+      "linear, vaginal, sektor  ",
+      "konveks, linear, sektor  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "FAST zamanı neçə boşluğa baxılır?  ",
     "answers": [
-      "4  ",
+      "3  ",
       "6  ",
       "2  ",
-      "5  ",
-      "3  "
-    ]
+      "4  ",
+      "5  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "FAST zamanı müayinəsi tələb olunan Morison boşluğu hansıdır?  ",
@@ -2697,37 +2966,41 @@
       "Qarnın sol yuxarı kvadrantı  ",
       "Kardial boşluqlar  ",
       "Pelvik boşluq  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "FAST zamanı müayinəsi tələb olunan splenorenal boşluq hansıdır?  ",
     "answers": [
-      "Qarnın sağ yuxarı kvadrantı  ",
       "Morison boşluğu  ",
       "Ürək boşluğu  ",
       "Çanaq boşluğu  ",
+      "Qarnın sağ yuxarı kvadrantı  ",
       "Qarnın sol üst kvadrantı  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "USM müayinəsində ötürücü ilə dəri arasındakı havanı azaltmaq üçün nə  istifadə olunur?  ",
     "answers": [
-      "Gel  ",
       "Su  ",
       "Betadin  ",
       "Məlhəm  ",
+      "Gel  ",
       "Bitki yağı  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "FAST müayinəsini kim edir?  ",
     "answers": [
-      "Təcili tibb həkimi  ",
+      "Ümumi cərrah  ",
       "Kardioloq  ",
       "İnfeksionist  ",
       "Reanimatoloq  ",
-      "Ümumi cərrah  "
-    ]
+      "Təcili tibb həkimi  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Aşağıdakı ötürücülərdən hansı ürəyin detallı müayinəsi üçün istifadə  olunur?     ",
@@ -2737,7 +3010,8 @@
       "A  ",
       "B və C  ",
       "Hər üç ötürücü  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Aşağıdakı şəkildə FAST zamanı Morison boşluğunun müayinəsini seçin.      ",
@@ -2747,35 +3021,39 @@
       "5  ",
       "2   ",
       "4   "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Aşağıdakı şəkildə FAST zamanı subksifoid boşluğun müayinəsini seçin     ",
     "answers": [
-      "1  ",
+      "3  ",
       "5  ",
       "4  ",
-      "3  ",
-      "2  "
-    ]
+      "2  ",
+      "1  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Aşağıdakı şəkildə FAST zamanı pelvik boşluğun müayinəsini seçin.          A) 2  ",
     "answers": [
-      "4  ",
       "3  ",
       "5  ",
-      "6  "
-    ]
+      "6  ",
+      "4  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Aşağıdakı şəkildə FAST zamanı splenorenal boşluğun müayinəsini seçin  ",
     "answers": [
-      "5  ",
       "1  ",
       "6  ",
-      "2     4     "
-    ]
+      "2     4     ",
+      "5  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Aşağıdakı şəkildə hansı boşluq müayinəsi edilir?     ",
@@ -2785,66 +3063,73 @@
       "Splenorenal  ",
       "Subksifoid  ",
       "Pelvik  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Aşağıdakı şəkildə hansı boşluq müayinəsi edilir?     ",
     "answers": [
-      "Splenorenal  ",
       "Hepatorenal  ",
       "Mədə boşluğu  ",
+      "Splenorenal  ",
       "Pelvik  ",
       "Subksifoid  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Aşağıdakı müayinədə hansı boşluq müayinəsi edilir?     ",
     "answers": [
-      "Pelvik  ",
       "Hepatorenal  ",
       "Subksifoid  ",
       "Mədə boşluğu  ",
+      "Pelvik  ",
       "Splenorenal  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "FAST protokolu üçün qarın boşlugu müayinəsi aşağıdakı hansı ötürücü ilə  aparılır?     ",
     "answers": [
-      "A      ",
+      "C  ",
       "A və B  ",
       "Hər biri ilə  ",
       "B  ",
-      "C  "
-    ]
+      "A      "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Hamiləlik dövründə miqren müalicəsində ən uyğun dərman hansıdır?  ",
     "answers": [
-      "Asetaminofen          ",
       "Ergotamin  ",
       "Sumatriptan  ",
-      "QSİƏD  "
-    ]
+      "QSİƏD  ",
+      "Asetaminofen          "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "32 yaşlı vəkil qadın ayda 2-3 dəfə olan, parlaq işığa qarşı əmələ gələn,  ikitərəfli, zoqquldayıcı və şiddətli baş ağrısından şikayət edir. Yanaşı olaraq,  ürəkbulanma, qusma və fotofobiyası var. Ağrı zamanı məhkəmə zalından  çıxmaq məcburiyyətində qalır.    Bu xəstədə ən təsirli ilkin müalicə hansıdır?           Asetil salisil turşusu  ",
     "answers": [
-      "Sumatriptan 100mg subkutan  ",
       "Diklofenac amp. 75mg, İM  ",
       "Aspirin 300mg per oral  ",
+      "Sumatriptan 100mg subkutan  ",
       "Naproksen 500mg per oral  ",
       "İbuprofen 600mg per oral  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Miqren müalicəsində Nikolau sindromu və neyrotoksik yan təsirləri  səbəbilə hansı dərmanın tətbiqindən çəkinməliyik?  ",
     "answers": [
-      "Diclofenac İM  ",
       "Difenhidramin İM  ",
       "İbuprofen 600mg per oral  ",
       "Metoklopromid İV  ",
+      "Diclofenac İM  ",
       "Sumatriptan SC      "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Hansı opioidlərin təcili yardım şöbələrində istifadə olunan antoqonistidir?  ",
@@ -2854,67 +3139,74 @@
       "Sumatriptan  ",
       "Aspirin  ",
       "Flumazenil  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Təcili yardım şöbəsinə böyrək sancısı şikayəti ilə gələn xəstənin  ağrısızlaşdırılması üçün ilk seçim dərmanı hansıdır?  ",
     "answers": [
-      "Ketorolak İV  ",
+      "Difenhidramin İV  ",
       "Metoklopromid İM  ",
       "Parasetamol PO  ",
-      "Difenhidramin İV  ",
-      "Lidokain İV  "
-    ]
+      "Lidokain İV  ",
+      "Ketorolak İV  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Travma xəstəliyində ağrını azaltmaq üçün qızıl standart olan dərman  hansıdır?  ",
     "answers": [
-      "Morfin İV  ",
+      "Ketonal İV  ",
       "Diclofenac İV  ",
       "Difenhidramin İV  ",
       "İbuprofen PO  ",
-      "Ketonal İV  "
-    ]
+      "Morfin İV  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Sedasiya almış və ya huşunu itirmiş xəstədə hansı ağrı şkalasından  istifadə olunur?  ",
     "answers": [
-      "Şifahi təsvirli ağrı şkalası (VDS)  ",
-      "Vizual analoji şkala (VAS)  ",
-      "Rəqəmli qiymətləndirmə şkalası (NRS)  ",
       "CRİES şkalası  ",
+      "Vizual analoji şkala (VAS)  ",
+      "Şifahi təsvirli ağrı şkalası (VDS)  ",
+      "Rəqəmli qiymətləndirmə şkalası (NRS)  ",
       "Davranış ağrı şkalası (BPS)  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Bu tip şkala adətən ağrı dərəcəsini qeyd etmək və xəstənin ağrısını  müqayisə etmək məqsədilə rəqəmli ballara çevrilə bilən \"ağrısız\"dan  \"əzablı/əzabverici ağrı\"ya (və ya oxşar terminologiyaya) qədər dörd-beş təsviri  ehtiva edir:  ",
     "answers": [
-      "Şifahi təsvirli ağrı şkalası (VDS)  ",
+      "CRİES şkalası  ",
       "Rəqəmli qiymətləndirmə şkalası (NRS)  ",
       "Vizual analoji şkala (VAS)  ",
-      "CRİES şkalası  ",
+      "Şifahi təsvirli ağrı şkalası (VDS)  ",
       "Davranış ağrı şkalası (BPS)  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Hansı təcili yardım şöbəsində ağrısızlaşdırma məqsədilə istifadə olunan  opioid deyil?  ",
     "answers": [
-      "Naproksen  ",
-      "Meperidin  ",
       "Morfin  ",
+      "Meperidin  ",
       "Tramadol  ",
+      "Naproksen  ",
       "Fentanil  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Hansı təcili yardım şöbəsində ağrısızlaşdırma məqsədilə istifadə olunan  opioiddir?  ",
     "answers": [
-      "Hidromorfin  ",
+      "Sumatriptan  ",
       "Ketorolak  ",
+      "Hidromorfin  ",
       "Ketamin  ",
-      "Naproksen  ",
-      "Sumatriptan  "
-    ]
+      "Naproksen  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Hansı prehospital paketləmə qaydası doğru ifadə olunmayıb?  ",
@@ -2924,7 +3216,8 @@
       "Hərəkət və hissiyat müayinəsi ilə dört ətrafın nəbz müayinəsi aparılmalıdır  ",
       "Boyun müayinəsi aparılmadan dərhal boyunluq taxılmalıdır  ",
       "Onurğa travmalarında total immobilizasiya icra olunmalıdır  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Ambulansla xəstə transferində aşağıdakılardan hansı düzgün deyil?  ",
@@ -2934,27 +3227,30 @@
       "Yaralı nahiyə asanlıqla əlçatan bir pozisiyada xəstə fiksasiya edilməlidir  ",
       "Xəstə etibarlı, isti və təhlükəsiz şəraitdə transfer olunmalıdır   ",
       "Xəstə üçün münasib xərək səçilməlidir  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Ambulansla xəstə transferində aşağıdakılardan hansı düzgün deyil?  ",
     "answers": [
-      "Bütün xəstələr üçün standart xərək seçilməlidir  ",
       "Xəstənin rutin fasilələrlə birincili baxış və vital parametrləri kontrol edilməlidir  (SpO₂ , monitor, kapnometr izlənməsi)  ",
       "Damar yolları təkanların təsirinə məruz qalmayacaq formada fiksasiya olunmalıdır  ",
       "Ambulans ləvazimatları, xəstəyə zərər vərməyəcək formada yerləşdirilməlidir və  fiksasiya olunmalıdır  ",
-      "2 damar yolu açılmalıdır.   "
-    ]
+      "2 damar yolu açılmalıdır.   ",
+      "Bütün xəstələr üçün standart xərək seçilməlidir  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "“ATMİST”-dəki sonuncu T nəyi ifadə edir?  ",
     "answers": [
-      "Tətbiq olunan müalicəni  ",
       "Ehtimal olunan və müəyyən edilən yaralanmaları  ",
       "Xəstənin yaşı və cinsiyyətini  ",
+      "Tətbiq olunan müalicəni  ",
       "Vital parametrləri  ",
       "Yaralanma mexanizmini  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Xarici qanaxmaya nəzarətdə ilk addım. . .   ",
@@ -2964,7 +3260,8 @@
       "damaryolu açılmasıdır.   ",
       "yaradan yuxarı nahiyəyə turniket qoyulmasıdır.   ",
       "yaradakı yad cismin xaric olunmasıdır.   "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Təməl hemorragik şok müalicəsi zamanı uyğun maye müalicəsi üçün:  ",
@@ -2974,37 +3271,41 @@
       "100ml qan həcminə 700ml maye verilməlidir  ",
       "100ml qan həcminə 100ml maye verilməlidir  ",
       "100ml qan həcminə 500ml maye verilməlidir  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Kritik travma xəstəsinin nəqli zamanı edilən səhv hansıdır?  ",
     "answers": [
-      "Major travmalarda xəstə birincili qiymətləndirmə və spinal immobilizasiya  edilmədən dərhal nəql edilir  ",
+      "Xəstə onurğa xərəyinə alınana qədər əl ilə servikal immobilizasiya davam  etdirilməlidir.   ",
       "2 damar yolu açılmalıdır.   ",
       "Major travma hallarında hadisə yerində alına bilməyən anamnez və ikincili  müayinə nəql zamanı ambulansda tətbiq oluna bilər  ",
-      "Hadisə yerində maks. 10 dəq. qalmalı  ",
-      "Xəstə onurğa xərəyinə alınana qədər əl ilə servikal immobilizasiya davam  etdirilməlidir.   "
-    ]
+      "Major travmalarda xəstə birincili qiymətləndirmə və spinal immobilizasiya  edilmədən dərhal nəql edilir  ",
+      "Hadisə yerində maks. 10 dəq. qalmalı  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "“ATMİST”-dəki A nəyi ifadə edir?  ",
     "answers": [
-      "Xəstənin yaşı və cinsiyyətini  ",
       "Ehtimal olunan və müəyyən edilən yaralanmaları  ",
       "Vital parametrləri  ",
       "Yaralanma mexanizmini  ",
-      "Tətbiq olunan müalicəni  "
-    ]
+      "Tətbiq olunan müalicəni  ",
+      "Xəstənin yaşı və cinsiyyətini  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Travma xəstəsinin transferi zamanı nəfəs yolu və ventilyasiyanın (Airway /  Breath) idarə olunmasında verilənlərdən hansı yanlışdır?  ",
     "answers": [
-      "Əlavə oksigen dəstəyi verilən xəstələrdə SPO2 90%-dən çox olmamalıdır  ",
+      "2 damar yolu açılmalıdır.   ",
       "Nəfəs yolu açıqlığı təmin olunarkən servikal stabilizasiya da təmin olunmalıdır  ",
       "İntubasiyanın göstəriş olduğu, amma tətbiq olunmadığı hallarda alternativ nəfəs  yolu stabilizasiya texnikaları istifadə olunmalıdır  ",
-      "2 damar yolu açılmalıdır.   ",
-      "Kritik yaralıların müalicələrində nəfəs yolunun idarə edilməsi öncəliklidir  "
-    ]
+      "Kritik yaralıların müalicələrində nəfəs yolunun idarə edilməsi öncəliklidir  ",
+      "Əlavə oksigen dəstəyi verilən xəstələrdə SPO2 90%-dən çox olmamalıdır  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Uşaqlarda baş travması haqqında hansı fikir yanlışdır?  ",
@@ -3014,27 +3315,30 @@
       "kəllə tikişlərinin açıq olması kəlləni artmış kəllədaxili təzyiqə adaptə edərək ciddi  kəllədaxili zədələrin diaqnostikasını gecikdirə bilər  ",
       "başın bədənə nisbəti böyük olduğundan kəllə travması daha çox rast gəlinir  ",
       "kəllə sümüklərinin nazik olması kəllə sınığı riskini artırır  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Uşaqlarda boyun travması haqqında hansı fikir doğrudur?  ",
     "answers": [
-      "uşaqlarda boyun zədələri böyüklərə nisbətən daha yüksək səviyyədə olur  ",
+      "fəqərə fasetləri üfüqi olduğuna görə onurğa zədələnməsi daha az olur  ",
       "əzələlər və sümüklər daha zəif olduğuna görə zərbəni daha az ötürür  ",
       "əzələlər elastik olduğuna görə boyun zədələnməsi daha az olur  ",
-      "fəqərə fasetləri üfüqi olduğuna görə onurğa zədələnməsi daha az olur  ",
+      "uşaqlarda boyun zədələri böyüklərə nisbətən daha yüksək səviyyədə olur  ",
       "boyun daha qısa olduğuna görə daha çox zədələnir  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Uşaqlarda döş travması haqqında hansı fikir yanlışdır?  ",
     "answers": [
-      "döş qəfəsi divarında ciddi zədələnmə olsa da ürək zədələnməsi daha az olur  ",
+      "traxeobronxial strukturlar barotravmaya həssasdır  ",
       "daha kiçik hava yolları hava axınına daha çox dözümlüdür  ",
       "yüksək həcmli ventilyasiya yatrogen pnevmotoraks əmələ gətirə bilər  ",
       "döş qəfəsi divarı daha elastik olduğuna görə torakal orqanlar daha çox zədələnir  ",
-      "traxeobronxial strukturlar barotravmaya həssasdır  "
-    ]
+      "döş qəfəsi divarında ciddi zədələnmə olsa da ürək zədələnməsi daha az olur  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Uşaqlarda qarın travması haqqında hansı fikir doğrudur?  ",
@@ -3044,47 +3348,52 @@
       "heç biri doğru deyil  ",
       "bağırsaqlar daha hərəkətli olduğuna görə daha az zədələnir  ",
       "vəzili orqanların kapsulu incə olduğundan kapsulaltı hematoma USM-də daha  rahat görünür  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Uşaqlarda ətrafların travması haqqında hansı fikirlər doğrudur?   1) skelet tam kalsifikasiya olunmayıb, daha elastikdir, bu isə travma zamanı  sümüklərin əyilməsinə, yaşıl çubuq zədələnməsinə səbəb olur   2) aktiv böyümə mərkəzlərinin və zəif epifizin olması uşaqlara xas olan  müəyyən sınıq növlərini izah edir   3) sümük toxumasının tam kalsifikasiya olmaması, elastik olması ciddi  sınıqların olmasına təsir etmir   4) sınıqlar ciddi olmasa da, sağalma müddəti daha uzun olur  ",
     "answers": [
-      "1,4  ",
       "2,3  ",
+      "1,4  ",
       "1,2  ",
       "2,4  ",
       "3,4  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Hamilələrdə travma haqqında hansı fikirlər doğrudur?   1) ≥20 həftə olduqda sidik kisəsi qarnın önünə, bağırsaqlar qarın boşluğunun  yuxarısına sıxıldığına görə zədələnməyə meylli olur   2) ≥20 həftə olduqda uzanmış vəziyyətdə ananın aşağı boş venasının uterus  tərəfindən sıxılması nəticəsində venoz qayıdış azalır   3) <20 həftəyə qədər uşaqlıq kiçik çanaqda qorunur və daha az travma alır   4) hamiləliyin bütün trimestrlərində torakostomiya eyni səviyyədə olunur  ",
     "answers": [
-      "1,2,3  ",
-      "hamısı  ",
       "3,4  ",
+      "hamısı  ",
       "heç biri  ",
+      "1,2,3  ",
       "1,2  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Travma zamanı >20 həftəlik hamilələrin daşınması necə olmalıdır?  ",
     "answers": [
-      "bel taxtası sol tərəfə 30 dərəcə bucaq altında çevrilməli, taxtanın sağ arxa tərəfinə  yastıq qoyulmalıdır  ",
       "hamilə olmayan xəstələrdə olduğu kimi daşınmalıdır  ",
       "baş və kürək altına yastıq qoyularaq yarımoturaq vəziyyət verilməlidir  ",
       "bel taxtası sağ tərəfə 30 dərəcə bucaq altında çevrilməli, taxtanın sol arxa tərəfinə  yastıq qoyulmalıdır  ",
+      "bel taxtası sol tərəfə 30 dərəcə bucaq altında çevrilməli, taxtanın sağ arxa tərəfinə  yastıq qoyulmalıdır  ",
       "supin vəziyyətdə arxası üstə uzadılmalıdır  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Hamilələrdə travma zamanı risklər barədə hansı fikirlər doğrudur?   1) erkən endotraxeal intubasiyanı nəzərdən keçirin, çünki hamiləlikdə  hipoksiyanın kompensasiyası məhduddur   2) nazogastrik borunun erkən yerləşdirilməsini nəzərdə tutun, çünki mədənin  boşalmasının gecikməsi və ezofagusun aşağı sfinkterinin tonusunun azalması  mədə möhtəviyyatının aspirasiya riskini artırır   3) hamilə şokun klinik əlamətlərini təzahür etdirmədən ümumi dövr edən qan  həcminin 30%-35%-ni itirə bilər   4) uterusun zədələnməsi anada güclü qanaxma ilə nəticələnə bilər   5) dölün potensial ağırlaşmalarından narahat olaraq ana üçün kritik müdaxilələr  və ya diaqnostik prosedurlar dayandırılmamalır  ",
     "answers": [
-      "hamısı  ",
       "3,4  ",
       "3,4,5  ",
       "1,2,3  ",
-      "1,2,3,4  "
-    ]
+      "1,2,3,4  ",
+      "hamısı  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Yaşlılarda travma haqqında hansı fikir yanlışdır?   1) hipovolemiya asanlıqla şokla nəticələnə bilər   2) miokardın xronotrop reaksiyası azalmış və katexolaminlərdən asılıdır   3) dərmanlar, xüsusən digoksin, β-blokatorlar, kalsium kanal blokatorları  taxikardiya reaksiyasını pozur   4) qanaxmanın kompensasiyası daha tez baş verir   5) travma ilə ürək fəaliyyəti arasında heç bir əlaqə yoxdur  ",
@@ -3094,7 +3403,8 @@
       "1,4,5  ",
       "heç biri  ",
       "1,4  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "65 yaşdan yuxarı yaşlılarda travmanın ən çox yayılmış səbəbi hansıdır?  ",
@@ -3104,17 +3414,19 @@
       "zorakılıq  ",
       "yanıqlar  ",
       "avtoqəza  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "65 yaşa qədər yaşlılarda ən çox ölümlə nəticələnən travma hansıdır?  ",
     "answers": [
-      "avtoqəza  ",
+      "yıxılma  ",
       "elektrik cərəyan  ",
       "hündürlükdən düşmə  ",
       "yanıqlar  ",
-      "yıxılma  "
-    ]
+      "avtoqəza  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Avtomobil toqquşması nəticəsində küt travma almış 70 yaşlı kişi üçün  aşağıdakı göstəricilərdən hansında ölüm riski böyükdür?  ",
@@ -3124,7 +3436,8 @@
       "sistolik qan təzyiqi 160 mm. c. süt. , tənəffüs tezliyi 12/dəq.   ",
       "sistolik qan təzyiqi 85 mm. c. süt. , tənəffüs tezliyi 18/dəq.   ",
       "sistolik qan təzyiqi 140 mm. c. süt. , tənəffüs tezliyi 10/dəq.   "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Yaşlılarda ən çox hansı sümüyün sınıqlarına rast gəlinir?  ",
@@ -3134,7 +3447,8 @@
       "bazu sümüyü  ",
       "kəllə sümüyü  ",
       "çanaq sümüyü  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Travma zamanı piylənməsi olan xəstələrin daşınmasında hansı vəziyyətdən  istifadə etmək məqsədəuyğundur?  ",
@@ -3144,27 +3458,30 @@
       "bədən 30 dərəcə sağa  ",
       "oturaq vəziyyət  ",
       "bədən 45 dərəcə sola  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Travma xəstəliyində piylənməsi olan xəstələr üçün tənəffüsü hansı  üsullarla yaxşılaşdırmaq mümkündür?  ",
     "answers": [
-      "baş tərəf 25 dərəcə yuxarı, CPAP rejimi ilə oksigenasiya  ",
+      "üzüaşağı (prone) vəziyyət, maska ilə O2  ",
       "oturaq vəziyyət, BİPAP rejimi ilə oksigenasiya  ",
       "Trendelenburq vəziyyəti, nazal kanyula ilə O2  ",
-      "üzüaşağı (prone) vəziyyət, maska ilə O2  ",
-      "bədən 45 dərəcə sola, rezervuarlı maska ilə O2  "
-    ]
+      "bədən 45 dərəcə sola, rezervuarlı maska ilə O2  ",
+      "baş tərəf 25 dərəcə yuxarı, CPAP rejimi ilə oksigenasiya  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Travmalı xəstə təcili yardım şöbəsində hansı protokolla qəbul edilir?  ",
     "answers": [
+      "ATLS  ",
       "ABCDE  ",
       "FAST  ",
-      "ATLS  ",
       "SAMPLE  ",
       "ATMİST  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "ABCDE yanaşmasına aid aşağıdakı fikirlərdən biri səhvdir.   ",
@@ -3174,7 +3491,8 @@
       "D – Nevroloji vəziyyət  ",
       "B – Tənəffüs  ",
       "A – Havayolu  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Təcili yardım şöbəsində travmalı xəstəyə hansı müayinə ilk növbədə  aparıla bilməz?  ",
@@ -3184,17 +3502,19 @@
       "USM  ",
       "KT  ",
       "Rentgenoqrafiya  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Travma xəstəsinə yanaşmanın prinsiplərini və qaydalarını əhatə edən  beynəlxalq protokol necə adlanır?  ",
     "answers": [
-      "ATLS  ",
+      "ACLS  ",
       "PALS  ",
       "AVPU  ",
-      "ACLS  ",
-      "BLS  "
-    ]
+      "BLS  ",
+      "ATLS  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Racoon`s eye, Battle sign əlamətləri hansı travmalarda rast gəlinir?  ",
@@ -3204,7 +3524,8 @@
       "Bazu sümüyünün sınığı  ",
       "Burun sümüyünün  ",
       "Kəllə tağının sınığı  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Qlasko Koma Şkalasının hansı göstəricisi xəstənin vəziyyətinin daha ağır  olduğunu göstərir?   ",
@@ -3214,7 +3535,8 @@
       "4  ",
       "10  ",
       "12  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Aşağıdakılardan hansı Kanada baş KT protokoluna əsasən klinik  proqnozlaşdırma alqoritminin meyarlarına aid deyil?  ",
@@ -3224,27 +3546,30 @@
       "Baş KT-sində patologiya aşkarlanmaması  ",
       "Baş KT-si göstəriş olsa da, əlçatan olmaması  ",
       "Baş KT normal olsa da, huşun depressive olması (QKŞ˂15)  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Kanada baş KT protokoluna əsasən aşağıdakılardan hansı KT müayinəsinə  göstəriş deyil?  ",
     "answers": [
-      "Kəllə əsasının sınığının hər hansı bir əlaməti   ",
       "Yaralanmadan 2 saat sonra QKŞ balının 9-dən aşağı olması  ",
+      "Kəllə əsasının sınığının hər hansı bir əlaməti   ",
       "Yaralanmadan sonra QKŞ balının 15 olması  ",
       "65 yaşdan yuxarı, hadisəni xatırlamayan xəstələr  ",
       "İki və ya daha çox qusma epizodları  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Travmanın lokalizasiyasına görə üzü hansı hissələrə bölmək olar?  ",
     "answers": [
-      "Yuxarı, orta, aşağı  ",
-      "Ön, arxa, yan  ",
       "Daxili, xarici  ",
+      "Ön, arxa, yan  ",
+      "Yuxarı, orta, aşağı  ",
       "Sağ, sol  ",
       "Medial, lateral  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Burun travması nəticələrinə aid deyil?  ",
@@ -3254,7 +3579,8 @@
       "Septal nekroz  ",
       "Septal perforasiyaya   ",
       "Septal hematoma  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Le-fort sınıqları hansı nahiyənin travmalarına aiddir?  ",
@@ -3264,7 +3590,8 @@
       "Burun  ",
       "Almacıq  ",
       "Çənə  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Əng sınığına şübhə yaradan əlamətlərə aid deyil:  ",
@@ -3274,37 +3601,41 @@
       "Üzün şişməsi  ",
       "Rinorreya  ",
       "Üz ağrısı  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Üz sınıqlarında ilkin müdaxilə nədən ibarətdir?  ",
     "answers": [
-      "Hava yolunun keçiriciliyinin təmin edilməsi  ",
+      "Damar yolu açılması  ",
       "Sınığın repozisiya edilməsi  ",
       "Hipotenziv preparatların təyin edilməsi  ",
-      "Damar yolu açılması  ",
-      "Çənəni önə-yuxarıya hərəkət etdirməklə vəziyyət verilməsi  "
-    ]
+      "Çənəni önə-yuxarıya hərəkət etdirməklə vəziyyət verilməsi  ",
+      "Hava yolunun keçiriciliyinin təmin edilməsi  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Tripod sınığı hansı şaxələrdən təşkil olumuşdur   1)  İnfraorbital şaxə   2)  Almacıq-üz tikiş xətti şaxəsi   3)  Almacıq-gicgah tikiş xətti şaxəsi   4) Alın şaxəsi  ",
     "answers": [
-      "1, 2, 3  ",
       "1, 2, 3, 4  ",
       "2, 3  ",
       "1,4  ",
-      "2, 3, 4  "
-    ]
+      "2, 3, 4  ",
+      "1, 2, 3  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Göz yuvasının hansı divarı sınıq üçün daha əlverişlidir?  ",
     "answers": [
-      "aşağı  ",
+      "yuxarı  ",
       "arxa   ",
       "lateral   ",
       "medial   ",
-      "yuxarı  "
-    ]
+      "aşağı  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Ən çox rast gəlinən üz sınıqları hansıdır?  ",
@@ -3314,27 +3645,30 @@
       "Çənə sümüyünün sınığı  ",
       "Almacıq sümüyünün sınığı  ",
       "Əng sümüyünün sınığı  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Çənə sümüyünün sınığında əsas görüntüləmə üsulu hansıdır?  ",
     "answers": [
-      "Rentgenoqrafiya  ",
+      "PET  ",
       "USM  ",
       "MRT  ",
-      "KT  ",
-      "PET  "
-    ]
+      "Rentgenoqrafiya  ",
+      "KT  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Çənə dislokasiyası (çıxığı) ən çox hansı hallarda baş verir?  ",
     "answers": [
-      "Əsnəmə zamanı  ",
+      "Dişləmə zamanı  ",
       "Üçlü sinirin iltihabında  ",
       "İntubasiyada  ",
       "Zərbə zamanı  ",
-      "Dişləmə zamanı  "
-    ]
+      "Əsnəmə zamanı  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Təkrarlanan çənə dislokasiyaları (çıxığı) ən çox hansı sindromlarda baş  verir?  ",
@@ -3344,37 +3678,41 @@
       "Daun sindromu  ",
       "Truman sindromu  ",
       "Klaynfelter sindromu  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Onurğanın boyun şöbəsinin 3lü immobilizasiyası əhatə edir:   1) Sərt boyunluq   2) Qum torbaları və lent    3) Kötük çevirmə   4) Dezo sarğısı  ",
     "answers": [
-      "1, 2, 3  ",
       "2, 3  ",
       "1, 2, 4  ",
       "2, 3, 4  ",
-      "1, 4  "
-    ]
+      "1, 4  ",
+      "1, 2, 3  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "NEXUS tədqiqatının məqsədi nədir?  ",
     "answers": [
-      "Onurğanın boyun şöbəsinin zədələnməsini klinik olaraq inkar etmək  ",
       "Xəstə üçün müvafiq konsultant çağırmaq  ",
       "Onurğanı immobilizasiya etmək  ",
       "Xəstəni evə yazmaq  ",
+      "Onurğanın boyun şöbəsinin zədələnməsini klinik olaraq inkar etmək  ",
       "Onurğa travmalarını daxili orqan travmalarından differensiasiya etmək  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "NEXUS tədqiqatının meyarlarına aid deyil:  ",
     "answers": [
-      "İntoksikasiya (alkoqol və ya narkotik maddə) əlamətlərinin varlığı  ",
+      "Huşun pozulmaması (GCS 15)  ",
       "Yerli nevroloji çatışmazlığın olmaması  ",
       "Ağrılı, diqqəti yayındıran xəsarətlərin olmaması   ",
       "Posterior orta xətt boyunca həssaslığın olmaması  ",
-      "Huşun pozulmaması (GCS 15)  "
-    ]
+      "İntoksikasiya (alkoqol və ya narkotik maddə) əlamətlərinin varlığı  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Tam onurğa beyni zədələnmələrinin spinal şok ilə differensiasiyasında  hansı simptomlar daha vacibdir?  ",
@@ -3384,17 +3722,19 @@
       "Hipotenziya, hipotermiya, öskürək  ",
       "İleus, öskürək, taxipnoe  ",
       "Bradikardiya, öskürək, ürəkbulanma  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Brown-Sequard sindromu onurğa beyninin lateral yarısı müəyyən  səviyyədə zədələndikdə (məsələn, penetrasion travma nəticəsində) baş verir.  Bu sindromda hansı əlamətlər müşahidə edilir?  ",
     "answers": [
-      "İpsilateral motor və kontrolateral sensor itki  ",
       "Kontrolateral motor və sensor itki  ",
       "İpsilateral motor və sensor itki  ",
       "Həm ipsilateral, həm də kontrolateral itki ilə yanaşı bağırsaq və sidik kisəsinin  funksiyası pozulması  ",
+      "İpsilateral motor və kontrolateral sensor itki  ",
       "İpsilateral sensor və kontrolateral motor itki  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Spinal şokun müalicəsində hansı istifadə olunmalıdır?  ",
@@ -3404,27 +3744,30 @@
       "Kalsium kanal blokatorları  ",
       "Qan və qanəvəzedicilər  ",
       "β-blokatorlar  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Spinal şoku neyrogen şokdan fərqləndirən xüsusiyyətlərdən hansı doğru  deyil?  ",
     "answers": [
-      "Neyrogen şok nevroloji hadisədir  ",
       "Spinal şok adətən ilk bir neçə gün ərzində aradan qalxır və onurğa reflekslərinin  qayıtması ilə xarakterizə olunur.   ",
       "Spinal şok zəif iflic, reflekslərin itməsi və hissiyyat itkisi ilə xarakterizə olunur  ",
       "Spinal şok onurğanın zədələnməsindən sonrakı ilkin mərhələdir  ",
-      "Neyrogen şok onurğa beyninin zədələnməsi, simpatik tonusun itirilməsi,  venodilatasiya nəticəsində nəticəsində yaranan hipotenziyadır  "
-    ]
+      "Neyrogen şok onurğa beyninin zədələnməsi, simpatik tonusun itirilməsi,  venodilatasiya nəticəsində nəticəsində yaranan hipotenziyadır  ",
+      "Neyrogen şok nevroloji hadisədir  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Döş qəfəsinin travması hansı zədələnmələrlə nəticələnə bilməz?  ",
     "answers": [
-      "Pankreasın zədələnməsi  ",
+      "Ağciyərin kontuziyası  ",
       "Hemopnevmotoraks  ",
       "Miokardın küt travması  ",
-      "Diafraqma zədələnməsi  ",
-      "Ağciyərin kontuziyası  "
-    ]
+      "Pankreasın zədələnməsi  ",
+      "Diafraqma zədələnməsi  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Yelkən döş qəfəsi necə meydana gəlir?  ",
@@ -3434,57 +3777,63 @@
       "Qabırğanın döş fəqərələri ilə birlikdə sınması nəticəsində  ",
       "3 və daha çox qabırğanın 1 yerdən sınması nəticəsində  ",
       "1 qabırğanın 3 yerdən sınması nəticəsində  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Hemotoraks və ya pnevmotoraks olan xəstələrdə hansı klinik əlamətlər  müşahidə edilə bilər?  ",
     "answers": [
-      "Bradikardiya  ",
       "Dərialtı emfizema   ",
       "Taxikardiya, zədələnmiş tərəfdə tənəffüs səslərinin azalması  ",
       "Taxipnoe  ",
-      "Döş qəfəsində ağrı, hipoksiya  "
-    ]
+      "Döş qəfəsində ağrı, hipoksiya  ",
+      "Bradikardiya  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Beck triadası hansı patologiya zamanı müşahidə edilir?  ",
     "answers": [
-      "Perikardial tamponada  ",
       "Ağciyər kontuziyası  ",
       "Gərginlik pnevmotoraksı  ",
+      "Perikardial tamponada  ",
       "Yelkən döş qəfəsi  ",
       "Qapalı pnevmotoraks  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Aşağıdakılardan hansı küt miokard zədələnməsinin ağırlaşmalarına aid  deyil?  ",
     "answers": [
-      "Kardiogen şok  ",
-      "Kongestiv ürək çatışmazlığı   ",
       "Miokard infarktı  ",
+      "Kongestiv ürək çatışmazlığı   ",
+      "Kardiogen şok  ",
       "Hemotoraks  ",
       "Disritmiyalar  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Küt miokard zədələnməsinin müalicəsi əsasən dəstəkləyici və . . . . . . . . . .   ",
     "answers": [
-      "aritmiyaların müalicəsini əhatə edir.   ",
+      "vazokonstriksiyanın müalicəsini əhatə edir.   ",
       "maye infuziyasını əhatə edir.   ",
       "vazodilatasiyanın müalicəsini əhatə edir.   ",
       "dinamik müşahidəni əhatə edir.   ",
-      "vazokonstriksiyanın müalicəsini əhatə edir.   "
-    ]
+      "aritmiyaların müalicəsini əhatə edir.   "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Qeyri-stabil perikardial tamponada olan xəstələrin müalicəsində ilk  müdaxilə nədən ibarətdir?  ",
     "answers": [
-      "Təcili perikardial dekompressiya  ",
+      "Ca-kanal blokatorları İV    ",
       "Qlükokortikoidlərin təyini  ",
       "β-blokatorların inyeksiyası  ",
-      "İki ədəd böyük diametrli İV kateterlə İV kristalloidlərin sürətli infuziyası  ",
-      "Ca-kanal blokatorları İV    "
-    ]
+      "Təcili perikardial dekompressiya  ",
+      "İki ədəd böyük diametrli İV kateterlə İV kristalloidlərin sürətli infuziyası  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Aorta cırılmaları əsasən aortanın hansı hissəsində baş verir?   ",
@@ -3494,17 +3843,19 @@
       "Aorta qövsündə   ",
       "Qarın aortasında  ",
       "Qalxan aortada  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Aorta cırılmasının diaqnostikasında qızıl standart nədir?  ",
     "answers": [
-      "Aortoqrafiya  ",
-      "Portoqrafiya  ",
       "MRT  ",
+      "Portoqrafiya  ",
       "USM  ",
+      "Aortoqrafiya  ",
       "KT angioqrafiya  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Döş qəfəsi rentgenoqrafiyasında aorta cırılmasının əlaməti hansıdır?  ",
@@ -3514,17 +3865,19 @@
       "Perikard zolağının qalınlaşması  ",
       "Yuxarı mediastinumun genişlənməsi  ",
       "Traxeyanın sağa deviasiyası  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Aşağıdakılardan hansı döş qəfəsinin rentgenoqrafiyasında diafraqmanın  zədələnməsini göstərən əlamətlərə aid deyil?  ",
     "answers": [
-      "Boyun venalarının dolğunluğu  ",
+      "Aydın diafraqma konturunun itməsi  ",
       "Nazoqastral borunun diafraqmadan yuxarıda olması   ",
       "Diafraqmanın üstündə kütləyəbənzər sıxlıq  ",
-      "Aydın diafraqma konturunun itməsi  ",
+      "Boyun venalarının dolğunluğu  ",
       "Hemidiafraqmanın yüksəlməsi  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Təcili yardım şöbəsində torakotomiya nə zaman əks göstərişdir?  ",
@@ -3534,37 +3887,41 @@
       "Nüfuz edən döş qəfəsi zədələnmələri   ",
       "Qeyri-stabil xəstələrdə  ",
       "Təcili yardım şöbəsinə gəlməzdən əvvəl 5 dəqiqədən az nəbzsiz qaldıqda     "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Təhlükəsizlik kəmərinin təsirindən yaranan qarın ekximozu (\"təhlükəsizlik  kəməri əlaməti\") hansı sınıqlar üçün xarakterikdir?  ",
     "answers": [
-      "Chance sınığı   ",
-      "Grey Turner sınığı   ",
       "Kompression sınıq  ",
+      "Grey Turner sınığı   ",
       "Jeans sınığı   ",
-      "Cullen sınığı  "
-    ]
+      "Cullen sınığı  ",
+      "Chance sınığı   "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Grey Turner əlaməti təhlükəsizlik kəmərinin hansı bölgədə səbəb olduğu  ekximozdur ?  ",
     "answers": [
-      "Qarının yan tərəflərində  ",
+      "Döş sümüyünün cismi üzərində   ",
       "Qalça qanadları üzərində  ",
       "Xəncərəbənzər çıxıntı nahiyəsində  ",
-      "Döş sümüyünün cismi üzərində   ",
+      "Qarının yan tərəflərində  ",
       "Göbək ətrafında  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Grey Turner, Cullen əlamətləri . . . . . . . . . . . . . . . . . . . . . . . göstərir:  ",
     "answers": [
-      "Retroperitoneal qanaxmanı  ",
+      "İntraperitoneal qanaxmanı  ",
       "Subdural qanaxmanı  ",
       "Hemopnevmotoraksı  ",
       "Hemotoraksı  ",
-      "İntraperitoneal qanaxmanı  "
-    ]
+      "Retroperitoneal qanaxmanı  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Nüfuz edən qarın travmalarında aşağıdakılardan hansı əhəmiyyət kəsb  etmir?   ",
@@ -3574,107 +3931,118 @@
       "Yaralanma zamanı xəstənin vəziyyəti  ",
       "Silah növü  ",
       "Atılan və ya hədəfə dəyən güllələrin sayı (əgər məlumdursa)  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Şokun hansı forması daha çox müşahidə edilir?  ",
     "answers": [
-      "Hipovolemik  ",
+      "Kardiogen    ",
       "Neyrogen  ",
       "Septik  ",
       "Obstruktiv  ",
-      "Kardiogen    "
-    ]
+      "Hipovolemik  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Döş qəfəsi və çanaq sümüyü rentgenoqrafiyası normal olan, uzun borulu  sümük sınıqları və açıq yaralardan aşkar qanaxma olmayan, şokdakı travma  xəstəsində qan itkisinin ən çox ehtimal olunan mənbəyi . . . . . . . . . . . . . . . . . . . .  qanaxmadır.   ",
     "answers": [
-      "qarındaxili  ",
-      "kəllədaxili  ",
       "xarici  ",
+      "kəllədaxili  ",
       "döşdaxili  ",
-      "açıq sınıqdan  "
-    ]
+      "açıq sınıqdan  ",
+      "qarındaxili  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Təcili yardım şöbəsində qarındaxili qanaxmanın diaqnostikasında hansı  müayinə üsulları daha informativdir?  ",
     "answers": [
-      "USM, KT, Diaqnostik peritoneal lavaj  ",
       "Diaqnostik peritoneal lavaj, KT, Rentgenoqrafiya  ",
       "USM, KT, Qastroskopiya  ",
       "KT, Diaqnostik peritoneal lavaj, MRT  ",
-      "USM, KT, Rentgenoqrafiya  "
-    ]
+      "USM, KT, Rentgenoqrafiya  ",
+      "USM, KT, Diaqnostik peritoneal lavaj  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Qarın travmalarında qan itkisini qiymətləndirmək üçün hansı laborator  göstəricilərdən istifadə edilir?  ",
     "answers": [
-      "Hb, Ht  ",
       "WBC, Ht  ",
       "Hb, Plt  ",
       "Hb, WBC  ",
-      "Ht, Plt  "
-    ]
+      "Ht, Plt  ",
+      "Hb, Ht  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Qarın travmalarında qarnın icmal Rh-qrafiyası hansı patologiyanın  diaqnostikasında əhəmiyyətlidir?  ",
     "answers": [
-      "Boşluqlu orqan perforasiyası  ",
+      "Dalağın zədələnməsi  ",
       "Prostat vəzinin zədələnməsi  ",
       "Sidik kisəsinin zədələnməsi  ",
-      "Dalağın zədələnməsi  ",
-      "Qaraciyərin zədələnməsi  "
-    ]
+      "Qaraciyərin zədələnməsi  ",
+      "Boşluqlu orqan perforasiyası  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Qarın travmasının diaqnostikasında istifadə edilən çarpayı yanı USM  protokolu necə adlanır?  ",
     "answers": [
-      "FAST  ",
       "SAMPLE  ",
       "AVPU  ",
       "ATMİST  ",
-      "DPL  "
-    ]
+      "DPL  ",
+      "FAST  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Abdominal ultrasəs müayinəsində intraperitoneal qanın aşkarlanması üçün  sərbəst mayenin minimum miqdarı nə qədər olmalıdır?  ",
     "answers": [
-      "300 ml  ",
-      "100 ml  ",
       "500 ml  ",
+      "100 ml  ",
       "50 ml  ",
+      "300 ml  ",
       "150 ml  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Hansı qarın travmalı xəstələr qeyri-operativ müalicə oluna bilir?  ",
     "answers": [
-      "Hemodinamik cəhətdən stabil xəstələr  ",
-      "Odlu silah yaralanmaları olanlar  ",
       "Kontrast ekstravazasiyası olan xəstələr  ",
+      "Odlu silah yaralanmaları olanlar  ",
       "Diafraqma cırılması olanlar  ",
+      "Hemodinamik cəhətdən stabil xəstələr  ",
       "Hipovolemik şokda olan xəstələr  "
-    ]
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Aşağıdakı fikirlərdən hansı yalnışdır?  ",
     "answers": [
-      "Uretra zədələnməsinə şübhə olduqda sidik kateteri taxılmalıdır.   ",
+      "Küt travmadan sonra müraciət edən hemodinamik normal xəstələrdə çox nadir  hallarda (1%-dən az) kəskin qanlı sidik olmasa belə ciddi urinar travma olur.   ",
       "Kişilərdə uretra daha uzun olduğu üçün kişilər uretra zədələnmələrinə qadınlara  nisbətən daha həssasdırlar.   ",
+      "Uretra zədələnməsinə şübhə olduqda sidik kateteri taxılmalıdır.   ",
       "Uretra zədələnməsi əlamətlərinə uretrada qan, yuxarı doğru yerdəyişən prostat və  penis, skrotal və ya perineal hematoma daxildir.   ",
-      "Çanaq sınıqları, xüsusən qasıq bitişməsini əhatə edən sınıqlar uretra  zədələnməsinə şübhə oyatmalıdır.   ",
-      "Küt travmadan sonra müraciət edən hemodinamik normal xəstələrdə çox nadir  hallarda (1%-dən az) kəskin qanlı sidik olmasa belə ciddi urinar travma olur.   "
-    ]
+      "Çanaq sınıqları, xüsusən qasıq bitişməsini əhatə edən sınıqlar uretra  zədələnməsinə şübhə oyatmalıdır.   "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Sidik kisəsinin zədələnməsinin diaqnozu hansı müayinə üsulu ilə qoyulur?  ",
     "answers": [
-      "Retrograd uretrosistoqrafiya  ",
+      "Ekskretor uroqrafiya  ",
       "USM  ",
       "Portoqrafiya  ",
-      "Ekskretor uroqrafiya  ",
-      "Uretropieloqrafiya  "
-    ]
+      "Uretropieloqrafiya  ",
+      "Retrograd uretrosistoqrafiya  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Çanaq sınığı olan xəstələrdə ilk növbədə hansı mütəxəssislərin  konsultasiyasına ehtiyac yarana bilər?    a) Travmatoloq-ortoped   b) Uroloq   c) Ümumi cərrah   d) Kardioloq   e) Neyrocərrah  ",
@@ -3684,7 +4052,8 @@
       "a, c, e  ",
       "b, c, e  ",
       "b, c, d  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Hansı zədələnmələr konservativ şəkildə müalicə olunur?  ",
@@ -3694,7 +4063,8 @@
       "S-ə bənzər çənbər bağırsağın perforasiyası  ",
       "Uretranın sidik kisəsindən tam qopması  ",
       "Sidik kisəsinin odlu silah yaralanması  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Ətraf travmalarında anamnez toplayarkən nəyə əhəmiyyət verilmir?  ",
@@ -3704,7 +4074,8 @@
       "Travmanın mexanizmi  ",
       "Travma zamanı oynağın və ya ətrafın mövqeyi  ",
       "Qüvvələrin istiqaməti  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Ətraf travmalarının dəyərləndirilməsilə bağlı yalnış fikir hansıdır?  ",
@@ -3714,17 +4085,19 @@
       "Zədələnmiş ətrafın obyektiv müayinəsi diqqətli damar və nevroloji müayinəni əhatə  etməlidir.   ",
       "Zədələnmiş ətraflar nöqtə həssaslığı və krepitasiya sahələri üzrə  qiymətləndirilməlidir.   ",
       "Multitravma xəstəsində digər daha kritik sistemlər qiymətləndirilənə və xəstə  stabilləşənə qədər ətraflar qiymətləndirilməməlidir.   "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Aşağıdakılardan hansı sınığın növü deyil?  ",
     "answers": [
-      "Korteks  ",
+      "Eninə  ",
       "Qəlpəli  ",
       "Spiral  ",
-      "Eninə  ",
+      "Korteks  ",
       "Çəp  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Ayaq rentgenoqrafiyası hansı halda tələb olunmur?  ",
@@ -3734,7 +4107,8 @@
       "5-ci metatarsalın əsası üzərində həssaslıq varsa  ",
       "Ayağın ortasında həssaslıq varsa  ",
       "Medial və ya lateral malleolun üzərində həssaslıq varsa  "
-    ]
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Bud sümüyünün boynunun sınıqlarının neçə faizi operativ müdaxilə tələb  edir?  ",
@@ -3744,77 +4118,85 @@
       "10%  ",
       "80%  ",
       "20%  "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "OTTAVA diz qaydalarına əsasən aşağıdakı əlamətlərdən hər hansı biri olan  xəstələrdə diz travmasından sonra diz rentgenoqrafiyası göstərişdir:  ",
     "answers": [
-      "Yaş >35  ",
       "Həm dərhal, həm də Təcili yardım şöbəsində öz kütləsini daşıya bilməmək (4  addımdan sonra axsama)  ",
       "Bükülmə qabiliyyəti 90°  ",
+      "Yaş >35  ",
       "Diz qapağının təcrid olunmuş həssaslığı (patelladan başqa dizdə sümük  həssaslığı yoxdur)  ",
       "Qamış sümüyünün başında həssaslıq  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Aşağıdakılardan hansı yuxarı ətraf sınıqlarına aid deyil?  ",
     "answers": [
-      "Tomas sınığı  ",
       "Dirsək sınığı  ",
       "Kollis sınığı  ",
       "Skafoid sınığı  ",
-      "Bazu sınığı  "
-    ]
+      "Bazu sınığı  ",
+      "Tomas sınığı  "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Aşağıdakılardan hansı mil sümüyünün distal sınıqlarının növlərinə aid  deyil?  ",
     "answers": [
-      "Triseps zədələnməsi  ",
       "Ekstraartikulyar  ",
       "İntraartikulyar   ",
+      "Triseps zədələnməsi  ",
       "Palmar yerdəyişmə  ",
       "Dorzal yerdəyişmə   "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Palmar çıxıqlar hansı splintlə immobilizasiya edilir?  ",
     "answers": [
-      "Zimmer  ",
+      "Dezo  ",
       "Səkkizvari  ",
       "Kollis  ",
       "Tomas  ",
-      "Dezo  "
-    ]
+      "Zimmer  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Kompartment sindromu ilə bağlı aşağıdakılardan hansı fikir yalnışdır ?   ",
     "answers": [
-      "Kompartment sindromu əsasən gənc yaşlarda inkişaf edir.   ",
       "Kompartment sindromunun səbəbləri müxtəlif ola və hər yerdə inkişaf edə bilər,  ən çox rast gəlinən səbəbi uzun sümük sınığıdır.   ",
       "Kompartment sindromu ən çox baldır və said nahiyələrində baş verir.   ",
       "Kapilyar qan axınının bu pozulması toxuma işemiyasına və nəticədə hüceyrə  hipoksiyasına gətirib çıxarır.   ",
-      "Kompartment sindromu qapalı osseofasial sahədə təzyiqin kapilyar qan axınını  pozacaq qədər yüksəlməsi nəticəsində baş verir.   "
-    ]
+      "Kompartment sindromu qapalı osseofasial sahədə təzyiqin kapilyar qan axınını  pozacaq qədər yüksəlməsi nəticəsində baş verir.   ",
+      "Kompartment sindromu əsasən gənc yaşlarda inkişaf edir.   "
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Kompartment sindromunun əsas simptomu nədir?   ",
     "answers": [
+      "Ağrı  ",
       "Hiperkalemiya  ",
       "Hipertermiya  ",
       "Hiperemiya  ",
-      "Hipotenziya  ",
-      "Ağrı  "
-    ]
+      "Hipotenziya  "
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Kompartment sindromu olan xəstədə paresteziya varsa, . . . . . . . . davam  edən sinir işemiyası mövcuddur.   ",
     "answers": [
-      "1 saat   ",
+      "6 saat  ",
       "24 saat  ",
       "12 saat  ",
-      "6 saat  ",
-      "3 saat  "
-    ]
+      "3 saat  ",
+      "1 saat   "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Aşağıdakılardan hansı təcili yardım şöbəsinə müraciət edən xəstələrdə  kompartment sindromunun səbəbi deyil?  ",
@@ -3824,27 +4206,30 @@
       "Hematoma  ",
       "Uzun müddət davam edən sıxılma sindromu   ",
       "Sınıq və ya yumşaq toxuma xəsarətləri ilə travma.   "
-    ]
+    ],
+    "correct_answer": "E"
   },
   {
     "question": "Aşağıdakılardan hansı Kompartment sindromunun qəti müalicəsidir?  ",
     "answers": [
-      "Fassiotomiya  ",
-      "Fassioektomiya  ",
       "Ekzartikulyasiya  ",
+      "Fassioektomiya  ",
       "Amputasiya  ",
-      "Nekrektomiya  "
-    ]
+      "Nekrektomiya  ",
+      "Fassiotomiya  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Hansı tədbirlər ətraf travmalarında işemiyanı minimuma endirməyə kömək  etmir?   ",
     "answers": [
-      "Ətraf sarğılarını möhkəmlətmək  ",
-      "Qanaxma olan xəstələr üçün laxtalanma sistemlərini nizamlamaq  ",
       "Dairəvi yanıqlar üçün askarotomiya  ",
+      "Qanaxma olan xəstələr üçün laxtalanma sistemlərini nizamlamaq  ",
       "Ətraf sarğılarını boşaltmaq  ",
-      "Ətrafı ürək səviyyəsinə və ya bir qədər yuxarı qaldırmaq  "
-    ]
+      "Ətrafı ürək səviyyəsinə və ya bir qədər yuxarı qaldırmaq  ",
+      "Ətraf sarğılarını möhkəmlətmək  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Ən çox yaralanan sahə deyil?  ",
@@ -3854,47 +4239,52 @@
       "Üz  ",
       "Barmaqlar  ",
       "Əllər  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Yara haqqında aşağıda bildirilən fikirlərdən hansı yalnışdır?  ",
     "answers": [
-      "Kritik olmayan yaralar yalnız reanimasiya şəraitində müalicə olunmalıdır.   ",
+      "Sağalan yara 3 həftədən sonra son möhkəmliyinin 20%-nə, 4 aydan sonra 60%- nə çatır.   ",
       "Neytrofillər və makrofaqlar ölü toxumaları, yad cisimləri və bakteriyaları  faqositləşdirir, bu da debridmanı təmin edir və infeksiyanın qarşısını alır.   ",
       "Bədən hemostaz, iltihab, epitelizasiya, angiogenez, yaranın büzülməsi və  çapıqlaşma daxil olmaqla bir sıra proseslərlə yaraların sağalmasına töhfə verir.   ",
       "Yaradakı nekrotik toxuma və yad cisimlər sağalmanı gecikdirir, infeksiya riskini  artırır və kosmetik nəticələri pisləşdirir.   ",
-      "Sağalan yara 3 həftədən sonra son möhkəmliyinin 20%-nə, 4 aydan sonra 60%- nə çatır.   "
-    ]
+      "Kritik olmayan yaralar yalnız reanimasiya şəraitində müalicə olunmalıdır.   "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Yara müayinəsi əhatə etmir:  ",
     "answers": [
-      "Xəstənin yaşını  ",
       "Yaranın kənarlarını, dərinliyini  ",
       "Yarada yad cisimləri və yaranın çirklənməsini   ",
       "Yaranın yerini  ",
+      "Xəstənin yaşını  ",
       "Yaranın ölçüsü və formasını  "
-    ]
+    ],
+    "correct_answer": "A"
   },
   {
     "question": "Yaranın bağlanmasına əks göstərişlərə daxil deyil?  ",
     "answers": [
-      "6 saatdan köhnə olmayan yaralar  ",
+      "Dişləmələr (üzün dişlənməsi istisna olmaqla)  ",
       "Rezeksiyası mümkün olmayan devitalizasiya olunmuş toxuma   ",
       "İnfeksiya və qapama zamanı həddindən artıq gərginliyə səbəb olan toxuma  qüsurları  ",
       "Çirklənmə  ",
-      "Dişləmələr (üzün dişlənməsi istisna olmaqla)  "
-    ]
+      "6 saatdan köhnə olmayan yaralar  "
+    ],
+    "correct_answer": "D"
   },
   {
     "question": "Yara müalicəsində hansı peyvəndlər istifadə edilir?  ",
     "answers": [
-      "Quduzluq, Tetanus  ",
+      "Difteriya, Qazlı qanqrena  ",
       "Tetanus, Qızılca  ",
       "Məxmərək, Quduzluq  ",
-      "Difteriya, Qazlı qanqrena  ",
-      "Polimielit, Tetanus  "
-    ]
+      "Polimielit, Tetanus  ",
+      "Quduzluq, Tetanus  "
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Aşağıdakılardan hansı cərrahın konsultasiyasını tələb etmir?  ",
@@ -3904,27 +4294,30 @@
       "Geniş dəri və/və ya yumşaq toxuma itkisi  ",
       "Anatomik cəhətdən mürəkkəb yaralar (göz qapaqları, burun septumları, dodaqlar)  ",
       "Sinir və vətər zədələnmə şübhəsi  "
-    ]
+    ],
+    "correct_answer": "C"
   },
   {
     "question": "Aşağıdakılardan hansı yara qapama üsullarına aid deyil?  ",
     "answers": [
-      "Tomas şinası  ",
-      "Stepler  ",
       "Toxuma sapları  ",
+      "Stepler  ",
       "Toxuma yapışqanı  ",
-      "Strip band  "
-    ]
+      "Strip band  ",
+      "Tomas şinası  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Yaranın sağalmasına mane olmur:  ",
     "answers": [
-      "Xəstənin boyu  ",
-      "Allergiya (yerli anestetik, lateks, antibiotiklər, yod)  ",
       "Dərmanlar (steroidlər, immunosupressivlər, antokoaqulyantlar)  ",
+      "Allergiya (yerli anestetik, lateks, antibiotiklər, yod)  ",
       "İmmun çatışmazlıq  ",
-      "Diabet   "
-    ]
+      "Diabet   ",
+      "Xəstənin boyu  "
+    ],
+    "correct_answer": "B"
   },
   {
     "question": "Yaranın təmizlənməsi üçün ən yaxşı vasitə nədir?  ",
@@ -3934,6 +4327,7 @@
       "H2O2 məhlulu   ",
       "Yodun sulu məhlulu  ",
       "Yodun spirtli məhlulu  "
-    ]
+    ],
+    "correct_answer": "E"
   }
 ]
