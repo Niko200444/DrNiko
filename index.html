@@ -1206,7 +1206,7 @@
     <div id="categoryContainer" style="display:flex; flex-direction:column; align-items:center; margin-bottom:30px;">
       <h2 style="font-size:2.2em; margin-bottom:20px;">Kateqoriya seçin</h2>
        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-        <button id="cat-farm" data-category="ux.json" onclick="selectCategory('ux.json')" class="category-btn"><i class="fa fa-flask"></i>Uşaq sağlamlığı</button>
+        <button id="cat-ux" data-category="ux.json" onclick="selectCategory('ux.json')" class="category-btn"><i class="fa fa-flask"></i>Uşaq sağlamlığı</button>
       </div>
        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
         <button id="cat-tecili" data-category="tecili.json" onclick="selectCategory('tecili.json')" class="category-btn"><i class="fa fa-flask"></i> TƏCİLİ</button>
@@ -1235,7 +1235,6 @@
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
         <button id="cat-norfiz2" data-category="norfiz2.json" onclick="selectCategory('norfiz2.json')" class="category-btn"><i class="fa fa-heartbeat"></i> NORFIZ2</button>
       </div>
-      a
       <!-- MİKROB üçün alt kateqoriyalar (başlanğıcda gizli) -->
 <div id="patanSubcats" style="display:none;align-items:center;gap:10px;margin-bottom:10px; margin-left:30px; flex-direction:column; width:100%;">
   <div style="display:flex; gap:10px; width:100%;">
@@ -3419,6 +3418,7 @@ function renderQuizWrongOnly() {
       { name: 'Uşaq sağlamlığı', file: 'ux.json', icon: 'fa-microchip' },
       { name: 'TƏCİLİ', file: 'tecili.json', icon: 'fa-flask' },
       { name: 'Farmakologiya', file: 'farm.json', icon: 'fa-flask' },
+      { name: 'Uşaq sağlamlığı', file: 'ux.json', icon: 'fa-flask' },
       { name: 'PATFİZ', file: 'patfiz.json', icon: 'fa-heartbeat' },
       { name: 'PATFIZ2', file: 'patfiz2.json', icon: 'fa-brain' },
       { name: 'PATAN1', file: 'patan1a.json', icon: 'fa-dna' },
@@ -4355,4 +4355,5 @@ document.addEventListener('DOMContentLoaded', function() {
   </script>
 </body>
 </html>
+
 
