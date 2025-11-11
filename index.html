@@ -1206,7 +1206,9 @@
     <div id="categoryContainer" style="display:flex; flex-direction:column; align-items:center; margin-bottom:30px;">
       <h2 style="font-size:2.2em; margin-bottom:20px;">Kateqoriya seçin</h2>
        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-         a
+        <button id="cat-farm" data-category="ux.json" onclick="selectCategory('ux.json')" class="category-btn"><i class="fa fa-flask"></i>Uşaq sağlamlığı</button>
+      </div>
+       <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
         <button id="cat-tecili" data-category="tecili.json" onclick="selectCategory('tecili.json')" class="category-btn"><i class="fa fa-flask"></i> TƏCİLİ</button>
       </div>
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
@@ -3414,6 +3416,7 @@ function renderQuizWrongOnly() {
   // Bütün kateqoriyaları yükləyən funksiya
   async function loadAllCategories() {
     const categories = [
+      { name: 'Uşaq sağlamlığı', file: 'ux.json', icon: 'fa-microchip' },
       { name: 'TƏCİLİ', file: 'tecili.json', icon: 'fa-flask' },
       { name: 'Farmakologiya', file: 'farm.json', icon: 'fa-flask' },
       { name: 'PATFİZ', file: 'patfiz.json', icon: 'fa-heartbeat' },
@@ -3425,6 +3428,7 @@ function renderQuizWrongOnly() {
       { name: 'MIKROB2', file: 'mikrob2.json', icon: 'fa-microchip' },
       { name: 'NORFIZ1', file: 'norfiz1.json', icon: 'fa-microchip' },
       { name: 'NORFIZ2', file: 'norfiz2.json', icon: 'fa-microchip' }
+
     ];
 
     allCategoriesData = {};
