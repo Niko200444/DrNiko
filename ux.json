@@ -1,1472 +1,982 @@
 [
   {
-    "question": "Kəskin revmatik qızdırma daha çox təsadüf olunur:   ",
+    "question": "Hamiləliyin 2-3-cü həftələrində embrionda hansı axacaq fəaliyyət göstərir? ",
     "answers": [
-      "məktəb yaşlı uşaqlar arasında   ",
-      "məktəbəgədər önü dövrdə   ",
-      "1 yaşa qədər uşaqlar arasında   ",
-      "göstərilən bütün yaş dövrlərində   ",
-      "məktəbəgədər dövrdə   "
+      "Mekkel divertikulu ",
+      "Oftalmus ",
+      "Ductus defferens ",
+      "Uraxus ",
+      "Yevstax borusu "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırmanın törədicisi:   ",
+    "question": "Embrional dövrdə embrionda fəaliyyət göstərən uraxus axacağı hansı  funksiyanı yerinə yetirir ? ",
     "answers": [
-      "A qrupundan olan β hemolitik streptokokklar   ",
-      "B qrupundan olan α- hemolitik streptokokklar   ",
-      "stafilokokklar   ",
-      "B qrupundan olan β hemolitik streptokokklar   ",
-      "A qrupundan olan α-hemolitik streptokokklar   "
+      "Sidik kisəsi ilə amnion boşluğunu birləşdirən axar ",
+      "Dölün qidalanmasını tənzimləyir ",
+      "Omfalos ",
+      "Ductus omphaloentericus ",
+      "Göbəyin tam fistulu "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırma zamanı oynaqlarda:   ",
+    "question": "Embrional dövrdə embrionda fəaliyyət göstərən hansı axacağa ductus  omphaloentericus deyilir? ",
     "answers": [
-      "qızartı, ağrı və şişkinlik olub, iltihab bir oynaqdan digərlərinə keçir   ",
-      "oynaqlarda heç vaxt prosesə cəlb olunmur   ",
-      "heç biri   ",
-      "ağrı və şişkinlik olmur   ",
-      "ağrılar uçucu olmur   "
+      "Sarı cisim axacağı ",
+      "Ductus defferens ",
+      "Sidik axarı ",
+      "Mekkel divertikulu ",
+      "Yevstax borusu "
     ]
   },
   {
-    "question": "Revmatik poliartritdə:   ",
+    "question": "Sarı cisim axacağının obliterasiya olmaması nəticəsində əmələ gələn  anomaliyalardan biri hansıdır? ",
     "answers": [
-      "oynaqlar simmetrik zədələnir, ağrılar uçucu olur   ",
-      "oynaqlar qeyri-simmetrik zədələnir, ağrılar uçucu olur   ",
-      "oynaqlar simmetrik zədələnir, ağrılar davamlı olur   ",
-      "heç biri   ",
-      "prosesə yalnız kiçik oynaqlar qoşulur, ağrılar davamlı olur   "
+      "Mekkel divertikulu ",
+      "Ductus defferens ",
+      "Sidik axarının tam fistulu ",
+      "Qida borusunun divertikulu ",
+      "Qasıq yırtığı "
     ]
   },
   {
-    "question": "Revmatik poliartrit müalicə olunursa:   ",
+    "question": "Uraxusun obliterasiya olmaması nəticəsində əmələ gələn anomaliyalardan  biri hansıdır? ",
     "answers": [
-      "klinik əlamətlər bir neçə gün davam edir   ",
-      "1 ildən çox davam edir   ",
-      "1 ilə qədər davam edir   ",
-      "1 aydan çox davam edir   ",
-      "3-4 həftə davam edir   "
+      "Sidik kisəsinin divertikulu ",
+      "Mekkel divertikulu ",
+      "Hidronefroz ",
+      "Qida borusunun divertikulu ",
+      "Göbək yırtığı "
     ]
   },
   {
-    "question": "Revmatik poliartrit:   ",
+    "question": "Sarı cisim axacağının obliterasiya olmaması nəticəsində əmələ gələn  anomaliyalardan biri hansıdır? ",
     "answers": [
-      "sağalma ilə nəticələnir və oynaqda deformasiya olmur   ",
-      "heç biri   ",
-      "kontrakturaların əmələ gəlməsi ilə nəticələnir   ",
-      "xronik hala keçir və oynaqda deformasiya olur   ",
-      "xronik hala keçir və oynaqda deformasiya olmur   "
+      "Enterosistoma ",
+      "Perineal sist ",
+      "Ateroma ",
+      "Qida borusunun divertikulu ",
+      "Omphalocele "
     ]
   },
   {
-    "question": "Revmatik düyünlər:   ",
+    "question": "Göbəyin tam fistulu zamanı əmələ gələn fəsadlardan biri hansıdır? ",
     "answers": [
-      "noxud böyüklükdə, ağrısız olub, oynaqların ətrafında yerləşir   ",
-      "heç biri   ",
-      "böyük ölçülərdə, ağrılı olur   ",
-      "noxud böyüklükdə, ağrısız olub bütün ətraflara yayılır   ",
-      "noxud böyüklükdə, ağrılı olur   "
+      "İnvaginasiya ",
+      "Bağirsaq qanaxması ",
+      "Kəskin appendisit ",
+      "Divertikulit ",
+      "Evaginasiya "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırma üçün xarakterikdir:   ",
+    "question": "Mekkel divertikulu  nazik bağırsağın hansı hissəsində yerləşir? ",
     "answers": [
-      "anulyar eritema və revmatik düyünlər   ",
-      "heç biri   ",
-      "revmatik düyünlər və limfa düyünlərinin irinli iltihabı   ",
-      "anulyar eritema və əzələ tonusunun artması   ",
-      "limfa düyünlərinin irinli iltihabı və əzələ tonusunun azalması   "
+      "Qalça bağırsaqda ",
+      "S-vari bağırsaqda ",
+      "İleosekal küncdə ",
+      "Qalxan köndələn bağırsaqda ",
+      "Enən köndələn bağırsaqda "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırma zamanı EKQ-də olan dəyişiklikləri göstərin:   ",
+    "question": "Mekkel divertikuluna aid olmayan fəsad hansıdır? ",
     "answers": [
-      "keçiriciliyin zəifləməsi, P-Q intervalının uzanması və QRS kompleksinin genişlənməsi   ",
-      "EKQ-də dəyişikliklər olmur   ",
-      "keçiriciliyin zəifləməsi və P-Q intervalının qısalması   ",
-      "P-Q intervalının qısalması və QRS kompleksinin daralması   ",
-      "P-Q intervalının qısalması   "
+      "Eventrasiya ",
+      "Qanaxma ",
+      "Divertikulit ",
+      "İnvaginasiya ",
+      "Stranqulyasiya "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırmanın fəal fazası zamanı periferik qanda hansı dəyişiklik  olur:   ",
+    "question": "Sarı cisim axacağının orta hissəsi obliterasiyaya uğramayanda hansı qüsur  meydana çıxır? ",
     "answers": [
-      "leykositoz, neytrofilyoz, EÇS-in artması   ",
-      "leykositoz, neytropeniya, EÇS-in artması   ",
-      "leykopeniya, neytrofilyoz, EÇS normal   ",
-      "periferik qanda dəyişiklik səciyyəvi deyil   ",
-      "leykopeniya, neytrofilyoz, EÇS-in artması   "
+      "Enterosistoma ",
+      "Fistula ",
+      "Divertikulit ",
+      "Yırtıq ",
+      "Stranqulyasiya "
     ]
   },
   {
-    "question": "Revmatik endokardit zamanı:   ",
+    "question": "Göbək nahiyəsindən damcı ilə sidiyin daimi axması zamanı hansı  anadangəlmə patologiya haqqında fikirləşmək lazımdır? ",
     "answers": [
-      "proses qapaqlar nahiyəsində olur və adətən mitral qapaq zədələnir   ",
-      "proses ən çox sol qulaqcıq nahiyəsində olur   ",
-      "qapaqlar zədələnmir   ",
-      "proses ən çox sağ qulaqcıq nahiyəsində olur   ",
-      "proses yalnız ürəyin zirvəsində olur   "
+      "Sarı cisim axacağının fistulu ",
+      "Divertikulit ",
+      "Sidik kisəsinin divertikulu ",
+      "Uraxusun tam fistulu ",
+      "Omfalit "
     ]
   },
   {
-    "question": "Revmatik endokardit zamanı klinik əlamətlərə aiddir:   ",
+    "question": "Uraxusun fəsadlarından biri hansıdır? ",
     "answers": [
-      "yüksək hərarət, ürək nahiyəsində ağrılar və xəstəliyin 2-3-cü həftəsində sistolik küyün  əmələ gəlməsi   ",
-      "heç biri   ",
-      "hərarət yüksəlmir, sistolik küy olmur   ",
-      "qarında ağrilar, küyün olmaması   ",
-      "hərarət yüksəlmir, yalnız ürək nahiyəsində ağrılar olur   "
+      "Sarı cisim axacağının fistulu ",
+      "Enterosistoma ",
+      "Qanaxma ",
+      "Bağırsaq invaginasiyası ",
+      "Sidik kisəsinin divertikulu "
     ]
   },
   {
-    "question": "Revmatik eksudativ perikarditin klinikasında müşahidə olunur:   ",
+    "question": "Mekkel divertikulunun iltihabı (divertikulit) zamanı müalicə taktikası nə  olmalıdır? ",
     "answers": [
-      "təngnəfəslik, əzabverici öskürək, sianoz, boyun venalarının pulsasiyası, qaraciyərin  böyüməsi   ",
-      "heç biri   ",
-      "qan təzyiqinin artması və EKQ-da bütün dişciklərin voltajının artması   ",
-      "qan təzyiqinin artması, boyun limfa düyünlərinin böyüməsi   ",
-      "boyun venalarının pulsasiyası və limfa düyünlərinin irinli iltihabı   "
+      "Konservativ müalicə ",
+      "Cərrahi əməliyyat ",
+      "Antibiotikoterapiya ",
+      "Müalicə tələb etmir ",
+      "Dinamiki müşahidə "
     ]
   },
   {
-    "question": "Revmatik quru perikardit zamanı klinik əlamətləri göstərin:   ",
+    "question": "Göbəyin natamam fistulu zamanı əsas müalicə üsulu hansıdır? ",
     "answers": [
-      "nəfəs alma zamanı güclənən perikardın sürtünmə küyü, ürəkbulanma, qusma,  qarında ağrı və təngnəfəslik   ",
-      "təngnəfəslik və ürəkdə ağrı olmur, yalnız abdominal simptomlar müşahidə olunur   ",
-      "nəfəsalma zamanı azalan perikardın sürtünmə küyü   ",
-      "heç biri   ",
-      "perikardın sürtünmə küyü olmur, yalnız abdominal simptomlar müşahidə olunur   "
+      "Cərrahi əməliyyat ",
+      "Müalicə tələb etmir ",
+      "Nass əməliyyatı ",
+      "Konservativ müalicə ",
+      "Enteroanastomoz "
     ]
   },
   {
-    "question": "Revmatik perikardit nəticələnir:   ",
+    "question": "Hamiləliyin 2-3-cü həftələrində embrionda hansı axacaq fəaliyyət göstərir? ",
     "answers": [
-      "sağalma və ya bitişmələrin əmələ gəlməsi ilə   ",
-      "heç biri   ",
-      "qapaqarın zədələnməsi ilə   ",
-      "bütün hallarda tam sağalma ilə   ",
-      "sağalma heç bir halda olmur, bitişmələr əmələ gəlir   "
+      "Sarı cisim axacağı ",
+      "Ductus defferens ",
+      "Omfalos ",
+      "Mekkel divertikulu ",
+      "Göbəyin tam fistulu "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırmanın əsas meyarlarını göstərin:   ",
+    "question": "Genetik inkişaf qüsuru olan, mədənin pilorik hissəsinin hipertrofiyası ilə  nəticələnən patologiya hansıdır? ",
     "answers": [
-      "kardit, poliartrit, xoreya, anulyar eritema, revmatik dərialtı düyünlər   ",
-      "tez yorulma, qarın ağrıları, kardit   ",
-      "xoreya, kardit, qızdırma   ",
-      "anulyar eritema, xoreya, artralgiya   ",
-      "kardit, poliartrit, artralgiya, qızdırma   "
+      "Pilorospazm ",
+      "Qastrit ",
+      "Leddi sindromu ",
+      "Mədə divertikulu ",
+      "Pilorostenoz "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırmanın kiçik meyarlarına aiddir:   ",
+    "question": "Pilorostenozun əsas kliniki simptomunu göstərin? ",
     "answers": [
-      "qızdırma və artralgiyalar   ",
-      "anulyar eritema və revmatik düyünlər   ",
-      "artralgiya və poliartrit   ",
-      "kardit, xoreya və artralgiya   ",
-      "qızdırma və kardit   "
+      "«Fəvvarə» şəklində qusma ",
+      "Təngnəfəslik ",
+      "Öd tərkibli qusma ",
+      "Şotkin-Blümberq simptomu ",
+      "Qarında ağrı "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırmanın kiçik meyarlarından aid olan laborator əlamətləri  göstərin:   ",
+    "question": "Pilorostenoz zamanı qusmanın növünü göstərin? ",
     "answers": [
-      "Antistreptolizin O titrinin artması və C-reaktiv zülalın normada olması   ",
-      "leykopeniya, C-reaktiv zülalın artması, eozinofiliya   ",
-      "C-reaktiv zülalın artması, leykopeniya, monositoz   ",
-      "EÇS-in artması, C-reaktiv zülalın yüksəlməsi, leykositoz   ",
-      "EÇS-in və C-reaktiv zülalın artması, leykopeniya   "
+      "«Fəvvarə» şəklində qusma ",
+      "Aramsız qusma ",
+      "Öd tərkibli qusma ",
+      "Selikli qusma ",
+      "Qusma olmur "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırmanın profilaktikasında xəstələrə ilk növbədə təyin  edilir:   ",
+    "question": "Pilorostenoz xəstəliyinin ilk  klinik əlamətləri hansı yaşlarda olur? ",
     "answers": [
-      "bisillin   ",
-      "penisillin   ",
-      "ürək qlükozidləri   ",
-      "antihistamin preparatlar   ",
-      "diuretiklər   "
+      "Doğulduqdan 2-3 həftə sonra ",
+      "Bir yaşından sonra ",
+      "3-5 yaş arası ",
+      "Müxtəlif yaşlarda ",
+      "15 yaşından sonra "
     ]
   },
   {
-    "question": "Bisillin-5 məktəbyaşlı uşaqlarda təyin olunur:   ",
+    "question": "Pilorostenoz zamanı qusmanın tərkibi necə olur? ",
     "answers": [
-      "1 500 000 TV 4 həftədən bir   ",
-      "750 000 TV ildə 1 dəfə   ",
-      "750 000 TV həftədə 1 dəfə   ",
-      "1 500 000 TV həftədə 1 dəfə   ",
-      "1 500 000 TV ildə 1 dəfə   "
+      "Cürümüş əmilən süd ",
+      "Az miqdarda ",
+      "Öd tərkibli ",
+      "Əmilən süd ",
+      "Selik tərkibli "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırmanın ikincili profilaktikası:   ",
+    "question": "Pilorostenozu çox vaxt hansı patologiya ilə differensiasiya etmək lazım  gəlir? ",
     "answers": [
-      "kəskin revmatik qızdırmanın keçirmiş bütün uşaqlarda aparılır   ",
-      "yalnız ürək çatışmazlığı olduqda aparılır   ",
-      "yalnız xoreya olduqda aparılır   ",
-      "aparılmır   ",
-      "yalnız artralqiya olduqda aparılır   "
+      "Pilorospazm ",
+      "Kəskin appendisit ",
+      "Yemək borusunun atreziyası ",
+      "Qastrit ",
+      "Mədə xorası "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırmanın birincili profilaktikasının məqsədi:   ",
+    "question": "Pilorostenoz zamanı hansı müalicə növü göstərişdir? ",
     "answers": [
-      "xəstəliyin yaranmasının qarşısını almaqdır   ",
-      "yalnız xoreyanın qarşısını almaqdır   ",
-      "profilaktik tədbirlər aparılmır   ",
-      "bu xəstəliyi keçirmiş uşaqlarda təkrar həmlələrin qarşısını almaqdır   ",
-      "yalnız oynaqların zədələnməsinin qarşısını almaqdır   "
+      "Cərrahi müalicə ",
+      "Antibiotikoterapiya ",
+      "Antispastik müalicə ",
+      "Enteroanastomoz ",
+      "Vitaminoterapiya     "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırmanın birincili profilatikası zamanı:   ",
+    "question": "Pilorostenozlu xəstələrdə baxış zamanı gözə çarpan simptom hansıdır? ",
     "answers": [
-      "xronik infeksiya ocaqları sanasiya olunur   ",
-      "xoreya əlamətləri müalicə olunur   ",
-      "hormonlar təyin olunur   ",
-      "heç biri   ",
-      "ürək zədələnmələri müalicə olunur   "
+      "Gözlə görünən mədə peristaltikası ",
+      "Qarında kəskin köp ",
+      "Döş qəfəsinin asimmetriyası ",
+      "«Meduza başı» ",
+      "Dəridə petexiyaların olması "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırmanın əsas diaqnostik meyarlarından biri hansıdır?   ",
+    "question": "Pilorostenoz zamanı piloromiotomiya hansı cərrahi üsülla icra olunur? ",
     "answers": [
-      "kardit   ",
-      "ümumi halsızlıq   ",
-      "ocaqlı infeksiya mövcudluğu   ",
-      "qızdırma   ",
-      "artralgiya   "
+      "Frede-Ramşted üsulu ",
+      "Düamel üsulu ",
+      "Enteroanastomoz ",
+      "Nass əməliyyatı ",
+      "Svenson əməliyyatı "
     ]
   },
   {
-    "question": "Revmatik səpgilər:   ",
+    "question": "Piloromiotomiya icra olunan zaman pilorusun hansı qatı kəsilmir? ",
     "answers": [
-      "döşdə, qarında, kürəkdə yerləşən və tez çəkilib gedən solğun çəhrayı rəngli  halqacıqlardır   ",
-      "oynaqlar ətrafında olan davamlı halqacıqlardır   ",
-      "oynaqlar ətrafında olan çəhrayı rəngli halqacıqlardır   ",
-      "oynaqlar ətrafında olan qırmızı rəngli halqacıqlardır   ",
-      "yuxarı ətraflarda yerləşən qırmızı rəngli halqacıqlardır   "
+      "Selikli qatı ",
+      "Əzələ qatı ",
+      "Seroz qatı ",
+      "Fassiya ",
+      "Sümüküstu qatı "
     ]
   },
   {
-    "question": "Revmatik endokardit zamanı:   ",
+    "question": "Pilorostenoz zamanı qusmanın tezliyini göstərin. ",
     "answers": [
-      "çox vaxt mitral, bəzən aortal qapaqlar zədələnir   ",
-      "çox vaxt ağ ciyər arteriyasının qapaqları zədələnir   ",
-      "qapaqlar zədələnmir   ",
-      "çox vaxt üçtaylı qapaqlar zədələnir   ",
-      "çox vaxt aortal qapaqlar zədələnir   "
+      "Fəvvarə şəkilli bir neçə dəfə ",
+      "Tez-tez ödlü qusma ",
+      "Aramsız qusma ",
+      "Mərkəz məşəli qusma ",
+      "Qusma olmur "
     ]
   },
   {
-    "question": "Fəal revmatik prosesi olan xəstələr üçün profilaktika aparılır:   ",
+    "question": "Pilorostenoz zamanı mədənin pilorik hissəsində hansı dəyişikliklər baş  verir? ",
     "answers": [
-      "5 il   ",
-      "2 il   ",
-      "1 il   ",
-      "4 il   ",
-      "3 il   "
+      "Hipertrofiya ",
+      "Atrofiya ",
+      "Heç bir dəyişiklik baş vermir ",
+      "Genişlənmə ",
+      "Nekroz "
     ]
   },
   {
-    "question": "Hansı hallarda kəskin revmatik qızdırma diaqnozu dürüst sayılır?   ",
+    "question": "Mekkel divertikulunun əsas fəsadlarından biri hansıdır? ",
     "answers": [
-      "xəstədə 2 əsas və ya 1 əsas və 2 əlavə meyar olduqda   ",
-      "miokardit əlamətləri olduqda   ",
-      "xəstədə 3 əlavə meyar olduqda   ",
-      "ASO və CRP yüksəldikdə   ",
-      "xəstədə 1 əsas və 1 əlavə meyar olduqda   "
+      "Bağırsaq qanaxması ",
+      "Appendisit ",
+      "Kron xəstəliyi ",
+      "Aqanqlioz ",
+      "Nekrotik enterokolit "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırmanın ilk həmləsi nə vaxt başlayır?   ",
+    "question": "Bətndaxili fistullardan biri necə adlanır? ",
     "answers": [
-      "keçirilmiş yuxarı tənəffüs yolları infeksiyasından 2-3 həftə sonra   ",
-      "uşaq yoluxucu xəstəliklərindən 1 il sonra   ",
-      "keçirilmiş xəstəliklərlə əlaqəsi yoxdur   ",
-      "keçirilmiş yuxarı tənəffüs yolları infeksiyasından 1 il sonra   ",
-      "keçirilmiş yuxarı tənəffüs yolları infeksiyasından 1 ay sonra   "
+      "Uraxus ",
+      "Omfalos ",
+      "Xiatus ",
+      "Meatus ",
+      "Pectus "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırmanın başlanğıcında:   ",
+    "question": "Anadangəlmə bağırsaq keçməzliyinə aiddir: ",
     "answers": [
-      "hərarətin yüksəlməsi ilə eyni vaxtda artralgiya olur   ",
-      "hərarətin yüksəlməsi ilə eyni vaxtda angina olur   ",
-      "ümumi intoksikasiya əlamətləri olur   ",
-      "yalnız poliartrit və ya artralogiya olur   ",
-      "hərarətin yüksəlməsi ilə eyni vaxtda nefrit olur   "
+      "İnvaginasiya ",
+      "Obturasion bağırsaq keçməzliyi ",
+      "Dinamiki bağırsaq keçməzliyi ",
+      "Nazik bağırsaq atreziyası ",
+      "Mədə xorası "
     ]
   },
   {
-    "question": "Revmatik poliartrit üçün xarakterikdir:   ",
+    "question": "Anadangəlmə bağırsaq keçməzliyinə aid deyil: ",
     "answers": [
-      "kəskin ağrılar, onların uçucu olması, böyük və orta oynaqların zədələnməsi   ",
-      "xarakterik əlamətləri yoxdur   ",
-      "oynaqların şişməsi, lakin ağrısız olması   ",
-      "kiçik oynaqların qeyri-simmetrik zədələnməsi   ",
-      "ağrıların davamlı olması və oynaqların funksiyasının pozulması   "
+      "İnvaginasiya ",
+      "Yoğun bağırsaq atreziyası ",
+      "Onikibarmaq bağırsaq atreziyası ",
+      "Acı bağırsaq atreziyası ",
+      "Nazik bağırsaqın çox saylı atreziyası "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırma zamanı ürəyin hansı qişaları zədələnir:   ",
+    "question": "Onikibarmaq bağırsaq atreziyasına xarakterik deyil: ",
     "answers": [
-      "endokard, miokard və perikard   ",
-      "yalnız perikard   ",
-      "yalnız endokard və miokard   ",
-      "yalnız miokard   ",
-      "yalnız endokard   "
+      "Qarında kəskin ağrı ",
+      "Qusma ",
+      "Qusuntuda çox vaxt ödün olması ",
+      "Epiqastral nahiyədə köpün olması ",
+      "Qarın boşluğunun ön proyeksiyada çəkilən rentgenoqrafiyasında                      2 hava qovuqcuğunun olması "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırmanın zamanı sinir sisteminin zədələnməsi özünü hansı  şəkildə göstərir:   ",
+    "question": "Yemək borusu atreziyasının antenatal diaqnostik əlamətləri. ",
     "answers": [
-      "kiçik xoreya   ",
-      "sinir sistemi zədələnmir   ",
-      "ətraflarda iflic   ",
-      "polinevrit   ",
-      "ensefalopatiya   "
+      "mikroqastriya, polihidroamniya ",
+      "mikroqastriya, polidaktiliya ",
+      "mikroqastriya, sindaktiliya ",
+      "mikroqnatiya, polidaktiliya ",
+      "ameliya, mikrosefaliya "
     ]
   },
   {
-    "question": "Kiçik xoreya zamanı:   ",
+    "question": "Yemək borusu atreziyasının ən cox rast gələn variantı? ",
     "answers": [
-      "uşaqlar əsəbi olur, davranışları dəyişir, qeyri-iradi hərəkətlər əmələ gəlir   ",
-      "sinir sistemində nəzərə çarpan dəyişiklik olmur   ",
-      "əzələ tonusu dəyişmir, fikir dağınıqlığı olur   ",
-      "əzələ tonusu artır və tiklər əmələ gəlir   ",
-      "əzələ tonusu artır və hiperaktivlik əmələ gəlir   "
+      "proksimal ucun kor qurtarıb distal ucun traxeal fistulası ",
+      "hər iki ucun kor qurtarnası ",
+      "hər iki ucun traxeal fistulası ",
+      "distal ucun kor qurtarıb proksimal ucun traxeal fistulası ",
+      "proksimal ucun kor qurtarıb distal ucun tam aplaziyası "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırmanın streptokokk etiologiyalı olmasını təsdiq etmir:   ",
+    "question": "Yemək borusu atreziyasının ilk klinik əlaməti nə vaxt özünü biruzə verir? ",
     "answers": [
-      "xronik tonzillit   ",
-      "antistreptokinazanın titrinin yüksəlməsi   ",
-      "antistreptolizinin O titrinin yüksəlməsi   ",
-      "əsnəkdən yaxmada streptokok infeksiyasının aşkar edilməsi   ",
-      "anamnezdə keçirilmiş streptokok infeksiyası   "
+      "doğuşdan sonrakı ilk saatlarda ",
+      "doğuşdan bir neçə saat sonra ",
+      "doğuşdan sonra bir gün sonra ",
+      "doğuşdan bir necə gün sonra ",
+      "yenidoğulmuş dövürdə "
     ]
   },
   {
-    "question": "Aşağıdakı variantlardan hansı revmatik prosesin patomorfoloji mərhələlərini  düzgün əks etdirir?   ",
+    "question": "Yemək borusu atreziyasına aid deyil ",
     "answers": [
-      "mukoid şişmə, fibrinoid şişmə, skleroz   ",
-      "fibrinoid şişmə, kardiomeqaliya, miozit   ",
-      "kardioskleroz, qapaq çatışmazlığı, xoreya   ",
-      "mukoid şişmə, poliartrit, poliserozit   ",
-      "mukoid şişmə, fibrinoid şişmə, damar keçiriciliyinin artması   "
+      "qusma ",
+      "ağızdan selikli ifrazatın xaric olması ",
+      "mekoni xaric olması ",
+      "tənəffüs pozğunluğu ",
+      "burundan selikli ifrazatın xaric olması "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırmanın medikamentoz terapiyasında təyin edilmir:   ",
+    "question": "Yemək borusu atreziyasının təsdiqləyici instrumental müayinə metodu ",
     "answers": [
-      "sulfanilamidlər   ",
-      "ürək qlikozidləri   ",
-      "antibiotiklər   ",
-      "qeyristeroid iltihab əleyhinə preparatlar   ",
-      "kortikosteroidlər   "
+      "kontrast R-ezafaqoqrafiya ",
+      "Elefant sınağı ",
+      "nazoqastral zondun ağızdan xaric olması ",
+      "USM ",
+      "icmal R-qrafiya "
     ]
   },
   {
-    "question": "Kəskin revmatik qızdırmanın medikamentoz terapiyasında təyin edilmir:   ",
+    "question": "Yemək borusu atreziyası əməliyyatönü hazırlığa aid deyil? ",
     "answers": [
-      "amikasin   ",
-      "azatioprin   ",
-      "kalium preparatları   ",
-      "ibuprofen   ",
-      "voltaren   "
+      "təmizləyici imalə ",
+      "oksigenasiya ",
+      "ağızdan qidalanmanın qadağan edilməsi ",
+      "aspirasiya ",
+      "medikamentoz müalicə "
     ]
   },
   {
-    "question": "Revmatoid artritin oynaq ya oynaq-visseral formasına aid deyil:   ",
+    "question": "Diastazın ölçüsü 1.5-2sm olduqda icra olunan əməliyyat? ",
     "answers": [
-      "kəskin revmatik qızdırma ilə birlikdə rast gələn revmatoid artrit   ",
-      "monoartrit   ",
-      "Still sindromu   ",
-      "Vissler – Fankoni sindromu   ",
-      "poliartrit   "
+      "bir momentli anastomoz ",
+      "ezafaqostoma qastrostoma ",
+      "ikili ezafaqostoma ",
+      "yalnız qastrostoma ",
+      "yalnız ezafaqostoma "
     ]
   },
   {
-    "question": "Revmatoid artrit zamanı oynaqlarda tipik dəyışiklikləri göstərin:   ",
+    "question": "Traxeoezofaqial fistula əsasən hansı səviyyədə olur? ",
     "answers": [
-      "diz oynaqları şarabənzər, falanqalararası oynaqlar yelpikvarı şəkildə dəyişir   ",
-      "diz və falanqalararası oynaqlar şarabənzərşəkildə dəyişir   ",
-      "heç biri   ",
-      "diz oynaqları yelpikvari şəkildə dəyişir   ",
-      "falanqalararası oynaqlar şarabənzərşəkildə dəyişir   "
+      "bufirkasiyaüstü-yuxarı döş aşağı boyun fəqərə səviyyədə ",
+      "üzüyəbənzər qığırdaq-yuxarı boyun fəqərə səviyyədə ",
+      "bufirkasiya-orta döş fəqərə səviyyədə ",
+      "bufirkasiyaltı-aşağı döş fəqərə səviyyədə ",
+      "baş bronx-aşağı döş fəqərə səviyyədə "
     ]
   },
   {
-    "question": "Vissler – Fankoni sindromunun aparıcı klinik əlamətinə aiddir:   ",
+    "question": "Traxeoezofaqial fistulanın klinikasına hansı aid deyil? ",
     "answers": [
-      "yüksək hərarət   ",
-      "uveit   ",
-      "perikardit   ",
-      "monoartrit   ",
-      "plevrit   "
+      "qusma ",
+      "öskürək ",
+      "sianoz ",
+      "təngnəfəslik ",
+      "ağciyər auskultasiyasında xırıltının eşidilməsi "
     ]
   },
   {
-    "question": "Revmatoid artrit zamanı səciyyəvi rentgenoloji dəyişikliklərə aid deyil:   ",
+    "question": "Traxeoezofaqial fistulanın ən çox rast gələn variantı ? ",
     "answers": [
-      "osteomalyasiya   ",
-      "oynaqların ankilozu   ",
-      "epifizlərin kiçik kistoz dəyişikliyi   ",
-      "sümüyün eroziyası   ",
-      "osteoporoz   "
+      "qısa-enli ",
+      "qısa-dar ",
+      "böyük əlaqəli ",
+      "uzun-dar ",
+      "bir neçə fistulalı "
     ]
   },
   {
-    "question": "Revmatoid artrit zamanı səciyyəvi laborator dəyişikliklərə aid deyil:   ",
+    "question": "Traxeoezfaqial fistulanın klinik əlamətləri əsasən nə zaman artır? ",
     "answers": [
-      "antistreptolizin O titrinin artması   ",
-      "C-reaktiv zülalın artması   ",
-      "EÇS-in artması   ",
-      "neytrofil leykositoz   ",
-      "disproteinemiya   "
+      "əmmə zamanı horizontal vəziyyətdə ",
+      "əmmə zamanı vertikal vəziyyətdə ",
+      "əmmədən kənar horizontal vəziyyətdə ",
+      "əmmədən kənar vertikal vəziyyətdə ",
+      "əmmə və vəziyyətdən asılı olmayaraq daim "
     ]
   },
   {
-    "question": "Revmatoid artrit zamanı gözün zədələnməsinə aid deyil:   ",
+    "question": "Traxeoezofaqial fistulanın daha informativ müayinə üsulu hansıdır? ",
     "answers": [
-      "uveit   ",
-      "keratit   ",
-      "iridosiklit   ",
-      "sklerit   ",
-      "qlaukoma   "
+      "traxeoskopiya ",
+      "icmal R-müayinə ",
+      "kontrast R-müayinə ",
+      "KT-müayinə ",
+      "USM "
     ]
   },
   {
-    "question": "Revmatoid artritin oynaq-visseral forması zamanı səpgilər:   ",
+    "question": "Yemək borusu axalaziyası nə ilə xarakterizə olunur? ",
     "answers": [
-      "əksər hallarda makulo-papulyoz, az hallarda övrəvari olur   ",
-      "əksər hallarda pustula şəklində olur   ",
-      "annulyar eritema şəklində olur   ",
-      "vezikulopustulyoz şəklində olur   ",
-      "səpgilər heç bir halda olmur   "
+      "kardial hissənin funksional keçiriciliyinin pozulması ",
+      "kardial hissənin stenozu ",
+      "kardial hissənin genişlənməsi ",
+      "yemək borusunun qısalması ",
+      "yemək borusunun iltihabı "
     ]
   },
   {
-    "question": "Revmatoid artrit zamanı rentgenoloji müayinədə:   ",
+    "question": "Axalaziyanın səbəbi? ",
     "answers": [
-      "70-80% hallarda sümüklərin epifiz nahiyəsində osteoporoz tapılır   ",
-      "dəyişikliklər olmur   ",
-      "az hallarda osteoporoz tapılır   ",
-      "“yaşıl budaq” şəklində sınıqlar olur   ",
-      "osteomielit əlamətləri olur   "
+      "yemək borusunun auerbax kələfində sinir defisiti ",
+      "mədə zondlanmasında yemək borusunun deşilməsi ",
+      "yemək borusunun yad cisimi ",
+      "yemək borusunun yanığı ",
+      "mədə ezofaqial reflyuks "
     ]
   },
   {
-    "question": "Revmatoid artriti revmatik qızdırmadan fərqləndirici əlaməti göstərin:   ",
+    "question": "Axalaziyanın əsas klinik simptomları? ",
     "answers": [
-      "xırda oynaqların prosesə cəlb olunması   ",
-      "artralgiya   ",
-      "ağrıların uçucu xarakteri   ",
-      "xəstəliyin 5-15 yaşlarda başlanması   ",
-      "urəyin zədələnməsi   "
+      "disfaqiya reqirqutasiya ",
+      "ürəkbulanma öyümə ",
+      "qusuntuda qan izinin olması ",
+      "döş sümüyü arxasında yandırıcı ağrının olması ",
+      "mədə möhtəviyyatlı qusma "
     ]
   },
   {
-    "question": "Revmatoid artritin diaqnostikasında müayinə üsullarına aid deyil:   ",
+    "question": "Axalaziyanın əsas diaqnostik metodu? ",
     "answers": [
-      "qanın sterilliyinin müayinəsi   ",
-      "qanın biokimyəvi müayinəsi   ",
-      "oynaqların rentgen müayinəsi   ",
-      "oynaqların USM-i   ",
-      "qanın ümumi analizi   "
+      "kontrast R-ezafaqoqrafiya ",
+      "icmal R-qrafiya ",
+      "ezafaqoskopiya ",
+      "KT müayinə ",
+      "USM "
     ]
   },
   {
-    "question": "Revmatoid artritin klinik diaqnostikasında əhəmiyyətlidir:   ",
+    "question": "Axalaziya hansı ilə diferensasiya olunmur? ",
     "answers": [
-      "oynaqlarda səhər hərəki məhdudluq, kontraktura   ",
-      "artralgiya   ",
-      "əzələ hipotoniyası   ",
-      "ümumi zəiflik, halsızlıq   ",
-      "oynaqların şişkinləşməsi   "
+      "yemək borusunun atreziyası ilə ",
+      "yemək borusunun anadangəlmə stenozu ilə ",
+      "yemək borusunun qazanılma stenozu ilə ",
+      "yemək borusunun divertikulu ilə ",
+      "yemək borusunun şişi ilə "
     ]
   },
   {
-    "question": "Klassik yuvenil revmatoid artrit üçün diaqnostik sayılan müsbət əlamətlərin  ümumi sayını göstərin:   ",
+    "question": "Axalaziyanın radikal müalicə metodu ",
     "answers": [
-      "8 əlamət   ",
-      "3 əlamət   ",
-      "1 əlamət   ",
-      "2 əlamət   ",
-      "5 əlamət   "
+      "cərrahi- kardiomiotomiya ezafaqokardiofundoplikasiya ",
+      "cərrahi- kardiomiotomiya ",
+      "bujlama ",
+      "konservativ ",
+      "fizoterapevtik   "
     ]
   },
   {
-    "question": "Sistemli qırmızı qurdeşənəyi üçün patoqnomonik sayılır:   ",
+    "question": "Kardiyanın xalaziyası nə ilə xarakterizə olunur ",
     "answers": [
-      "üz nahiyəsində yerləşən kəpənək formasında eritema   ",
-      "heç biri   ",
-      "Aşoff-Talalayev qlanulyomaları   ",
-      "annulyar eritema   ",
-      "pustullyoz səpgilər   "
+      "kardiyanın çatışmazlığı ilə ",
+      "kardiyanın spazmı ilə ",
+      "yemək borusunun genişlənməsi ilə ",
+      "yemək borusunun qısalığı ilə ",
+      "orta divararalığının yerdəyişməsi ilə "
     ]
   },
   {
-    "question": "Sistemli qırmızı qurdeşənəyi üçün səciyyəvidir:   ",
+    "question": "Yalançı diafraqmal yırtıq hansıdır? ",
     "answers": [
-      "anemiya, leykopeniya, trombositopeniya   ",
-      "heç biri   ",
-      "eritrositoz, hədəfəbənzər eritrositlər   ",
-      "oraqvarı eritrositlər   ",
-      "hədəfəbənzər eritrositlər   "
+      "yırtıq kisəsi olmur ",
+      "yırtıq möhtəviyyatı olmur ",
+      "yırtıq qapısı olmur ",
+      "yırtıq kisəsi yırtıq qapısı olur ",
+      "yırtıq kisəsi yırtıq möhtəviyyatı olur "
     ]
   },
   {
-    "question": "Yuvenil revmatoid artrit zamanı oynaqların hərəkət məhdudlaşması    müşahidə olunur:   ",
+    "question": "Həqiqi diafraqmal yırtığın əsas elementi nədir? ",
     "answers": [
-      "xüsusən səhər   ",
-      "gecənin 1-ci yarısı   ",
-      "günün 2-ci yarısı.   ",
-      "xüsusən günorta   ",
-      "xüsusən axşam   "
+      "yırtıq kisəsi ",
+      "yırtıq qapısı ",
+      "yırtıq möhtəviyyatı ",
+      "yırtıq qapısı yırtıq möhtəviyyatı ",
+      "yırtıq kisəsinin olmaması "
     ]
   },
   {
-    "question": "Yuvenil revmatoid artrit üçün xarakterdir:   ",
+    "question": "Diafraqmal yırtığın ən az rast gələn variantı? ",
     "answers": [
-      "ikinci oynağın 3 aydan sonra və daha gec yaranan artriti   ",
-      "anulyar eritema   ",
-      "qanda bilirubinin artması   ",
-      "kiçik xoreya   ",
-      "ikinci oynağın 1 aydan sonra yaranan artriti   "
+      "travmatik diafraqmal yırtıq ",
+      "diafraqmanın yemək borusu həlqəsinin yırtıgı ",
+      "həqiqi diafraqmal yırtıq ",
+      "yalançı diafraqmal yırtıq ",
+      "parasternal diafraqmal yırtıq "
     ]
   },
   {
-    "question": "Yuvenil revmatoid artritin erkən diaqnostik meyarlarına aid deyil:   ",
+    "question": "Diafraqmal yırtığın əsas diaqnostik metodu hansıdır? ",
     "answers": [
-      "Rayt-Heddelson reaksiyasının müsbət olması   ",
-      "qoltuqaltı və dirsək limfa düyünlərinin böyüməsi   ",
-      "onurğa sütunun boyun şöbəsində ağrı və hərəkət məhdudluğu   ",
-      "ümumi və ya yerli səhər gərginliyi   ",
-      "oynaq sindromu   "
+      "həzm traktının kontrast R-müayinəsi ",
+      "qarın boşluğunun icmal R-müayinəsi ",
+      "ağciyərlərin fizikal müayinəsi ",
+      "torakoskopiya ",
+      "USM "
     ]
   },
   {
-    "question": "Oynaq yarığının daralması və gecikmiş deformasiyalar xarakterikdir:   ",
+    "question": "Anadangəlmə diafraqmal yırtıq üçün hansı xarakterikdir? ",
     "answers": [
-      "revmatoid artrit üçün   ",
-      "revmatik qızdırma üçün   ",
-      "sklerodermiya üçün   ",
-      "dermatomiozit üçün   ",
-      "reaktiv artrit üçün   "
+      "qarının ölçüləri kiçik olur   ",
+      "döş qəfəsinin ölçüsü kiçik olur ",
+      "orta divararalığı pataloji tərəfə yerini dəyişir ",
+      "ağciyərlər simmetrik olur ",
+      "auskultasiyada patoloji tərəfdə yaş xırıltılar eşidilir "
     ]
   },
   {
-    "question": "“Döşəkağı sindromu” izah olunur:   ",
+    "question": "Ağciyər toxumasının bakterial destruksiyası nədir? ",
     "answers": [
-      "oynaq boşluğuna mayenin toplanması və periartikulyar toxumada iltihab ödeminin  olması ilə   ",
-      "yuxarıda sadalananların heç biri ilə   ",
-      "oynağın travması ilə   ",
-      "oynaqda fibroz dəyişikliklər ilə   ",
-      "oynağın deformasiyası ilə   "
+      "Ağciyər toxumasının irinli-iltihabi xəstəliyi ",
+      "Ağciyər toxumasının inkişaf pozğunluğu ",
+      "Bronxların müxtəlif ölçüdə genişlənməsi ",
+      "Ağciyərlərdə ölçülü sistoz törəmələrin olması ",
+      "Döş qəfəsində havanın olması "
     ]
   },
   {
-    "question": "Yuvenil revmatoid artritin oynaq-visseral forması zamanı zədələnmir:   ",
+    "question": "Uşaqlarda ağciyərlərdə bakterial destruksiyanı ən çox törədən bakterial  mühit hansıdır? ",
     "answers": [
-      "baş beyin   ",
-      "ağciyərlər   ",
-      "böyrəklər   ",
-      "ürək-damar sistemi   ",
-      "qaraciyər   "
+      "Stafilakokk mənşəli flora ",
+      "Eşrexia-koliflora ",
+      "Korinobakterium difteriya florası ",
+      "Salmenella ",
+      "Exinokokkoz "
     ]
   },
   {
-    "question": "Yuvenil revmatoid artrit diaqnozunu təstiqləyir:   ",
+    "question": "Bakterial destruksiyanın xroniki formaları hansılardır? ",
     "answers": [
-      "müsbət revmatoid faktor   ",
-      "LE-hüceyrələrin tapılması   ",
-      "yüksək EÇS   ",
-      "yüksək C-reaktiv zülal   ",
-      "leykositoz   "
+      "Xroniki abses, ağciyərlərin qazanılma sisti, plevranın empieması ",
+      "Exinokokk sisti, irinləmiş sist, emfizema ",
+      "Bronxların amputasiyası ",
+      "Ağciyər vərəmi, ağciyər şişi, ağciyərin aqneziyası ",
+      "Bronxların genişlənməsi, amputasiyası "
     ]
   },
   {
-    "question": "Yuvenil-revmatoid artritin allerqoseptik variantı adlanır:   ",
+    "question": "Ağciyərlərin bakterial destruksiyasında fizikal əlamətlər nə vaxt özünü  parlaq şəkildə göstərir? ",
     "answers": [
-      "Visler-Fankoni xəstəliyi   ",
-      "İtsenko-Kuşinq xəstəliyi   ",
-      "Hend-Şüller-Krisçen xəstəliyi   ",
-      "Kuli xəstəliyi   ",
-      "Vilsen-Konovalov xəstəliyi   "
+      "Plevral fəsadlar baş verdikdə ",
+      "Sidiyin ümumi analizində dəyişiklik olduqda ",
+      "Borulu sümüklərdə iltihab olduqda ",
+      "Qarında ağrılar olduqda ",
+      "Bədən hərarətinin yüksəldikdə "
     ]
   },
   {
-    "question": "Yuvenil revmatoid artritin müalicəsində istifadə olunmur:   ",
+    "question": "Ağciyərlərin bakterial destruksiyasının başlanğıc formasında hansı  müayinə metodundan istifadə edirlər? ",
     "answers": [
-      "bronxomunal   ",
-      "metipred   ",
-      "azatioprin   ",
-      "diklofenak   ",
-      "prednizolon   "
+      "R-qrafiya (döş qəfəsinin)     ",
+      "US- müayinəsi ",
+      "Ekskrotor uroqrafiya ",
+      "Kolonoskopiya ",
+      "Endoskopiya "
     ]
   },
   {
-    "question": "Yuvenil revmatoid artritdə müayinə planında mütləq olmalıdır, birindən başqa:   ",
+    "question": "Ağciyərlərin bakterial destruksiyasında döş qəfəsinin R-qrafiyası hansı  vəziyyətdə aparılır? ",
     "answers": [
-      "kolonoskopiya   ",
-      "qanın ümumi analizi   ",
-      "revmatoid faktorun təyini   ",
-      "sinovial mayenin tədqiqi   ",
-      "rentgenoloji müayinə   "
+      "Şaquli vəziyyətdə öndən və yandan ",
+      "Arxası üstə uzanmış vəziyyətdə ",
+      "Üzü üstə uzanmış vəziyyətdə ",
+      "Sol yanı üstə uzanmış vəziyyətdə ",
+      "Trendlenburq vəziyyəti "
     ]
   },
   {
-    "question": "Yuvenil revmatoid artritdə limfa düyünlərinin tipik zədələnməsi:   ",
+    "question": "Ağciyərlərin  bakterial  destruksiyasında  döş  qəfəsi  orqanlarının                      R-qrafiyasında hansı əlamət əsasdır? ",
     "answers": [
-      "qoltuqaltı və dirsək   ",
-      "heç biri   ",
-      "qasıq   ",
-      "mezenterial   ",
-      "dirsək   "
+      "Ağciyər toxumasının şəffaflığına və divararalığı orqanlarının sağlam  tərəfə yerdəyişməsinə ",
+      "Hər iki ağciyər toxumasının sıxılmasına ",
+      "Hər iki ağciyərdə kistoz törəmənin olmasına ",
+      "Hər iki ağciyərdə heç bir dəyişikliyin olmamasına ",
+      "Divararalığında havanın olmasına "
     ]
   },
   {
-    "question": "Yuvenil revmatoid artritdə gözlərin zədələnmə xarakterini göstərin:   ",
+    "question": "Ağciyərlərin R-qrafiyasında bulloz formalı destruksiya üçün xarakterik  əlamət nədir? ",
     "answers": [
-      "uveit   ",
-      "qlaukoma   ",
-      "blefarit   ",
-      "oftalmoherpes   ",
-      "konyuktivit   "
+      "Bir və ya bir neçə nazik qişaya malik havalı boşluğun olması ",
+      "Bir və ya bir neçə iki kapsulaya malik mayeli sistin olması ",
+      "Bir və ya bir neçə nazik kapsulaya malik yarıhavalı, mayeli sistin  olması ",
+      "Bir və ya bir neçə gərginləşmiş mayeli sistin olması ",
+      "Qalın divara malik mayeli sistin olması "
     ]
   },
   {
-    "question": "Revmatoid artrit üçün böyrəklərin aşağıdakı zədədlənməsi səciyyəvidir:   ",
+    "question": "Bulloz formalı destruksiyanın digər formalardan fərqləndirici xüsusiyyəti  nədir? ",
     "answers": [
-      "amiloidoz   ",
-      "hidronefroz   ",
-      "polikistoz   ",
-      "böyrəklərin infarktı   ",
-      "pielonefrit   "
+      "Onlar müalicəyə tabe olurlar ",
+      "Onlar müalicəyə tabe olmurlar ",
+      "Onlar çox sürətlə fəsadlaşırlar ",
+      "Onlar tez bir zamanda qanaxma verir ",
+      "R-qrafiyada kavernalar qeyd edilir. "
     ]
   },
   {
-    "question": "Yuvenil revmatoid artrit zamanı istifadə olunan sitostatik:   ",
+    "question": "Ağciyərlərin plevral fəsadları ilə olan destruksiyanın diaqnostikasında əsas  müayinə metodu hansılardır? ",
     "answers": [
-      "metotreksat   ",
-      "nerabol   ",
-      "klemastin   ",
-      "omeprazol   ",
-      "indometasin   "
+      "Ağciyərlərin R-qrafiyası və plevranın punksiyası ",
+      "Qarın boşluğunun KT müayinəsi ",
+      "Qarın boşluğunun US müayinəsi ",
+      "Qanın və sidiyin ümumi analizi ",
+      "Ekskretor uroqrafiya "
     ]
   },
   {
-    "question": "Yuvenil revmatoid artrit oynaqların:   ",
+    "question": "Piopnevmotoraksda rentgenoloji mənzərə necə olur? ",
     "answers": [
-      "iltihabi xəstəliklərinə aiddir   ",
-      "reaktiv xəstəliklərinə aiddir   ",
-      "bağırsağın xronik iltihabı zədədlənmələri ilə assosiasiya olunmuş xəstəliklərinə aiddir   ",
-      "metabolik xəstəliklərinə aiddir   ",
-      "infeksion xəstəliklərinə aiddir   "
+      "Ağciyər toxumasının şəffaflığı azalır, ağciyərın kökünə doğru sıxılır ",
+      "Heç bir patologiya müəyyən edilmir. ",
+      "Divar aralığında iri həcmli törəmə qeyd edilir. ",
+      "Ağciyər toxumasının əzilməsi qeyd edilir. ",
+      "Ağciyər toxumasında çoxsaylı sistlər "
     ]
   },
   {
-    "question": "Still sindromunun səciyyəvi əlamətlərinə aid deyil:   ",
+    "question": "Plevritin neçə forması var? ",
     "answers": [
-      "uveit   ",
-      "bir çox oynaqların kəskin zədələnməsi   ",
-      "allergik papulyoz səpgilər   ",
-      "intoksikasiya   ",
-      "nefrit   "
+      "Total, eksudativ, fibroz ",
+      "Kompensator, subkompensator, dekompensator ",
+      "Kompression, subkompression, dekompression ",
+      "Gərginləşmiş və gərginləşməmiş ",
+      "Heç bir forması yoxdur. "
     ]
   },
   {
-    "question": "Yuvenil revmatoid artritin rentgenoloji əlamətlərinə aid deyil:   ",
+    "question": "Total plevritin rentgenoloji mənzərəsi necə olur? ",
     "answers": [
-      "epifizin qədəhəbənzər genişlənməsi   ",
-      "onurğa sütununun boyun şöbəsinin zədədlənməsi   ",
-      "sümük boyunun pozulması   ",
-      "osteoporoz   ",
-      "oynaq yarığının daralması   "
+      "Proses olan tərəfdə intensiv kölgəlik ",
+      "R-qrafiyada döş qəfəsində normal mənzərə qeyd edilir. ",
+      "Hər iki ağciyərdə kistoz törəmələr qeyd edilir. ",
+      "Divar aralığı orqanlar yerini dəyişməyib ",
+      "Plevral boşluqda hava-maye səviyyəsi olur "
     ]
   },
   {
-    "question": "Yuvenil revmatoid artrit zamanı sinovial mayedə tapılan hüceyrələr:   ",
+    "question": "Fibroz piotoraks zamanı döş qəfəsinin punksiyası zamanı nə alınır? ",
     "answers": [
-      "faqositlər   ",
-      "heç biri   ",
-      "Langerqans hüceyrələr   ",
-      "Kupfer hüceyrələr   ",
-      "LE-hüceyrələr   "
+      "Heç bir eksudat alınmır ",
+      "Irinli-ərpli eksudat alınır ",
+      "Qatı iyli irin alınır ",
+      "Hava xaric olur ",
+      "Qanlı maye xaric olur "
     ]
   },
   {
-    "question": "Sistem qırmızı qurdeşənəyi üçün patognomonik əlamət sayılır:   ",
+    "question": "Abses və piopnevmatoraksı ağciyərin anadangəlmə sisti ilə necə  differensasiya etmək olar? ",
     "answers": [
-      "toxumalarda tapılan hemotoksilin cisimciyi   ",
-      "heç biri   ",
-      "Kurşman cisimcikləri   ",
-      "Şarko-Leyden kristalları   ",
-      "qanda tapılan Hayns cisimcikləri   "
+      "Rentgenoqrammada sistin nazik kapsulu aydın görünür ",
+      "Rentgenoqrammada hər iki ağciyərin sıxılması ",
+      "Mediastenitin olması ",
+      "Rentgenoqrammada qabırqaların osteoparozu ",
+      "Piopnevmotoraks zamanı plevral boşluqda hava qeyd olunmur "
     ]
   },
   {
-    "question": "Sistem qırmızı qurdeşənəyi endokarditi adlanır:   ",
+    "question": "Anadangəlmə bronxoektaziyanın əmələ gəlməsində əsas inkişaf qüsuru  hansıdır? ",
     "answers": [
-      "Limban-Saks endokarditi   ",
-      "Leffer endokarditi   ",
-      "Lambe endokarditi   ",
-      "Hedinger endokarditi   ",
-      "Hunter endokarditi   "
+      "Bronxların distal hissəsinin aqeneziyası ",
+      "Ağciyərlərin aqneziyası ",
+      "Ağciyərlərin hipoplaziyası ",
+      "Döş qəfəsinin inkişaf qüsuru ",
+      "Ağciyərlərin aplaziyası "
     ]
   },
   {
-    "question": "Sistem qırmızı qurdeşənəyində bu sindromlar ola bilər:   ",
+    "question": "Bronxoektaziyanın rentgenoloji mənzərəsi necə olur? ",
     "answers": [
-      "dəri, oynaq, visseral   ",
-      "heç biri   ",
-      "bronxoobstruktiv, nefrotik   ",
-      "bronxoobstruktiv   ",
-      "anemik, dispepsik   "
+      "Ağciyərin atelektazı və ya arı şanını xatırladan şəffaf kölgəliyin  olması ",
+      "Çox saylı havalı sistlərin olması ",
+      "Qalın divara malik içi hava və maye kistoz törəmənin olması ",
+      "Plevra boşluğunda havanın olması ",
+      "Plevra boşluğunda mayenin olması "
     ]
   },
   {
-    "question": "Sistem qırmızı qurdeşənəyi zamanı dərinin tipik zədədlənməsinə aid deyil:   ",
+    "question": "Boynun orta fistulun residivinin qarşısını almaq üçün hansını etmək  lazımdır? ",
     "answers": [
-      "dishidroz   ",
-      "piqmentasiya   ",
-      "atrofik çapıq   ",
-      "infiltrasiyalı hiperkeratoz   ",
-      "ödemlə müşaiyət olunan ekssudativ eritema   "
+      "Dilaltı sümüyün rezeksiyası ",
+      "Fistulun fassiyanın səthinə qədər ayrılması ",
+      "Fistul yolunun sklerozlaşdırıcı preparatla işlənməsi ",
+      "Sanasiyadan sonra fistul yolunun tikilməsi ",
+      "Xarici vidaci venanın bağlanması "
     ]
   },
   {
-    "question": "Sistem qırmızı qurdeşənəyi zamanı böyrəklərin zədələnməsi aşağıdakı  xarakter daşıyır:   ",
+    "question": "Göbək dəbəliyini göbək ciyəsi dəbəliyindən ayıran xüsusiyyət hansıdır ? ",
     "answers": [
-      "nefrotik sindrom   ",
-      "tubulyar nefrit   ",
-      "polikistoz   ",
-      "pielonefrit   ",
-      "böyrək-daş xəstəliyi   "
+      "Dəbəlik kisəsi üzərində dəri örtüyünün olması ",
+      "Dəbəlik kisəsi üzərində varton örtüyünün olması ",
+      "Dəbəlik kisəsi üzərində amnion qişasının olması ",
+      "Dəbəlik kisəsinin mövtəviyyatının qaraciyər olması ",
+      "Dəbəlik kisəsi üzərində varton örtüyünün və amnion qişasının olması "
     ]
   },
   {
-    "question": "Sistem qırmızı qurdeşənəyi zamanı müalicə üçün istifadə olunmur:   ",
+    "question": "Qastroşizis müalicəsi yalnız hansı üsuldur ? ",
     "answers": [
-      "glükofaj   ",
-      "siklofosfan   ",
-      "azatioprin   ",
-      "metipred   ",
-      "prednizolon   "
+      "Ancaq cərrahi üsul ",
+      "Ancaq konservativ üsul ",
+      "Heç bir müalicə üsulu yoxdur ",
+      "Fizioterapiya ",
+      "Fundoplikasiya "
     ]
   },
   {
-    "question": "Qanın ümumi analizində sistem qırmızı qurdeşənəyi üçün xarakter deyil:   ",
+    "question": "Göbəklə xəncərvari çıxıntı arasında hansı dəbəlik təsadüf edilir ? ",
     "answers": [
-      "Ca səviyyəsinin artması   ",
-      "DNT-yə qarşı antitellərin titrinin artması   ",
-      "antinuklear amillərin artması   ",
-      "LE-hüceyrələrin artması   ",
-      "leykopeniya   "
+      "Ağ xətt dəbəliyi ",
+      "Ompholocele ",
+      "Göbək dəbəliyi ",
+      "Ventral dəbəlik ",
+      "Qastroşizis "
     ]
   },
   {
-    "question": "Sistem qırmızı qurdeşənəyi xəstəliyinə aid deyil:   ",
+    "question": "Böyük ölçülü ventral dəbəliyin radikal müalicə üsulu hansıdır ? ",
     "answers": [
-      "oynaqların səhər gərginliyi   ",
-      "“kəpənək” simptomu   ",
-      "neyrolupus   ",
-      "Libman-Saks endokarditi   ",
-      "lupus-nefrit   "
+      "Konservativ müalicə ",
+      "Ultrasonaqrafiya ",
+      "Fizioterapiya ",
+      "Masaj ",
+      "Cərrahi müalicə "
     ]
   },
   {
-    "question": "Qırmızı qurdeşənəyin diskoid formasında əsas zədələnir:   ",
+    "question": "Uşaqlarda ən çox qasıq dəbəliyinin hansı forması təsadüf edilir ? ",
     "answers": [
-      "baş beyin   ",
-      "oynaqlar   ",
-      "böyrəklər   ",
-      "qaraciyər   ",
-      "dəri   "
+      "Cəp yırtıqlar ",
+      "Düz yırtıqlar ",
+      "Sürüşkən yırtıqlar ",
+      "Oval formalı yırtıqlar ",
+      "xaya yırtığı "
     ]
   },
   {
-    "question": "Lupus-nefritin əlamətlərinə aid deyil:   ",
+    "question": "Peritonun yataq çıxıntısının obliterasiya prosesinin pozulmasına aşağıda  qeyd olunanlardan biri aid deyil ? ",
     "answers": [
-      "hemokolit   ",
-      "ödemlər   ",
-      "hematuriya   ",
-      "sidikdə zülal   ",
-      "arterial təzyiqin artması   "
+      "Xayanın ektopiyası ",
+      "Qasıq-xayalıq yırtığı ",
+      "Əlaqəli xaya hidropsu ",
+      "Toxum ciyəsinin sisti ",
+      "Qasıq yırtığı "
     ]
   },
   {
-    "question": "Sistem qırmızı qurdeşənəyinin visseral formasında zədələnmir:   ",
+    "question": "Qasıq yırtğını qeyd olunan patologiylardan hansı ilə differensasiya etmək  lazım gəlir? ",
     "answers": [
-      "oynaqlar   ",
-      "miokard   ",
-      "böyrəklər   ",
-      "perikard   ",
-      "qaraciyər   "
+      "Hidrosele ",
+      "Varikosele ",
+      "Monorxizm ",
+      "Anorxizm ",
+      "Poliorxizm "
     ]
   },
   {
-    "question": "Sistem qırmızı qurdeşənəyinin müalicəsinin erkən mərhələsində istifadə  olunmur:   ",
+    "question": "Boğulmuş qasıq yırtğı qeyd olunan patologiylardan hansı ilə differensasiya  olunmur ? ",
     "answers": [
-      "antibiotikoterapiya   ",
-      "hormonal preparatlar   ",
-      "sitostatiklər   ",
-      "qeyri-steroid preparatlar   ",
-      "venadaxili immunoqlobulinlər   "
+      "Hidrosele ",
+      "Limfaadenit ",
+      "Bud yırtığı ",
+      "Anorxizm ",
+      "Toxum ciyəsinin kəskin sisti "
     ]
   },
   {
-    "question": "Lupus-hepatit üçün xarakterikdir, birindən başqa:   ",
+    "question": "Qasıq-xayalıq yırtığı ilə hidroselini differensasiya etmək üçün istifadə  olunan ən sadə müayinə üsulu hansıdır? ",
     "answers": [
-      "qanda kreatinin artması   ",
-      "qanda bilirubinin artması   ",
-      "qanda GGT-n artması   ",
-      "hepatomeqaliya   ",
-      "qanda ALT-in artması   "
+      "Diafonoskopiya ",
+      "Rentgen müayinə ",
+      "Laborator müayinə ",
+      "Ultrasəs müayinə ",
+      "Sidiyin ümumi müayinəsi   "
     ]
   },
   {
-    "question": "Sistem qırmızı qurdeşənəyinin müalicəsində pulsterapiyaya daxil deyil:   ",
+    "question": "Uşaqlarda qasıq yırtığının müalicəsi hansıdır ? ",
     "answers": [
-      "seftriakson   ",
-      "siklofosfan   ",
-      "azatioprin   ",
-      "prednizolon   ",
-      "metipred   "
+      "Peritonun yataq çıxıntısının proksimal bağlanması ",
+      "Alloplastik üsullarla xarici cəp əzələnin plastikası ",
+      "Alloplastik üsullarla arxa divarın plastikası ",
+      "Həm ön, həm də arxa divarın plastikası ",
+      "Alloplastik üsullarla ön divarın plastikası "
     ]
   },
   {
-    "question": "Sistem qırmızı qurd eşənəyinin patogenezində əsas nəzəriyyə götürülür:   ",
+    "question": "Uşaqlarda qasıq yırtığının əmələgəlmə səbəbi hansıdır ? ",
     "answers": [
-      "immunoloji   ",
-      "infeksion-allergik   ",
-      "antigen-mimikriya   ",
-      "toksiki   ",
-      "infeksion   "
+      "Obliterasiya olunmamış peritonun yataq çıxıntısı ",
+      "xarici çəp əzələnin defekti ",
+      "daxili çəp əzələnin defekti ",
+      "köndələn fassiyanın defekti ",
+      "köndələn əzələnin defekti "
     ]
   },
   {
-    "question": "Neyrolupus üçün xarakter deyil:   ",
+    "question": "Uşaqlarda qasıq kanalının yuxarı divarını nə təşkil edir ? ",
     "answers": [
-      "endoftalm   ",
-      "başgicəllənmə   ",
-      "yuxunun pozulması   ",
-      "başağrı   ",
-      "polinevrit   "
+      "daxili çəp və köndələn əzələlərdən ",
+      "xarici çəp əzələnin aponevrozu ",
+      "daxili cəp əzələnin və köndələn fassiya ",
+      "köndələn fassiya ",
+      "pupart bağı "
     ]
   },
   {
-    "question": "Sistem qırmızı qurdeşənəyinin oynaq sindromuna aid deyil:   ",
+    "question": "Düzəlməyən boğulmuş qasıq yırtığının müalicə üsulu hansıdır ? ",
     "answers": [
-      "sümüklərin “X-vari” deformasiyaları   ",
-      "artrit   ",
-      "artralgiya   ",
-      "prosesə iri oynaqların cəlb olunması   ",
-      "prosesə xırda oynaqların cəlb olunması   "
+      "Təcili cərrahi müalicə ",
+      "Konservativ müalicə ",
+      "Ultrasonaqrafiya ",
+      "hec bir müalicə tələb etmir ",
+      "irroqrafiya "
     ]
   },
   {
-    "question": "Dermatomiozitin nevroloji simptomatikasında səciyyəvi deyil:   ",
+    "question": "Uraxus nədir ? ",
     "answers": [
-      "kiçik xoreya   ",
-      "parezlər   ",
-      "ifliclər   ",
-      "xoreyayabənzər hiperkinezlər   ",
-      "ensefalit   "
+      "Göbək-sidiklik fistulu ",
+      "Göbək-bağırsaq fistulu ",
+      "Göbək-bağırsaq arasında fibroz bağ ",
+      "Enterasistoma ",
+      "Göbək-sidiklik arasında törəmə "
     ]
   },
   {
-    "question": "Dermatomiozitin klinikası üçün səciyyəvi deyil:   ",
+    "question": "Nazik bağırsaq atreziyasına görə əməliyyat olunmuş uşaqda əməliyyatdan  sonra ən çox rast gəlinən ağırlaşma ",
     "answers": [
-      "normal hərarət   ",
-      "kəskin başlama   ",
-      "mialgiya   ",
-      "yüksək hərarət   ",
-      "paraorbital nahiyənin dərisində ödemin olması   "
+      "Bağırsağın davamlı parezi ",
+      "Pnevmoniya ",
+      "Metabolik pozğunluq ",
+      "Bağırsaq invaginasiya ",
+      "Eventerasiya "
     ]
   },
   {
-    "question": "Sklerodermiyanın klinikası üçün səciyyəvi deyil:   ",
+    "question": "Yuxarı formalı anadangəlmə bağırsaq keçməzliyi üçün hansı kliniki  əlamətlər xarakterikdir? ",
     "answers": [
-      "yüksək hərarət   ",
-      "barmaq falanqalarının zədələnməsi   ",
-      "hərəkət məhdudluğu   ",
-      "kiset sindromu   ",
-      "ödem   "
+      "Doğulan anadan ödlü qusma və epiqastral nahiyənin köpməsi ",
+      "İkinci sutkadan mekoneal qusma ",
+      "Mekoniumun xaric olmaması ",
+      "Qarnın kəskin köpməsi ",
+      "Epiqastral nahiyənin köpməsi "
     ]
   },
   {
-    "question": "Düyünlü periarteriitin klinikası üçün səciyyəvi deyil:   ",
+    "question": "Anadangəlmə yuxarı bağırsaq keçməzliyi üçün hansı kliniki əlamətlər  xarakterikdir? ",
     "answers": [
-      "ankiloz   ",
-      "dərialtı düyünlərin olması,   ",
-      "koronarit   ",
-      "hemorrargik purpura nəzərə çarpır   ",
-      "izolə olunmuş sidik sindromu   "
+      "Qarnın «batması», ödlü qusma.  ",
+      "Doğuşdan 2 sutka sonra mekoniumla qusma ",
+      "Qarnın ön divarının və cinsiyyət üzvlərinin ödəmli olması ",
+      "Mekoniumun xaric olmaması ",
+      "Təsviri rentgenoqrammada çoxsaylı Kloyber kasacıqlarının olması "
     ]
   },
   {
-    "question": "Bronxitin zəmin yaradıcı faktoruna aid deyil:   ",
+    "question": "Göbək həlqəsi 4,5 sm ölçüdə olan embrional dəbəliklə olan 2 saat bundan  əvvəl doğulmuş uşağa nə göstərişdir? ",
     "answers": [
-      "bağırsaqların disfunksiyası   ",
-      "defisit vəziyyətlər   ",
-      "passiv siqaret çəkmə   ",
-      "termiki amillər   ",
-      "bronx-ağciyər sisteminin displaziyası   "
+      "Təcili radikal əməliyyat ",
+      "Qarın boşluğunun təsviri rentgenoqrafiyası ",
+      "Kali permanqanatla qişanın işlənməsi ",
+      "2- 4 saatlıq hazırlıqdan sonra I etapda Qross əməliyyatı ",
+      "Həyatın 2-ci sutkasında radikal əməliyyat "
     ]
   },
   {
-    "question": "Kəskin sadə bronxitin əsas simptomları:   ",
+    "question": "Yuxarı bağırsaq keçməzliyini aşağı bağırsaq keçməzliyindən                           mədə-bağırsaq traktının hansı hissəsi ayırır? ",
     "answers": [
-      "yaş öskürəyə keçən quru öskürək   ",
-      "spastik öskurək və fitverici xırıltılar   ",
-      "öskürəksiz hərarətin artması, intoksikasiya   ",
-      "reprizlərlə tutmaşəkilli öskurək   ",
-      "hürücü öskürək   "
+      "Acı bağırsağın başlanğıc hissəsi ",
+      "Yemək borusunun mədəyə keçən yeri ",
+      "Mədənin pilorik hissəsi ",
+      "İleosekal künc ",
+      "Yoğun bağırsağın rektosiqmoidal hissəsi "
     ]
   },
   {
-    "question": "Kəskin sadə bronxitli uşaqların auskultasiyası zamanı aşkar olunur:   ",
+    "question": "Embrional göbək ciyəsi dəbəliyinin əmələ gəlməsində hansı anatomik  hissənin qüsuru aparıcı rol oynayır? ",
     "answers": [
-      "sərt tənəffüs, səpələnmiş quru və ya orta qabarcıqlı xırıltılar   ",
-      "diffuz zəifləmiş tənəffüs   ",
-      "diffuz kiçikqabarcıqlı xırıltılar   ",
-      "lokal zəifləmiş tənəffüs   ",
-      "lokal kiçik qabarcıqlı xırıltılar   "
+      "Qarın divarının apanevroz-əzələ qatının defekti ",
+      "Qarın dərisinin defekti ",
+      "Göbək damarlarının inkişaf qüsuru ",
+      "Göbək ciyəsinin yerləşmə anomaliyası ",
+      "Bütün göstərilənlərin hamısı   "
     ]
   },
   {
-    "question": "Obstruktiv bronxit üçün daha xarakterik olan simptomu göstərin:   ",
+    "question": "Embrional göbək ciyəsi dəbəliyində cərrahi müalicədə əsas məqsəd nədən  ibarətdir? ",
     "answers": [
-      "fitverici nəfəsvermə   ",
-      "inspirator təngnəfəslik   ",
-      "səpələnmiş xırdaqabarcıqlı xırıltılar   ",
-      "güclü bəlğəm ifrazı olan öskürək   ",
-      "perkutor səsin lokal kütləşməsi   "
+      "Qarnın ön divarının apanevroz-əzələ defektinin plastikası ",
+      "Dəri defektinin bağlanması ",
+      "Defektdən xaricdə olan bağırsaqların bir hissəsinin rezeksiyası ",
+      "Qarın boşluğunun həcminin böyüdülməsi ",
+      "Mərkəzi venoz təzyiqə nəzarət etmək "
     ]
   },
   {
-    "question": "II dərəcəli tənəffüs çatışmazlığı üçün xarakterik olmayan əlaməti göstərin:   ",
+    "question": "Bağırsaq keçməzliyi zamanı qusuntunun ödlü olması nəyi bildirir? ",
     "answers": [
-      "yüksək qan təzyiqi   ",
-      "generalizə olunmuş anemiya   ",
-      "peroral sianoz   ",
-      "sakitlik vəziyyətində təngnəfəsliyin olmaması   ",
-      "xırıltılı tənəffüs   "
+      "Keçməzliyin Fater məməciyindən distal səviyyədə olmasını ",
+      "Keçməzliyin  Fater  məməciyindən  proksimal  səviyyədə  olmasını ",
+      "Keçməzliyin pilorik sfinkter səviyyəsində olmasını ",
+      "Keçməzliyin kardial sfinkter səviyyəsində olmasını ",
+      "12 barmaq bağırsaq atreziyasının olmasını "
     ]
   },
   {
-    "question": "Obstruktiv bronxit üçün xarakterik olmayan simptomu göstərin:   ",
+    "question": "Hər dəfə bərk qida qəbulundan sonra həll olunmamış qida ilə qusma hansı  patologiyaya daha uyğundur? ",
     "answers": [
-      "febril hərarət   ",
-      "kəskin intoksikasiya   ",
-      "subfebril hərarət   ",
-      "ekspirator təngnəfəslik   ",
-      "quru öskürək və ya çətin ifraz olunan bəlğəm   "
+      "Pilorospazm ",
+      "Pilozostenoz ",
+      "Ledde sindromu ",
+      "Yemək borusunun stenozu ",
+      "Yemək borusunun atreziyası "
     ]
   },
   {
-    "question": "I dərəcəli tənəffüs çatışmazlığı üçün xarakterik olmayan əlaməti göstərin:   ",
+    "question": "Yemək borusunun atreziyasının traxeya arasında fistula olan xəstəni  təxliyyə (transportirvka) etdikdə hansı vəziyyətdə aparmaq daha düzgündür? ",
     "answers": [
-      "sakitlik vəziyyətində təngnəfəsliyin olması   ",
-      "hemiodinamik pozuntunun olmaması   ",
-      "normal qan təzyiqi   ",
-      "peroral sianoz   ",
-      "dərinin avazıması   "
-    ]
-  },
-  {
-    "question": "III dərəcəli tənəffüs çatışmazlığı üçün xarakterik olmayan əlaməti göstərin:   ",
-    "answers": [
-      "yüksək qan təzyiqi   ",
-      "paradoksal tənəffüs   ",
-      "kəskin təngnəfəslik   ",
-      "bradikardiya   ",
-      "generalizə olunmuş sianoz   "
-    ]
-  },
-  {
-    "question": "Hansı etiologiyalı pnevmoniya zamanı tez-tez destruksiya müşahidə olunur:   ",
-    "answers": [
-      "stafilokokk   ",
-      "pnevmokokk   ",
-      "göbələk   ",
-      "streptokokk   ",
-      "klebsiella   "
-    ]
-  },
-  {
-    "question": "Kəskin pnevmoniyalar təsnifata görə bölünürlər:   ",
-    "answers": [
-      "ocaqlı, seqmentar, krupoz (paylı), interstisial   ",
-      "krupoz, interstisial   ",
-      "interstisial, allergik   ",
-      "iki tərəfli bronxopnevmoniya, interstisial, allergik   ",
-      "krupoz, bronxiolitlər   "
-    ]
-  },
-  {
-    "question": "Pnevmoniyanın perinatal infeksiyalaşma nəticəsində əsas törədicisinə aid  deyil:   ",
-    "answers": [
-      "mikobakterialar   ",
-      "pnevmosistlər   ",
-      "viruslar   ",
-      "ureaplazma   ",
-      "xlamidiya   "
-    ]
-  },
-  {
-    "question": "Kəskin pnevmoniyanın əsas klinik əlamətlərini göstərin:   ",
-    "answers": [
-      "hipertermiya, təngnəfəslik, lokal krepitasiyanın eşidilməsi   ",
-      "obstruksiyanın olması   ",
-      "pnevmotoraks, bullaların olması   ",
-      "plevrit əlamətləri   ",
-      "miokardit, toksikoz əlamətləri   "
-    ]
-  },
-  {
-    "question": "Pnеvmoniya zamanı əsas rеntgеnoloji əlamətlər:   ",
-    "answers": [
-      "ağciyər toxumasında ocaqlı infiltrativ kölgəlik   ",
-      "bronx-damar şəklinin güclənməsi   ",
-      "ağciyərlərin havalı olması, şəffaflığın yüksəlməsi   ",
-      "üfüqü səviyyəli mayе ilə boşluq   ",
-      "aydın nəzərə carpan sərhədi olan intеnsiv hеmogеn kölgəlik   "
-    ]
-  },
-  {
-    "question": "Krupoz pnevmoniyanın əsas törədicisi:   ",
-    "answers": [
-      "pnevmokokk   ",
-      "göbələklər   ",
-      "sitomeqalovirus   ",
-      "stafillokokk   ",
-      "steptokokk   "
-    ]
-  },
-  {
-    "question": "Kəskin bronxiolitin klinikasında səciyyəvi deyil:   ",
-    "answers": [
-      "perkutor-timpanik səs   ",
-      "perkutor kutu səsi   ",
-      "ekspirator tip təngnəfəslik   ",
-      "intoksikasiya   ",
-      "tutmaşəkilli öskürək   "
-    ]
-  },
-  {
-    "question": "Xronik bronxitin əsas müalicəsinə daxil deyil:   ",
-    "answers": [
-      "qeyristeroid iltihab əleyhinə preparatlar   ",
-      "mukolitiklər   ",
-      "vibrasion masaj   ",
-      "fizioterapiya   ",
-      "aerozolterapiya   "
-    ]
-  },
-  {
-    "question": "Residivləşən bronxitin diaqnostikasında önəmli deyil:   ",
-    "answers": [
-      "exokardioqrafiya   ",
-      "bronxoskopiya   ",
-      "bəlğəmin müayinəsi   ",
-      "qanın ümumi müayinəsi   ",
-      "bronxoqrafiya   "
-    ]
-  },
-  {
-    "question": "Kəskin bronxiolitdə:   ",
-    "answers": [
-      "kiçik bronxların və bronxiollaların zədələnməsi baş verir:   ",
-      "orta bronxların zədələnməsi baş verir   ",
-      "plevranın zədələnməsi baş verir   ",
-      "ağciyər toxumasının zədələnməsi baş verir   ",
-      "iri bronxların zədələnməsi baş verir   "
-    ]
-  },
-  {
-    "question": "Kliniki olaraq bronxial obstruksiya sindromu müşayiət olunur:   ",
-    "answers": [
-      "ekspirator təngnəfəsliklə   ",
-      "vezikulyar tənəffüslə   ",
-      "pueril tənəffüslə   ",
-      "amforik tənəffüslə   ",
-      "inspirator təngnəfəsliklə   "
-    ]
-  },
-  {
-    "question": "Seqmentar pnevmoniya zamanı proses əhatə edir:   ",
-    "answers": [
-      "bir və ya bir neçə seqmenti   ",
-      "ağciyərin payını   ",
-      "bronxları   ",
-      "bronxiolları   ",
-      "interstisial toxumanı   "
-    ]
-  },
-  {
-    "question": "Virus etiologiyalı obstruktiv bronxitin əsas müalicəsinə aid deyil:   ",
-    "answers": [
-      "antibiotik qəbulu   ",
-      "fizioprosedur   ",
-      "döş qəfəsinin vibrasion massajı   ",
-      "bəlğəmgətiricilərin istifadəsi   ",
-      "mukolitiklərin qəbulu   "
-    ]
-  },
-  {
-    "question": "Bronxların obstruksiyasında tənəffüsün xarakterini göstərin:   ",
-    "answers": [
-      "ekspirator tənəffüsün çətinləşməsi   ",
-      "taxipnoe   ",
-      "nəfəs alma və nəfəs vermənin çətinləşməsi   ",
-      "normal tənəffüs   ",
-      "inspirator tənəffüsün çətinləşməsi   "
-    ]
-  },
-  {
-    "question": "Kəskin bronxit üçün xarakterik deyil:   ",
-    "answers": [
-      "rentgenoqrammda ocaqlı kölgəlik   ",
-      "yaş öskürək   ",
-      "subfebril hərarət, ümumi zəiflik   ",
-      "rentgenoqrammada ağciyər şəklinin güclənməsi   ",
-      "quru öskürək   "
-    ]
-  },
-  {
-    "question": "Kəskin sadə bronxitin ən xarakterik əlamətidir:   ",
-    "answers": [
-      "yüksək hərarət   ",
-      "taxikardiya   ",
-      "təngnəfəslik   ",
-      "ürək çatışmazlığı   ",
-      "quru və yaş xırıltılar   "
-    ]
-  },
-  {
-    "question": "Kəskin sadə bronxitin əsas etioloji faktorlarını göstərin:   ",
-    "answers": [
-      "virus, bakteriya   ",
-      "helmintlər   ",
-      "kimyəvi maddələr, allergiya   ",
-      "bətndaxili infeksiyalar   ",
-      "dərman faktorları   "
-    ]
-  },
-  {
-    "question": "Bronxitlər necə təsnif olunurlar:   ",
-    "answers": [
-      "kəskin sadə bronxit, obstriktiv bronxit, bronxiolit, residivləşən bronxit, xronik bronxit   ",
-      "kəskin sadə bronxit, obstriktiv bronxit, bronxiolit   ",
-      "astmatik komponentlə gedən obstruktiv bronxit   ",
-      "bronxiolit, kəskin sadə bronxit   ",
-      "asmatik bronxit, residivləşən bronxiolit   "
-    ]
-  },
-  {
-    "question": "Bronxiolitin inkişafında daha çox hansı törədici rol oynayır:   ",
-    "answers": [
-      "RS-viruslar   ",
-      "toksoplazma   ",
-      "mikoplazma   ",
-      "xlamidiya   ",
-      "göbələk   "
-    ]
-  },
-  {
-    "question": "Kəskin sadə bronxitli uşaqların auskultasiyası zamanı aşkar olunur:   ",
-    "answers": [
-      "sərt tənəffüs, səpələnmiş quru və ya yaorta qabarcıqlı xırıltılar   ",
-      "diffuz zəifləmiş tənəffüs   ",
-      "lokal kiçik qabarcıqlı xırıltılar   ",
-      "diffuz kiçikqabarcıqlı xırıltılar   ",
-      "lokal zəifləmiş tənəffüs   "
-    ]
-  },
-  {
-    "question": "Obstruktiv bronxit üçün daha xarakterik olan simptomu göstərin:   ",
-    "answers": [
-      "səpələnmiş fitverici xırıltılar   ",
-      "səpələnmiş xırdaqabarcıqlı xırıltılar   ",
-      "yuxarıda göstərilənlərin hamısı   ",
-      "güclü bəlğəm ifrazı olan öskürək   ",
-      "perkutor səsin lokal kütləşməsi   "
-    ]
-  },
-  {
-    "question": "Kəskin bronxitin yaranmasında yoluxma yolu deyildir:   ",
-    "answers": [
-      "bronxogen   ",
-      "kontakt   ",
-      "hematogen   ",
-      "alimentar   ",
-      "aerogen   "
-    ]
-  },
-  {
-    "question": "Kəskin pnevmoniya zamanı infeksiyanın əsas ötürülmə yolu:   ",
-    "answers": [
-      "bronxogen   ",
-      "neyrogen   ",
-      "bağırsaq yolu ilə   ",
-      "limfogen   ",
-      "hematogen   "
-    ]
-  },
-  {
-    "question": "Kəskin pnevmoniya xarakterizə olunur:   ",
-    "answers": [
-      "ağciyər parenximasının kəskin infeksion–iltihabı   ",
-      "yuxarı tənəffüs yollarının iltihabı   ",
-      "bronxların selikli qişasının iltihabı   ",
-      "ağciyərlərin xronik – allergik iltihabı   ",
-      "plevral qişanın iltihabı   "
-    ]
-  },
-  {
-    "question": "Kəskin pnevmoniyanın əsas klinik meyarlarını göstərin:   ",
-    "answers": [
-      "hipertermiya, təngnəfəslik, lokal krepitasiyanın eşidilməsi   ",
-      "obstruksiyanın olması   ",
-      "miokardit, toksikoz əlamətləri   ",
-      "pnevmotoraks, bullaların olması   ",
-      "plevrit əlamətləri   "
-    ]
-  },
-  {
-    "question": "Kəskin pnevmoniyanın ağciyər daxili ağırlaşmalarına aiddir:   ",
-    "answers": [
-      "metapnevmotik plevrit, ağciyər destruksiyası, abses, pnevmotoraks   ",
-      "respirator-distres sindrom   ",
-      "toksikoz, infeksion toksik şok   ",
-      "miokarditlər   ",
-      "damar daxili laxtalanma sindromu   "
-    ]
-  },
-  {
-    "question": "Kəskin pnеvmoniya zamanı əsas simptom:   ",
-    "answers": [
-      "lokal yaş xırıltılar   ",
-      "еkspirator təngənəfəslik   ",
-      "quru öskürək   ",
-      "quru fitvеrici xırıltılar   ",
-      "perkussiya zamanı qutu səsi   "
-    ]
-  },
-  {
-    "question": "Pnevmoniya zamanı oksigen çatışmazlığı ilk növbədə bu orqanın  fəaliyyətində özünü biruzə verir:   ",
-    "answers": [
-      "mərkəzi sinir sistemi   ",
-      "mədəaltı vəzi   ",
-      "qanyaradıcı   ",
-      "qaraciyər   ",
-      "böyrəklər   "
-    ]
-  },
-  {
-    "question": "Ekspirator təngnəfəsliyin səbəbi:   ",
-    "answers": [
-      "bronxial obstruksiya   ",
-      "rinosinusit   ",
-      "traxeit   ",
-      "faringit   ",
-      "laringit   "
-    ]
-  },
-  {
-    "question": "Pnevmoniyanın müalicəsində istifadə olunan antibiotik effektsiz olduqda  hansı müddətdən sonra dəyişdirilməlidir:   ",
-    "answers": [
-      "3 gün   ",
-      "7 gün   ",
-      "5gün   ",
-      "12 gün   ",
-      "10 gün   "
-    ]
-  },
-  {
-    "question": "Kəskin bronxiolit uşaqlarda təsədüf olunur:   ",
-    "answers": [
-      "6 ayından 2 yaşa qədər   ",
-      "10-12 yaş arasında   ",
-      "7-8 yaş arasında   ",
-      "5-6 yaş arasında   ",
-      "3-4 yaş arasında   "
-    ]
-  },
-  {
-    "question": "Ekspirator təngnəfəsliyə aiddır, birindən başqa:   ",
-    "answers": [
-      "nəfəsalmanın pozulması   ",
-      "döş qəfəsinin qalxması   ",
-      "qarnın düz əzələsinin tənəffüsdə iştrakı   ",
-      "nəfəsvermənin uzanması   ",
-      "köməkçi əzələlərin iştraki   "
-    ]
-  },
-  {
-    "question": "İnspirator təngənəfəsliyə aiddır:   ",
-    "answers": [
-      "nəfəsalmanın uzanması   ",
-      "döş qəfəsinin qalxması   ",
-      "qarnın düz əzələsinin tənəffüsdə iştrakı   ",
-      "nəfəsvermənin uzanması   ",
-      "köməkçi əzələlərin iştrakı   "
-    ]
-  },
-  {
-    "question": "Həm nəfəsalmanın, həm nəfəsvermənin güclənməsi:   ",
-    "answers": [
-      "sərt tənəffüsdür   ",
-      "pueril tənəffüsdür   ",
-      "vezikulyar tənəffüsdür   ",
-      "amforik tənəffüsdür   ",
-      "bronxial tənəffüsdür   "
-    ]
-  },
-  {
-    "question": "Kəskin pnevmoniyanın ağciyərdən kənar ağırlaşmalarına aiddir:   ",
-    "answers": [
-      "ürək-damar çatışmazlığı   ",
-      "plevritlər   ",
-      "bulalar   ",
-      "pnevmotoraks   ",
-      "abses   "
-    ]
-  },
-  {
-    "question": "Orta qabarcıqlı yaş xırıltılar əmələ gəlir:   ",
-    "answers": [
-      "orta kalibirli bronxlarda   ",
-      "traxeyada   ",
-      "iri bronxlarda   ",
-      "alveollarda   ",
-      "bronxiolalarda   "
-    ]
-  },
-  {
-    "question": "Kiçik kalibirli yaş xırıltılar əmələ gəlir:   ",
-    "answers": [
-      "kiçik kalibirli bronxlarda   ",
-      "traxeyada   ",
-      "iri bronxlarda   ",
-      "alveollarda   ",
-      "orta kalibirli bronxlarda   "
-    ]
-  },
-  {
-    "question": "Krepitasiya əmələ gəlir:   ",
-    "answers": [
-      "alveollarda   ",
-      "orta kalibirli bronxlarda   ",
-      "iri bronxlarda   ",
-      "traxeyada   ",
-      "boşluqlarda   "
-    ]
-  },
-  {
-    "question": "Tənəffüs sisteminin instrumental müayinə üsullarına aid deyil:   ",
-    "answers": [
-      "kolonoskopiya   ",
-      "bronxoqrafiya   ",
-      "flüoroqrafiya   ",
-      "rentgenoloji müayinə   ",
-      "bronxoskopiya   "
-    ]
-  },
-  {
-    "question": "Seqmentar pnevmoniya zamanı proses:   ",
-    "answers": [
-      "bir və ya bir neçə seqmenti əhatə edir   ",
-      "bronxları əhatə edir   ",
-      "ağciyərin payını əhatə edir   ",
-      "bronxiolları əhatə edir   ",
-      "interstisial toxumanı əhatə edir   "
-    ]
-  },
-  {
-    "question": "Krupoz pnevmoniyanın ağırlaşmalarına aid deyil:   ",
-    "answers": [
-      "hematuriya   ",
-      "miokardit   ",
-      "meningit   ",
-      "abses   ",
-      "plevrit   "
-    ]
-  },
-  {
-    "question": "Stafilokokk pnevmoniyanın ağırlaşmalarına aid deyil:   ",
-    "answers": [
-      "ishal   ",
-      "plevrit   ",
-      "bullalar   ",
-      "pnevmotoraks   ",
-      "abseslər   "
-    ]
-  },
-  {
-    "question": "Pnevmoniyada infuzion terapiyaya göstəriş deyil:   ",
-    "answers": [
-      "öskürək   ",
-      "mikrosirkulasıyanın pozulması   ",
-      "irinli intoksikasiya   ",
-      "neyrotoksikoz   ",
-      "kəskin eksikoz   "
-    ]
-  },
-  {
-    "question": "Virus etiologiyalı obstruktiv bronxitin əsas müalicəsinə aid deyil:   ",
-    "answers": [
-      "antibiotik qəbulu   ",
-      "fizioprosedur   ",
-      "döş qəfəsinin vibrasion massajı   ",
-      "bəlğəmgətiricilərin istifadəsi   ",
-      "bronxolitiklərin qəbulu   "
-    ]
-  },
-  {
-    "question": "Kəskin sadə bronxitlər üçün xarakterdir:   ",
-    "answers": [
-      "normal, yaxud subfebril hərarət   ",
-      "perkutor səsin qısalması   ",
-      "tənəffüs çatışmazlığı   ",
-      "febril hərarət   ",
-      "yüksək intoksikasiya əlamətləri   "
-    ]
-  },
-  {
-    "question": "Kəskin pnevmoniya üçün xarakter deyil:   ",
-    "answers": [
-      "sərt tənəffüs fonunda yayılmış yaş və quru xırıltılar   ",
-      "Perkutor səsin qısalması   ",
-      "Rg-də lokal infiltrativ kölgəlik   ",
-      "3 gündən çox davam edən febril hərarət   ",
-      "lokal kiçik kalibrli yaş xırıltılar,yaxud krepitasiya   "
-    ]
-  },
-  {
-    "question": "Pnevmoniyanın ağciyərdaxili ağırlaşmalarına aid deyil:   ",
-    "answers": [
-      "damardaxili laxtalanma sindromu   ",
-      "pnevmotoraks   ",
-      "plevrit   ",
-      "absses   ",
-      "destruksiya   "
-    ]
-  },
-  {
-    "question": "Pnevmoniyanın ağciyərdaxili ağırlaşmalarına aiddir:   ",
-    "answers": [
-      "pnevmotoraks   ",
-      "atelektazlar   ",
-      "kəskin ürək-damaq çatışmazlığı   ",
-      "neyrotoksikoz   ",
-      "damardaxili laxtalanma sindromu   "
+      "Vertikal ",
+      "Sağ böyrü üstə ",
+      "Trendelenburq vəziyyəti ",
+      "Vəziyyətin əhəmiyyəti yoxdur ",
+      "Horizontal      "
     ]
   }
 ]
