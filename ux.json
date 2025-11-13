@@ -3,14 +3,14 @@
     "question": "Hamiləliyin 2-3-cü həftələrində embrionda hansı axacaq fəaliyyət göstərir? ",
     "answers": [
       "Uraxus ",
-      "Oftalmus ",
       "Ductus defferens ",
+      "Omfalos ",
       "Mekkel divertikulu ",
       "Yevstax borusu "
     ]
   },
   {
-    "question": "Embrional dövrdə embrionda fəaliyyət göstərən uraxus axacağı hansı  funksiyanı yerinə yetirir ? ",
+    "question": "Embrional dövrdə embrionda fəaliyyət göstərən uraxus axacağı hansı funksiyanı  yerinə yetirir ? ",
     "answers": [
       "Sidik kisəsi ilə amnion boşluğunu birləşdirən axar ",
       "Dölün qidalanmasını tənzimləyir ",
@@ -40,7 +40,7 @@
     ]
   },
   {
-    "question": "Uraxusun obliterasiya olmaması nəticəsində əmələ gələn anomaliyalardan  biri hansıdır? ",
+    "question": "Uraxusun obliterasiya olmaması nəticəsində əmələ gələn anomaliyalardan biri  hansıdır? ",
     "answers": [
       "Sidik kisəsinin divertikulu ",
       "Mekkel divertikulu ",
@@ -62,11 +62,11 @@
   {
     "question": "Göbəyin tam fistulu zamanı əmələ gələn fəsadlardan biri hansıdır? ",
     "answers": [
-      "İnvaginasiya ",
+      "Evaginasiya ",
       "Bağirsaq qanaxması ",
+      "İnvaginasiya ",
       "Kəskin appendisit ",
-      "Divertikulit ",
-      "Evaginasiya "
+      "Divertikulit "
     ]
   },
   {
@@ -100,30 +100,30 @@
     ]
   },
   {
-    "question": "Göbək nahiyəsindən damcı ilə sidiyin daimi axması zamanı hansı  anadangəlmə patologiya haqqında fikirləşmək lazımdır? ",
+    "question": "Göbək nahiyəsindən damcı ilə sidiyin daimi axması zamanı hansı anadangəlmə  patologiya haqqında fikirləşmək lazımdır? ",
     "answers": [
+      "Uraxusun tam fistulu ",
       "Sarı cisim axacağının fistulu ",
       "Divertikulit ",
       "Sidik kisəsinin divertikulu ",
-      "Uraxusun tam fistulu ",
       "Omfalit "
     ]
   },
   {
     "question": "Uraxusun fəsadlarından biri hansıdır? ",
     "answers": [
+      "Sidik kisəsinin divertikulu ",
       "Sarı cisim axacağının fistulu ",
       "Enterosistoma ",
       "Qanaxma ",
-      "Bağırsaq invaginasiyası ",
-      "Sidik kisəsinin divertikulu "
+      "Bağırsaq invaginasiyası "
     ]
   },
   {
     "question": "Mekkel divertikulunun iltihabı (divertikulit) zamanı müalicə taktikası nə  olmalıdır? ",
     "answers": [
-      "Konservativ müalicə ",
       "Cərrahi əməliyyat ",
+      "Konservativ müalicə ",
       "Antibiotikoterapiya ",
       "Müalicə tələb etmir ",
       "Dinamiki müşahidə "
@@ -132,10 +132,10 @@
   {
     "question": "Göbəyin natamam fistulu zamanı əsas müalicə üsulu hansıdır? ",
     "answers": [
+      "Konservativ müalicə ",
       "Cərrahi əməliyyat ",
       "Müalicə tələb etmir ",
       "Nass əməliyyatı ",
-      "Konservativ müalicə ",
       "Enteroanastomoz "
     ]
   },
@@ -152,11 +152,11 @@
   {
     "question": "Genetik inkişaf qüsuru olan, mədənin pilorik hissəsinin hipertrofiyası ilə  nəticələnən patologiya hansıdır? ",
     "answers": [
-      "Pilorospazm ",
+      "Pilorostenoz ",
       "Qastrit ",
       "Leddi sindromu ",
-      "Mədə divertikulu ",
-      "Pilorostenoz "
+      "Pilorospazm ",
+      "Mədə divertikulu "
     ]
   },
   {
@@ -200,7 +200,7 @@
     ]
   },
   {
-    "question": "Pilorostenozu çox vaxt hansı patologiya ilə differensiasiya etmək lazım  gəlir? ",
+    "question": "Pilorostenozu çox vaxt hansı patologiya ilə differensiasiya etmək lazım gəlir? ",
     "answers": [
       "Pilorospazm ",
       "Kəskin appendisit ",
@@ -216,7 +216,7 @@
       "Antibiotikoterapiya ",
       "Antispastik müalicə ",
       "Enteroanastomoz ",
-      "Vitaminoterapiya     "
+      "Konservativ müalicə "
     ]
   },
   {
@@ -260,12 +260,12 @@
     ]
   },
   {
-    "question": "Pilorostenoz zamanı mədənin pilorik hissəsində hansı dəyişikliklər baş  verir? ",
+    "question": "Pilorostenoz zamanı mədənin pilorik hissəsində hansı dəyişikliklər baş verir? ",
     "answers": [
       "Hipertrofiya ",
       "Atrofiya ",
       "Heç bir dəyişiklik baş vermir ",
-      "Genişlənmə ",
+      "Hipotrofiya ",
       "Nekroz "
     ]
   },
@@ -292,11 +292,11 @@
   {
     "question": "Anadangəlmə bağırsaq keçməzliyinə aiddir: ",
     "answers": [
+      "Nazik bağırsaq atreziyası ",
       "İnvaginasiya ",
       "Obturasion bağırsaq keçməzliyi ",
       "Dinamiki bağırsaq keçməzliyi ",
-      "Nazik bağırsaq atreziyası ",
-      "Mədə xorası "
+      "Evaginasiya "
     ]
   },
   {
@@ -306,21 +306,41 @@
       "Yoğun bağırsaq atreziyası ",
       "Onikibarmaq bağırsaq atreziyası ",
       "Acı bağırsaq atreziyası ",
-      "Nazik bağırsaqın çox saylı atreziyası "
+      "Leddi sindromu "
     ]
   },
   {
     "question": "Onikibarmaq bağırsaq atreziyasına xarakterik deyil: ",
     "answers": [
-      "Qarında kəskin ağrı ",
-      "Qusma ",
+      "Qanlı qusma ",
+      "Nəcisin olmaması ",
       "Qusuntuda çox vaxt ödün olması ",
       "Epiqastral nahiyədə köpün olması ",
-      "Qarın boşluğunun ön proyeksiyada çəkilən rentgenoqrafiyasında                      2 hava qovuqcuğunun olması "
+      "Qarın boşluğunun ön proyeksiyada çəkilən rentgenoqrafiyasında                     iki hava qovuqcuğunun olması "
     ]
   },
   {
-    "question": "Yemək borusu atreziyasının antenatal diaqnostik əlamətləri. ",
+    "question": "Onikibarmaq bağırsaq atreziyasına xarakterikdir: ",
+    "answers": [
+      "Qarın boşluğunun ön proyeksiyada çəkilən rentgenoqrafiyasında                          iki hava qovuqcuğunun olması ",
+      "Qarında kəskin ağrı ",
+      "Təsviri R-qrammada qarında sərbəst havanın olması ",
+      "Qarnın kəskin köpməsi ",
+      "Şotkin-Blumberq simptomun müsbət olması "
+    ]
+  },
+  {
+    "question": "Onikibarmaq bağırsaq atreziyasına xarakterik deyil: ",
+    "answers": [
+      "Düz bağırsaqdan qanlı ifrazat ",
+      "Tez-tez qusmanın olması ",
+      "Qusuntuda çox vaxt ödün olması ",
+      "Epiqastral nahiyədə köpün olması ",
+      "Qarın boşluğunun ön proyeksiyada çəkilən rentgenoqrafiyasında 2 hava  qovuqcuğunun olması "
+    ]
+  },
+  {
+    "question": "Yemək borusu atreziyasının antenatal sonoqrafiya zamanı diaqnostik əlamətlərini  göstərin. ",
     "answers": [
       "mikroqastriya, polihidroamniya ",
       "mikroqastriya, polidaktiliya ",
@@ -352,11 +372,11 @@
   {
     "question": "Yemək borusu atreziyasına aid deyil ",
     "answers": [
-      "qusma ",
+      "qəbul olunmuş qida ilə qusma ",
       "ağızdan selikli ifrazatın xaric olması ",
       "mekoni xaric olması ",
       "tənəffüs pozğunluğu ",
-      "burundan selikli ifrazatın xaric olması "
+      "akrosianoz "
     ]
   },
   {
@@ -410,17 +430,17 @@
     ]
   },
   {
-    "question": "Traxeoezofaqial fistulanın ən çox rast gələn variantı ? ",
+    "question": "Traxeoezofaqeal fistulanın ən çox rast gələn variantı ? ",
     "answers": [
       "qısa-enli ",
       "qısa-dar ",
-      "böyük əlaqəli ",
+      "bağ şəklində ",
       "uzun-dar ",
       "bir neçə fistulalı "
     ]
   },
   {
-    "question": "Traxeoezfaqial fistulanın klinik əlamətləri əsasən nə zaman artır? ",
+    "question": "Traxeoezfaqeal fistulanın klinik əlamətləri əsasən nə zaman artır? ",
     "answers": [
       "əmmə zamanı horizontal vəziyyətdə ",
       "əmmə zamanı vertikal vəziyyətdə ",
@@ -443,7 +463,7 @@
     "question": "Yemək borusu axalaziyası nə ilə xarakterizə olunur? ",
     "answers": [
       "kardial hissənin funksional keçiriciliyinin pozulması ",
-      "kardial hissənin stenozu ",
+      "qida borusunun stenozu ",
       "kardial hissənin genişlənməsi ",
       "yemək borusunun qısalması ",
       "yemək borusunun iltihabı "
@@ -452,11 +472,11 @@
   {
     "question": "Axalaziyanın səbəbi? ",
     "answers": [
-      "yemək borusunun auerbax kələfində sinir defisiti ",
+      "qida borusunun kardial sfinkterinin innervasiyasının pozulması ",
       "mədə zondlanmasında yemək borusunun deşilməsi ",
       "yemək borusunun yad cisimi ",
       "yemək borusunun yanığı ",
-      "mədə ezofaqial reflyuks "
+      "mədə-ezofaqeal reflyuks "
     ]
   },
   {
@@ -472,9 +492,9 @@
   {
     "question": "Axalaziyanın əsas diaqnostik metodu? ",
     "answers": [
-      "kontrast R-ezafaqoqrafiya ",
+      "kontrast R-ezofaqoqrafiya ",
       "icmal R-qrafiya ",
-      "ezafaqoskopiya ",
+      "qastroskopiya ",
       "KT müayinə ",
       "USM "
     ]
@@ -493,20 +513,20 @@
     "question": "Axalaziyanın radikal müalicə metodu ",
     "answers": [
       "cərrahi- kardiomiotomiya ezafaqokardiofundoplikasiya ",
-      "cərrahi- kardiomiotomiya ",
+      "cərrahi- qida borusu plastikası ",
       "bujlama ",
       "konservativ ",
-      "fizoterapevtik   "
+      "cərrahi- piloromiotomiya  "
     ]
   },
   {
     "question": "Kardiyanın xalaziyası nə ilə xarakterizə olunur ",
     "answers": [
-      "kardiyanın çatışmazlığı ilə ",
-      "kardiyanın spazmı ilə ",
-      "yemək borusunun genişlənməsi ilə ",
-      "yemək borusunun qısalığı ilə ",
-      "orta divararalığının yerdəyişməsi ilə "
+      "kardial sfinkterin çatışmazlığı ilə ",
+      "qida borusu venaların genişlənməsi ",
+      "«qisa qida borusu» ",
+      "divararası orqanların yerdəyişməsi ilə ",
+      "pilorik sfinkterin çatmazlığı ilə "
     ]
   },
   {
@@ -543,16 +563,16 @@
     "question": "Diafraqmal yırtığın əsas diaqnostik metodu hansıdır? ",
     "answers": [
       "həzm traktının kontrast R-müayinəsi ",
-      "qarın boşluğunun icmal R-müayinəsi ",
-      "ağciyərlərin fizikal müayinəsi ",
+      "invertoqramma ",
+      "sintiqrafiya ",
       "torakoskopiya ",
-      "USM "
+      "ultrasonoqrafiya "
     ]
   },
   {
     "question": "Anadangəlmə diafraqmal yırtıq üçün hansı xarakterikdir? ",
     "answers": [
-      "qarının ölçüləri kiçik olur   ",
+      "qarının ölçüləri kiçik olur ",
       "döş qəfəsinin ölçüsü kiçik olur ",
       "orta divararalığı pataloji tərəfə yerini dəyişir ",
       "ağciyərlər simmetrik olur ",
@@ -560,17 +580,17 @@
     ]
   },
   {
-    "question": "Ağciyər toxumasının bakterial destruksiyası nədir? ",
+    "question": "Ağciyər bakterial destruksiyası nədir? ",
     "answers": [
       "Ağciyər toxumasının irinli-iltihabi xəstəliyi ",
       "Ağciyər toxumasının inkişaf pozğunluğu ",
-      "Bronxların müxtəlif ölçüdə genişlənməsi ",
+      "Ağciyərlərin xroniki irinli-iltihabi xəstəliyi ",
       "Ağciyərlərdə ölçülü sistoz törəmələrin olması ",
-      "Döş qəfəsində havanın olması "
+      "Ağciyərlərin anadangəlmə pay emfizeması "
     ]
   },
   {
-    "question": "Uşaqlarda ağciyərlərdə bakterial destruksiyanı ən çox törədən bakterial  mühit hansıdır? ",
+    "question": "Uşaqlarda ağciyərlərdə bakterial destruksiyanı ən çox törədən bakterial mühit  hansıdır? ",
     "answers": [
       "Stafilakokk mənşəli flora ",
       "Eşrexia-koliflora ",
@@ -582,47 +602,47 @@
   {
     "question": "Bakterial destruksiyanın xroniki formaları hansılardır? ",
     "answers": [
-      "Xroniki abses, ağciyərlərin qazanılma sisti, plevranın empieması ",
+      "Xroniki abses, plevranın empieması ",
       "Exinokokk sisti, irinləmiş sist, emfizema ",
       "Bronxların amputasiyası ",
-      "Ağciyər vərəmi, ağciyər şişi, ağciyərin aqneziyası ",
-      "Bronxların genişlənməsi, amputasiyası "
+      "Ağciyər vərəmi, ağciyərin aqneziyası ",
+      "Bronxların genişlənməsi "
     ]
   },
   {
-    "question": "Ağciyərlərin bakterial destruksiyasında fizikal əlamətlər nə vaxt özünü  parlaq şəkildə göstərir? ",
+    "question": "Ağciyərlərin bakterial destruksiyasında klinik əlamətlər nə vaxt özünü parlaq  şəkildə göstərir? ",
     "answers": [
       "Plevral fəsadlar baş verdikdə ",
-      "Sidiyin ümumi analizində dəyişiklik olduqda ",
-      "Borulu sümüklərdə iltihab olduqda ",
-      "Qarında ağrılar olduqda ",
+      "Hemotoraksla fəsadlaşanda ",
+      "İnfeksiya hematoqen yolla ayrı orqanlara yayılanda ",
+      "Qarında kəskin ağrılar olduqda ",
       "Bədən hərarətinin yüksəldikdə "
     ]
   },
   {
-    "question": "Ağciyərlərin bakterial destruksiyasının başlanğıc formasında hansı  müayinə metodundan istifadə edirlər? ",
+    "question": "Ağciyərlərin bakterial destruksiyasının başlanğıc formasında hansı müayinə  metodundan istifadə edirlər? ",
     "answers": [
-      "R-qrafiya (döş qəfəsinin)     ",
+      "Təsviri R-qrafiya (döş qəfəsinin) ",
       "US- müayinəsi ",
-      "Ekskrotor uroqrafiya ",
-      "Kolonoskopiya ",
-      "Endoskopiya "
+      "Bronxoskopiya ",
+      "Bronxoqrafiya ",
+      "İnvertoqramma "
     ]
   },
   {
-    "question": "Ağciyərlərin bakterial destruksiyasında döş qəfəsinin R-qrafiyası hansı  vəziyyətdə aparılır? ",
+    "question": "Ağciyərlərin bakterial destruksiyasında döş qəfəsinin R-qrafiyası hansı  vəziyyətdə  aparılır? ",
     "answers": [
-      "Şaquli vəziyyətdə öndən və yandan ",
-      "Arxası üstə uzanmış vəziyyətdə ",
-      "Üzü üstə uzanmış vəziyyətdə ",
-      "Sol yanı üstə uzanmış vəziyyətdə ",
+      "Vertikal vəziyyətdə, ön və yan proeksiyalarda ",
+      "Arxası üstə uzanmış vəziyyətdə, ön proeksiyada ",
+      "Üzü üstə uzanmış vəziyyətdə, ön və yan proeksiyalarda ",
+      "İnvertoqramma ",
       "Trendlenburq vəziyyəti "
     ]
   },
   {
-    "question": "Ağciyərlərin  bakterial  destruksiyasında  döş  qəfəsi  orqanlarının                      R-qrafiyasında hansı əlamət əsasdır? ",
+    "question": "Ağciyərlərin bakterial destruksiyasında döş qəfəsi orqanlarının R-qrafiyasında  hansı əlamət əsasdır? ",
     "answers": [
-      "Ağciyər toxumasının şəffaflığına və divararalığı orqanlarının sağlam  tərəfə yerdəyişməsinə ",
+      "Ağciyər toxumasının şəffaflığına və divararalığı orqanlarının sağlam tərəfə  yerdəyişməsinə ",
       "Hər iki ağciyər toxumasının sıxılmasına ",
       "Hər iki ağciyərdə kistoz törəmənin olmasına ",
       "Hər iki ağciyərdə heç bir dəyişikliyin olmamasına ",
@@ -630,17 +650,17 @@
     ]
   },
   {
-    "question": "Ağciyərlərin R-qrafiyasında bulloz formalı destruksiya üçün xarakterik  əlamət nədir? ",
+    "question": "Ağciyərlərin R-qrafiyasında bulloz formalı destruksiya üçün xarakterik əlamət  nədir? ",
     "answers": [
       "Bir və ya bir neçə nazik qişaya malik havalı boşluğun olması ",
       "Bir və ya bir neçə iki kapsulaya malik mayeli sistin olması ",
-      "Bir və ya bir neçə nazik kapsulaya malik yarıhavalı, mayeli sistin  olması ",
+      "Bir və ya bir neçə nazik kapsulaya malik yarıhavalı, mayeli sistin olması ",
       "Bir və ya bir neçə gərginləşmiş mayeli sistin olması ",
       "Qalın divara malik mayeli sistin olması "
     ]
   },
   {
-    "question": "Bulloz formalı destruksiyanın digər formalardan fərqləndirici xüsusiyyəti  nədir? ",
+    "question": "Bulloz formalı destruksiyanın digər formalardan fərqləndirici xüsusiyyəti nədir?",
     "answers": [
       "Onlar müalicəyə tabe olurlar ",
       "Onlar müalicəyə tabe olmurlar ",
@@ -650,33 +670,33 @@
     ]
   },
   {
-    "question": "Ağciyərlərin plevral fəsadları ilə olan destruksiyanın diaqnostikasında əsas  müayinə metodu hansılardır? ",
+    "question": "Ağciyərlərin plevral fəsadları ilə olan destruksiyanın diaqnostikasında əsas  müayinə metodları hansılardır? ",
     "answers": [
-      "Ağciyərlərin R-qrafiyası və plevranın punksiyası ",
-      "Qarın boşluğunun KT müayinəsi ",
-      "Qarın boşluğunun US müayinəsi ",
-      "Qanın və sidiyin ümumi analizi ",
-      "Ekskretor uroqrafiya "
+      "Ağciyərlərin təsviri R-qrafiyası və plevranın punksiyası ",
+      "Ağciyərlərin təsviri R-qrafiyası, bronxoskopiya  ",
+      "Bronxoskopiya ",
+      "Bronxoqrafiya ",
+      "Sintiqrafiya "
     ]
   },
   {
     "question": "Piopnevmotoraksda rentgenoloji mənzərə necə olur? ",
     "answers": [
-      "Ağciyər toxumasının şəffaflığı azalır, ağciyərın kökünə doğru sıxılır ",
-      "Heç bir patologiya müəyyən edilmir. ",
-      "Divar aralığında iri həcmli törəmə qeyd edilir. ",
-      "Ağciyər toxumasının əzilməsi qeyd edilir. ",
-      "Ağciyər toxumasında çoxsaylı sistlər "
+      "Plevral boşluğunda qaz-maye səviyyələrin olması ",
+      "Divararalığı orqanların patologiya olan tərəfə yerdəyişməsi ",
+      "Diafraqmanın yüksək duruşu ",
+      "Qalın divarlı sistin müəyyənləşdirilməsi ",
+      "Ağciyər toxumasında çoxsaylı sistlərin olması "
     ]
   },
   {
-    "question": "Plevritin neçə forması var? ",
+    "question": "Plevrit təsnifatla hansı formalarda olur? ",
     "answers": [
       "Total, eksudativ, fibroz ",
-      "Kompensator, subkompensator, dekompensator ",
+      "Kataral, fleqmonoz, qanqrenoz ",
       "Kompression, subkompression, dekompression ",
       "Gərginləşmiş və gərginləşməmiş ",
-      "Heç bir forması yoxdur. "
+      "Birincili, ikincili "
     ]
   },
   {
@@ -700,29 +720,29 @@
     ]
   },
   {
-    "question": "Abses və piopnevmatoraksı ağciyərin anadangəlmə sisti ilə necə  differensasiya etmək olar? ",
+    "question": "Təsviri R-qrafiya zamanı ağciyərin anadangəlmə sisti ilə olan xəstələrdə hansı  mənzərəyə rast gəlinir? ",
     "answers": [
-      "Rentgenoqrammada sistin nazik kapsulu aydın görünür ",
-      "Rentgenoqrammada hər iki ağciyərin sıxılması ",
-      "Mediastenitin olması ",
-      "Rentgenoqrammada qabırqaların osteoparozu ",
-      "Piopnevmotoraks zamanı plevral boşluqda hava qeyd olunmur "
+      "Nazik kapsulu olan sist görünür ",
+      "Hər iki ağciyərin sıxılması ",
+      "Mediastenit əlamətləri ",
+      "Qabırqaların osteoporozu ",
+      "Plevral boşluqda hava qeyd olunur "
     ]
   },
   {
-    "question": "Anadangəlmə bronxoektaziyanın əmələ gəlməsində əsas inkişaf qüsuru  hansıdır? ",
+    "question": "Anadangəlmə bronxoektaziyanın əmələ gəlməsində əsas inkişaf qüsuru hansıdır? ",
     "answers": [
       "Bronxların distal hissəsinin aqeneziyası ",
       "Ağciyərlərin aqneziyası ",
       "Ağciyərlərin hipoplaziyası ",
-      "Döş qəfəsinin inkişaf qüsuru ",
+      "Pay bronxların hipoplaziyası ",
       "Ağciyərlərin aplaziyası "
     ]
   },
   {
     "question": "Bronxoektaziyanın rentgenoloji mənzərəsi necə olur? ",
     "answers": [
-      "Ağciyərin atelektazı və ya arı şanını xatırladan şəffaf kölgəliyin  olması ",
+      "Ağciyərin atelektazı və ya «arı şanını» xatırladan şəffaf kölgəliyin olması ",
       "Çox saylı havalı sistlərin olması ",
       "Qalın divara malik içi hava və maye kistoz törəmənin olması ",
       "Plevra boşluğunda havanın olması ",
@@ -730,7 +750,7 @@
     ]
   },
   {
-    "question": "Boynun orta fistulun residivinin qarşısını almaq üçün hansını etmək  lazımdır? ",
+    "question": "Boynun orta sistinə gorə əməliyyatdan sonraki dövrdə residivinin qarşısını almaq üçün hansını etmək mütləqdir? ",
     "answers": [
       "Dilaltı sümüyün rezeksiyası ",
       "Fistulun fassiyanın səthinə qədər ayrılması ",
@@ -740,7 +760,7 @@
     ]
   },
   {
-    "question": "Göbək dəbəliyini göbək ciyəsi dəbəliyindən ayıran xüsusiyyət hansıdır ? ",
+    "question": "Göbək dəbəliyini göbək ciyəsi dəbəliyindən ayıran xüsusiyyətlərdən biri hansıdır ? ",
     "answers": [
       "Dəbəlik kisəsi üzərində dəri örtüyünün olması ",
       "Dəbəlik kisəsi üzərində varton örtüyünün olması ",
@@ -750,11 +770,11 @@
     ]
   },
   {
-    "question": "Qastroşizis müalicəsi yalnız hansı üsuldur ? ",
+    "question": "Qastroşizis radikal müalicəsi yalnız hansı üsulla aparılmalıdır ? ",
     "answers": [
-      "Ancaq cərrahi üsul ",
-      "Ancaq konservativ üsul ",
-      "Heç bir müalicə üsulu yoxdur ",
+      "Cərrahi  ",
+      "Konservativ  ",
+      "Müalicə üsulu yoxdur ",
       "Fizioterapiya ",
       "Fundoplikasiya "
     ]
@@ -770,13 +790,23 @@
     ]
   },
   {
-    "question": "Böyük ölçülü ventral dəbəliyin radikal müalicə üsulu hansıdır ? ",
+    "question": "Böyük ventral yırtıq üçün hansı müalicə növü istifadə olunur? ",
     "answers": [
+      "Cərrahi müalicə ",
       "Konservativ müalicə ",
-      "Ultrasonaqrafiya ",
+      "Ultrasəs müayinəsi ",
       "Fizioterapiya ",
-      "Masaj ",
-      "Cərrahi müalicə "
+      "Masaj  "
+    ]
+  },
+  {
+    "question": "Qastroşizis nədir? ",
+    "answers": [
+      "Daxili orqanların bətndaxili eventrasiyası ",
+      "Embrional yirtıq ",
+      "Sərt damağın yarığı ",
+      "Qarnın ön divarının aplaziyası ",
+      "Nazik bağırsaq atreziyasının bir növü "
     ]
   },
   {
@@ -790,7 +820,7 @@
     ]
   },
   {
-    "question": "Peritonun yataq çıxıntısının obliterasiya prosesinin pozulmasına aşağıda  qeyd olunanlardan biri aid deyil ? ",
+    "question": "Peritonun yataq çıxıntısının obliterasiya prosesinin pozulmasına aşağıda qeyd  olunanlardan biri aid deyil ? ",
     "answers": [
       "Xayanın ektopiyası ",
       "Qasıq-xayalıq yırtığı ",
@@ -800,7 +830,7 @@
     ]
   },
   {
-    "question": "Qasıq yırtğını qeyd olunan patologiylardan hansı ilə differensasiya etmək  lazım gəlir? ",
+    "question": "Qasıq yırtğını qeyd olunan patologiylardan hansı ilə differensasiya etmək lazım  gəlir? ",
     "answers": [
       "Hidrosele ",
       "Varikosele ",
@@ -810,23 +840,23 @@
     ]
   },
   {
-    "question": "Boğulmuş qasıq yırtğı qeyd olunan patologiylardan hansı ilə differensasiya  olunmur ? ",
+    "question": "Qasıq yırtğı qeyd olunan patologiylardan hansı ilə differensasiya olunmur? ",
     "answers": [
-      "Hidrosele ",
-      "Limfaadenit ",
+      "Varikosele ",
+      "Limfadenit ",
       "Bud yırtığı ",
-      "Anorxizm ",
-      "Toxum ciyəsinin kəskin sisti "
+      "Hidrosele ",
+      "Toxum ciyəsinin sisti "
     ]
   },
   {
-    "question": "Qasıq-xayalıq yırtığı ilə hidroselini differensasiya etmək üçün istifadə  olunan ən sadə müayinə üsulu hansıdır? ",
+    "question": "Qasıq-xayalıq yırtığı ilə hidroseleni differensasiya etmək üçün istifadə olunan  ən  sadə müayinə üsulu hansıdır? ",
     "answers": [
       "Diafonoskopiya ",
       "Rentgen müayinə ",
       "Laborator müayinə ",
       "Ultrasəs müayinə ",
-      "Sidiyin ümumi müayinəsi   "
+      "Sidiyin ümumi müayinəsi "
     ]
   },
   {
@@ -835,8 +865,8 @@
       "Peritonun yataq çıxıntısının proksimal bağlanması ",
       "Alloplastik üsullarla xarici cəp əzələnin plastikası ",
       "Alloplastik üsullarla arxa divarın plastikası ",
-      "Həm ön, həm də arxa divarın plastikası ",
-      "Alloplastik üsullarla ön divarın plastikası "
+      "Qasıq kanalının həm ön, həm də arxa divarın plastikası ",
+      "Qasıq kanalının ön divarın plastikası "
     ]
   },
   {
@@ -856,7 +886,7 @@
       "xarici çəp əzələnin aponevrozu ",
       "daxili cəp əzələnin və köndələn fassiya ",
       "köndələn fassiya ",
-      "pupart bağı "
+      "Pupart bağı "
     ]
   },
   {
@@ -864,9 +894,9 @@
     "answers": [
       "Təcili cərrahi müalicə ",
       "Konservativ müalicə ",
-      "Ultrasonaqrafiya ",
-      "hec bir müalicə tələb etmir ",
-      "irroqrafiya "
+      "Spazmolitiklərin təyin edilməsi ",
+      "Hec bir müalicə tələb etmir ",
+      "Planlı əməliyyat "
     ]
   },
   {
@@ -880,7 +910,7 @@
     ]
   },
   {
-    "question": "Nazik bağırsaq atreziyasına görə əməliyyat olunmuş uşaqda əməliyyatdan  sonra ən çox rast gəlinən ağırlaşma ",
+    "question": "Nazik bağırsaq atreziyasına görə əməliyyat olunmuş uşaqda əməliyyatdan sonra ən  çox rast gəlinən ağırlaşma hansıdır? ",
     "answers": [
       "Bağırsağın davamlı parezi ",
       "Pnevmoniya ",
@@ -890,7 +920,7 @@
     ]
   },
   {
-    "question": "Yuxarı formalı anadangəlmə bağırsaq keçməzliyi üçün hansı kliniki  əlamətlər xarakterikdir? ",
+    "question": "Yuxarı formalı anadangəlmə bağırsaq keçməzliyi üçün hansı kliniki əlamətlər  xarakterikdir? ",
     "answers": [
       "Doğulan anadan ödlü qusma və epiqastral nahiyənin köpməsi ",
       "İkinci sutkadan mekoneal qusma ",
@@ -910,12 +940,12 @@
     ]
   },
   {
-    "question": "Göbək həlqəsi 4,5 sm ölçüdə olan embrional dəbəliklə olan 2 saat bundan  əvvəl doğulmuş uşağa nə göstərişdir? ",
+    "question": "Göbək həlqəsi 4,5 sm ölçüdə olan embrional dəbəliklə olan 2 saat bundan əvvəl  doğulmuş uşağa nə göstərişdir? ",
     "answers": [
       "Təcili radikal əməliyyat ",
-      "Qarın boşluğunun təsviri rentgenoqrafiyası ",
+      "Duamel üsulu ilə planlı əməliyyat ",
       "Kali permanqanatla qişanın işlənməsi ",
-      "2- 4 saatlıq hazırlıqdan sonra I etapda Qross əməliyyatı ",
+      "2 - 4 saatlıq hazırlıqdan sonra I etap Qross əməliyyatı ",
       "Həyatın 2-ci sutkasında radikal əməliyyat "
     ]
   },
@@ -930,19 +960,19 @@
     ]
   },
   {
-    "question": "Embrional göbək ciyəsi dəbəliyinin əmələ gəlməsində hansı anatomik  hissənin qüsuru aparıcı rol oynayır? ",
+    "question": "Embrional göbək ciyəsi dəbəliyinin əmələ gəlməsində hansı anatomik hissənin  qüsuru aparıcı rol oynayır? ",
     "answers": [
       "Qarın divarının apanevroz-əzələ qatının defekti ",
       "Qarın dərisinin defekti ",
       "Göbək damarlarının inkişaf qüsuru ",
       "Göbək ciyəsinin yerləşmə anomaliyası ",
-      "Bütün göstərilənlərin hamısı   "
+      "Bütün göstərilənlərin hamısı "
     ]
   },
   {
     "question": "Embrional göbək ciyəsi dəbəliyində cərrahi müalicədə əsas məqsəd nədən  ibarətdir? ",
     "answers": [
-      "Qarnın ön divarının apanevroz-əzələ defektinin plastikası ",
+      "Qarnın ön divarının aponevroz-əzələ defektinin plastikası ",
       "Dəri defektinin bağlanması ",
       "Defektdən xaricdə olan bağırsaqların bir hissəsinin rezeksiyası ",
       "Qarın boşluğunun həcminin böyüdülməsi ",
@@ -953,31 +983,520 @@
     "question": "Bağırsaq keçməzliyi zamanı qusuntunun ödlü olması nəyi bildirir? ",
     "answers": [
       "Keçməzliyin Fater məməciyindən distal səviyyədə olmasını ",
-      "Keçməzliyin  Fater  məməciyindən  proksimal  səviyyədə  olmasını ",
+      "Keçməzliyin Fater məməciyindən proksimal səviyyədə olmasını ",
       "Keçməzliyin pilorik sfinkter səviyyəsində olmasını ",
       "Keçməzliyin kardial sfinkter səviyyəsində olmasını ",
       "12 barmaq bağırsaq atreziyasının olmasını "
     ]
   },
   {
-    "question": "Hər dəfə bərk qida qəbulundan sonra həll olunmamış qida ilə qusma hansı  patologiyaya daha uyğundur? ",
+    "question": "Hər dəfə bərk qida qəbulundan sonra həll olunmamış qida ilə davamlı qusma  hansı patologiyaya daha uyğundur? ",
     "answers": [
-      "Pilorospazm ",
-      "Pilozostenoz ",
-      "Ledde sindromu ",
       "Yemək borusunun stenozu ",
+      "Pilozostenoz ",
+      "Pilorospazm ",
+      "Ledde sindromu ",
       "Yemək borusunun atreziyası "
     ]
   },
   {
-    "question": "Yemək borusunun atreziyasının traxeya arasında fistula olan xəstəni  təxliyyə (transportirvka) etdikdə hansı vəziyyətdə aparmaq daha düzgündür? ",
+    "question": "Qeyd olunan anadangəlmə patologiyalardan hansı bağırsaq fırlanması  prosesinin pozulmasında yarana bilər: ",
     "answers": [
-      "Vertikal ",
-      "Sağ böyrü üstə ",
-      "Trendelenburq vəziyyəti ",
-      "Vəziyyətin əhəmiyyəti yoxdur ",
-      "Horizontal      "
+      "Ledd sindromu ",
+      "meconial bağırsaq keçməzliyi ",
+      "çoxsaylı “sosis” atreziyaları ",
+      "mədənin pilorik hissəsinin membranı ",
+      "siqmavari bağırsağın kəskin burulması  "
+    ]
+  },
+  {
+    "question": "Anadangəlmə aşağı bağırsaq keçməzliyinin əsas rentgenoloji əlamətini göstərin: ",
+    "answers": [
+      "çoxlu maye səviyyələrinin olması ",
+      "diafraqma günbəzi altında sərbəst qaz ",
+      "bağırsaq pnevmatozu ",
+      "uzanmış mədə, bağırsaq ilgəklərində qazın olmaması ",
+      "iki üfüqi səviyyənin olması "
+    ]
+  },
+  {
+    "question": "Anadangəlmə bağırsaq keçməzliyinin səbəbi hansıdır: ",
+    "answers": [
+      "bağırsaq borusunun malformasiyaları ",
+      "doğuş travması ",
+      "yarımçıq doğulma ",
+      "polihidramnioz ",
+      "bətndaxili infeksiyalar "
+    ]
+  },
+  {
+    "question": "Anadangəlmə bağırsaq keçməzliyinin səbəbi: ",
+    "answers": [
+      "bağırsağın fırlanma və fiksasiya anomaliyaları ",
+      "yarımçıq doğulma ",
+      "polihidramnioz ",
+      "doğuş travması ",
+      "bağırsaq fiksasiyası "
+    ]
+  },
+  {
+    "question": "Dölün antenatal ultrasəs müayinəsi zamanı “double-bubble” əlaməti aşkar  edildikdə hansı diaqnozu düşünmək olar? ",
+    "answers": [
+      "12 - barmaq bağırsaq atreziyası ",
+      "acı bağırsaq atreziyası ",
+      "qalça bağırsaq atreziyası  ",
+      "mədə keçməzlyi ",
+      "Ledd sindromu "
+    ]
+  },
+  {
+    "question": "Xəstəliyi 11 saat davam edən 6 aylıq invaginasiyalı uşaq üçün müalicə  strategiyanız necə olardı? ",
+    "answers": [
+      "konservativ üsul ilə açılma  ",
+      "planlı  əməliyyat ",
+      "təcili əməliyyat ",
+      "təxirəsalınmaz əməliyyat? ",
+      "dinamiki müşahidə "
+    ]
+  },
+  {
+    "question": "Hansı xəstəlik qanla qusmaya (hematemez) səbəb olmur? ",
+    "answers": [
+      "Ledd sindromu ",
+      "eroziv qastrit ",
+      "mədə xorası ",
+      "Mallory-Weiss sindromu ",
+      "boğulmuş hiatal yırtıq "
+    ]
+  },
+  {
+    "question": "Etiologiyası bilinməyən bağırsaq qanaxmalarının diaqnostikası zamanı Mekkel  divertikulunun mövcudluğunu hansı müayinə metodu daha dəqiq müəyyən  edəcək? ",
+    "answers": [
+      "sintiqrafiya ",
+      "kolonoskopiya ",
+      "laparoskopiya ",
+      "fibroqastroduodenoskopiya ",
+      "mədə-bağırsaq traktının kontrast müayinəsi "
+    ]
+  },
+  {
+    "question": "Uşaqlarda invaginasiyanın hansı növü daha çox rast gəlinir (90%-ə qədər): ",
+    "answers": [
+      "qalça-çənbər ",
+      "nazik-nazik bağırsaq ",
+      "kor-çənbər ",
+      "yoğun-yoğun bağırsaq ",
+      "onların heç biri "
+    ]
+  },
+  {
+    "question": "Bağırsaq  invaginasiyasında qarın ağrısının xarakteri: ",
+    "answers": [
+      "qarında tutmaşəkilli ağrı ",
+      "qarında ağrının tədricən artması ",
+      "qarında daimi kəskin ağrı ",
+      "qarın boşluğunda local ağrı ",
+      "qarında daimi sızlayan ağrı "
+    ]
+  },
+  {
+    "question": "İnvaginasiyanı hansı xəstəlikdən diferensasiya etmək lazımdır? ",
+    "answers": [
+      "onların hamısı ilə ",
+      "dizenteriyanın kəskin forması ",
+      "mədə-bağırsaq traktının funksional pozğunluqları ",
+      "salmonellyozun bağırsaq forması ",
+      "kəskin appendisit "
+    ]
+  },
+  {
+    "question": "8 aylıq uşaqda qəflətən qarında sancışəkilli ağrı və qusma əmələ gəlib. 8  saatdan sonra rektal müayinədə \"moruğ jelesi\" tipli qan aşkar edildi.  Sizin  ehtimal etdiyiniz diaqnoz? ",
+    "answers": [
+      "invaginasiya ",
+      "rektal polip ",
+      "düz bağırsağın selikli qişasının çatlaması ",
+      "duodenal xora ",
+      "kəskin appendisit "
+    ]
+  },
+  {
+    "question": "Portal hipertenziyalı xəstələrdə qida borusundan profuz qanaxmanın səbəbini  göstərin: ",
+    "answers": [
+      "qida borusunun varikoz damarları ",
+      "eroziv ezofagit ",
+      "qida borusu divertikulu ",
+      "qida borusunun polipi ",
+      "qida borusunun stenozu "
+    ]
+  },
+  {
+    "question": "İnvaginasiyanı təyin etmək üçün ən informativ metodu göstərin: ",
+    "answers": [
+      "irriqoqrafiya ",
+      "rektoskopiya ",
+      "qarın boşluğunun palpasiyası ",
+      "qarın boşluğunun icmal rentgenoqrafiyası ",
+      "scintiqrafiya "
+    ]
+  },
+  {
+    "question": "Peritonun qıcıqlanma simptomunu göstərin: ",
+    "answers": [
+      "Şotkin – Blümberq simptomu ",
+      "Voskresenskiy ",
+      "Merfi ",
+      "Rovzinq ",
+      "Sitkovskiy "
+    ]
+  },
+  {
+    "question": "Rentgenoqrafiyada xəstənin hansı vəziyyətində pnevmoperitoneum aşkar oluna  bilər? ",
+    "answers": [
+      "şaquli vəziyyətində ",
+      "Vangenstin   ",
+      "sol  yan tərəfdə ",
+      "sağ yan tərəfdə ",
+      "arxası üstə uzanan "
+    ]
+  },
+  {
+    "question": "Hirşprunq xəstəliyinin etiopatogenezində əsas faktor: ",
+    "answers": [
+      "bağırsaq divarında sinir kələfinin anadangəlmə olmaması və ya inkişafdan  qalması ",
+      "mərkəzi mənşəli bağırsağın funksiyasının requlyasiyasının pozulması ",
+      "bağırsaq borusunun inkişaf qüsuru ",
+      "bağırsaq fırlanması prosesinin pozulması ",
+      "yarımçıq doğulmuş "
+    ]
+  },
+  {
+    "question": "Hirşprunq xəstəliyində uzun sürən qəbizlik fonunda “paradoksal ishal”ın  yaranmasına səbəb nədir? ",
+    "answers": [
+      "ağır disbakterioz ",
+      "nazik bağırsaqda iltihab prosesinin inkişafı ",
+      "imalələrə reaksiya ",
+      "işlədici dərmanlar qəbuluna reaksiya ",
+      "Hirşprunq xəstəliyində rast gəlmir "
+    ]
+  },
+  {
+    "question": "Funksional meqakolonun əsas müalicəsi hansıdır? ",
+    "answers": [
+      "əsas xəstəliyin konservativ müalicəsi və yoğun bağırsağın funksiyasının  korreksiyası ",
+      "yalnız cərrahi müalicə ",
+      "konservativ müalicə effektsiz olduqda cərrahi müalicə ",
+      "bağırsağın genişlənmiş hissəsinin rezeksiyası ",
+      "müalicə tələb etmir "
+    ]
+  },
+  {
+    "question": "Ağciyərlərin bakterial destruksiyasının ağciyərdaxili ağırlaşmasını göstərin: ",
+    "answers": [
+      "abses ",
+      "lobar amfizema ",
+      "sekvestrasiya ",
+      "qanqrena ",
+      "ağciyər sekvestrasiyası "
+    ]
+  },
+  {
+    "question": "Rentgenoqrammada dəyişmiş parenxima fonunda dəqiq konturlu nazik divarlı  hava boşluqları aşkar edilir. Ən çox ehtimal olunan diaqnozunuz hansıdır? ",
+    "answers": [
+      "ağciyərlərin bakterial destruksiyasının büllöz forması ",
+      "ağciyər absesi ",
+      "pnevmotoraks ",
+      "piopnevmotoraks ",
+      "ağciyərin solitar sisti "
+    ]
+  },
+  {
+    "question": "Rentgenoqrafiyada mediastinumun zədələnmiş tərəfə yerdəyişməsi ilə plevra  boşluğunun tam qaralması? aşkar edilir.  Ən çox ehtimal olunan diaqnozu  göstərin: ",
+    "answers": [
+      "ağciyər atelektazı ",
+      "total plevra empiyeması ",
+      "gərgin total empiyema ",
+      "fibrinoz plevrit ",
+      "piopnevmotoraks "
+    ]
+  },
+  {
+    "question": "Rentgen müayinəsi mediastinumun əks tərəfə yerdəyişməsini, ağciyərin  kollapsını, plevra boşluğunda çoxlu miqdarda havanın olduğunu göstərir.  Diaqnozunuz: ",
+    "answers": [
+      "gərgin pnevmotoraks ",
+      "gərgin hidropnevmotoraks ",
+      "nəhəng kortikal abses ",
+      "total plevra empiyeması ",
+      "piopnevmotoraks "
+    ]
+  },
+  {
+    "question": "Hirşprunq xəstəliyinin xarakterik rentgenoloji əlamətini göstərin: ",
+    "answers": [
+      "bağırsaqda daralmış və suprastenotik genişlənmiş zonanın olması ",
+      "bağırsaqda yalnız daralmış zonanın olması ",
+      "genişlənmiş bağırsaq ilgəkləri ",
+      "diafraqma günbəzi altında sərbəst qaz ",
+      "əlavə bağırsaq  ilgəyinin  olması "
+    ]
+  },
+  {
+    "question": "Böyük yaşlı uşaqlarda kəskin appendisiti hansı xəstəliklərdən differensiasiya  etmək lazım deyil? ",
+    "answers": [
+      "kriptorxizmin abdominal forması ",
+      "sağ aşağı payın kəskin pnevmoniyası ",
+      "kəskin mezadenit ",
+      "sidik yollarının infeksiyası ",
+      "yumurtalıqların burulması "
+    ]
+  },
+  {
+    "question": "Kəskin appendisitin tipik gedişində ağrının xarakteri necədir? ",
+    "answers": [
+      "daimi  ",
+      "periodik  ",
+      "tutmaşəkilli ",
+      "ağrı yoxdur ",
+      "təkrarlanan "
+    ]
+  },
+  {
+    "question": "Böyük yaşlı uşaqlarda tipik gedişli kəskin appendisitin  simptomların  ardıcıllığını göstərin: ",
+    "answers": [
+      "qarın ağrısı, ürəkbulanma, qusma, qızdırma ",
+      "bədən hərarətinin artması, ürəkbulanma, qusma, ishal, qarın ağrısı ",
+      "ürəkbulanma, qusma, ishal, qarın ağrısı, qızdırma ",
+      "ürəkbulanma olmadan qusma, tutmaşəkilli qarın ağrısı, bədən hərarətinin  artması,  ",
+      "simptomların ardıcıllığı yoxdur "
+    ]
+  },
+  {
+    "question": "3 yaşa qədər uşaqlarda kəskin appendisitin hansı əlaməti yuxu zamanı müəyyən  edilir? ",
+    "answers": [
+      "qarın ön divarının əzələlərinin passiv gərginliyi ",
+      "qarın ön divarının əzələlərinin aktiv gərginliyi ",
+      "Rovsing əlaməti ",
+      "“öskürək təkanı” simptomu ",
+      "Ortner əlaməti "
+    ]
+  },
+  {
+    "question": "1 yaşdan yuxarı uşaqlarda peritonitin ən çox rast gələn səbəbini göstərin: ",
+    "answers": [
+      "kəskin appendisit ",
+      "aşağı payın kəskin pnevmoniyası ",
+      "kəskin pankreatit ",
+      "perforasiya olunmuş mədə xorası ",
+      "boğulmuş qasıq yırtığı "
+    ]
+  },
+  {
+    "question": "Uşaqlarda invaginasiyanın ilkin mərhələsində qarının palpasiyası nəyi aşkar  edir? ",
+    "answers": [
+      "yumşaq qarın ",
+      "taxta qarın ",
+      "qarın əzələlərinin gərginliyi ",
+      "Şotkin-Blümberq simptomu ",
+      "“qum saatı” simptomu "
+    ]
+  },
+  {
+    "question": "Aşağıdakı simptomlar kompleksi ilə xarakterizə olunan sindromu göstərin:  mikrogeniya, damaq yarığı, qlossoptoz. ",
+    "answers": [
+      "Pierre- Robin ",
+      "Marfan ",
+      "Daun ",
+      "Poland ",
+      "Barrett qida borusu "
+    ]
+  },
+  {
+    "question": "Xoanaların atreziyası olan yenidoğulmuş uşaq doğulduqdan dərhal sonra hansı  simptomlarla qarşılaşır? ",
+    "answers": [
+      "kəskin tənəffüs çatışmazlığı ",
+      "ürək pozğunluqları ",
+      "heç bir pozuntu aşkar edilmir ",
+      "görmə pozğunluğu ",
+      "defekasiya aktının olmaması "
+    ]
+  },
+  {
+    "question": "Dilaltı nahiyədə, ağız dibinin əzələlərinin içində yerləşən anadangəlmə sist  necə  adlanır? ",
+    "answers": [
+      "Ranula ",
+      "Enterosistoma ",
+      "Limfoma ",
+      "hemangioma ",
+      "Nukki sisti "
+    ]
+  },
+  {
+    "question": "Döş qəfəsinin anadangəlmə deformasiyalarına nə aid edilmir? ",
+    "answers": [
+      "Daun sindromu ",
+      "qıfvari deformasiya  ",
+      "pectus carinatum ",
+      "döş sümüyünün yarığı ",
+      "Poland sindromu "
+    ]
+  },
+  {
+    "question": "Pectus exavatum olan xəstələrdə hansı əməliyyat aparılır? ",
+    "answers": [
+      "Nass əməliyyatı  ",
+      "Nissen fundoplikasiyası  ",
+      "Dühamel əməliyyatı ",
+      "Svenson əməliyyatı ",
+      "Soave əməliyyatı  "
+    ]
+  },
+  {
+    "question": "Anadangəlmə dodaq yarığı üçün hansı əməliyyat aparılır? ",
+    "answers": [
+      "xeyloplastika ",
+      "Nass əməliyyatı   ",
+      "blefaroplastika ",
+      "Svenson əməliyyatı ",
+      "uranoplastika "
+    ]
+  },
+  {
+    "question": "Anadangəlmə damaq yarığı üçün hansı əməliyyat aparılır? ",
+    "answers": [
+      "uranoplastika ",
+      "Nass əməliyyatı   ",
+      "blefaroplastika ",
+      "Svenson əməliyyatı ",
+      "xeyloplastika  "
+    ]
+  },
+  {
+    "question": "Qalxanabənzər-dilaltı  axarın geriyə inkişafının pozulması nəticəsində hansı  malformasiya əmələ gəlir? ",
+    "answers": [
+      "boynun orta sisti ",
+      "boynun yan sisti   ",
+      "ranula ",
+      "enterokistoma ",
+      "ateroma "
+    ]
+  },
+  {
+    "question": "Timus vəzinin axarının geriyə inkişafının pozulması nəticəsində hansı  malformasiya əmələ gəlir? ",
+    "answers": [
+      "boynun  yan sisti    ",
+      "boynun orta sisti ",
+      "ranula ",
+      "enterokistoma ",
+      "ateroma "
+    ]
+  },
+  {
+    "question": "Orta və yan boyun sistlərinin müalicə üsulunu göstərin? ",
+    "answers": [
+      "əməliyyat    ",
+      "konservativ ",
+      "skleroterapiya ",
+      "krioterapiya ",
+      "müalicə tələb etmir "
+    ]
+  },
+  {
+    "question": "Qastroşizis və omfalosele arasında əsas fərq nədir? ",
+    "answers": [
+      "yırtıq kisəsinin olmaması   ",
+      "yırtıq kisəsi var ",
+      "yırtıq qapısı yoxdur ",
+      "yırtıq möhtəviyyatı yoxdur ",
+      "fərqi yoxdur "
+    ]
+  },
+  {
+    "question": "Qastroşizis zamanı qarnın ön divarının defektinin harada yerləşdiyini göstərin?",
+    "answers": [
+      "göbəyin sağ tərəfidə  ",
+      "göbəyin üstündə   ",
+      "göbək elementlərinin tərkibində ",
+      "göbəkdən aşağıda  ",
+      "epiqastriumda "
+    ]
+  },
+  {
+    "question": "Doğuş zamanı qışası cırılmış göbək ciyəsi yırtığını (omfalosele) hansı  patologiya ilə differensiasiya etmək lazımdır? ",
+    "answers": [
+      "gastroşizis   ",
+      "göbək yırtığı   ",
+      "invaginasiya ",
+      "eventrasiya  ",
+      "raxişizis "
+    ]
+  },
+  {
+    "question": "Ağ xətt yırtığı nədir? ",
+    "answers": [
+      "aponevroz defekti  ",
+      "göbək halqasının qüsuru   ",
+      "peritonun yataq çıxıntısının obitersiyasının pozulması ",
+      "eventrasiya   ",
+      "qarın ön divarının əzələlərinin aplaziyası "
+    ]
+  },
+  {
+    "question": "Bağırsaq borusunun malformasiyalarının formalaşması zamanı anadangəlmə  bağırsaq keçməzliyinin hansı növləri baş verir? ",
+    "answers": [
+      "atreziya, stenoz ",
+      "bağırsa burulması  ",
+      "Ledd sindromu ",
+      "aqanqlionoz  ",
+      "invaginasiya "
+    ]
+  },
+  {
+    "question": "Koprostaz zamanı bağırsaq keçməzliyinin hansı növü baş verir? ",
+    "answers": [
+      "obstruktiv ",
+      "bağırsaq burulması ",
+      "stranqulyasion ",
+      "dinamik  ",
+      "invaginasiya "
+    ]
+  },
+  {
+    "question": "Hirşprunq xəstəliyindən əziyyət çəkən uşaqlarda aparıcı simptom hansıdır? ",
+    "answers": [
+      "xroniki qəbizlik ",
+      "yedikləri il tez-tez qusma ",
+      "tez-tez ishal ",
+      "disfagiya  ",
+      "regurgitasiya "
+    ]
+  },
+  {
+    "question": "Yoğun bağırsağın anadangəlmə aqanqlionozu nəticəsində hansı növ patologiya  baş verir? ",
+    "answers": [
+      "Hirşprung xəstəliyi ",
+      "mekonial ileus  ",
+      "orta bağırsaq burulması ",
+      "invaginasiya ",
+      "dolixosiqma "
+    ]
+  },
+  {
+    "question": "Yalançı diafraqma yırtıqlarının həqiqi yırtıqlardan fərqlərini göstərin? ",
+    "answers": [
+      "yırtıq kisəsi yoxdur ",
+      "yırtıq qapısı yoxdur ",
+      "yırtıq möhtəviyyatı yoxdur  ",
+      "yırtıq möhtəviyyatının boğulması ",
+      "yalnız yenidoğulmuşlarda rast gəlir "
+    ]
+  },
+  {
+    "question": "Qarın boşluğu orqanlarının döş qəfəsinə yerdəyişməsi nəticəsində hansı   patologiya baş verir? ",
+    "answers": [
+      "diafraqma yırtığı ",
+      "ağ xəttin yırtığı ",
+      "pnevmotoraks ",
+      "invaginasiya ",
+      "dolixosiqma              "
     ]
   }
 ]
-
