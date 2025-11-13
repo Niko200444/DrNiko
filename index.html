@@ -793,7 +793,7 @@
   body.dark-mode .question {
     background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
     border-color: #475569;
-    color: #e5e7eb;
+    color: #e7e9eb;
     box-shadow: 0 8px 32px rgba(0,0,0,0.15);
   }
   body.dark-mode .answers button {
@@ -852,7 +852,7 @@
   }
   body.dark-mode input, body.dark-mode textarea {
     background: #334155;
-    color: #e5e7eb;
+    color: #e7e9eb;
     border-color: #475569;
   }
   body.dark-mode input:focus, body.dark-mode textarea:focus {
@@ -911,7 +911,7 @@
   body.dark-mode .flagged-questions-list button,
   body.dark-mode .repeated-mistakes-list button {
     background: #334155;
-    color: #e5e7eb;
+    color: #e7e9eb;
     border-color: #475569;
   }
   body.dark-mode .wrong-questions-list button:hover,
@@ -1130,7 +1130,7 @@
     body.dark-mode .flashcard-question {
       background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
       border-color: #475569;
-      color: #e5e7eb;
+      color: #e7e9eb;
       box-shadow: 0 12px 40px rgba(0,0,0,0.3);
     }
     
@@ -1140,7 +1140,7 @@
     
     body.dark-mode .flashcard-answers button {
       background: rgba(51,65,85,0.9);
-      color: #e5e7eb;
+      color: #e7e9eb;
       border-color: #475569;
     }
     
@@ -1161,7 +1161,7 @@
     
     body.dark-mode .flashcard-controls button {
       background: rgba(51,65,85,0.3);
-      color: #e5e7eb;
+      color: #e7e9eb;
       border-color: #475569;
     }
     
@@ -1172,7 +1172,1137 @@
     
     body.dark-mode .flashcard-indicator {
       background: rgba(51,65,85,0.3);
-      color: #e5e7eb;
+      color: #e7e9eb;
+      border-color: #475569;
+    }
+    
+    /* Kateqoriya düymələri üçün stil */
+    .category-btn {
+      width: 240px;
+      margin: 12px 0;
+      padding: 18px 0;
+      font-size: 1.25em;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      border: none;
+      border-radius: 18px;
+      cursor: pointer;
+      box-shadow: 0 8px 32px rgba(102,126,234,0.15);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .category-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    .category-btn:hover::before {
+      left: 100%;
+    }
+
+    .category-btn:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 16px 48px rgba(102,126,234,0.25);
+    }
+
+    .category-btn.selected {
+      font-size: 1.6em;
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      color: #fff;
+      transform: scale(1.08);
+      font-weight: bold;
+      box-shadow: 0 12px 40px rgba(245,87,108,0.3);
+      z-index: 2;
+    }
+
+    .category-btn.inactive {
+      opacity: 0.6;
+      filter: grayscale(0.3);
+      font-size: 1em;
+      background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+      color: #6b7280;
+      box-shadow: none;
+    }
+
+    .category-btn i {
+      margin-right: 8px;
+      font-size: 1.1em;
+    }
+
+    /* Başlanğıc ekranı üçün stil */
+    #welcomeScreen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      height: 100vh;
+      background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+      padding: 0 20px;
+      text-align: center;
+    }
+    #welcomeScreen h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #2563eb;
+      font-family: 'Pacifico', cursive;
+    }
+    #welcomeScreen p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+      color: #333;
+    }
+    #startBtn {
+      font-family: 'Caveat', cursive;
+      font-size: 3.5em;
+      padding: 44px 100px;
+      border-radius: 32px;
+      border: none;
+      background: linear-gradient(90deg, #17cc9f 60%, #0b0ec2 100%);
+      color: #222;
+      box-shadow: 0 8px 36px rgba(251,191,36,0.18);
+      cursor: pointer;
+      margin: 0;
+      letter-spacing: 2px;
+      transition: background 0.2s, transform 0.1s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #startBtn:hover {
+      transform: scale(1.07);
+      box-shadow: 0 12px 48px rgba(251,191,36,0.22);
+    }
+    .order-mode-option:hover {
+  background: #2ed30c;
+}
+/* Estetik flag mode və geri düymələri üçün */
+.flagged-mode-btn, #exitFlaggedModeBtn {
+  margin-top: 16px;
+  background: linear-gradient(90deg, rgb(6, 230, 73) 60%, #f472b6 100%);
+  color: #222;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 1.15em;
+  padding: 14px 0;
+  box-shadow: 0 4px 16px rgba(251,191,36,0.13);
+  transition: background 0.18s, transform 0.12s;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.flagged-mode-btn:hover, #exitFlaggedModeBtn:hover {
+  background: linear-gradient(90deg, #f472b6 60%, #0ada94 100%);
+  color: #fff;
+  transform: scale(1.04);
+}
+#exitFlaggedModeBtn::before {
+  content: "⟵";
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+.flagged-mode-btn {
+  margin-top: 18px;
+  background: linear-gradient(90deg, #0ee28a 60%, #980dcf 100%);
+  color: #222;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 18px;
+  cursor: pointer;
+  border: none;
+  font-size: 1em;
+  padding: 10px 0;
+  box-shadow: 0 6px 24px rgba(251,191,36,0.18);
+  transition: background 0.18s, transform 0.12s, color 0.18s, box-shadow 0.18s;
+  letter-spacing: 1.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-shadow: 0 2px 8px #fff8;
+  outline: none;
+  border: 2px solid #fbbf24;
+}
+.flagged-mode-btn:hover {
+  background: linear-gradient(90deg, #f472b6 60%, #fbbf24 100%);
+  color: #fff;
+  transform: scale(1.06) rotate(-1deg);
+  box-shadow: 0 12px 36px rgba(251,191,36,0.22);
+  border-color: #f472b6;
+}
+  body.dark-mode {
+    background: linear-gradient(120deg, #18181b 0%, #1e293b 100%);
+    color: #e5e7eb;
+  }
+  body.dark-mode .main-container {
+    background: #23272f;
+    color: #e5e7eb;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  }
+  body.dark-mode .question {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    border-color: #475569;
+    color: #e7e9eb;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  body.dark-mode .answers button {
+    background: linear-gradient(135deg, #334155 0%, #475569 100%);
+    color: #e7e9eb;
+    border-color: #475569;
+  }
+  body.dark-mode .answers button:hover:not(.correct):not(.wrong) {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(14,165,233,0.3);
+  }
+  body.dark-mode .answers button.correct {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(34,197,94,0.3);
+  }
+  body.dark-mode .answers button.wrong {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(239,68,68,0.3);
+  }
+  body.dark-mode .side-panel {
+    background: linear-gradient(135deg, rgba(30,41,59,0.95) 0%, rgba(51,65,85,0.95) 100%);
+    color: #e5e7eb;
+    border-left: 1px solid #475569;
+    backdrop-filter: blur(20px);
+  }
+  body.dark-mode .side-panel h2 {
+    background: linear-gradient(135deg, rgba(14,165,233,0.1) 0%, rgba(2,132,199,0.1) 100%);
+    border-color: #0ea5e9;
+    color: #0ea5e9;
+  }
+  body.dark-mode .side-panel div, body.dark-mode .side-panel p {
+    background: rgba(30,41,59,0.8);
+    border-color: #475569;
+    color: #e7e9eb;
+  }
+  body.dark-mode .category-btn {
+    background: linear-gradient(135deg, #334155 0%, #475569 100%);
+    color: #e7e9eb;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  }
+  body.dark-mode .category-btn.selected {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: #1e293b;
+    box-shadow: 0 12px 40px rgba(251,191,36,0.3);
+  }
+  body.dark-mode .category-btn.inactive {
+    background: linear-gradient(135deg, #475569 0%, #64748b 100%);
+    color: #94a3b8;
+  }
+  body.dark-mode #welcomeScreen {
+    background: linear-gradient(120deg, #1e293b 0%, #0f172a 100%);
+    color: #e7e9eb;
+  }
+  body.dark-mode input, body.dark-mode textarea {
+    background: #334155;
+    color: #e7e9eb;
+    border-color: #475569;
+  }
+  body.dark-mode input:focus, body.dark-mode textarea:focus {
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 4px rgba(14,165,233,0.1);
+  }
+  body.dark-mode .search-container {
+    background: linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(51,65,85,0.9) 100%);
+    border-color: #475569;
+  }
+  body.dark-mode .search-container button {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: #fff;
+  }
+  body.dark-mode .search-container button:hover {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  }
+  body.dark-mode .extra-options button {
+    background: linear-gradient(135deg, #334155 0%, #475569 100%);
+    color: #e7e9eb;
+  }
+  body.dark-mode .extra-options .flag-btn {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: #1e293b;
+  }
+  body.dark-mode .extra-options .note-btn {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: #fff;
+  }
+  body.dark-mode .extra-options .clear-answer-btn {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: #fff;
+  }
+  body.dark-mode .toggle-button {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: #fff;
+  }
+  body.dark-mode .reset-btn {
+    background: #334155;
+    color: #e7e9eb;
+    border-color: #475569;
+  }
+  body.dark-mode .reset-btn:hover {
+    background: #475569;
+  }
+  body.dark-mode .page-navigation button {
+    background: #334155;
+    color: #e7e9eb;
+    border-color: #475569;
+  }
+  body.dark-mode .page-navigation button.active {
+    background: #0ea5e9;
+    color: #fff;
+  }
+  body.dark-mode .wrong-questions-list button,
+  body.dark-mode .flagged-questions-list button,
+  body.dark-mode .repeated-mistakes-list button {
+    background: #334155;
+    color: #e7e9eb;
+    border-color: #475569;
+  }
+  body.dark-mode .wrong-questions-list button:hover,
+  body.dark-mode .flagged-questions-list button:hover,
+  body.dark-mode .repeated-mistakes-list button:hover {
+    background: #475569;
+  }
+  body.dark-mode .flagged-mode-btn {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    color: #fff;
+  }
+  body.dark-mode .flagged-mode-btn:hover {
+    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  }
+
+  @media (max-width: 600px) {
+  #patanSubcats,
+  #patanSubcats > div {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .category-btn {
+    width: 100% !important;
+    min-width: unset !important;
+    font-size: 1em;
+    padding: 12px 0;
+    box-sizing: border-box;
+  }
+  .main-container {
+    max-width: 100vw;
+    padding: 10px 2vw 10px 2vw;
+    border-radius: 10px;
+  }
+    .side-panel {
+    width: 85vw !important;
+    right: -90vw !important;
+    border-radius: 12px 0 0 12px !important;
+    padding: 18px 6px !important;
+    font-size: 1em !important;
+    top: 0 !important;
+    height: 100vh !important;
+    z-index: 10001 !important;
+    box-shadow: -2px 0 24px rgba(37,99,235,0.10);
+    background: #fff;
+    transition: right 0.35s cubic-bezier(.77,0,.18,1);
+  }
+  .side-panel.open {
+    right: 0 !important;
+  }
+  .side-overlay {
+    display: block;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.25);
+    z-index: 10000;
+  }
+  .toggle-button {
+    top: 8px !important;
+    right: 0 !important;
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 1.5em !important;
+    z-index: 11000 !important;
+    display: flex !important;
+  }
+}
+@media (min-width: 601px) {
+  .side-overlay { display: none !important; }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-18px);}
+}
+#patanSubcats {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: auto;
+}
+  body, html {
+  overflow-x: hidden;
+}
+.main-container {
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+    
+    /* Flashcard rejimi üçün stillər */
+    .flashcard-question {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(102,126,234,0.2);
+      margin-bottom: 32px;
+      padding: 40px 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .flashcard-question::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 50%, rgba(255,255,255,0.1) 100%);
+      animation: shimmer 3s infinite;
+    }
+    
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    
+    .flashcard-question h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    
+    .flashcard-answers {
+      display: none;
+      margin-top: 20px;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .flashcard-answers.show {
+      display: block;
+      animation: slideInUp 0.5s ease-out;
+    }
+    
+    .flashcard-answers button {
+      background: rgba(255,255,255,0.9);
+      color: #333;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 20px;
+      margin: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+    
+    .flashcard-answers button:hover {
+      background: rgba(255,255,255,1);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    
+    .flashcard-answers button.correct {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: #fff;
+      font-weight: 600;
+    }
+    
+    .flashcard-answers button.wrong {
+      background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+      color: #fff;
+      font-weight: 600;
+    }
+    
+    .flashcard-controls {
+      margin-top: 20px;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .flashcard-controls button {
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-radius: 12px;
+      padding: 12px 24px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+    
+    .flashcard-controls button:hover {
+      background: rgba(255,255,255,0.3);
+      border-color: rgba(255,255,255,0.5);
+      transform: translateY(-2px);
+    }
+    
+    .flashcard-indicator {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    
+    /* Dark mode flashcard stilləri */
+    body.dark-mode .flashcard-question {
+      background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+      border-color: #475569;
+      color: #e7e9eb;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+    
+    body.dark-mode .flashcard-question::before {
+      background: linear-gradient(45deg, rgba(255,255,255,0.05) 0%, transparent 50%, rgba(255,255,255,0.05) 100%);
+    }
+    
+    body.dark-mode .flashcard-answers button {
+      background: rgba(51,65,85,0.9);
+      color: #e7e9eb;
+      border-color: #475569;
+    }
+    
+    body.dark-mode .flashcard-answers button:hover {
+      background: rgba(71,85,105,1);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    
+    body.dark-mode .flashcard-answers button.correct {
+      background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+      color: #fff;
+    }
+    
+    body.dark-mode .flashcard-answers button.wrong {
+      background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+      color: #fff;
+    }
+    
+    body.dark-mode .flashcard-controls button {
+      background: rgba(51,65,85,0.3);
+      color: #e7e9eb;
+      border-color: #475569;
+    }
+    
+    body.dark-mode .flashcard-controls button:hover {
+      background: rgba(71,85,105,0.4);
+      border-color: #64748b;
+    }
+    
+    body.dark-mode .flashcard-indicator {
+      background: rgba(51,65,85,0.3);
+      color: #e7e9eb;
+      border-color: #475569;
+    }
+    
+    /* Kateqoriya düymələri üçün stil */
+    .category-btn {
+      width: 240px;
+      margin: 12px 0;
+      padding: 18px 0;
+      font-size: 1.25em;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      border: none;
+      border-radius: 18px;
+      cursor: pointer;
+      box-shadow: 0 8px 32px rgba(102,126,234,0.15);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .category-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    .category-btn:hover::before {
+      left: 100%;
+    }
+
+    .category-btn:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 16px 48px rgba(102,126,234,0.25);
+    }
+
+    .category-btn.selected {
+      font-size: 1.6em;
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      color: #fff;
+      transform: scale(1.08);
+      font-weight: bold;
+      box-shadow: 0 12px 40px rgba(245,87,108,0.3);
+      z-index: 2;
+    }
+
+    .category-btn.inactive {
+      opacity: 0.6;
+      filter: grayscale(0.3);
+      font-size: 1em;
+      background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+      color: #6b7280;
+      box-shadow: none;
+    }
+
+    .category-btn i {
+      margin-right: 8px;
+      font-size: 1.1em;
+    }
+
+    /* Başlanğıc ekranı üçün stil */
+    #welcomeScreen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      height: 100vh;
+      background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+      padding: 0 20px;
+      text-align: center;
+    }
+    #welcomeScreen h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #2563eb;
+      font-family: 'Pacifico', cursive;
+    }
+    #welcomeScreen p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+      color: #333;
+    }
+    #startBtn {
+      font-family: 'Caveat', cursive;
+      font-size: 3.5em;
+      padding: 44px 100px;
+      border-radius: 32px;
+      border: none;
+      background: linear-gradient(90deg, #17cc9f 60%, #0b0ec2 100%);
+      color: #222;
+      box-shadow: 0 8px 36px rgba(251,191,36,0.18);
+      cursor: pointer;
+      margin: 0;
+      letter-spacing: 2px;
+      transition: background 0.2s, transform 0.1s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #startBtn:hover {
+      transform: scale(1.07);
+      box-shadow: 0 12px 48px rgba(251,191,36,0.22);
+    }
+    .order-mode-option:hover {
+  background: #2ed30c;
+}
+/* Estetik flag mode və geri düymələri üçün */
+.flagged-mode-btn, #exitFlaggedModeBtn {
+  margin-top: 16px;
+  background: linear-gradient(90deg, rgb(6, 230, 73) 60%, #f472b6 100%);
+  color: #222;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 1.15em;
+  padding: 14px 0;
+  box-shadow: 0 4px 16px rgba(251,191,36,0.13);
+  transition: background 0.18s, transform 0.12s;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.flagged-mode-btn:hover, #exitFlaggedModeBtn:hover {
+  background: linear-gradient(90deg, #f472b6 60%, #0ada94 100%);
+  color: #fff;
+  transform: scale(1.04);
+}
+#exitFlaggedModeBtn::before {
+  content: "⟵";
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+.flagged-mode-btn {
+  margin-top: 18px;
+  background: linear-gradient(90deg, #0ee28a 60%, #980dcf 100%);
+  color: #222;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 18px;
+  cursor: pointer;
+  border: none;
+  font-size: 1em;
+  padding: 10px 0;
+  box-shadow: 0 6px 24px rgba(251,191,36,0.18);
+  transition: background 0.18s, transform 0.12s, color 0.18s, box-shadow 0.18s;
+  letter-spacing: 1.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-shadow: 0 2px 8px #fff8;
+  outline: none;
+  border: 2px solid #fbbf24;
+}
+.flagged-mode-btn:hover {
+  background: linear-gradient(90deg, #f472b6 60%, #fbbf24 100%);
+  color: #fff;
+  transform: scale(1.06) rotate(-1deg);
+  box-shadow: 0 12px 36px rgba(251,191,36,0.22);
+  border-color: #f472b6;
+}
+  body.dark-mode {
+    background: linear-gradient(120deg, #18181b 0%, #1e293b 100%);
+    color: #e5e7eb;
+  }
+  body.dark-mode .main-container {
+    background: #23272f;
+    color: #e5e7eb;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  }
+  body.dark-mode .question {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    border-color: #475569;
+    color: #e7e9eb;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+  body.dark-mode .answers button {
+    background: linear-gradient(135deg, #334155 0%, #475569 100%);
+    color: #e7e9eb;
+    border-color: #475569;
+  }
+  body.dark-mode .answers button:hover:not(.correct):not(.wrong) {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(14,165,233,0.3);
+  }
+  body.dark-mode .answers button.correct {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(34,197,94,0.3);
+  }
+  body.dark-mode .answers button.wrong {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(239,68,68,0.3);
+  }
+  body.dark-mode .side-panel {
+    background: linear-gradient(135deg, rgba(30,41,59,0.95) 0%, rgba(51,65,85,0.95) 100%);
+    color: #e5e7eb;
+    border-left: 1px solid #475569;
+    backdrop-filter: blur(20px);
+  }
+  body.dark-mode .side-panel h2 {
+    background: linear-gradient(135deg, rgba(14,165,233,0.1) 0%, rgba(2,132,199,0.1) 100%);
+    border-color: #0ea5e9;
+    color: #0ea5e9;
+  }
+  body.dark-mode .side-panel div, body.dark-mode .side-panel p {
+    background: rgba(30,41,59,0.8);
+    border-color: #475569;
+    color: #e7e9eb;
+  }
+  body.dark-mode .category-btn {
+    background: linear-gradient(135deg, #334155 0%, #475569 100%);
+    color: #e7e9eb;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  }
+  body.dark-mode .category-btn.selected {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: #1e293b;
+    box-shadow: 0 12px 40px rgba(251,191,36,0.3);
+  }
+  body.dark-mode .category-btn.inactive {
+    background: linear-gradient(135deg, #475569 0%, #64748b 100%);
+    color: #94a3b8;
+  }
+  body.dark-mode #welcomeScreen {
+    background: linear-gradient(120deg, #1e293b 0%, #0f172a 100%);
+    color: #e7e9eb;
+  }
+  body.dark-mode input, body.dark-mode textarea {
+    background: #334155;
+    color: #e7e9eb;
+    border-color: #475569;
+  }
+  body.dark-mode input:focus, body.dark-mode textarea:focus {
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 4px rgba(14,165,233,0.1);
+  }
+  body.dark-mode .search-container {
+    background: linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(51,65,85,0.9) 100%);
+    border-color: #475569;
+  }
+  body.dark-mode .search-container button {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: #fff;
+  }
+  body.dark-mode .search-container button:hover {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  }
+  body.dark-mode .extra-options button {
+    background: linear-gradient(135deg, #334155 0%, #475569 100%);
+    color: #e7e9eb;
+  }
+  body.dark-mode .extra-options .flag-btn {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: #1e293b;
+  }
+  body.dark-mode .extra-options .note-btn {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: #fff;
+  }
+  body.dark-mode .extra-options .clear-answer-btn {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: #fff;
+  }
+  body.dark-mode .toggle-button {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: #fff;
+  }
+  body.dark-mode .reset-btn {
+    background: #334155;
+    color: #e7e9eb;
+    border-color: #475569;
+  }
+  body.dark-mode .reset-btn:hover {
+    background: #475569;
+  }
+  body.dark-mode .page-navigation button {
+    background: #334155;
+    color: #e7e9eb;
+    border-color: #475569;
+  }
+  body.dark-mode .page-navigation button.active {
+    background: #0ea5e9;
+    color: #fff;
+  }
+  body.dark-mode .wrong-questions-list button,
+  body.dark-mode .flagged-questions-list button,
+  body.dark-mode .repeated-mistakes-list button {
+    background: #334155;
+    color: #e7e9eb;
+    border-color: #475569;
+  }
+  body.dark-mode .wrong-questions-list button:hover,
+  body.dark-mode .flagged-questions-list button:hover,
+  body.dark-mode .repeated-mistakes-list button:hover {
+    background: #475569;
+  }
+  body.dark-mode .flagged-mode-btn {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    color: #fff;
+  }
+  body.dark-mode .flagged-mode-btn:hover {
+    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  }
+
+  @media (max-width: 600px) {
+  #patanSubcats,
+  #patanSubcats > div {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .category-btn {
+    width: 100% !important;
+    min-width: unset !important;
+    font-size: 1em;
+    padding: 12px 0;
+    box-sizing: border-box;
+  }
+  .main-container {
+    max-width: 100vw;
+    padding: 10px 2vw 10px 2vw;
+    border-radius: 10px;
+  }
+    .side-panel {
+    width: 85vw !important;
+    right: -90vw !important;
+    border-radius: 12px 0 0 12px !important;
+    padding: 18px 6px !important;
+    font-size: 1em !important;
+    top: 0 !important;
+    height: 100vh !important;
+    z-index: 10001 !important;
+    box-shadow: -2px 0 24px rgba(37,99,235,0.10);
+    background: #fff;
+    transition: right 0.35s cubic-bezier(.77,0,.18,1);
+  }
+  .side-panel.open {
+    right: 0 !important;
+  }
+  .side-overlay {
+    display: block;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.25);
+    z-index: 10000;
+  }
+  .toggle-button {
+    top: 8px !important;
+    right: 0 !important;
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 1.5em !important;
+    z-index: 11000 !important;
+    display: flex !important;
+  }
+}
+@media (min-width: 601px) {
+  .side-overlay { display: none !important; }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-18px);}
+}
+#patanSubcats {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: auto;
+}
+  body, html {
+  overflow-x: hidden;
+}
+.main-container {
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+    
+    /* Flashcard rejimi üçün stillər */
+    .flashcard-question {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(102,126,234,0.2);
+      margin-bottom: 32px;
+      padding: 40px 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .flashcard-question::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 50%, rgba(255,255,255,0.1) 100%);
+      animation: shimmer 3s infinite;
+    }
+    
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    
+    .flashcard-question h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    
+    .flashcard-answers {
+      display: none;
+      margin-top: 20px;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .flashcard-answers.show {
+      display: block;
+      animation: slideInUp 0.5s ease-out;
+    }
+    
+    .flashcard-answers button {
+      background: rgba(255,255,255,0.9);
+      color: #333;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 20px;
+      margin: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+    
+    .flashcard-answers button:hover {
+      background: rgba(255,255,255,1);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    
+    .flashcard-answers button.correct {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: #fff;
+      font-weight: 600;
+    }
+    
+    .flashcard-answers button.wrong {
+      background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+      color: #fff;
+      font-weight: 600;
+    }
+    
+    .flashcard-controls {
+      margin-top: 20px;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .flashcard-controls button {
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-radius: 12px;
+      padding: 12px 24px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+    
+    .flashcard-controls button:hover {
+      background: rgba(255,255,255,0.3);
+      border-color: rgba(255,255,255,0.5);
+      transform: translateY(-2px);
+    }
+    
+    .flashcard-indicator {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    
+    /* Dark mode flashcard stilləri */
+    body.dark-mode .flashcard-question {
+      background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+      border-color: #475569;
+      color: #e7e9eb;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+    
+    body.dark-mode .flashcard-question::before {
+      background: linear-gradient(45deg, rgba(255,255,255,0.05) 0%, transparent 50%, rgba(255,255,255,0.05) 100%);
+    }
+    
+    body.dark-mode .flashcard-answers button {
+      background: rgba(51,65,85,0.9);
+      color: #e7e9eb;
+      border-color: #475569;
+    }
+    
+    body.dark-mode .flashcard-answers button:hover {
+      background: rgba(71,85,105,1);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    
+    body.dark-mode .flashcard-answers button.correct {
+      background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+      color: #fff;
+    }
+    
+    body.dark-mode .flashcard-answers button.wrong {
+      background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+      color: #fff;
+    }
+    
+    body.dark-mode .flashcard-controls button {
+      background: rgba(51,65,85,0.3);
+      color: #e7e9eb;
+      border-color: #475569;
+    }
+    
+    body.dark-mode .flashcard-controls button:hover {
+      background: rgba(71,85,105,0.4);
+      border-color: #64748b;
+    }
+    
+    body.dark-mode .flashcard-indicator {
+      background: rgba(51,65,85,0.3);
+      color: #e7e9eb;
       border-color: #475569;
     }
     
@@ -1206,7 +2336,7 @@
     <div id="categoryContainer" style="display:flex; flex-direction:column; align-items:center; margin-bottom:30px;">
       <h2 style="font-size:2.2em; margin-bottom:20px;">Kateqoriya seçin</h2>
        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-        <button id="cat-ux" data-category="ux.json" onclick="selectCategory('ux.json')" class="category-btn"><i class="fa fa-flask"></i>Uşaq sağlamlığı</button>
+        <button id="cat-farm" data-category="ux.json" onclick="selectCategory('ux.json')" class="category-btn"><i class="fa fa-flask"></i>Uşaq sağlamlığı</button>
       </div>
        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
         <button id="cat-tecili" data-category="tecili.json" onclick="selectCategory('tecili.json')" class="category-btn"><i class="fa fa-flask"></i> TƏCİLİ</button>
@@ -1235,6 +2365,7 @@
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
         <button id="cat-norfiz2" data-category="norfiz2.json" onclick="selectCategory('norfiz2.json')" class="category-btn"><i class="fa fa-heartbeat"></i> NORFIZ2</button>
       </div>
+      a
       <!-- MİKROB üçün alt kateqoriyalar (başlanğıcda gizli) -->
 <div id="patanSubcats" style="display:none;align-items:center;gap:10px;margin-bottom:10px; margin-left:30px; flex-direction:column; width:100%;">
   <div style="display:flex; gap:10px; width:100%;">
@@ -3415,10 +4546,7 @@ function renderQuizWrongOnly() {
   // Bütün kateqoriyaları yükləyən funksiya
   async function loadAllCategories() {
     const categories = [
-      { name: 'Uşaq sağlamlığı', file: 'ux.json', icon: 'fa-microchip' },
-      { name: 'TƏCİLİ', file: 'tecili.json', icon: 'fa-flask' },
       { name: 'Farmakologiya', file: 'farm.json', icon: 'fa-flask' },
-      { name: 'Uşaq sağlamlığı', file: 'ux.json', icon: 'fa-flask' },
       { name: 'PATFİZ', file: 'patfiz.json', icon: 'fa-heartbeat' },
       { name: 'PATFIZ2', file: 'patfiz2.json', icon: 'fa-brain' },
       { name: 'PATAN1', file: 'patan1a.json', icon: 'fa-dna' },
@@ -3428,7 +4556,6 @@ function renderQuizWrongOnly() {
       { name: 'MIKROB2', file: 'mikrob2.json', icon: 'fa-microchip' },
       { name: 'NORFIZ1', file: 'norfiz1.json', icon: 'fa-microchip' },
       { name: 'NORFIZ2', file: 'norfiz2.json', icon: 'fa-microchip' }
-
     ];
 
     allCategoriesData = {};
@@ -3682,7 +4809,7 @@ function renderQuizWrongOnly() {
       return;
     }
 
-    // Əgər bütün patan alt kateqoriyaları üçünsə:
+    // Əgər bütün patan alt kateqoriyaları üçünsə
     if (filename === 'patan-all') {
       // Bütün alt kateqoriyaların json-larını yüklə və birləşdir
       const files = ['patan2a.json', 'patan1a.json', 'patandyes.json'];
@@ -3711,9 +4838,8 @@ function renderQuizWrongOnly() {
 
     // Standart halda bir json yüklə
     loadQuizData();
-  }
-
-  // Firebase Authentication və Sync funksiyaları
+}
+    // Firebase Authentication və Sync funksiyaları
   function signInWithGoogle() {
     if (!window.firebaseAuth || !window.firebaseProvider) {
       alert('Firebase yüklənmədi. Zəhmət olmasa səhifəni yeniləyin.');
@@ -3990,370 +5116,6 @@ function renderQuizWrongOnly() {
     return totalQuestions;
   }
   </script>
-  <button id="darkModeToggle" style="position:fixed;top:18px;left:18px;z-index:1001;padding:12px 20px;border-radius:12px;background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);color:#fff;font-size:1.1em;cursor:pointer;border:none;box-shadow:0 4px 16px rgba(102,126,234,0.3);transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);font-family:'Inter',sans-serif;font-weight:600;display:flex;align-items:center;gap:8px;">
-    <i class="fa fa-moon"></i>
-    <span>Qaranlıq rejim</span>
-  </button>
-  <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const darkBtn = document.getElementById('darkModeToggle');
-  const darkIcon = darkBtn.querySelector('i');
-  const darkText = darkBtn.querySelector('span');
-  
-  // Yadda saxlanılan rejimi yüklə
-  if (safeGetItem('darkMode') === 'on') {
-    document.body.classList.add('dark-mode');
-    updateDarkModeUI(true);
-  }
-  
-  if (darkBtn) {
-    darkBtn.addEventListener('click', function() {
-      const isDark = document.body.classList.toggle('dark-mode');
-      updateDarkModeUI(isDark);
-      
-      // Yadda saxla
-      if (isDark) {
-        safeSetItem('darkMode', 'on');
-      } else {
-        safeSetItem('darkMode', 'off');
-      }
-    });
-  }
-  
-  function updateDarkModeUI(isDark) {
-    if (isDark) {
-      darkIcon.className = 'fa fa-sun';
-      darkText.textContent = 'İşıqlı rejim';
-      darkBtn.style.background = 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)';
-      darkBtn.style.color = '#1e293b';
-    } else {
-      darkIcon.className = 'fa fa-moon';
-      darkText.textContent = 'Qaranlıq rejim';
-      darkBtn.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
-      darkBtn.style.color = '#fff';
-    }
-  }
-  
-  // Keyboard shortcut for search (Ctrl+F)
-  document.addEventListener('keydown', function(e) {
-    if (e.ctrlKey && e.key === 'f') {
-      e.preventDefault();
-      const searchInput = document.getElementById('searchInput');
-      const searchContainer = document.getElementById('searchContainer');
-      if (searchContainer && searchContainer.style.display !== 'none') {
-        searchInput.focus();
-      }
-    }
-  });
-});
-</script>
-  <div id="loadingSpinner" style="display:none;text-align:center;">
-    <i class="fa fa-spinner fa-spin fa-2x"></i>
-  </div>
-
-  <!-- PWA Installation System -->
-  <div id="pwaInstallContainer" style="display:none; position:fixed; bottom:20px; left:50%; transform:translateX(-50%); z-index:10000; background:linear-gradient(135deg, #667eea 0%, #764ba2 100%); color:#fff; padding:16px 24px; border-radius:16px; box-shadow:0 8px 32px rgba(102,126,234,0.3); font-family:'Inter',sans-serif; max-width:400px; text-align:center;">
-    <div style="margin-bottom:12px; font-weight:bold; font-size:1.1em;">
-      <i class="fa fa-download"></i> Tətbiqi quraşdırın
-    </div>
-    <div style="margin-bottom:16px; font-size:0.9em; opacity:0.9;">
-      Offline işləmə və daha sürətli giriş üçün tətbiqi cihazınıza quraşdırın
-    </div>
-    <div style="display:flex; gap:8px; justify-content:center;">
-      <button id="pwaInstallBtn" style="background:rgba(255,255,255,0.2); border:none; color:#fff; padding:8px 16px; border-radius:8px; cursor:pointer; font-weight:bold; transition:all 0.3s;">
-        <i class="fa fa-plus"></i> Quraşdır
-      </button>
-      <button id="pwaDismissBtn" style="background:rgba(255,255,255,0.1); border:none; color:#fff; padding:8px 16px; border-radius:8px; cursor:pointer; transition:all 0.3s;">
-        <i class="fa fa-times"></i> Bağla
-      </button>
-    </div>
-  </div>
-
-  <!-- PWA Status Indicator -->
-  <div id="pwaStatusIndicator" style="position:fixed; top:20px; right:20px; z-index:10001; background:rgba(0,0,0,0.7); color:#fff; padding:8px 12px; border-radius:8px; font-size:0.8em; font-family:'Inter',sans-serif; display:none;">
-    <i class="fa fa-wifi"></i> <span id="pwaStatusText">Offline</span>
-  </div>
-
-  <script>
-  // PWA Installation System
-  let deferredPrompt = null;
-  let installPromptReady = false;
-  
-  // PWA quraşdırma funksiyası
-  function initializePWA() {
-    console.log('🚀 PWA quraşdırılır...');
-    
-    // Service Worker qeydiyyatı
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./sw.js')
-        .then((registration) => {
-          console.log('✅ Service Worker qeydiyyatdan keçdi:', registration.scope);
-          updatePWAStatus('Service Worker aktiv');
-        })
-        .catch((error) => {
-          console.error('❌ Service Worker xətası:', error);
-          updatePWAStatus('Service Worker xətası');
-        });
-    }
-    
-    // Install prompt hadisəsi
-    window.addEventListener('beforeinstallprompt', (e) => {
-      console.log('📱 Install prompt hazır');
-      e.preventDefault();
-      deferredPrompt = e;
-      installPromptReady = true;
-      showInstallButton();
-    });
-    
-    // App installed hadisəsi
-    window.addEventListener('appinstalled', (evt) => {
-      console.log('✅ Tətbiq quraşdırıldı');
-      hideInstallButton();
-      updatePWAStatus('Tətbiq quraşdırıldı');
-      
-      // Analytics tracking
-      if (window.gtag) {
-        window.gtag('event', 'pwa_install', {
-          'event_category': 'engagement',
-          'event_label': 'pwa_install'
-        });
-      }
-    });
-    
-    // Online/Offline status
-    window.addEventListener('online', () => {
-      console.log('🌐 Online');
-      updatePWAStatus('Online');
-    });
-    
-    window.addEventListener('offline', () => {
-      console.log('📴 Offline');
-      updatePWAStatus('Offline');
-    });
-    
-    // İlk status yoxlaması
-    updatePWAStatus(navigator.onLine ? 'Online' : 'Offline');
-  }
-  
-  // Install düyməsini göstər
-  function showInstallButton() {
-    const container = document.getElementById('pwaInstallContainer');
-    if (container && installPromptReady) {
-      container.style.display = 'block';
-      
-      // Install düyməsi
-      const installBtn = document.getElementById('pwaInstallBtn');
-      if (installBtn) {
-        installBtn.addEventListener('click', () => {
-          if (deferredPrompt) {
-            deferredPrompt.prompt();
-            deferredPrompt.userChoice.then((choiceResult) => {
-              console.log('İstifadəçi seçimi:', choiceResult.outcome);
-              if (choiceResult.outcome === 'accepted') {
-                console.log('Tətbiq quraşdırılacaq');
-              }
-              deferredPrompt = null;
-              hideInstallButton();
-            });
-          }
-        });
-      }
-      
-      // Bağla düyməsi
-      const dismissBtn = document.getElementById('pwaDismissBtn');
-      if (dismissBtn) {
-        dismissBtn.addEventListener('click', () => {
-          hideInstallButton();
-          // 1 həftə ərzində göstərmə
-          localStorage.setItem('pwaInstallDismissed', Date.now());
-        });
-      }
-    }
-  }
-  
-  // Install düyməsini gizlət
-  function hideInstallButton() {
-    const container = document.getElementById('pwaInstallContainer');
-    if (container) {
-      container.style.display = 'none';
-    }
-  }
-  
-  // PWA status göstəricisini yenilə
-  function updatePWAStatus(status) {
-    const indicator = document.getElementById('pwaStatusIndicator');
-    const statusText = document.getElementById('pwaStatusText');
-    
-    if (indicator && statusText) {
-      indicator.style.display = 'block';
-      statusText.textContent = status;
-      
-      // Status-a görə ikon dəyişdir
-      const icon = indicator.querySelector('i');
-      if (icon) {
-        if (status === 'Online') {
-          icon.className = 'fa fa-wifi';
-          indicator.style.background = 'rgba(34,197,94,0.8)';
-        } else if (status === 'Offline') {
-          icon.className = 'fa fa-wifi-slash';
-          indicator.style.background = 'rgba(239,68,68,0.8)';
-        } else if (status.includes('Service Worker')) {
-          icon.className = 'fa fa-cog';
-          indicator.style.background = 'rgba(59,130,246,0.8)';
-        } else {
-          icon.className = 'fa fa-info-circle';
-          indicator.style.background = 'rgba(0,0,0,0.7)';
-        }
-      }
-      
-      // 3 saniyə sonra gizlət
-      setTimeout(() => {
-        indicator.style.display = 'none';
-      }, 3000);
-    }
-  }
-  
-  // PWA test funksiyaları
-  function testPWAInstall() {
-    console.log('🧪 PWA install test edilir...');
-    if (deferredPrompt) {
-      console.log('✅ Install prompt mövcuddur');
-      showInstallButton();
-    } else {
-      console.log('❌ Install prompt mövcud deyil');
-      alert('Install prompt hazır deyil. Zəhmət olmasa tətbiqi bir az istifadə edin və sonra yenidən cəhd edin.');
-    }
-  }
-  
-  function checkPWAStatus() {
-    console.log('📊 PWA Status:');
-    console.log('- Service Worker:', 'serviceWorker' in navigator);
-    console.log('- Install Prompt:', !!deferredPrompt);
-    console.log('- Online:', navigator.onLine);
-    console.log('- Manifest:', !!document.querySelector('link[rel="manifest"]'));
-    
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations().then(registrations => {
-        console.log('- Service Worker Registrations:', registrations.length);
-      });
-    }
-  }
-  
-  // Global funksiyalar
-  window.testPWAInstall = testPWAInstall;
-  window.checkPWAStatus = checkPWAStatus;
-  
-  // Səhifə yükləndikdə PWA-nı başlat
-  document.addEventListener('DOMContentLoaded', function() {
-    // PWA dismiss yoxlaması
-    const dismissed = localStorage.getItem('pwaInstallDismissed');
-    if (dismissed) {
-      const dismissTime = parseInt(dismissed);
-      const oneWeek = 7 * 24 * 60 * 60 * 1000;
-      if (Date.now() - dismissTime < oneWeek) {
-        console.log('PWA install bildirişi gizlədilib');
-      } else {
-        localStorage.removeItem('pwaInstallDismissed');
-      }
-    }
-    
-    // PWA-nı başlat
-    initializePWA();
-    
-    // Console üçün test funksiyaları
-    console.log('🎯 PWA test funksiyaları:');
-    console.log('- testPWAInstall() - Install düyməsini göstər');
-    console.log('- checkPWAStatus() - PWA status yoxla');
-  });
-  </script>
-
-  <div id="pwaFixedInstallBtn" style="position:fixed;bottom:24px;right:24px;z-index:10002;background:linear-gradient(135deg,#2563eb 0%,#764ba2 100%);color:#fff;padding:16px 28px;border-radius:16px;box-shadow:0 8px 32px rgba(37,99,235,0.18);font-family:'Inter',sans-serif;font-size:1.15em;font-weight:bold;display:none;align-items:center;gap:10px;cursor:pointer;transition:all 0.2s;">
-    <i class="fa fa-download"></i> Tətbiqi Quraşdır
-  </div>
-  <script>
-  // Sabit PWA install düyməsi
-  function showFixedPWAInstallBtn() {
-    const btn = document.getElementById('pwaFixedInstallBtn');
-    if (btn) btn.style.display = 'flex';
-  }
-  function hideFixedPWAInstallBtn() {
-    const btn = document.getElementById('pwaFixedInstallBtn');
-    if (btn) btn.style.display = 'none';
-  }
-  document.addEventListener('DOMContentLoaded', function() {
-    const btn = document.getElementById('pwaFixedInstallBtn');
-    if (btn) {
-      btn.addEventListener('click', function() {
-        if (window.deferredPrompt) {
-          window.deferredPrompt.prompt();
-          window.deferredPrompt.userChoice.then((choiceResult) => {
-            if (choiceResult.outcome === 'accepted') {
-              hideFixedPWAInstallBtn();
-            }
-            window.deferredPrompt = null;
-          });
-        } else {
-          alert('Quraşdırma üçün brauzerin install imkanını gözləyin və ya tətbiqdən bir az istifadə edin.');
-        }
-      });
-    }
-  });
-  // beforeinstallprompt hadisəsində sabit düyməni göstər
-  window.addEventListener('beforeinstallprompt', function(e) {
-    window.deferredPrompt = e;
-    showFixedPWAInstallBtn();
-  });
-  // Quraşdırıldıqdan sonra gizlət
-  window.addEventListener('appinstalled', function() {
-    hideFixedPWAInstallBtn();
-  });
-  </script>
-
-  <script>
-  function checkTotal() {
-    const inputs = document.querySelectorAll('.category-percent');
-    let total = 0;
-    inputs.forEach(input => {
-      total += Number(input.value);
-    });
-    if (total !== 100) {
-      document.getElementById('warning').innerText = 'Cəmi 100 olmalıdır!';
-      document.getElementById('submitBtn').disabled = true;
-    } else {
-      document.getElementById('warning').innerText = '';
-      document.getElementById('submitBtn').disabled = false;
-    }
-  }
-
-  // Hər input dəyişəndə yoxla
-  document.querySelectorAll('.category-percent').forEach(input => {
-    input.addEventListener('input', checkTotal);
-  });
-  </script>
-
-  <script>
-  function checkDistributionTotal() {
-    const total = Object.values(categoryDistribution).reduce((sum, val) => sum + val, 0);
-    let warning = document.getElementById('distributionWarning');
-    if (!warning) {
-      warning = document.createElement('div');
-      warning.id = 'distributionWarning';
-      warning.style.color = 'red';
-      warning.style.textAlign = 'center';
-      warning.style.marginTop = '10px';
-      document.getElementById('distributionPanel').appendChild(warning);
-    }
-    const submitBtn = document.querySelector('#distributionPanel button[onclick="applyDistribution()"]');
-    if (total !== 100) {
-      warning.innerText = 'Cəmi 100 olmalıdır! Hazırda: ' + total;
-      if (submitBtn) submitBtn.disabled = true;
-    } else {
-      warning.innerText = '';
-      if (submitBtn) submitBtn.disabled = false;
-    }
-  }
-  </script>
 </body>
 </html>
-
 
